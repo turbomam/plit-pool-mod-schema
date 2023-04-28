@@ -20,16 +20,20 @@
       "prefix_reference": "https://w3id.org/linkml/"
     },
     {
+      "prefix_prefix": "BFO",
+      "prefix_reference": "http://purl.obolibrary.org/obo/BFO_"
+    },
+    {
+      "prefix_prefix": "IAO",
+      "prefix_reference": "http://purl.obolibrary.org/obo/IAO_"
+    },
+    {
       "prefix_prefix": "schema",
       "prefix_reference": "http://schema.org/"
     },
     {
       "prefix_prefix": "example",
       "prefix_reference": "https://example.org/"
-    },
-    {
-      "prefix_prefix": "BFO",
-      "prefix_reference": "http://purl.obolibrary.org/obo/BFO_"
     }
   ],
   "default_prefix": "split_pool_mod_schema",
@@ -312,6 +316,7 @@
       "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/named_thing_set",
       "description": "Links a Database to a list of NamedThings",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
       "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/named_thing_set",
       "multivalued": true,
       "owner": "Database",
@@ -326,17 +331,100 @@
     {
       "name": "material_entity_set",
       "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/material_entity_set",
-      "description": "Links a Database to a list of NamedThings",
+      "description": "Links a Database to a list of MaterialEntities",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
       "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/material_entity_set",
       "multivalued": true,
       "owner": "Database",
       "domain_of": [
         "Database"
       ],
-      "range": "NamedThing",
+      "range": "MaterialEntity",
       "inlined": true,
       "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "process_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/process_set",
+      "description": "Links a Database to a list of Processes",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/process_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "Process",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "information_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/information_set",
+      "description": "Links a Database to a list of Informations",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/information_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "Information",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_inputs",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_inputs",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Process",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_inputs",
+      "multivalued": true,
+      "owner": "Process",
+      "domain_of": [
+        "Process"
+      ],
+      "range": "string",
+      "any_of": [
+        {
+          "range": "MaterialEntity",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "Information",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_outputs",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_outputs",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Process",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_outputs",
+      "multivalued": true,
+      "owner": "Process",
+      "domain_of": [
+        "Process"
+      ],
+      "range": "string",
+      "any_of": [
+        {
+          "range": "MaterialEntity",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "Information",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
       "@type": "SlotDefinition"
     }
   ],
@@ -370,8 +458,10 @@
       ],
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "slots": [
+        "information_set",
+        "material_entity_set",
         "named_thing_set",
-        "material_entity_set"
+        "process_set"
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Database",
@@ -381,7 +471,7 @@
     {
       "name": "MaterialEntity",
       "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity",
-      "description": "An entity that consists of matter",
+      "description": "An entity that consists of matter. Has an identity that persists over time.",
       "title": "Material Entity",
       "comments": [
         "bootstrapped from https://github.com/microbiomedata/nmdc-schema/pull/710"
@@ -403,13 +493,54 @@
       "slot_usage": {},
       "class_uri": "http://purl.obolibrary.org/obo/BFO_0000040",
       "@type": "ClassDefinition"
+    },
+    {
+      "name": "Process",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Process",
+      "description": "An entity that unfolds over time. Not composed of matter.",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "mappings": [
+        "BFO:0000015"
+      ],
+      "is_a": "NamedThing",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/BFO_0000015",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Information",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Information",
+      "description": "Anything that informs, or reduces uncertainty. Can be about a material entity or a process.",
+      "comments": [
+        "Information is (almost?) always conveyed by something, like a book printed on paper, electrical charges stored on a computer disk, or human speech. Those information bearers are not the information itself."
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "mappings": [
+        "IAO:0000030"
+      ],
+      "is_a": "NamedThing",
+      "slots": [
+        "id",
+        "name",
+        "description"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/IAO_0000030",
+      "@type": "ClassDefinition"
     }
   ],
   "metamodel_version": "1.7.0",
   "source_file": "split_pool_mod_schema.yaml",
-  "source_file_date": "2023-04-28T08:15:51",
-  "source_file_size": 2154,
-  "generation_date": "2023-04-28T08:15:57",
+  "source_file_date": "2023-04-28T08:49:40",
+  "source_file_size": 3633,
+  "generation_date": "2023-04-28T08:50:16",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/split_pool_mod_schema.context.jsonld",

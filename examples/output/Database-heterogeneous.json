@@ -1,0 +1,39 @@
+{
+  "information_set": [
+    {
+      "id": "example:Info001",
+      "name": "first Information",
+      "description": "this is the first Information"
+    },
+    {
+      "id": "example:It002",
+      "name": "second Information",
+      "description": "this is the second Information"
+    }
+  ],
+  "material_entity_set": [
+    {
+      "id": "example:Me001",
+      "name": "first MaterialEntity",
+      "description": "this is the first MaterialEntity"
+    },
+    {
+      "id": "example:Me002",
+      "name": "second MaterialEntity",
+      "description": "this is the second MaterialEntity"
+    }
+  ],
+  "process_set": [
+    {
+      "id": "example:Proc001",
+      "name": "first Process",
+      "description": "this is the first Process"
+    },
+    {
+      "id": "example:Proc002",
+      "name": "second Process",
+      "description": "this is the second Process"
+    }
+  ],
+  "@type": "Database"
+}

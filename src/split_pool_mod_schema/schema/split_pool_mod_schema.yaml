@@ -11,9 +11,10 @@ see_also:
 prefixes:
   split_pool_mod_schema: https://w3id.org/turbomam/split-pool-mod-schema/
   linkml: https://w3id.org/linkml/
+  BFO: http://purl.obolibrary.org/obo/BFO_
+  IAO: http://purl.obolibrary.org/obo/IAO_
   schema: http://schema.org/
   example: https://example.org/
-  BFO: http://purl.obolibrary.org/obo/BFO_
 default_prefix: split_pool_mod_schema
 default_range: string
 
@@ -40,8 +41,10 @@ classes:
     comments:
       - handcrafted but very similar to the Database from nmdc-schema
     slots:
-      - named_thing_set
+      - information_set
       - material_entity_set
+      - named_thing_set
+      - process_set
 
   MaterialEntity:
     comments:
@@ -51,9 +54,31 @@ classes:
       - Physical entity
     #    abstract: true
     class_uri: BFO:0000040
-    description: An entity that consists of matter
+    description: An entity that consists of matter. Has an identity that persists over time.
     is_a: NamedThing
     title: Material Entity
+
+  Process:
+    description: >-
+      An entity that unfolds over time. Not composed of matter.
+    slots:
+      - has_inputs
+      - has_outputs
+    class_uri: BFO:0000015
+    is_a: NamedThing
+    #    abstract: true
+
+  Information:
+    is_a: NamedThing
+    description: >-
+      Anything that informs, or reduces uncertainty. Can be about a material entity or a process.
+    comments:
+      - Information is (almost?) always conveyed by something, like a book printed on paper, electrical charges stored on a computer disk, or human speech. Those information bearers are not the information itself.
+    #    slots:
+    #      - has_inputs
+    #      - has_outputs
+    class_uri: IAO:0000030
+    #    abstract: true
 
 slots:
   id:
@@ -74,8 +99,34 @@ slots:
     range: NamedThing
     multivalued: true
     inlined_as_list: true
+    domain: Database
   material_entity_set:
-    description: Links a Database to a list of NamedThings
-    range: NamedThing
-    multivalued: true
+    description: Links a Database to a list of MaterialEntities
+    domain: Database
     inlined_as_list: true
+    multivalued: true
+    range: MaterialEntity
+  process_set:
+    description: Links a Database to a list of Processes
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: Process
+  information_set:
+    description: Links a Database to a list of Informations
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: Information
+  has_inputs:
+    domain: Process
+    multivalued: true
+    any_of:
+      - range: MaterialEntity
+      - range: Information
+  has_outputs:
+    domain: Process
+    multivalued: true
+    any_of:
+      - range: MaterialEntity
+      - range: Information

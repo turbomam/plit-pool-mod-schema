@@ -1,13 +1,27 @@
-## Database-material_entity_set
+## Database-heterogeneous
 ### Input
 ```yaml
+information_set:
+- description: this is the first Information
+  id: example:Info001
+  name: first Information
+- description: this is the second Information
+  id: example:It002
+  name: second Information
 material_entity_set:
-- description: this is the first named thing
-  id: example:Nt001
-  name: first named thing
-- description: this is the second named thing
-  id: example:Nt002
-  name: second named thing
+- description: this is the first MaterialEntity
+  id: example:Me001
+  name: first MaterialEntity
+- description: this is the second MaterialEntity
+  id: example:Me002
+  name: second MaterialEntity
+process_set:
+- description: this is the first Process
+  id: example:Proc001
+  name: first Process
+- description: this is the second Process
+  id: example:Proc002
+  name: second Process
 
 ```
 ## DatabaseCollection-undefined-slot
