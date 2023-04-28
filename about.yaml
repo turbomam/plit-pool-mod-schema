@@ -1,0 +1,7 @@
+---
+name: split_pool_mod_schema
+author: Mark Andrew Miller <MAM@lbl.gov>
+description: A Schema with processes for splitting, pooling and modifying material entities. Intended to illustrate solutions for NMDC modeling of NEON metadata and metabolomics data
+source_schema_path: src/split_pool_mod_schema/schema/split_pool_mod_schema.yaml
+google_sheet_id: 1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ
+google_sheet_tabs: personinfo enums

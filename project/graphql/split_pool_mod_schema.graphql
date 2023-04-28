@@ -1,0 +1,22 @@
+type Database
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    primaryEmail: String
+    ageInYears: Integer
+    vitalStatus: PersonStatus
+  }
+
+type DatabaseCollection
+  {
+    entries: [Database]
+  }
+
+type NamedThing
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+  }
+
