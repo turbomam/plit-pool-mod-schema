@@ -10,6 +10,7 @@ include = ["README.md", "src/split_pool_mod_schema/schema", "project"]
 [tool.poetry.dependencies]
 python = "^3.9"
 linkml-runtime = "^1.1.24"
+linkml-renderer = "^0.1.2"
 
 [tool.poetry-dynamic-versioning]
 enable = true

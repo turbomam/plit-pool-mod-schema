@@ -43,3 +43,10 @@ project/reports/slot_usage_esp_validation.tsv:
 		--schema src/split_pool_mod_schema/schema/split_pool_mod_schema.yaml \
 		--output $@ \
 		src/local_schemasheets/templates/slot_usage_esp_validation.tsv
+
+examples/output/Database-heterogeneous.html: src/data/examples/valid/Database-heterogeneous.yaml
+	$(RUN) linkml-render \
+	--schema src/split_pool_mod_schema/schema/split_pool_mod_schema.yaml \
+	--config renderer-include-mermaid-conf.yaml \
+	--output-format html \
+	--output $@ $<
