@@ -38,17 +38,29 @@ linkml:Objectidentifier IRI
 linkml:Nodeidentifier NONLITERAL
 
 <Database> CLOSED {
-    (  $<Database_tes> <named_thing_set> @<NamedThing> * ;
+    (  $<Database_tes> (  <named_thing_set> @<NamedThing> * ;
+          <material_entity_set> @<NamedThing> *
+       ) ;
        rdf:type [ <Database> ] ?
     )
 }
 
-<NamedThing> CLOSED {
-    (  $<NamedThing_tes> (  schema1:name @linkml:String ? ;
-          schema1:description @linkml:String ?
+<MaterialEntity> CLOSED {
+    (  $<MaterialEntity_tes> (  &<NamedThing_tes> ;
+          rdf:type [ schema1:Thing ] ?
        ) ;
-       rdf:type [ schema1:Thing ]
+       rdf:type [ <http://purl.obolibrary.org/obo/BFO_0000040> ]
     )
 }
+
+<NamedThing>  (
+    CLOSED {
+       (  $<NamedThing_tes> (  schema1:name @linkml:String ? ;
+             schema1:description @linkml:String ?
+          ) ;
+          rdf:type [ schema1:Thing ]
+       )
+    } OR @<MaterialEntity>
+)
 
 

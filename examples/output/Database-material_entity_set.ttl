@@ -11,6 +11,6 @@ example:Nt002 a schema1:Thing ;
     schema1:name "second named thing" .
 
 [] a split_pool_mod_schema:Database ;
-    split_pool_mod_schema:named_thing_set example:Nt001,
+    split_pool_mod_schema:material_entity_set example:Nt001,
         example:Nt002 .
 

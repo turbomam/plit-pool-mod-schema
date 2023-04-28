@@ -26,6 +26,10 @@
     {
       "prefix_prefix": "example",
       "prefix_reference": "https://example.org/"
+    },
+    {
+      "prefix_prefix": "BFO",
+      "prefix_reference": "http://purl.obolibrary.org/obo/BFO_"
     }
   ],
   "default_prefix": "split_pool_mod_schema",
@@ -318,13 +322,32 @@
       "inlined": true,
       "inlined_as_list": true,
       "@type": "SlotDefinition"
+    },
+    {
+      "name": "material_entity_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/material_entity_set",
+      "description": "Links a Database to a list of NamedThings",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/material_entity_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "NamedThing",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
     }
   ],
   "classes": [
     {
       "name": "NamedThing",
       "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/NamedThing",
-      "description": "A generic grouping for any identifiable entity",
+      "description": "An identifiable entity",
+      "comments": [
+        "provided by cookiecutter"
+      ],
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "mappings": [
         "schema:Thing"
@@ -341,22 +364,52 @@
     {
       "name": "Database",
       "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Database",
-      "description": "Instances of Database serve as heterogeneous collections of data",
+      "description": "A possibly heterogeneous collections of data",
+      "comments": [
+        "handcrafted but very similar to the Database from nmdc-schema"
+      ],
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "slots": [
-        "named_thing_set"
+        "named_thing_set",
+        "material_entity_set"
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Database",
       "tree_root": true,
       "@type": "ClassDefinition"
+    },
+    {
+      "name": "MaterialEntity",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity",
+      "description": "An entity that consists of matter",
+      "title": "Material Entity",
+      "comments": [
+        "bootstrapped from https://github.com/microbiomedata/nmdc-schema/pull/710"
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "aliases": [
+        "Material",
+        "Physical entity"
+      ],
+      "mappings": [
+        "BFO:0000040"
+      ],
+      "is_a": "NamedThing",
+      "slots": [
+        "id",
+        "name",
+        "description"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/BFO_0000040",
+      "@type": "ClassDefinition"
     }
   ],
   "metamodel_version": "1.7.0",
   "source_file": "split_pool_mod_schema.yaml",
-  "source_file_date": "2023-04-28T07:53:06",
-  "source_file_size": 2854,
-  "generation_date": "2023-04-28T07:53:18",
+  "source_file_date": "2023-04-28T08:15:51",
+  "source_file_size": 2154,
+  "generation_date": "2023-04-28T08:15:57",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/split_pool_mod_schema.context.jsonld",

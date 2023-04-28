@@ -1,5 +1,5 @@
 # Auto generated from split_pool_mod_schema.yaml by pythongen.py version: 0.9.0
-# Generation date: 2023-04-28T07:53:26
+# Generation date: 2023-04-28T08:16:06
 # Schema: split-pool-mod-schema
 #
 # id: https://w3id.org/turbomam/split-pool-mod-schema
@@ -33,6 +33,7 @@ version = None
 dataclasses._init_fn = dataclasses_init_fn_with_kwargs
 
 # Namespaces
+BFO = CurieNamespace('BFO', 'http://purl.obolibrary.org/obo/BFO_')
 EXAMPLE = CurieNamespace('example', 'https://example.org/')
 LINKML = CurieNamespace('linkml', 'https://w3id.org/linkml/')
 SCHEMA = CurieNamespace('schema', 'http://schema.org/')
@@ -47,10 +48,14 @@ class NamedThingId(URIorCURIE):
     pass
 
 
+class MaterialEntityId(NamedThingId):
+    pass
+
+
 @dataclass
 class NamedThing(YAMLRoot):
     """
-    A generic grouping for any identifiable entity
+    An identifiable entity
     """
     _inherited_slots: ClassVar[List[str]] = []
 
@@ -81,7 +86,7 @@ class NamedThing(YAMLRoot):
 @dataclass
 class Database(YAMLRoot):
     """
-    Instances of Database serve as heterogeneous collections of data
+    A possibly heterogeneous collections of data
     """
     _inherited_slots: ClassVar[List[str]] = []
 
@@ -91,9 +96,35 @@ class Database(YAMLRoot):
     class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.Database
 
     named_thing_set: Optional[Union[Dict[Union[str, NamedThingId], Union[dict, NamedThing]], List[Union[dict, NamedThing]]]] = empty_dict()
+    material_entity_set: Optional[Union[Dict[Union[str, NamedThingId], Union[dict, NamedThing]], List[Union[dict, NamedThing]]]] = empty_dict()
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         self._normalize_inlined_as_list(slot_name="named_thing_set", slot_type=NamedThing, key_name="id", keyed=True)
+
+        self._normalize_inlined_as_list(slot_name="material_entity_set", slot_type=NamedThing, key_name="id", keyed=True)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class MaterialEntity(NamedThing):
+    """
+    An entity that consists of matter
+    """
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = BFO["0000040"]
+    class_class_curie: ClassVar[str] = "BFO:0000040"
+    class_name: ClassVar[str] = "MaterialEntity"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.MaterialEntity
+
+    id: Union[str, MaterialEntityId] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, MaterialEntityId):
+            self.id = MaterialEntityId(self.id)
 
         super().__post_init__(**kwargs)
 
@@ -117,3 +148,6 @@ slots.description = Slot(uri=SCHEMA.description, name="description", curie=SCHEM
 
 slots.named_thing_set = Slot(uri=SPLIT_POOL_MOD_SCHEMA.named_thing_set, name="named_thing_set", curie=SPLIT_POOL_MOD_SCHEMA.curie('named_thing_set'),
                    model_uri=SPLIT_POOL_MOD_SCHEMA.named_thing_set, domain=None, range=Optional[Union[Dict[Union[str, NamedThingId], Union[dict, NamedThing]], List[Union[dict, NamedThing]]]])
+
+slots.material_entity_set = Slot(uri=SPLIT_POOL_MOD_SCHEMA.material_entity_set, name="material_entity_set", curie=SPLIT_POOL_MOD_SCHEMA.curie('material_entity_set'),
+                   model_uri=SPLIT_POOL_MOD_SCHEMA.material_entity_set, domain=None, range=Optional[Union[Dict[Union[str, NamedThingId], Union[dict, NamedThing]], List[Union[dict, NamedThing]]]])
