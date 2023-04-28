@@ -6,6 +6,8 @@ May also be used for isolating issues from other schema repos, like nmdc-schema
 
 Based on https://github.com/turbomam/examples-first-cookiecutter
 
+Sample data with broken rendering: https://htmlpreview.github.io/?https://github.com/turbomam/split-pool-mod-schema/blob/main/examples/output/Database-heterogeneous.html
+
 ## Website
 
 [https://turbomam.github.io/split-pool-mod-schema](https://turbomam.github.io/split-pool-mod-schema)
