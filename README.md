@@ -2,6 +2,10 @@
 
 A Schema with processes for splitting, pooling and modifying material entities. Intended to illustrate solutions for NMDC modeling of NEON metadata and metabolomics data
 
+May also be used for isolating issues from other schema repos, like nmdc-schema
+
+Based on https://github.com/turbomam/examples-first-cookiecutter
+
 ## Website
 
 [https://turbomam.github.io/split-pool-mod-schema](https://turbomam.github.io/split-pool-mod-schema)
