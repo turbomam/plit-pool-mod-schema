@@ -20,16 +20,8 @@
       "prefix_reference": "https://w3id.org/linkml/"
     },
     {
-      "prefix_prefix": "biolink",
-      "prefix_reference": "https://w3id.org/biolink/"
-    },
-    {
       "prefix_prefix": "schema",
       "prefix_reference": "http://schema.org/"
-    },
-    {
-      "prefix_prefix": "PATO",
-      "prefix_reference": "http://purl.obolibrary.org/obo/PATO_"
     },
     {
       "prefix_prefix": "example",
@@ -259,35 +251,6 @@
       "@type": "TypeDefinition"
     }
   ],
-  "enums": [
-    {
-      "name": "PersonStatus",
-      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/PersonStatus",
-      "notes": [
-        "redundant text properties are currently required for building a DataHarmonizer menu"
-      ],
-      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "permissible_values": [
-        {
-          "text": "ALIVE",
-          "description": "the person is living",
-          "meaning": "PATO:0001421"
-        },
-        {
-          "text": "DEAD",
-          "description": "the person is deceased",
-          "meaning": "PATO:0001422"
-        },
-        {
-          "text": "UNKNOWN",
-          "description": "the vital status is not known",
-          "todos": [
-            "map this to an ontology"
-          ]
-        }
-      ]
-    }
-  ],
   "slots": [
     {
       "name": "id",
@@ -341,94 +304,19 @@
       "@type": "SlotDefinition"
     },
     {
-      "name": "primary_email",
-      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/primary_email",
-      "description": "The main email address of a person",
+      "name": "named_thing_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/named_thing_set",
+      "description": "Links a Database to a list of NamedThings",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "mappings": [
-        "http://schema.org/email"
-      ],
-      "slot_uri": "http://schema.org/email",
-      "owner": "Database",
-      "domain_of": [
-        "Database"
-      ],
-      "range": "string",
-      "@type": "SlotDefinition"
-    },
-    {
-      "name": "birth_date",
-      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/birth_date",
-      "description": "Date on which a person is born",
-      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "mappings": [
-        "http://schema.org/birthDate"
-      ],
-      "slot_uri": "http://schema.org/birthDate",
-      "range": "date",
-      "@type": "SlotDefinition"
-    },
-    {
-      "name": "age_in_years",
-      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/age_in_years",
-      "description": "Number of years since birth",
-      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/age_in_years",
-      "owner": "Database",
-      "domain_of": [
-        "Database"
-      ],
-      "range": "integer",
-      "@type": "SlotDefinition"
-    },
-    {
-      "name": "vital_status",
-      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/vital_status",
-      "description": "living or dead status",
-      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/vital_status",
-      "owner": "Database",
-      "domain_of": [
-        "Database"
-      ],
-      "range": "PersonStatus",
-      "@type": "SlotDefinition"
-    },
-    {
-      "name": "databaseCollection__entries",
-      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/entries",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/named_thing_set",
       "multivalued": true,
-      "alias": "entries",
-      "owner": "DatabaseCollection",
+      "owner": "Database",
       "domain_of": [
-        "DatabaseCollection"
+        "Database"
       ],
-      "range": "Database",
+      "range": "NamedThing",
       "inlined": true,
       "inlined_as_list": true,
-      "@type": "SlotDefinition"
-    },
-    {
-      "name": "Database_primary_email",
-      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/primary_email",
-      "description": "The main email address of a person",
-      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "mappings": [
-        "http://schema.org/email"
-      ],
-      "is_a": "primary_email",
-      "domain": "Database",
-      "slot_uri": "http://schema.org/email",
-      "alias": "primary_email",
-      "owner": "Database",
-      "domain_of": [
-        "Database"
-      ],
-      "is_usage_slot": true,
-      "usage_slot_name": "primary_email",
-      "range": "string",
-      "pattern": "^\\S+@[\\S+\\.]+\\S+",
       "@type": "SlotDefinition"
     }
   ],
@@ -453,50 +341,22 @@
     {
       "name": "Database",
       "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Database",
-      "description": "Represents a Database",
+      "description": "Instances of Database serve as heterogeneous collections of data",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "is_a": "NamedThing",
       "slots": [
-        "id",
-        "name",
-        "description",
-        "Database_primary_email",
-        "age_in_years",
-        "vital_status"
+        "named_thing_set"
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Database",
-      "@type": "ClassDefinition"
-    },
-    {
-      "name": "DatabaseCollection",
-      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/DatabaseCollection",
-      "description": "A holder for Database objects",
-      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "slots": [
-        "databaseCollection__entries"
-      ],
-      "slot_usage": {},
-      "attributes": [
-        {
-          "name": "entries",
-          "multivalued": true,
-          "range": "Database",
-          "inlined": true,
-          "inlined_as_list": true,
-          "@type": "SlotDefinition"
-        }
-      ],
-      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/DatabaseCollection",
       "tree_root": true,
       "@type": "ClassDefinition"
     }
   ],
   "metamodel_version": "1.7.0",
   "source_file": "split_pool_mod_schema.yaml",
-  "source_file_date": "2023-04-28T07:29:50",
-  "source_file_size": 2706,
-  "generation_date": "2023-04-28T07:30:25",
+  "source_file_date": "2023-04-28T07:53:06",
+  "source_file_size": 2854,
+  "generation_date": "2023-04-28T07:53:18",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/split_pool_mod_schema.context.jsonld",

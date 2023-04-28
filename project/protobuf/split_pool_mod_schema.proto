@@ -1,17 +1,7 @@
-// Represents a Database
+// Instances of Database serve as heterogeneous collections of data
 message Database
  {
-  uriorcurie id = 0
-  string name = 0
-  string description = 0
-  string primaryEmail = 0
-  integer ageInYears = 0
-  personStatus vitalStatus = 0
- }
-// A holder for Database objects
-message DatabaseCollection
- {
- repeated  database entries = 0
+ repeated  namedThing namedThingSet = 0
  }
 // A generic grouping for any identifiable entity
 message NamedThing
