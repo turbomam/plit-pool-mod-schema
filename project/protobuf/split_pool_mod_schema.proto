@@ -1,10 +1,19 @@
 // A possibly heterogeneous collections of data
 message Database
  {
+ repeated  information informationSet = 0
+ repeated  materialEntity materialEntitySet = 0
  repeated  namedThing namedThingSet = 0
- repeated  namedThing materialEntitySet = 0
+ repeated  process processSet = 0
  }
-// An entity that consists of matter
+// Anything that informs, or reduces uncertainty. Can be about a material entity or a process.
+message Information
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ }
+// An entity that consists of matter. Has an identity that persists over time.
 message MaterialEntity
  {
   uriorcurie id = 0
@@ -17,4 +26,13 @@ message NamedThing
   uriorcurie id = 0
   string name = 0
   string description = 0
+ }
+// An entity that unfolds over time. Not composed of matter.
+message Process
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  string hasInputs = 0
+ repeated  string hasOutputs = 0
  }

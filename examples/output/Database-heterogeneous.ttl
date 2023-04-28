@@ -1,0 +1,38 @@
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix example: <https://example.org/> .
+@prefix schema1: <http://schema.org/> .
+@prefix split_pool_mod_schema: <https://w3id.org/turbomam/split-pool-mod-schema/> .
+
+example:Info001 a IAO:0000030 ;
+    schema1:description "this is the first Information" ;
+    schema1:name "first Information" .
+
+example:It002 a IAO:0000030 ;
+    schema1:description "this is the second Information" ;
+    schema1:name "second Information" .
+
+example:Me001 a BFO:0000040 ;
+    schema1:description "this is the first MaterialEntity" ;
+    schema1:name "first MaterialEntity" .
+
+example:Me002 a BFO:0000040 ;
+    schema1:description "this is the second MaterialEntity" ;
+    schema1:name "second MaterialEntity" .
+
+example:Proc001 a BFO:0000015 ;
+    schema1:description "this is the first Process" ;
+    schema1:name "first Process" .
+
+example:Proc002 a BFO:0000015 ;
+    schema1:description "this is the second Process" ;
+    schema1:name "second Process" .
+
+[] a split_pool_mod_schema:Database ;
+    split_pool_mod_schema:information_set example:Info001,
+        example:It002 ;
+    split_pool_mod_schema:material_entity_set example:Me001,
+        example:Me002 ;
+    split_pool_mod_schema:process_set example:Proc001,
+        example:Proc002 .
+

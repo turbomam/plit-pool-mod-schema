@@ -1,7 +1,16 @@
 type Database
   {
+    informationSet: [Information]
+    materialEntitySet: [MaterialEntity]
     namedThingSet: [NamedThing]
-    materialEntitySet: [NamedThing]
+    processSet: [Process]
+  }
+
+type Information
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
   }
 
 type MaterialEntity
@@ -16,5 +25,14 @@ type NamedThing
     id: Uriorcurie!
     name: String
     description: String
+  }
+
+type Process
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [String]
+    hasOutputs: [String]
   }
 

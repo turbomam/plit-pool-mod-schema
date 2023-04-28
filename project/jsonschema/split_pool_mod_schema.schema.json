@@ -4,10 +4,17 @@
             "additionalProperties": false,
             "description": "A possibly heterogeneous collections of data",
             "properties": {
-                "material_entity_set": {
-                    "description": "Links a Database to a list of NamedThings",
+                "information_set": {
+                    "description": "Links a Database to a list of Informations",
                     "items": {
-                        "$ref": "#/$defs/NamedThing"
+                        "$ref": "#/$defs/Information"
+                    },
+                    "type": "array"
+                },
+                "material_entity_set": {
+                    "description": "Links a Database to a list of MaterialEntities",
+                    "items": {
+                        "$ref": "#/$defs/MaterialEntity"
                     },
                     "type": "array"
                 },
@@ -17,14 +24,45 @@
                         "$ref": "#/$defs/NamedThing"
                     },
                     "type": "array"
+                },
+                "process_set": {
+                    "description": "Links a Database to a list of Processes",
+                    "items": {
+                        "$ref": "#/$defs/Process"
+                    },
+                    "type": "array"
                 }
             },
             "title": "Database",
             "type": "object"
         },
+        "Information": {
+            "additionalProperties": false,
+            "description": "Anything that informs, or reduces uncertainty. Can be about a material entity or a process.",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "Information",
+            "type": "object"
+        },
         "MaterialEntity": {
             "additionalProperties": false,
-            "description": "An entity that consists of matter",
+            "description": "An entity that consists of matter. Has an identity that persists over time.",
             "properties": {
                 "description": {
                     "description": "A human-readable description for a thing",
@@ -69,6 +107,56 @@
             ],
             "title": "NamedThing",
             "type": "object"
+        },
+        "Process": {
+            "additionalProperties": false,
+            "description": "An entity that unfolds over time. Not composed of matter.",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "Process",
+            "type": "object"
         }
     },
     "$id": "https://w3id.org/turbomam/split-pool-mod-schema",
@@ -76,10 +164,17 @@
     "additionalProperties": true,
     "metamodel_version": "1.7.0",
     "properties": {
-        "material_entity_set": {
-            "description": "Links a Database to a list of NamedThings",
+        "information_set": {
+            "description": "Links a Database to a list of Informations",
             "items": {
-                "$ref": "#/$defs/NamedThing"
+                "$ref": "#/$defs/Information"
+            },
+            "type": "array"
+        },
+        "material_entity_set": {
+            "description": "Links a Database to a list of MaterialEntities",
+            "items": {
+                "$ref": "#/$defs/MaterialEntity"
             },
             "type": "array"
         },
@@ -87,6 +182,13 @@
             "description": "Links a Database to a list of NamedThings",
             "items": {
                 "$ref": "#/$defs/NamedThing"
+            },
+            "type": "array"
+        },
+        "process_set": {
+            "description": "Links a Database to a list of Processes",
+            "items": {
+                "$ref": "#/$defs/Process"
             },
             "type": "array"
         }
