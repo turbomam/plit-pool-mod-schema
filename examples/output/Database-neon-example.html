@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+    <title>DEFAULT</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <div>
+      <h3 Diagram></h3>
+      <div class="mermaid">
+        graph TB
+    example:db1(Database<br><b>id</b> example:db1)
+    example:db1(Database<br><b>id</b> example:db1<br><b>name</b> example database)
+    ANON__fInformation_1{ }
+    BIOPROJECT:PRJNA406974(Information<br><b>id</b> BIOPROJECT:PRJNA406974)
+    BIOPROJECT:PRJNA406974(Information<br><b>id</b> BIOPROJECT:PRJNA406974<br><b>name</b> empty/invalid bioproject claimed by neon)
+    ANON__fInformation_1 -.-> BIOPROJECT:PRJNA406974
+    example:db1 -- information_set --> ANON__fInformation_1
+    example:db1(Database<br><b>id</b> example:db1<br><b>name</b> example database)
+    ANON__fMaterialEntity_2{ }
+    NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2(MaterialEntity<br><b>id</b> NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2)
+    NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2(MaterialEntity<br><b>id</b> NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2<br><b>name</b> extracted dna from neon soil sample)
+    NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2(MaterialEntity<br><b>id</b> NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2<br><b>name</b> extracted dna from neon soil sample<br><b>description</b> intended for sequencing and metagenomic analysis)
+    ANON__fMaterialEntity_2 -.-> NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2
+    example:db1 -- material_entity_set --> ANON__fMaterialEntity_2
+    example:db1(Database<br><b>id</b> example:db1<br><b>name</b> example database)
+    ANON__fProcess_3{ }
+    example:SampleNeonSoilMetagenomeSequencing(Process<br><b>has_input</b> NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2)
+    example:SampleNeonSoilMetagenomeSequencing(Process<br><b>has_input</b> NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2<br><b>has_output</b> BIOPROJECT:PRJNA406974)
+    example:SampleNeonSoilMetagenomeSequencing(Process<br><b>has_input</b> NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2<br><b>has_output</b> BIOPROJECT:PRJNA406974<br><b>id</b> example:SampleNeonSoilMetagenomeSequencing)
+    example:SampleNeonSoilMetagenomeSequencing(Process<br><b>has_input</b> NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2<br><b>has_output</b> BIOPROJECT:PRJNA406974<br><b>id</b> example:SampleNeonSoilMetagenomeSequencing<br><b>name</b> Sequencing of soil from Yellowstone)
+    ANON__fProcess_3 -.-> example:SampleNeonSoilMetagenomeSequencing
+    example:db1 -- process_set --> ANON__fProcess_3
+    example:db1(Database<br><b>id</b> example:db1<br><b>name</b> example database)
+
+      </div>
+      <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js">
+        mermaid.initialize({});
+      </script>
+    </div>
+    <div>
+      <dl class="row">
+        <dt class="col-sm-3">
+          <span>
+            id
+            <a href="http://schema.org/identifier" data-bs-toggle="tooltip" title="A unique identifier for a thing">
+              <sup>
+                ?
+              </sup>
+            </a>
+          </span>
+        </dt>
+        <dd class="col-sm-9">
+          <a href="https://example.org/db1">
+            example:db1
+          </a>
+        </dd>
+        <dt class="col-sm-3">
+          <span>
+            name
+            <a href="http://schema.org/name" data-bs-toggle="tooltip" title="A human-readable name for a thing">
+              <sup>
+                ?
+              </sup>
+            </a>
+          </span>
+        </dt>
+        <dd class="col-sm-9">
+          example database
+        </dd>
+        <dt class="col-sm-3">
+          <span>
+            information_set
+            <a href="https://w3id.org/turbomam/split-pool-mod-schema/information_set" data-bs-toggle="tooltip" title="Links a Database to a list of Informations">
+              <sup>
+                ?
+              </sup>
+            </a>
+          </span>
+        </dt>
+        <dd class="col-sm-9">
+          <div>
+            <table class="table table-striped">
+              <tr>
+                <th>
+                  id
+                </th>
+                <th>
+                  name
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA406974">
+                    BIOPROJECT:PRJNA406974
+                  </a>
+                </td>
+                <td>
+                  empty/invalid bioproject claimed by neon
+                </td>
+              </tr>
+            </table>
+          </div>
+        </dd>
+        <dt class="col-sm-3">
+          <span>
+            material_entity_set
+            <a href="https://w3id.org/turbomam/split-pool-mod-schema/material_entity_set" data-bs-toggle="tooltip" title="Links a Database to a list of MaterialEntities">
+              <sup>
+                ?
+              </sup>
+            </a>
+          </span>
+        </dt>
+        <dd class="col-sm-9">
+          <div>
+            <table class="table table-striped">
+              <tr>
+                <th>
+                  id
+                </th>
+                <th>
+                  name
+                </th>
+                <th>
+                  description
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://data.neonscience.org/api/v0/samples/view?YELL_046-M-4.5-0.5-20191002-GEN-DNA2">
+                    NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2
+                  </a>
+                </td>
+                <td>
+                  extracted dna from neon soil sample
+                </td>
+                <td>
+                  intended for sequencing and metagenomic analysis
+                </td>
+              </tr>
+            </table>
+          </div>
+        </dd>
+        <dt class="col-sm-3">
+          <span>
+            process_set
+            <a href="https://w3id.org/turbomam/split-pool-mod-schema/process_set" data-bs-toggle="tooltip" title="Links a Database to a list of Processes">
+              <sup>
+                ?
+              </sup>
+            </a>
+          </span>
+        </dt>
+        <dd class="col-sm-9">
+          <div>
+            <table class="table table-striped">
+              <tr>
+                <th>
+                  id
+                </th>
+                <th>
+                  has_input
+                </th>
+                <th>
+                  has_output
+                </th>
+                <th>
+                  name
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://example.org/SampleNeonSoilMetagenomeSequencing">
+                    example:SampleNeonSoilMetagenomeSequencing
+                  </a>
+                </td>
+                <td>
+                  <a href="NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2">
+                    NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2
+                  </a>
+                </td>
+                <td>
+                  <a href="BIOPROJECT:PRJNA406974">
+                    BIOPROJECT:PRJNA406974
+                  </a>
+                </td>
+                <td>
+                  Sequencing of soil from Yellowstone
+                </td>
+              </tr>
+            </table>
+          </div>
+        </dd>
+      </dl>
+    </div>
+  </body>
+</html>

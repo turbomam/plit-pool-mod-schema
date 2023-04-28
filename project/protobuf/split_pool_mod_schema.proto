@@ -1,6 +1,8 @@
 // A possibly heterogeneous collections of data
 message Database
  {
+  uriorcurie id = 0
+  string name = 0
  repeated  information informationSet = 0
  repeated  materialEntity materialEntitySet = 0
  repeated  namedThing namedThingSet = 0
@@ -35,4 +37,6 @@ message Process
   string description = 0
  repeated  string hasInputs = 0
  repeated  string hasOutputs = 0
+  namedThing hasInput = 0
+  namedThing hasOutput = 0
  }

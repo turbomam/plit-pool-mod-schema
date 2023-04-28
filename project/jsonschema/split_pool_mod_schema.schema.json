@@ -4,6 +4,11 @@
             "additionalProperties": false,
             "description": "A possibly heterogeneous collections of data",
             "properties": {
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
                 "information_set": {
                     "description": "Links a Database to a list of Informations",
                     "items": {
@@ -17,6 +22,10 @@
                         "$ref": "#/$defs/MaterialEntity"
                     },
                     "type": "array"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
                 },
                 "named_thing_set": {
                     "description": "Links a Database to a list of NamedThings",
@@ -33,6 +42,9 @@
                     "type": "array"
                 }
             },
+            "required": [
+                "id"
+            ],
             "title": "Database",
             "type": "object"
         },
@@ -116,6 +128,9 @@
                     "description": "A human-readable description for a thing",
                     "type": "string"
                 },
+                "has_input": {
+                    "type": "string"
+                },
                 "has_inputs": {
                     "items": {
                         "anyOf": [
@@ -128,6 +143,9 @@
                         ]
                     },
                     "type": "array"
+                },
+                "has_output": {
+                    "type": "string"
                 },
                 "has_outputs": {
                     "items": {
@@ -164,6 +182,11 @@
     "additionalProperties": true,
     "metamodel_version": "1.7.0",
     "properties": {
+        "id": {
+            "description": "A unique identifier for a thing",
+            "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+            "type": "string"
+        },
         "information_set": {
             "description": "Links a Database to a list of Informations",
             "items": {
@@ -177,6 +200,10 @@
                 "$ref": "#/$defs/MaterialEntity"
             },
             "type": "array"
+        },
+        "name": {
+            "description": "A human-readable name for a thing",
+            "type": "string"
         },
         "named_thing_set": {
             "description": "Links a Database to a list of NamedThings",
@@ -193,6 +220,9 @@
             "type": "array"
         }
     },
+    "required": [
+        "id"
+    ],
     "title": "split-pool-mod-schema",
     "type": "object",
     "version": null

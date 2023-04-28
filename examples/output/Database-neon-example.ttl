@@ -1,0 +1,24 @@
+@prefix BIOPROJECT: <https://www.ncbi.nlm.nih.gov/bioproject/> .
+@prefix NEON_SAMP_VIEW: <https://data.neonscience.org/api/v0/samples/view?> .
+@prefix example: <https://example.org/> .
+@prefix schema1: <http://schema.org/> .
+@prefix split_pool_mod_schema: <https://w3id.org/turbomam/split-pool-mod-schema/> .
+
+example:db1 a split_pool_mod_schema:Database ;
+    schema1:name "example database" ;
+    split_pool_mod_schema:information_set BIOPROJECT:PRJNA406974 ;
+    split_pool_mod_schema:material_entity_set NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2 ;
+    split_pool_mod_schema:process_set example:SampleNeonSoilMetagenomeSequencing .
+
+example:SampleNeonSoilMetagenomeSequencing a split_pool_mod_schema:Process ;
+    schema1:name "Sequencing of soil from Yellowstone" ;
+    split_pool_mod_schema:has_input NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2 ;
+    split_pool_mod_schema:has_output BIOPROJECT:PRJNA406974 .
+
+NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2 a split_pool_mod_schema:MaterialEntity ;
+    schema1:description "intended for sequencing and metagenomic analysis" ;
+    schema1:name "extracted dna from neon soil sample" .
+
+BIOPROJECT:PRJNA406974 a split_pool_mod_schema:Information ;
+    schema1:name "empty/invalid bioproject claimed by neon" .
+

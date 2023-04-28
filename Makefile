@@ -55,7 +55,7 @@ status: check-config
 	@echo "Project: $(SCHEMA_NAME)"
 	@echo "Source: $(SOURCE_SCHEMA_PATH)"
 
-# generate products and add everything to github
+# generate products.json and add everything to github
 setup: install gen-project gen-examples gendoc git-init-add
 
 # install any dependencies required for building
