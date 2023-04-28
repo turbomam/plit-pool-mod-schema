@@ -2,8 +2,15 @@
     "$defs": {
         "Database": {
             "additionalProperties": false,
-            "description": "Instances of Database serve as heterogeneous collections of data",
+            "description": "A possibly heterogeneous collections of data",
             "properties": {
+                "material_entity_set": {
+                    "description": "Links a Database to a list of NamedThings",
+                    "items": {
+                        "$ref": "#/$defs/NamedThing"
+                    },
+                    "type": "array"
+                },
                 "named_thing_set": {
                     "description": "Links a Database to a list of NamedThings",
                     "items": {
@@ -15,9 +22,33 @@
             "title": "Database",
             "type": "object"
         },
+        "MaterialEntity": {
+            "additionalProperties": false,
+            "description": "An entity that consists of matter",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "MaterialEntity",
+            "type": "object"
+        },
         "NamedThing": {
             "additionalProperties": false,
-            "description": "A generic grouping for any identifiable entity",
+            "description": "An identifiable entity",
             "properties": {
                 "description": {
                     "description": "A human-readable description for a thing",
@@ -45,6 +76,13 @@
     "additionalProperties": true,
     "metamodel_version": "1.7.0",
     "properties": {
+        "material_entity_set": {
+            "description": "Links a Database to a list of NamedThings",
+            "items": {
+                "$ref": "#/$defs/NamedThing"
+            },
+            "type": "array"
+        },
         "named_thing_set": {
             "description": "Links a Database to a list of NamedThings",
             "items": {

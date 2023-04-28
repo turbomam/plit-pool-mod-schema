@@ -1,8 +1,12 @@
 {
+   "BFO": "http://purl.obolibrary.org/obo/BFO_",
    "example": "https://example.org/",
    "linkml": "https://w3id.org/linkml/",
    "schema": "http://schema.org/",
    "split_pool_mod_schema": "https://w3id.org/turbomam/split-pool-mod-schema/",
+   "MaterialEntity": {
+      "@id": "BFO:0000040"
+   },
    "NamedThing": {
       "@id": "schema:Thing"
    }

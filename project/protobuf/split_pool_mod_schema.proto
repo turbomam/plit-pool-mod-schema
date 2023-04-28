@@ -1,9 +1,17 @@
-// Instances of Database serve as heterogeneous collections of data
+// A possibly heterogeneous collections of data
 message Database
  {
  repeated  namedThing namedThingSet = 0
+ repeated  namedThing materialEntitySet = 0
  }
-// A generic grouping for any identifiable entity
+// An entity that consists of matter
+message MaterialEntity
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ }
+// An identifiable entity
 message NamedThing
  {
   uriorcurie id = 0

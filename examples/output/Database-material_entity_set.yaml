@@ -1,4 +1,4 @@
-named_thing_set:
+material_entity_set:
 - id: example:Nt001
   name: first named thing
   description: this is the first named thing

@@ -1,6 +1,14 @@
 type Database
   {
     namedThingSet: [NamedThing]
+    materialEntitySet: [NamedThing]
+  }
+
+type MaterialEntity
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
   }
 
 type NamedThing

@@ -1,7 +1,7 @@
-## Database-minimal
+## Database-material_entity_set
 ### Input
 ```yaml
-named_thing_set:
+material_entity_set:
 - description: this is the first named thing
   id: example:Nt001
   name: first named thing
