@@ -1,24 +1,9 @@
 
 
 CREATE TABLE "Database" (
-	information_set TEXT, 
-	material_entity_set TEXT, 
+	id TEXT NOT NULL, 
+	name TEXT, 
 	named_thing_set TEXT, 
-	process_set TEXT, 
-	PRIMARY KEY (information_set, material_entity_set, named_thing_set, process_set)
-);
-
-CREATE TABLE "Information" (
-	id TEXT NOT NULL, 
-	name TEXT, 
-	description TEXT, 
-	PRIMARY KEY (id)
-);
-
-CREATE TABLE "MaterialEntity" (
-	id TEXT NOT NULL, 
-	name TEXT, 
-	description TEXT, 
 	PRIMARY KEY (id)
 );
 
@@ -29,11 +14,35 @@ CREATE TABLE "NamedThing" (
 	PRIMARY KEY (id)
 );
 
+CREATE TABLE "Information" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	"Database_id" TEXT, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY("Database_id") REFERENCES "Database" (id)
+);
+
+CREATE TABLE "MaterialEntity" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	"Database_id" TEXT, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY("Database_id") REFERENCES "Database" (id)
+);
+
 CREATE TABLE "Process" (
 	id TEXT NOT NULL, 
 	name TEXT, 
 	description TEXT, 
-	PRIMARY KEY (id)
+	has_input TEXT, 
+	has_output TEXT, 
+	"Database_id" TEXT, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(has_input) REFERENCES "NamedThing" (id), 
+	FOREIGN KEY(has_output) REFERENCES "NamedThing" (id), 
+	FOREIGN KEY("Database_id") REFERENCES "Database" (id)
 );
 
 CREATE TABLE "Process_has_inputs" (

@@ -1,5 +1,7 @@
 type Database
   {
+    id: Uriorcurie!
+    name: String
     informationSet: [Information]
     materialEntitySet: [MaterialEntity]
     namedThingSet: [NamedThing]
@@ -34,5 +36,7 @@ type Process
     description: String
     hasInputs: [String]
     hasOutputs: [String]
+    hasInput: NamedThing
+    hasOutput: NamedThing
   }
 

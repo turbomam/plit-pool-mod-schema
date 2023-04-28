@@ -1,5 +1,5 @@
 # Auto generated from split_pool_mod_schema.yaml by pythongen.py version: 0.9.0
-# Generation date: 2023-04-28T08:50:22
+# Generation date: 2023-04-28T13:27:31
 # Schema: split-pool-mod-schema
 #
 # id: https://w3id.org/turbomam/split-pool-mod-schema
@@ -34,7 +34,9 @@ dataclasses._init_fn = dataclasses_init_fn_with_kwargs
 
 # Namespaces
 BFO = CurieNamespace('BFO', 'http://purl.obolibrary.org/obo/BFO_')
+BIOPROJECT = CurieNamespace('BIOPROJECT', 'https://www.ncbi.nlm.nih.gov/bioproject/')
 IAO = CurieNamespace('IAO', 'http://purl.obolibrary.org/obo/IAO_')
+NEON_SAMP_VIEW = CurieNamespace('NEON_SAMP_VIEW', 'https://data.neonscience.org/api/v0/samples/view?')
 EXAMPLE = CurieNamespace('example', 'https://example.org/')
 LINKML = CurieNamespace('linkml', 'https://w3id.org/linkml/')
 SCHEMA = CurieNamespace('schema', 'http://schema.org/')
@@ -46,6 +48,10 @@ DEFAULT_ = SPLIT_POOL_MOD_SCHEMA
 
 # Class references
 class NamedThingId(URIorCURIE):
+    pass
+
+
+class DatabaseId(URIorCURIE):
     pass
 
 
@@ -104,12 +110,22 @@ class Database(YAMLRoot):
     class_name: ClassVar[str] = "Database"
     class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.Database
 
+    id: Union[str, DatabaseId] = None
+    name: Optional[str] = None
     information_set: Optional[Union[Dict[Union[str, InformationId], Union[dict, "Information"]], List[Union[dict, "Information"]]]] = empty_dict()
     material_entity_set: Optional[Union[Dict[Union[str, MaterialEntityId], Union[dict, "MaterialEntity"]], List[Union[dict, "MaterialEntity"]]]] = empty_dict()
     named_thing_set: Optional[Union[Dict[Union[str, NamedThingId], Union[dict, NamedThing]], List[Union[dict, NamedThing]]]] = empty_dict()
     process_set: Optional[Union[Dict[Union[str, ProcessId], Union[dict, "Process"]], List[Union[dict, "Process"]]]] = empty_dict()
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, DatabaseId):
+            self.id = DatabaseId(self.id)
+
+        if self.name is not None and not isinstance(self.name, str):
+            self.name = str(self.name)
+
         self._normalize_inlined_as_list(slot_name="information_set", slot_type=Information, key_name="id", keyed=True)
 
         self._normalize_inlined_as_list(slot_name="material_entity_set", slot_type=MaterialEntity, key_name="id", keyed=True)
@@ -128,8 +144,8 @@ class MaterialEntity(NamedThing):
     """
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = BFO["0000040"]
-    class_class_curie: ClassVar[str] = "BFO:0000040"
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.MaterialEntity
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:MaterialEntity"
     class_name: ClassVar[str] = "MaterialEntity"
     class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.MaterialEntity
 
@@ -151,14 +167,16 @@ class Process(NamedThing):
     """
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = BFO["0000015"]
-    class_class_curie: ClassVar[str] = "BFO:0000015"
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.Process
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:Process"
     class_name: ClassVar[str] = "Process"
     class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.Process
 
     id: Union[str, ProcessId] = None
     has_inputs: Optional[Union[str, List[str]]] = empty_list()
     has_outputs: Optional[Union[str, List[str]]] = empty_list()
+    has_input: Optional[Union[str, NamedThingId]] = None
+    has_output: Optional[Union[str, NamedThingId]] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.id):
@@ -174,6 +192,12 @@ class Process(NamedThing):
             self.has_outputs = [self.has_outputs] if self.has_outputs is not None else []
         self.has_outputs = [v if isinstance(v, str) else str(v) for v in self.has_outputs]
 
+        if self.has_input is not None and not isinstance(self.has_input, NamedThingId):
+            self.has_input = NamedThingId(self.has_input)
+
+        if self.has_output is not None and not isinstance(self.has_output, NamedThingId):
+            self.has_output = NamedThingId(self.has_output)
+
         super().__post_init__(**kwargs)
 
 
@@ -184,8 +208,8 @@ class Information(NamedThing):
     """
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = IAO["0000030"]
-    class_class_curie: ClassVar[str] = "IAO:0000030"
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.Information
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:Information"
     class_name: ClassVar[str] = "Information"
     class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.Information
 
@@ -234,3 +258,9 @@ slots.has_inputs = Slot(uri=SPLIT_POOL_MOD_SCHEMA.has_inputs, name="has_inputs",
 
 slots.has_outputs = Slot(uri=SPLIT_POOL_MOD_SCHEMA.has_outputs, name="has_outputs", curie=SPLIT_POOL_MOD_SCHEMA.curie('has_outputs'),
                    model_uri=SPLIT_POOL_MOD_SCHEMA.has_outputs, domain=Process, range=Optional[Union[str, List[str]]])
+
+slots.has_input = Slot(uri=SPLIT_POOL_MOD_SCHEMA.has_input, name="has_input", curie=SPLIT_POOL_MOD_SCHEMA.curie('has_input'),
+                   model_uri=SPLIT_POOL_MOD_SCHEMA.has_input, domain=Process, range=Optional[Union[str, NamedThingId]])
+
+slots.has_output = Slot(uri=SPLIT_POOL_MOD_SCHEMA.has_output, name="has_output", curie=SPLIT_POOL_MOD_SCHEMA.curie('has_output'),
+                   model_uri=SPLIT_POOL_MOD_SCHEMA.has_output, domain=Process, range=Optional[Union[str, NamedThingId]])

@@ -14,6 +14,8 @@ prefixes:
   BFO: http://purl.obolibrary.org/obo/BFO_
   IAO: http://purl.obolibrary.org/obo/IAO_
   schema: http://schema.org/
+  BIOPROJECT: https://www.ncbi.nlm.nih.gov/bioproject/ # https://identifiers.org/bioproject/
+  NEON_SAMP_VIEW: https://data.neonscience.org/api/v0/samples/view?
   example: https://example.org/
 default_prefix: split_pool_mod_schema
 default_range: string
@@ -41,6 +43,8 @@ classes:
     comments:
       - handcrafted but very similar to the Database from nmdc-schema
     slots:
+      - id
+      - name
       - information_set
       - material_entity_set
       - named_thing_set
@@ -53,7 +57,8 @@ classes:
       - Material
       - Physical entity
     #    abstract: true
-    class_uri: BFO:0000040
+    exact_mappings:
+      - BFO:0000040
     description: An entity that consists of matter. Has an identity that persists over time.
     is_a: NamedThing
     title: Material Entity
@@ -64,7 +69,10 @@ classes:
     slots:
       - has_inputs
       - has_outputs
-    class_uri: BFO:0000015
+      - has_input
+      - has_output
+    exact_mappings:
+      - BFO:0000015
     is_a: NamedThing
     #    abstract: true
 
@@ -77,7 +85,8 @@ classes:
     #    slots:
     #      - has_inputs
     #      - has_outputs
-    class_uri: IAO:0000030
+    exact_mappings:
+      - IAO:0000030
     #    abstract: true
 
 slots:
@@ -130,3 +139,11 @@ slots:
     any_of:
       - range: MaterialEntity
       - range: Information
+  has_input:
+    domain: Process
+    multivalued: false
+    range: NamedThing
+  has_output:
+    domain: Process
+    multivalued: false
+    range: NamedThing

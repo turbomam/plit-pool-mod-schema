@@ -38,12 +38,13 @@ linkml:Objectidentifier IRI
 linkml:Nodeidentifier NONLITERAL
 
 <Database> CLOSED {
-    (  $<Database_tes> (  <information_set> @<Information> * ;
+    (  $<Database_tes> (  schema1:name @linkml:String ? ;
+          <information_set> @<Information> * ;
           <material_entity_set> @<MaterialEntity> * ;
           <named_thing_set> @<NamedThing> * ;
           <process_set> @<Process> *
        ) ;
-       rdf:type [ <Database> ] ?
+       rdf:type [ <Database> ]
     )
 }
 
@@ -51,7 +52,7 @@ linkml:Nodeidentifier NONLITERAL
     (  $<Information_tes> (  &<NamedThing_tes> ;
           rdf:type [ schema1:Thing ] ?
        ) ;
-       rdf:type [ <http://purl.obolibrary.org/obo/IAO_0000030> ]
+       rdf:type [ <Information> ]
     )
 }
 
@@ -59,7 +60,7 @@ linkml:Nodeidentifier NONLITERAL
     (  $<MaterialEntity_tes> (  &<NamedThing_tes> ;
           rdf:type [ schema1:Thing ] ?
        ) ;
-       rdf:type [ <http://purl.obolibrary.org/obo/BFO_0000040> ]
+       rdf:type [ <MaterialEntity> ]
     )
 }
 
@@ -77,9 +78,11 @@ linkml:Nodeidentifier NONLITERAL
     (  $<Process_tes> (  &<NamedThing_tes> ;
           rdf:type [ schema1:Thing ] ? ;
           <has_inputs> @linkml:String * ;
-          <has_outputs> @linkml:String *
+          <has_outputs> @linkml:String * ;
+          <has_input> @<NamedThing> ? ;
+          <has_output> @<NamedThing> ?
        ) ;
-       rdf:type [ <http://purl.obolibrary.org/obo/BFO_0000015> ]
+       rdf:type [ <Process> ]
     )
 }
 

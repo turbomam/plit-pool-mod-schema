@@ -1,0 +1,14 @@
+id: example:db1
+name: example database
+information_set:
+  - id: BIOPROJECT:PRJNA406974
+    name: empty/invalid bioproject claimed by neon
+material_entity_set:
+  - id: NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2
+    name: extracted dna from neon soil sample
+    description: intended for sequencing and metagenomic analysis
+process_set:
+  - id: example:SampleNeonSoilMetagenomeSequencing
+    name: Sequencing of soil from Yellowstone
+    has_output: BIOPROJECT:PRJNA406974
+    has_input: NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2

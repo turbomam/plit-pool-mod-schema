@@ -1,0 +1,74 @@
+---
+data:
+  sampleViews:
+  - sampleClass: mic_dnaExtraction_in.soilDnaSampleID
+    sampleTag: YELL_001-M-20180710-COMP-DNA1
+    barcode:
+    archiveGuid:
+    sampleUuid: e59fa999-38df-45f3-be6b-dd87888cf602
+    parentSampleIdentifiers:
+    - sampleUuid: 3a907057-5433-44d7-a863-727eecb257f8
+      sampleTag: YELL_001-M-20180710-COMP
+      sampleClass: sls_metagenomicsPooling_in.compositeSampleID
+      barcode: B00000013535
+      archiveGuid:
+    childSampleIdentifiers:
+    - sampleUuid: 7ce8089f-2a7e-487e-99d6-e0d75c87e904
+      sampleTag: BMI_PLATE88WELLA2_MMG.FASTQ.ZIP
+      sampleClass: mms_metagenomeSequencing_in.processedSeqFileNameID
+      barcode:
+      archiveGuid:
+    - sampleUuid: 2397974b-f181-4655-ab1d-066ae918909f
+      sampleTag: YELL_001-M-20180710-COMP-DNA1_BMI_PLATE88WELLA2
+      sampleClass: mic_dnaExtraction_in.subsampleID
+      barcode:
+      archiveGuid:
+    sampleEvents:
+    - ingestTableName: mms_metagenomeSequencing_in
+      smsFieldEntries:
+      - smsKey: analysis_type
+        smsValue: Illumina
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2018-12-21T17:00:00Z'
+      - smsKey: fate_location
+        smsValue: Battelle Memorial Institute
+      - smsKey: sample_tag
+        smsValue: YELL_001-M-20180710-COMP-DNA1
+    - ingestTableName: mic_dnaExtraction_in
+      smsFieldEntries:
+      - smsKey: analysis_type
+        smsValue: metagenomics
+      - smsKey: collect_end_date
+        smsValue: '2018-07-10T16:34:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2018-07-10T16:07:00Z'
+      - smsKey: collection_location
+        smsValue: YELL_001.basePlot.bgc
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2018-12-17T17:00:00Z'
+      - smsKey: fate_location
+        smsValue: Battelle Applied Genomics
+      - smsKey: sample_class
+        smsValue: mic_dnaExtraction_in.soilDnaSampleID
+      - smsKey: sample_tag
+        smsValue: YELL_001-M-20180710-COMP-DNA1
+      - smsKey: sample_type
+        smsValue: soil
+      - smsKey: sampling_protocol
+        smsValue: BMI_dnaExtractionSOP_v1
+    - ingestTableName: mms_rawDataFiles_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: sample_tag
+        smsValue: YELL_001-M-20180710-COMP-DNA1
+    - ingestTableName: mms_rawDataFiles_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: sample_tag
+        smsValue: YELL_001-M-20180710-COMP-DNA1

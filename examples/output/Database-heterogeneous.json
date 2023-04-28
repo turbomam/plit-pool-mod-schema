@@ -1,4 +1,6 @@
 {
+  "id": "example:db1",
+  "name": "example database",
   "information_set": [
     {
       "id": "example:Info001",

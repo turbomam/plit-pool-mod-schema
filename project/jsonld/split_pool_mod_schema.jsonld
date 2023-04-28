@@ -32,6 +32,14 @@
       "prefix_reference": "http://schema.org/"
     },
     {
+      "prefix_prefix": "BIOPROJECT",
+      "prefix_reference": "https://www.ncbi.nlm.nih.gov/bioproject/"
+    },
+    {
+      "prefix_prefix": "NEON_SAMP_VIEW",
+      "prefix_reference": "https://data.neonscience.org/api/v0/samples/view?"
+    },
+    {
       "prefix_prefix": "example",
       "prefix_reference": "https://example.org/"
     }
@@ -270,9 +278,10 @@
       ],
       "slot_uri": "http://schema.org/identifier",
       "identifier": true,
-      "owner": "NamedThing",
+      "owner": "Database",
       "domain_of": [
-        "NamedThing"
+        "NamedThing",
+        "Database"
       ],
       "range": "uriorcurie",
       "required": true,
@@ -288,9 +297,10 @@
         "http://schema.org/name"
       ],
       "slot_uri": "http://schema.org/name",
-      "owner": "NamedThing",
+      "owner": "Database",
       "domain_of": [
-        "NamedThing"
+        "NamedThing",
+        "Database"
       ],
       "range": "string",
       "@type": "SlotDefinition"
@@ -426,6 +436,32 @@
         }
       ],
       "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_input",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_input",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Process",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_input",
+      "owner": "Process",
+      "domain_of": [
+        "Process"
+      ],
+      "range": "NamedThing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_output",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_output",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Process",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_output",
+      "owner": "Process",
+      "domain_of": [
+        "Process"
+      ],
+      "range": "NamedThing",
+      "@type": "SlotDefinition"
     }
   ],
   "classes": [
@@ -458,6 +494,8 @@
       ],
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "slots": [
+        "id",
+        "name",
         "information_set",
         "material_entity_set",
         "named_thing_set",
@@ -481,7 +519,7 @@
         "Material",
         "Physical entity"
       ],
-      "mappings": [
+      "exact_mappings": [
         "BFO:0000040"
       ],
       "is_a": "NamedThing",
@@ -491,7 +529,7 @@
         "description"
       ],
       "slot_usage": {},
-      "class_uri": "http://purl.obolibrary.org/obo/BFO_0000040",
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity",
       "@type": "ClassDefinition"
     },
     {
@@ -499,7 +537,7 @@
       "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Process",
       "description": "An entity that unfolds over time. Not composed of matter.",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "mappings": [
+      "exact_mappings": [
         "BFO:0000015"
       ],
       "is_a": "NamedThing",
@@ -508,10 +546,12 @@
         "name",
         "description",
         "has_inputs",
-        "has_outputs"
+        "has_outputs",
+        "has_input",
+        "has_output"
       ],
       "slot_usage": {},
-      "class_uri": "http://purl.obolibrary.org/obo/BFO_0000015",
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Process",
       "@type": "ClassDefinition"
     },
     {
@@ -522,7 +562,7 @@
         "Information is (almost?) always conveyed by something, like a book printed on paper, electrical charges stored on a computer disk, or human speech. Those information bearers are not the information itself."
       ],
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "mappings": [
+      "exact_mappings": [
         "IAO:0000030"
       ],
       "is_a": "NamedThing",
@@ -532,15 +572,15 @@
         "description"
       ],
       "slot_usage": {},
-      "class_uri": "http://purl.obolibrary.org/obo/IAO_0000030",
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Information",
       "@type": "ClassDefinition"
     }
   ],
   "metamodel_version": "1.7.0",
   "source_file": "split_pool_mod_schema.yaml",
-  "source_file_date": "2023-04-28T08:49:40",
-  "source_file_size": 3633,
-  "generation_date": "2023-04-28T08:50:16",
+  "source_file_date": "2023-04-28T13:25:55",
+  "source_file_size": 4051,
+  "generation_date": "2023-04-28T13:27:24",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/split_pool_mod_schema.context.jsonld",
