@@ -38,30 +38,17 @@ linkml:Objectidentifier IRI
 linkml:Nodeidentifier NONLITERAL
 
 <Database> CLOSED {
-    (  $<Database_tes> (  &<NamedThing_tes> ;
-          rdf:type [ schema1:Thing ] ? ;
-          schema1:email @linkml:String ? ;
-          <age_in_years> @linkml:Integer ? ;
-          <vital_status> @<PersonStatus> ?
+    (  $<Database_tes> <named_thing_set> @<NamedThing> * ;
+       rdf:type [ <Database> ] ?
+    )
+}
+
+<NamedThing> CLOSED {
+    (  $<NamedThing_tes> (  schema1:name @linkml:String ? ;
+          schema1:description @linkml:String ?
        ) ;
-       rdf:type [ <Database> ]
+       rdf:type [ schema1:Thing ]
     )
 }
-
-<DatabaseCollection> CLOSED {
-    (  $<DatabaseCollection_tes> <entries> @<Database> * ;
-       rdf:type [ <DatabaseCollection> ] ?
-    )
-}
-
-<NamedThing>  (
-    CLOSED {
-       (  $<NamedThing_tes> (  schema1:name @linkml:String ? ;
-             schema1:description @linkml:String ?
-          ) ;
-          rdf:type [ schema1:Thing ]
-       )
-    } OR @<Database>
-)
 
 

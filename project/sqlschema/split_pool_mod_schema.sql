@@ -1,18 +1,8 @@
 
 
 CREATE TABLE "Database" (
-	id TEXT NOT NULL, 
-	name TEXT, 
-	description TEXT, 
-	primary_email TEXT, 
-	age_in_years INTEGER, 
-	vital_status VARCHAR(7), 
-	PRIMARY KEY (id)
-);
-
-CREATE TABLE "DatabaseCollection" (
-	entries TEXT, 
-	PRIMARY KEY (entries)
+	named_thing_set TEXT, 
+	PRIMARY KEY (named_thing_set)
 );
 
 CREATE TABLE "NamedThing" (

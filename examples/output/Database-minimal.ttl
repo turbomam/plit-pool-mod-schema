@@ -1,0 +1,16 @@
+@prefix example: <https://example.org/> .
+@prefix schema1: <http://schema.org/> .
+@prefix split_pool_mod_schema: <https://w3id.org/turbomam/split-pool-mod-schema/> .
+
+example:Nt001 a schema1:Thing ;
+    schema1:description "this is the first named thing" ;
+    schema1:name "first named thing" .
+
+example:Nt002 a schema1:Thing ;
+    schema1:description "this is the second named thing" ;
+    schema1:name "second named thing" .
+
+[] a split_pool_mod_schema:Database ;
+    split_pool_mod_schema:named_thing_set example:Nt001,
+        example:Nt002 .
+
