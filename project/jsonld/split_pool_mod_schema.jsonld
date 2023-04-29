@@ -578,9 +578,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "split_pool_mod_schema.yaml",
-  "source_file_date": "2023-04-28T13:25:55",
+  "source_file_date": "2023-04-28T13:42:57",
   "source_file_size": 4051,
-  "generation_date": "2023-04-28T13:27:24",
+  "generation_date": "2023-04-28T14:52:36",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/split_pool_mod_schema.context.jsonld",

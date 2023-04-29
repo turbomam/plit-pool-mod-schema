@@ -1,0 +1,46 @@
+{
+  "excludeSingletons": "false",
+  "relationProperties": {
+    "type": {
+      "color": "red",
+      "penwidth": 3,
+      "arrowhead": "open",
+      "label": "TTTTTT"
+    },
+    "rdfs:subClassOf": {
+      "color": "orange",
+      "penwidth": 9,
+      "arrowhead": "open",
+      "label": "SSSSSS"
+    },
+    "has_input": {
+      "color": "yellow",
+      "penwidth": 9,
+      "arrowhead": "open",
+      "label": "HHHHHH"
+    },
+    "has_inputs": {
+      "color": "green",
+      "penwidth": 9,
+      "arrowhead": "open",
+      "label": "HHHHHH"
+    },
+    "rdfs:subClassOf": {
+      "color": "blue",
+      "penwidth": 3,
+      "arrowhead": "open",
+      "label": ""
+    },
+    "is_a": {
+      "color": "purple",
+      "penwidth": 3,
+      "arrowhead": "open",
+      "label": ""
+    },
+    "rdf:type": {
+      "color": "black",
+      "arrowhead": "open",
+      "label": "type"
+    }
+  }
+}

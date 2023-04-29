@@ -67,6 +67,7 @@ examples/output/neon-merged.ttl:
 examples/output/neon-merged.png: examples/output/neon-merged.json
 	$(RUN) og2dot $< \
 		--outfile $@ \
+		-s test-ogv-style.json \
 		--to png $<
 
 
@@ -90,4 +91,4 @@ xxx: examples/output/neon-merged.ttl
 #		--verbose \
 #		--input $< tree 'Information'
 	$(RUN) runoak \
-		--input $< viz 'empty/invalid bioproject claimed by neon'
+		--input $< viz -p t,p,i 'empty/invalid bioproject claimed by neon'

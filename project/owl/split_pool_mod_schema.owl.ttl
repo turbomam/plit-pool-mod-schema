@@ -137,21 +137,21 @@ split_pool_mod_schema:Database a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Database" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom split_pool_mod_schema:Process ;
-            owl:onProperty split_pool_mod_schema:process_set ],
+            owl:allValuesFrom split_pool_mod_schema:NamedThing ;
+            owl:onProperty split_pool_mod_schema:named_thing_set ],
         [ a owl:Restriction ;
             owl:allValuesFrom split_pool_mod_schema:MaterialEntity ;
             owl:onProperty split_pool_mod_schema:material_entity_set ],
         [ a owl:Restriction ;
-            owl:allValuesFrom split_pool_mod_schema:NamedThing ;
-            owl:onProperty split_pool_mod_schema:named_thing_set ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom split_pool_mod_schema:Information ;
-            owl:onProperty split_pool_mod_schema:information_set ],
+            owl:allValuesFrom split_pool_mod_schema:Process ;
+            owl:onProperty split_pool_mod_schema:process_set ],
         [ a owl:Restriction ;
             owl:onClass linkml:Uriorcurie ;
             owl:onProperty schema1:identifier ;
             owl:qualifiedCardinality 1 ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom split_pool_mod_schema:Information ;
+            owl:onProperty split_pool_mod_schema:information_set ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
@@ -163,19 +163,19 @@ split_pool_mod_schema:Process a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Process" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom linkml:String ;
-            owl:onProperty split_pool_mod_schema:has_inputs ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass split_pool_mod_schema:NamedThing ;
-            owl:onProperty split_pool_mod_schema:has_output ],
-        [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass split_pool_mod_schema:NamedThing ;
             owl:onProperty split_pool_mod_schema:has_input ],
         [ a owl:Restriction ;
             owl:allValuesFrom linkml:String ;
             owl:onProperty split_pool_mod_schema:has_outputs ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty split_pool_mod_schema:has_inputs ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass split_pool_mod_schema:NamedThing ;
+            owl:onProperty split_pool_mod_schema:has_output ],
         split_pool_mod_schema:NamedThing ;
     skos:definition "An entity that unfolds over time. Not composed of matter." ;
     skos:exactMatch BFO:0000015 ;
@@ -188,15 +188,15 @@ split_pool_mod_schema:NamedThing a owl:Class,
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
+            owl:onProperty schema1:name ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
             owl:onProperty schema1:description ],
         [ a owl:Restriction ;
             owl:onClass linkml:Uriorcurie ;
             owl:onProperty schema1:identifier ;
-            owl:qualifiedCardinality 1 ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass linkml:String ;
-            owl:onProperty schema1:name ] ;
+            owl:qualifiedCardinality 1 ] ;
     skos:definition "An identifiable entity" ;
     skos:exactMatch schema1:Thing ;
     linkml:attributes "{}" .
