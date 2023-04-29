@@ -1,5 +1,5 @@
 # Auto generated from split_pool_mod_schema.yaml by pythongen.py version: 0.9.0
-# Generation date: 2023-04-28T13:27:31
+# Generation date: 2023-04-28T14:52:44
 # Schema: split-pool-mod-schema
 #
 # id: https://w3id.org/turbomam/split-pool-mod-schema

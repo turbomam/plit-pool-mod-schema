@@ -394,8 +394,8 @@
                                                               <http://www.w3.org/2004/02/skos/core#definition> "Anything that informs, or reduces uncertainty. Can be about a material entity or a process." .
 
 
-<https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> <https://w3id.org/linkml/attributes> "{}" ;
-                                                                 <http://purl.org/dc/terms/title> "Material Entity" ;
+<https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> <http://purl.org/dc/terms/title> "Material Entity" ;
+                                                                 <https://w3id.org/linkml/attributes> "{}" ;
                                                                  <https://w3id.org/linkml/is_a> "NamedThing" ;
                                                                  <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.obolibrary.org/obo/BFO_0000040> ;
                                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "Material" ,
