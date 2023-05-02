@@ -7,6 +7,51 @@ message Database
  repeated  materialEntity materialEntitySet = 0
  repeated  namedThing namedThingSet = 0
  repeated  process processSet = 0
+ repeated  micDnaExtractionInSoilDnaSample micDnaExtractionInSoilDnaSampleSet = 0
+ repeated  micDnaExtractionInSubsample micDnaExtractionInSubsampleSet = 0
+ repeated  mmsMetagenomeSequencingInProcessedSeqFileName mmsMetagenomeSequencingInProcessedSeqFileNameSet = 0
+ repeated  slsMetagenomicsPoolingInCompositeSample slsMetagenomicsPoolingInCompositeSampleSet = 0
+ repeated  slsSoilCoreCollectionInGeneticArchiveSample1 slsSoilCoreCollectionInGeneticArchiveSample1Set = 0
+ repeated  slsSoilCoreCollectionInGeneticArchiveSample2 slsSoilCoreCollectionInGeneticArchiveSample2Set = 0
+ repeated  slsSoilCoreCollectionInGeneticArchiveSample3 slsSoilCoreCollectionInGeneticArchiveSample3Set = 0
+ repeated  slsSoilCoreCollectionInGeneticArchiveSample4 slsSoilCoreCollectionInGeneticArchiveSample4Set = 0
+ repeated  slsSoilCoreCollectionInGeneticArchiveSample5 slsSoilCoreCollectionInGeneticArchiveSample5Set = 0
+ repeated  slsSoilCoreCollectionInGeneticSample slsSoilCoreCollectionInGeneticSampleSet = 0
+ repeated  slsSoilCoreCollectionInSample slsSoilCoreCollectionInSampleSet = 0
+ repeated  slsSoilMoistureInMoistureSample slsSoilMoistureInMoistureSampleSet = 0
+ repeated  slsSoilpHInPhSample slsSoilPhInPhSampleSet = 0
+ repeated  dnaSamplePrepComposite dnaSamplePrepCompositeSet = 0
+ repeated  dnaSamplePrepSimple dnaSamplePrepSimpleSet = 0
+ repeated  geneticSamplePrep geneticSamplePrepSet = 0
+ repeated  moistureSamplePrep moistureSamplePrepSet = 0
+ repeated  phSamplePrep phSamplePrepSet = 0
+ repeated  pooling poolingSet = 0
+ repeated  sequencing sequencingSet = 0
+ repeated  subsampleDnaExtract subsampleDnaExtractSet = 0
+ }
+message DnaSamplePrepComposite
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
+ }
+message DnaSamplePrepSimple
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
+ }
+message GeneticSamplePrep
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
  }
 // Anything that informs, or reduces uncertainty. Can be about a material entity or a process.
 message Information
@@ -21,6 +66,52 @@ message MaterialEntity
   uriorcurie id = 0
   string name = 0
   string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message MicDnaExtractionInSoilDnaSample
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message MicDnaExtractionInSubsample
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message MmsMetagenomeSequencingInProcessedSeqFileName
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message MoistureSamplePrep
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
  }
 // An identifiable entity
 message NamedThing
@@ -29,14 +120,154 @@ message NamedThing
   string name = 0
   string description = 0
  }
+message PhSamplePrep
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
+ }
+message Pooling
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
+ }
 // An entity that unfolds over time. Not composed of matter.
 message Process
  {
   uriorcurie id = 0
   string name = 0
   string description = 0
- repeated  string hasInputs = 0
- repeated  string hasOutputs = 0
-  namedThing hasInput = 0
-  namedThing hasOutput = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
+ }
+message Sequencing
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
+ }
+message SlsMetagenomicsPoolingInCompositeSample
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message SlsSoilCoreCollectionInGeneticArchiveSample1
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message SlsSoilCoreCollectionInGeneticArchiveSample2
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message SlsSoilCoreCollectionInGeneticArchiveSample3
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message SlsSoilCoreCollectionInGeneticArchiveSample4
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message SlsSoilCoreCollectionInGeneticArchiveSample5
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message SlsSoilCoreCollectionInGeneticSample
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message SlsSoilCoreCollectionInSample
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message SlsSoilMoistureInMoistureSample
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message SlsSoilpHInPhSample
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message SubsampleDnaExtract
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
  }

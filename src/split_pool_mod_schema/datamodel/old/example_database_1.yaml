@@ -1,0 +1,29 @@
+id: example:db1
+name: Example Database 1
+material_entity_set:
+- id: NEON_SAMP_UUID:e68ff983-54a4-4e4a-aa3b-3fcc95fdd765
+  name: YELL_052-O-20190820-COMP-DNA1
+  neon_sample_class: mic_dnaExtraction_in.soilDnaSampleID
+  child_sample_identifiers:
+  - NEON_SAMP_UUID:a9b215e5-45cb-404d-a205-21eff0d03888
+  - NEON_SAMP_UUID:fede0df9-1eb9-4d1e-b8c7-670dfd25f81d
+  parent_sample_identifiers:
+  - NEON_SAMP_UUID:084fa101-5f9e-4b8e-9930-63f1164fc44d
+- id: NEON_SAMP_UUID:a9b215e5-45cb-404d-a205-21eff0d03888
+  name: BMI_HY5W2BGXG_PLATE19S_31WELLG3.FASTQ.GZ
+  neon_sample_class: mms_metagenomeSequencing_in.processedSeqFileNameID
+  parent_sample_identifiers:
+  - NEON_SAMP_UUID:e68ff983-54a4-4e4a-aa3b-3fcc95fdd765
+- id: NEON_SAMP_UUID:e68ff983-54a4-4e4a-aa3b-3fcc95fdd765
+  name: YELL_052-O-20190820-COMP-DNA1
+  neon_sample_class: mic_dnaExtraction_in.soilDnaSampleID
+  child_sample_identifiers:
+  - NEON_SAMP_UUID:a9b215e5-45cb-404d-a205-21eff0d03888
+  - NEON_SAMP_UUID:fede0df9-1eb9-4d1e-b8c7-670dfd25f81d
+  parent_sample_identifiers:
+  - NEON_SAMP_UUID:084fa101-5f9e-4b8e-9930-63f1164fc44d
+- id: NEON_SAMP_UUID:fede0df9-1eb9-4d1e-b8c7-670dfd25f81d
+  name: YELL_052-O-20190820-COMP-DNA1_19S_31_2842
+  neon_sample_class: mic_dnaExtraction_in.subsampleID
+  parent_sample_identifiers:
+  - NEON_SAMP_UUID:e68ff983-54a4-4e4a-aa3b-3fcc95fdd765

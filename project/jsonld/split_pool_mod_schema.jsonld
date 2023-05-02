@@ -12,36 +12,40 @@
   "license": "BSD-3",
   "prefixes": [
     {
-      "prefix_prefix": "split_pool_mod_schema",
-      "prefix_reference": "https://w3id.org/turbomam/split-pool-mod-schema/"
-    },
-    {
-      "prefix_prefix": "linkml",
-      "prefix_reference": "https://w3id.org/linkml/"
-    },
-    {
       "prefix_prefix": "BFO",
       "prefix_reference": "http://purl.obolibrary.org/obo/BFO_"
-    },
-    {
-      "prefix_prefix": "IAO",
-      "prefix_reference": "http://purl.obolibrary.org/obo/IAO_"
-    },
-    {
-      "prefix_prefix": "schema",
-      "prefix_reference": "http://schema.org/"
     },
     {
       "prefix_prefix": "BIOPROJECT",
       "prefix_reference": "https://www.ncbi.nlm.nih.gov/bioproject/"
     },
     {
-      "prefix_prefix": "NEON_SAMP_VIEW",
-      "prefix_reference": "https://data.neonscience.org/api/v0/samples/view?"
+      "prefix_prefix": "IAO",
+      "prefix_reference": "http://purl.obolibrary.org/obo/IAO_"
+    },
+    {
+      "prefix_prefix": "NEON_SAMP_UUID",
+      "prefix_reference": "https://data.neonscience.org/api/v0/samples/"
     },
     {
       "prefix_prefix": "example",
       "prefix_reference": "https://example.org/"
+    },
+    {
+      "prefix_prefix": "linkml",
+      "prefix_reference": "https://w3id.org/linkml/"
+    },
+    {
+      "prefix_prefix": "rdfs",
+      "prefix_reference": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    {
+      "prefix_prefix": "schema",
+      "prefix_reference": "http://schema.org/"
+    },
+    {
+      "prefix_prefix": "split_pool_mod_schema",
+      "prefix_reference": "https://w3id.org/turbomam/split-pool-mod-schema/"
     }
   ],
   "default_prefix": "split_pool_mod_schema",
@@ -294,9 +298,9 @@
       "description": "A human-readable name for a thing",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "mappings": [
-        "http://schema.org/name"
+        "http://www.w3.org/2000/01/rdf-schema#label"
       ],
-      "slot_uri": "http://schema.org/name",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#label",
       "owner": "Database",
       "domain_of": [
         "NamedThing",
@@ -400,7 +404,7 @@
       "domain_of": [
         "Process"
       ],
-      "range": "string",
+      "range": "MaterialEntity",
       "any_of": [
         {
           "range": "MaterialEntity",
@@ -424,7 +428,7 @@
       "domain_of": [
         "Process"
       ],
-      "range": "string",
+      "range": "MaterialEntity",
       "any_of": [
         {
           "range": "MaterialEntity",
@@ -438,29 +442,409 @@
       "@type": "SlotDefinition"
     },
     {
-      "name": "has_input",
-      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_input",
+      "name": "has_children",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_children",
+      "comments": [
+        "This is a temporary shortcut that bypasses process instances"
+      ],
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "domain": "Process",
-      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_input",
-      "owner": "Process",
+      "domain": "NamedThing",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_children",
+      "multivalued": true,
+      "owner": "has_children",
       "domain_of": [
-        "Process"
+        "MaterialEntity"
       ],
       "range": "NamedThing",
       "@type": "SlotDefinition"
     },
     {
-      "name": "has_output",
-      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_output",
+      "name": "has_parents",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_parents",
+      "comments": [
+        "This is a temporary shortcut that bypasses process instances"
+      ],
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "domain": "Process",
-      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_output",
-      "owner": "Process",
+      "domain": "NamedThing",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/has_parents",
+      "multivalued": true,
+      "owner": "has_parents",
       "domain_of": [
-        "Process"
+        "MaterialEntity"
       ],
       "range": "NamedThing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "neon_sample_class",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_class",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_class",
+      "owner": "MaterialEntity",
+      "domain_of": [
+        "MaterialEntity"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "neon_sample_tag",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_tag",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_tag",
+      "owner": "MaterialEntity",
+      "domain_of": [
+        "MaterialEntity"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "neon_sample_uuid",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_uuid",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_uuid",
+      "owner": "MaterialEntity",
+      "domain_of": [
+        "MaterialEntity"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mic_dna_extraction_in_soil_dna_sample_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_soil_dna_sample_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_soil_dna_sample_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "MicDnaExtractionInSoilDnaSample",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mic_dna_extraction_in_subsample_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_subsample_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_subsample_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "MicDnaExtractionInSubsample",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mms_metagenome_sequencing_in_processed_seq_file_name_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/mms_metagenome_sequencing_in_processed_seq_file_name_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/mms_metagenome_sequencing_in_processed_seq_file_name_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "MmsMetagenomeSequencingInProcessedSeqFileName",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sls_metagenomics_pooling_in_composite_sample_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_metagenomics_pooling_in_composite_sample_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_metagenomics_pooling_in_composite_sample_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "SlsMetagenomicsPoolingInCompositeSample",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sls_soil_core_collection_in_genetic_archive_sample1_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample1_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample1_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "SlsSoilCoreCollectionInGeneticArchiveSample1",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sls_soil_core_collection_in_genetic_archive_sample2_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample2_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample2_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "SlsSoilCoreCollectionInGeneticArchiveSample2",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sls_soil_core_collection_in_genetic_archive_sample3_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample3_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample3_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "SlsSoilCoreCollectionInGeneticArchiveSample3",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sls_soil_core_collection_in_genetic_archive_sample4_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample4_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample4_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "SlsSoilCoreCollectionInGeneticArchiveSample4",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sls_soil_core_collection_in_genetic_archive_sample5_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample5_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample5_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "SlsSoilCoreCollectionInGeneticArchiveSample5",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sls_soil_core_collection_in_genetic_sample_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_sample_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_sample_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "SlsSoilCoreCollectionInGeneticSample",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sls_soil_core_collection_in_sample_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_sample_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_sample_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "SlsSoilCoreCollectionInSample",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sls_soil_moisture_in_moisture_sample_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_moisture_in_moisture_sample_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_moisture_in_moisture_sample_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "SlsSoilMoistureInMoistureSample",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sls_soil_ph_in_ph_sample_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_ph_in_ph_sample_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_ph_in_ph_sample_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "SlsSoilpHInPhSample",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "dna_sample_prep_composite_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_composite_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_composite_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "DnaSamplePrepComposite",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "dna_sample_prep_simple_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_simple_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_simple_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "DnaSamplePrepSimple",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "genetic_sample_prep_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/genetic_sample_prep_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/genetic_sample_prep_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "GeneticSamplePrep",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "moisture_sample_prep_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/moisture_sample_prep_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/moisture_sample_prep_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "MoistureSamplePrep",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ph_sample_prep_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/ph_sample_prep_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/ph_sample_prep_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "PhSamplePrep",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "pooling_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/pooling_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/pooling_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "Pooling",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sequencing_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sequencing_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/sequencing_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "Sequencing",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "subsample_dna_extract_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/subsample_dna_extract_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/subsample_dna_extract_set",
+      "multivalued": true,
+      "owner": "Database",
+      "domain_of": [
+        "Database"
+      ],
+      "range": "SubsampleDnaExtract",
+      "inlined": true,
+      "inlined_as_list": true,
       "@type": "SlotDefinition"
     }
   ],
@@ -499,7 +883,28 @@
         "information_set",
         "material_entity_set",
         "named_thing_set",
-        "process_set"
+        "process_set",
+        "mic_dna_extraction_in_soil_dna_sample_set",
+        "mic_dna_extraction_in_subsample_set",
+        "mms_metagenome_sequencing_in_processed_seq_file_name_set",
+        "sls_metagenomics_pooling_in_composite_sample_set",
+        "sls_soil_core_collection_in_genetic_archive_sample1_set",
+        "sls_soil_core_collection_in_genetic_archive_sample2_set",
+        "sls_soil_core_collection_in_genetic_archive_sample3_set",
+        "sls_soil_core_collection_in_genetic_archive_sample4_set",
+        "sls_soil_core_collection_in_genetic_archive_sample5_set",
+        "sls_soil_core_collection_in_genetic_sample_set",
+        "sls_soil_core_collection_in_sample_set",
+        "sls_soil_moisture_in_moisture_sample_set",
+        "sls_soil_ph_in_ph_sample_set",
+        "dna_sample_prep_composite_set",
+        "dna_sample_prep_simple_set",
+        "genetic_sample_prep_set",
+        "moisture_sample_prep_set",
+        "ph_sample_prep_set",
+        "pooling_set",
+        "sequencing_set",
+        "subsample_dna_extract_set"
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Database",
@@ -526,7 +931,12 @@
       "slots": [
         "id",
         "name",
-        "description"
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity",
@@ -546,9 +956,7 @@
         "name",
         "description",
         "has_inputs",
-        "has_outputs",
-        "has_input",
-        "has_output"
+        "has_outputs"
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Process",
@@ -574,13 +982,575 @@
       "slot_usage": {},
       "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Information",
       "@type": "ClassDefinition"
+    },
+    {
+      "name": "MicDnaExtractionInSoilDnaSample",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSoilDnaSample",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "mic_dnaExtraction_in.soilDnaSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSoilDnaSample",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MicDnaExtractionInSubsample",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSubsample",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "mic_dnaExtraction_in.subsampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSubsample",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SlsMetagenomicsPoolingInCompositeSample",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsMetagenomicsPoolingInCompositeSample",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "sls_metagenomicsPooling_in.compositeSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsMetagenomicsPoolingInCompositeSample",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SlsSoilCoreCollectionInGeneticArchiveSample1",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample1",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "sls_soilCoreCollection_in.geneticArchiveSample1ID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample1",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SlsSoilCoreCollectionInGeneticArchiveSample2",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample2",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "sls_soilCoreCollection_in.geneticArchiveSample2ID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample2",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SlsSoilCoreCollectionInGeneticArchiveSample3",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample3",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "sls_soilCoreCollection_in.geneticArchiveSample3ID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample3",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SlsSoilCoreCollectionInGeneticArchiveSample4",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample4",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "sls_soilCoreCollection_in.geneticArchiveSample4ID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample4",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SlsSoilCoreCollectionInGeneticArchiveSample5",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample5",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "sls_soilCoreCollection_in.geneticArchiveSample5ID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample5",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SlsSoilCoreCollectionInGeneticSample",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticSample",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "sls_soilCoreCollection_in.geneticSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticSample",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SlsSoilCoreCollectionInSample",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInSample",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "sls_soilCoreCollection_in.sampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInSample",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SlsSoilMoistureInMoistureSample",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilMoistureInMoistureSample",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "sls_soilMoisture_in.moistureSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilMoistureInMoistureSample",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SlsSoilpHInPhSample",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilpHInPhSample",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "sls_soilpH_in.pHSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilpHInPhSample",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MmsMetagenomeSequencingInProcessedSeqFileName",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/MmsMetagenomeSequencingInProcessedSeqFileName",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "mms_metagenomeSequencing_in.processedSeqFileNameID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/MmsMetagenomeSequencingInProcessedSeqFileName",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SubsampleDnaExtract",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SubsampleDnaExtract",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "mic_dnaExtraction_in.soilDnaSampleID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "mic_dnaExtraction_in.subsampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SubsampleDnaExtract",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Sequencing",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Sequencing",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "mic_dnaExtraction_in.soilDnaSampleID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "mms_metagenomeSequencing_in.processedSeqFileNameID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Sequencing",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "DnaSamplePrepSimple",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepSimple",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_soilCoreCollection_in.geneticSampleID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "mic_dnaExtraction_in.soilDnaSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepSimple",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "DnaSamplePrepComposite",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepComposite",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_metagenomicsPooling_in.compositeSampleID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "mic_dnaExtraction_in.soilDnaSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepComposite",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Pooling",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Pooling",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_soilCoreCollection_in.sampleID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "sls_metagenomicsPooling_in.compositeSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/Pooling",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "GeneticSamplePrep",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/GeneticSamplePrep",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_soilCoreCollection_in.sampleID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "sls_soilCoreCollection_in.geneticSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/GeneticSamplePrep",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MoistureSamplePrep",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/MoistureSamplePrep",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_soilCoreCollection_in.sampleID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "sls_soilMoisture_in.moistureSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/MoistureSamplePrep",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "PhSamplePrep",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/PhSamplePrep",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_soilCoreCollection_in.sampleID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "sls_soilpH_in.pHSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/PhSamplePrep",
+      "@type": "ClassDefinition"
     }
   ],
   "metamodel_version": "1.7.0",
   "source_file": "split_pool_mod_schema.yaml",
-  "source_file_date": "2023-04-28T13:42:57",
-  "source_file_size": 4051,
-  "generation_date": "2023-04-28T14:52:36",
+  "source_file_date": "2023-05-02T15:12:15",
+  "source_file_size": 12585,
+  "generation_date": "2023-05-02T15:13:00",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/split_pool_mod_schema.context.jsonld",

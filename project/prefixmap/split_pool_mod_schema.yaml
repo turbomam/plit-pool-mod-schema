@@ -2,9 +2,10 @@
    "BFO": "http://purl.obolibrary.org/obo/BFO_",
    "BIOPROJECT": "https://www.ncbi.nlm.nih.gov/bioproject/",
    "IAO": "http://purl.obolibrary.org/obo/IAO_",
-   "NEON_SAMP_VIEW": "https://data.neonscience.org/api/v0/samples/view?",
+   "NEON_SAMP_UUID": "https://data.neonscience.org/api/v0/samples/",
    "example": "https://example.org/",
    "linkml": "https://w3id.org/linkml/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
    "schema": "http://schema.org/",
    "split_pool_mod_schema": "https://w3id.org/turbomam/split-pool-mod-schema/",
    "NamedThing": {

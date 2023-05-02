@@ -1,14 +1,141 @@
 id: example:db1
 name: example database
-information_set:
-  - id: BIOPROJECT:PRJNA406974
-    name: empty/invalid bioproject claimed by neon
+#information_set:
+#  - id: BIOPROJECT:PRJNA406974
+#    name: empty/invalid bioproject claimed by neon
 material_entity_set:
-  - id: NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2
-    name: extracted dna from neon soil sample
-    description: intended for sequencing and metagenomic analysis
-process_set:
-  - id: example:SampleNeonSoilMetagenomeSequencing
-    name: Sequencing of soil from Yellowstone
-    has_output: BIOPROJECT:PRJNA406974
-    has_input: NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2
+  - id: NEON_SAMP_UUID:468d0b14-7bed-4498-9b8c-3471c60d3ef7
+    description: YELL_046-M-4.5-0.5-20191002-GEN-DNA2
+    name: YELL_046-M-4.5-0.5-20191002-GEN-DNA2
+    neon_sample_class: mic_dnaExtraction_in.soilDnaSampleID
+    neon_sample_tag: YELL_046-M-4.5-0.5-20191002-GEN-DNA2
+    neon_sample_uuid: 468d0b14-7bed-4498-9b8c-3471c60d3ef7
+    has_children:
+      - NEON_SAMP_UUID:db838e1d-ce63-4729-a3f5-066dfb0a3110
+      - NEON_SAMP_UUID:d3400849-f839-4c4a-af30-431990b3777e
+    has_parents:
+      - NEON_SAMP_UUID:46c36dd1-e36f-4152-9840-726355a09d9b
+  - id: NEON_SAMP_UUID:db838e1d-ce63-4729-a3f5-066dfb0a3110
+    description: BMI_HHGLLBGXH_PLATE19S_36WELLE7.FASTQ.GZ
+    name: BMI_HHGLLBGXH_PLATE19S_36WELLE7.FASTQ.GZ
+    neon_sample_class: mms_metagenomeSequencing_in.processedSeqFileNameID
+    neon_sample_tag: BMI_HHGLLBGXH_PLATE19S_36WELLE7.FASTQ.GZ
+    neon_sample_uuid: db838e1d-ce63-4729-a3f5-066dfb0a3110
+    has_parents:
+      - NEON_SAMP_UUID:468d0b14-7bed-4498-9b8c-3471c60d3ef7
+  - id: NEON_SAMP_UUID:d3400849-f839-4c4a-af30-431990b3777e
+    description: YELL_046-M-4.5-0.5-20191002-GEN-DNA2_19S_36_3342
+    name: YELL_046-M-4.5-0.5-20191002-GEN-DNA2_19S_36_3342
+    neon_sample_class: mic_dnaExtraction_in.subsampleID
+    neon_sample_tag: YELL_046-M-4.5-0.5-20191002-GEN-DNA2_19S_36_3342
+    neon_sample_uuid: d3400849-f839-4c4a-af30-431990b3777e
+    has_parents:
+      - NEON_SAMP_UUID:468d0b14-7bed-4498-9b8c-3471c60d3ef7
+  - id: NEON_SAMP_UUID:46c36dd1-e36f-4152-9840-726355a09d9b
+    description: YELL_046-M-4.5-0.5-20191002-GEN
+    name: YELL_046-M-4.5-0.5-20191002-GEN
+    neon_sample_class: sls_soilCoreCollection_in.geneticSampleID
+    neon_sample_tag: YELL_046-M-4.5-0.5-20191002-GEN
+    neon_sample_uuid: 46c36dd1-e36f-4152-9840-726355a09d9b
+    has_children:
+      - NEON_SAMP_UUID:468d0b14-7bed-4498-9b8c-3471c60d3ef7
+    has_parents:
+      - NEON_SAMP_UUID:fc97e9f7-bcb0-41f7-a7bc-e44628aac07c
+  - id: NEON_SAMP_UUID:fc97e9f7-bcb0-41f7-a7bc-e44628aac07c
+    description: YELL_046-M-4.5-0.5-20191002
+    name: YELL_046-M-4.5-0.5-20191002
+    neon_sample_class: sls_soilCoreCollection_in.sampleID
+    neon_sample_tag: YELL_046-M-4.5-0.5-20191002
+    neon_sample_uuid: fc97e9f7-bcb0-41f7-a7bc-e44628aac07c
+    has_children:
+      - NEON_SAMP_UUID:2d6a8775-da0b-4e7c-882e-dafeab9971a5
+      - NEON_SAMP_UUID:1773276a-3ee2-48b3-af95-e3adf0d318fc
+      - NEON_SAMP_UUID:0cac1f9f-47bd-4161-94d8-fa7d0e606cce
+      - NEON_SAMP_UUID:51c680f3-5614-4a41-8f8b-ca75fcc7993b
+      - NEON_SAMP_UUID:9da81bc4-1f7c-41f9-82c0-e2e391c9b159
+      - NEON_SAMP_UUID:46c36dd1-e36f-4152-9840-726355a09d9b
+      - NEON_SAMP_UUID:92e9749f-36aa-4cd4-9005-7cfb7cd00da0
+      - NEON_SAMP_UUID:6e6de9cf-1542-40e7-b3a1-066231bf8e79
+  - id: NEON_SAMP_UUID:2d6a8775-da0b-4e7c-882e-dafeab9971a5
+    description: YELL_046-M-4.5-0.5-20191002-GA1
+    name: YELL_046-M-4.5-0.5-20191002-GA1
+    neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample1ID
+    neon_sample_tag: YELL_046-M-4.5-0.5-20191002-GA1
+    neon_sample_uuid: 2d6a8775-da0b-4e7c-882e-dafeab9971a5
+    has_parents:
+      - NEON_SAMP_UUID:fc97e9f7-bcb0-41f7-a7bc-e44628aac07c
+  - id: NEON_SAMP_UUID:1773276a-3ee2-48b3-af95-e3adf0d318fc
+    description: YELL_046-M-4.5-0.5-20191002-GA2
+    name: YELL_046-M-4.5-0.5-20191002-GA2
+    neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample2ID
+    neon_sample_tag: YELL_046-M-4.5-0.5-20191002-GA2
+    neon_sample_uuid: 1773276a-3ee2-48b3-af95-e3adf0d318fc
+    has_parents:
+      - NEON_SAMP_UUID:fc97e9f7-bcb0-41f7-a7bc-e44628aac07c
+  - id: NEON_SAMP_UUID:0cac1f9f-47bd-4161-94d8-fa7d0e606cce
+    description: YELL_046-M-4.5-0.5-20191002-GA3
+    name: YELL_046-M-4.5-0.5-20191002-GA3
+    neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample3ID
+    neon_sample_tag: YELL_046-M-4.5-0.5-20191002-GA3
+    neon_sample_uuid: 0cac1f9f-47bd-4161-94d8-fa7d0e606cce
+    has_parents:
+      - NEON_SAMP_UUID:fc97e9f7-bcb0-41f7-a7bc-e44628aac07c
+  - id: NEON_SAMP_UUID:51c680f3-5614-4a41-8f8b-ca75fcc7993b
+    description: YELL_046-M-4.5-0.5-20191002-GA4
+    name: YELL_046-M-4.5-0.5-20191002-GA4
+    neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample4ID
+    neon_sample_tag: YELL_046-M-4.5-0.5-20191002-GA4
+    neon_sample_uuid: 51c680f3-5614-4a41-8f8b-ca75fcc7993b
+    has_parents:
+      - NEON_SAMP_UUID:fc97e9f7-bcb0-41f7-a7bc-e44628aac07c
+  - id: NEON_SAMP_UUID:9da81bc4-1f7c-41f9-82c0-e2e391c9b159
+    description: YELL_046-M-4.5-0.5-20191002-GA5
+    name: YELL_046-M-4.5-0.5-20191002-GA5
+    neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample5ID
+    neon_sample_tag: YELL_046-M-4.5-0.5-20191002-GA5
+    neon_sample_uuid: 9da81bc4-1f7c-41f9-82c0-e2e391c9b159
+    has_parents:
+      - NEON_SAMP_UUID:fc97e9f7-bcb0-41f7-a7bc-e44628aac07c
+  - id: NEON_SAMP_UUID:46c36dd1-e36f-4152-9840-726355a09d9b
+    description: YELL_046-M-4.5-0.5-20191002-GEN
+    name: YELL_046-M-4.5-0.5-20191002-GEN
+    neon_sample_class: sls_soilCoreCollection_in.geneticSampleID
+    neon_sample_tag: YELL_046-M-4.5-0.5-20191002-GEN
+    neon_sample_uuid: 46c36dd1-e36f-4152-9840-726355a09d9b
+    has_children:
+      - NEON_SAMP_UUID:468d0b14-7bed-4498-9b8c-3471c60d3ef7
+    has_parents:
+      - NEON_SAMP_UUID:fc97e9f7-bcb0-41f7-a7bc-e44628aac07c
+  - id: NEON_SAMP_UUID:92e9749f-36aa-4cd4-9005-7cfb7cd00da0
+    description: YELL_046-M-4.5-0.5-20191002-PH
+    name: YELL_046-M-4.5-0.5-20191002-PH
+    neon_sample_class: sls_soilpH_in.pHSampleID
+    neon_sample_tag: YELL_046-M-4.5-0.5-20191002-PH
+    neon_sample_uuid: 92e9749f-36aa-4cd4-9005-7cfb7cd00da0
+    has_parents:
+      - NEON_SAMP_UUID:fc97e9f7-bcb0-41f7-a7bc-e44628aac07c
+  - id: NEON_SAMP_UUID:6e6de9cf-1542-40e7-b3a1-066231bf8e79
+    description: YELL_046-M-4.5-0.5-20191002-SM
+    name: YELL_046-M-4.5-0.5-20191002-SM
+    neon_sample_class: sls_soilMoisture_in.moistureSampleID
+    neon_sample_tag: YELL_046-M-4.5-0.5-20191002-SM
+    neon_sample_uuid: 6e6de9cf-1542-40e7-b3a1-066231bf8e79
+    has_parents:
+      - NEON_SAMP_UUID:fc97e9f7-bcb0-41f7-a7bc-e44628aac07c
+
+        #  - id: NEON_SAMP_UUID:
+        #    description:
+        #    name:
+        #    neon_sample_class:
+        #    neon_sample_tag:
+        #    neon_sample_uuid:
+        #    has_children:
+        #      - NEON_SAMP_UUID:
+        #    has_parents:
+        #      - NEON_SAMP_UUID:
+
+#process_set:
+#  - id: example:SampleNeonSoilMetagenomeSequencing
+#    name: Sequencing of soil from Yellowstone
+#    has_output: BIOPROJECT:PRJNA406974
+#    has_input: NEON_SAMP_VIEW:YELL_046-M-4.5-0.5-20191002-GEN-DNA2

@@ -1,0 +1,140 @@
+{
+  "data": {
+    "sampleViews": [
+      {
+        "sampleClass": "mic_dnaExtraction_in.soilDnaSampleID",
+        "sampleTag": "YELL_052-O-20190820-COMP-DNA1",
+        "barcode": null,
+        "archiveGuid": null,
+        "sampleUuid": "e68ff983-54a4-4e4a-aa3b-3fcc95fdd765",
+        "parentSampleIdentifiers": [
+          {
+            "sampleUuid": "084fa101-5f9e-4b8e-9930-63f1164fc44d",
+            "sampleTag": "YELL_052-O-20190820-COMP",
+            "sampleClass": "sls_metagenomicsPooling_in.compositeSampleID",
+            "barcode": "B00000038367",
+            "archiveGuid": null
+          }
+        ],
+        "childSampleIdentifiers": [
+          {
+            "sampleUuid": "a9b215e5-45cb-404d-a205-21eff0d03888",
+            "sampleTag": "BMI_HY5W2BGXG_PLATE19S_31WELLG3.FASTQ.GZ",
+            "sampleClass": "mms_metagenomeSequencing_in.processedSeqFileNameID",
+            "barcode": null,
+            "archiveGuid": null
+          },
+          {
+            "sampleUuid": "fede0df9-1eb9-4d1e-b8c7-670dfd25f81d",
+            "sampleTag": "YELL_052-O-20190820-COMP-DNA1_19S_31_2842",
+            "sampleClass": "mic_dnaExtraction_in.subsampleID",
+            "barcode": null,
+            "archiveGuid": null
+          }
+        ],
+        "sampleEvents": [
+          {
+            "ingestTableName": "mic_dnaExtraction_in",
+            "smsFieldEntries": [
+              {
+                "smsKey": "analysis_type",
+                "smsValue": "metagenomics"
+              },
+              {
+                "smsKey": "collect_end_date",
+                "smsValue": "2019-08-20T18:13:00Z"
+              },
+              {
+                "smsKey": "collect_start_date",
+                "smsValue": "2019-08-20T18:13:00Z"
+              },
+              {
+                "smsKey": "collection_location",
+                "smsValue": "YELL_052.basePlot.bgc"
+              },
+              {
+                "smsKey": "fate",
+                "smsValue": "active"
+              },
+              {
+                "smsKey": "fate_date",
+                "smsValue": "2020-09-01T16:00:00Z"
+              },
+              {
+                "smsKey": "fate_location",
+                "smsValue": "Battelle Applied Genomics"
+              },
+              {
+                "smsKey": "sample_class",
+                "smsValue": "mic_dnaExtraction_in.soilDnaSampleID"
+              },
+              {
+                "smsKey": "sample_tag",
+                "smsValue": "YELL_052-O-20190820-COMP-DNA1"
+              },
+              {
+                "smsKey": "sample_type",
+                "smsValue": "soil"
+              },
+              {
+                "smsKey": "sampling_protocol",
+                "smsValue": "BMI_dnaExtractionSOP_v3"
+              }
+            ]
+          },
+          {
+            "ingestTableName": "mms_metagenomeSequencing_in",
+            "smsFieldEntries": [
+              {
+                "smsKey": "analysis_type",
+                "smsValue": "Illumina"
+              },
+              {
+                "smsKey": "fate",
+                "smsValue": "active"
+              },
+              {
+                "smsKey": "fate_date",
+                "smsValue": "2021-01-07T17:00:00Z"
+              },
+              {
+                "smsKey": "fate_location",
+                "smsValue": "Battelle Memorial Institute"
+              },
+              {
+                "smsKey": "sample_tag",
+                "smsValue": "YELL_052-O-20190820-COMP-DNA1"
+              }
+            ]
+          },
+          {
+            "ingestTableName": "mms_rawDataFiles_in",
+            "smsFieldEntries": [
+              {
+                "smsKey": "fate",
+                "smsValue": "active"
+              },
+              {
+                "smsKey": "sample_tag",
+                "smsValue": "YELL_052-O-20190820-COMP-DNA1"
+              }
+            ]
+          },
+          {
+            "ingestTableName": "mms_rawDataFiles_in",
+            "smsFieldEntries": [
+              {
+                "smsKey": "fate",
+                "smsValue": "active"
+              },
+              {
+                "smsKey": "sample_tag",
+                "smsValue": "YELL_052-O-20190820-COMP-DNA1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

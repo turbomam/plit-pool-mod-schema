@@ -4,6 +4,24 @@
             "additionalProperties": false,
             "description": "A possibly heterogeneous collections of data",
             "properties": {
+                "dna_sample_prep_composite_set": {
+                    "items": {
+                        "$ref": "#/$defs/DnaSamplePrepComposite"
+                    },
+                    "type": "array"
+                },
+                "dna_sample_prep_simple_set": {
+                    "items": {
+                        "$ref": "#/$defs/DnaSamplePrepSimple"
+                    },
+                    "type": "array"
+                },
+                "genetic_sample_prep_set": {
+                    "items": {
+                        "$ref": "#/$defs/GeneticSamplePrep"
+                    },
+                    "type": "array"
+                },
                 "id": {
                     "description": "A unique identifier for a thing",
                     "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
@@ -23,6 +41,30 @@
                     },
                     "type": "array"
                 },
+                "mic_dna_extraction_in_soil_dna_sample_set": {
+                    "items": {
+                        "$ref": "#/$defs/MicDnaExtractionInSoilDnaSample"
+                    },
+                    "type": "array"
+                },
+                "mic_dna_extraction_in_subsample_set": {
+                    "items": {
+                        "$ref": "#/$defs/MicDnaExtractionInSubsample"
+                    },
+                    "type": "array"
+                },
+                "mms_metagenome_sequencing_in_processed_seq_file_name_set": {
+                    "items": {
+                        "$ref": "#/$defs/MmsMetagenomeSequencingInProcessedSeqFileName"
+                    },
+                    "type": "array"
+                },
+                "moisture_sample_prep_set": {
+                    "items": {
+                        "$ref": "#/$defs/MoistureSamplePrep"
+                    },
+                    "type": "array"
+                },
                 "name": {
                     "description": "A human-readable name for a thing",
                     "type": "string"
@@ -34,10 +76,94 @@
                     },
                     "type": "array"
                 },
+                "ph_sample_prep_set": {
+                    "items": {
+                        "$ref": "#/$defs/PhSamplePrep"
+                    },
+                    "type": "array"
+                },
+                "pooling_set": {
+                    "items": {
+                        "$ref": "#/$defs/Pooling"
+                    },
+                    "type": "array"
+                },
                 "process_set": {
                     "description": "Links a Database to a list of Processes",
                     "items": {
                         "$ref": "#/$defs/Process"
+                    },
+                    "type": "array"
+                },
+                "sequencing_set": {
+                    "items": {
+                        "$ref": "#/$defs/Sequencing"
+                    },
+                    "type": "array"
+                },
+                "sls_metagenomics_pooling_in_composite_sample_set": {
+                    "items": {
+                        "$ref": "#/$defs/SlsMetagenomicsPoolingInCompositeSample"
+                    },
+                    "type": "array"
+                },
+                "sls_soil_core_collection_in_genetic_archive_sample1_set": {
+                    "items": {
+                        "$ref": "#/$defs/SlsSoilCoreCollectionInGeneticArchiveSample1"
+                    },
+                    "type": "array"
+                },
+                "sls_soil_core_collection_in_genetic_archive_sample2_set": {
+                    "items": {
+                        "$ref": "#/$defs/SlsSoilCoreCollectionInGeneticArchiveSample2"
+                    },
+                    "type": "array"
+                },
+                "sls_soil_core_collection_in_genetic_archive_sample3_set": {
+                    "items": {
+                        "$ref": "#/$defs/SlsSoilCoreCollectionInGeneticArchiveSample3"
+                    },
+                    "type": "array"
+                },
+                "sls_soil_core_collection_in_genetic_archive_sample4_set": {
+                    "items": {
+                        "$ref": "#/$defs/SlsSoilCoreCollectionInGeneticArchiveSample4"
+                    },
+                    "type": "array"
+                },
+                "sls_soil_core_collection_in_genetic_archive_sample5_set": {
+                    "items": {
+                        "$ref": "#/$defs/SlsSoilCoreCollectionInGeneticArchiveSample5"
+                    },
+                    "type": "array"
+                },
+                "sls_soil_core_collection_in_genetic_sample_set": {
+                    "items": {
+                        "$ref": "#/$defs/SlsSoilCoreCollectionInGeneticSample"
+                    },
+                    "type": "array"
+                },
+                "sls_soil_core_collection_in_sample_set": {
+                    "items": {
+                        "$ref": "#/$defs/SlsSoilCoreCollectionInSample"
+                    },
+                    "type": "array"
+                },
+                "sls_soil_moisture_in_moisture_sample_set": {
+                    "items": {
+                        "$ref": "#/$defs/SlsSoilMoistureInMoistureSample"
+                    },
+                    "type": "array"
+                },
+                "sls_soil_ph_in_ph_sample_set": {
+                    "items": {
+                        "$ref": "#/$defs/SlsSoilpHInPhSample"
+                    },
+                    "type": "array"
+                },
+                "subsample_dna_extract_set": {
+                    "items": {
+                        "$ref": "#/$defs/SubsampleDnaExtract"
                     },
                     "type": "array"
                 }
@@ -46,6 +172,156 @@
                 "id"
             ],
             "title": "Database",
+            "type": "object"
+        },
+        "DnaSamplePrepComposite": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "DnaSamplePrepComposite",
+            "type": "object"
+        },
+        "DnaSamplePrepSimple": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "DnaSamplePrepSimple",
+            "type": "object"
+        },
+        "GeneticSamplePrep": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "GeneticSamplePrep",
             "type": "object"
         },
         "Information": {
@@ -80,6 +356,212 @@
                     "description": "A human-readable description for a thing",
                     "type": "string"
                 },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "MaterialEntity",
+            "type": "object"
+        },
+        "MicDnaExtractionInSoilDnaSample": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "MicDnaExtractionInSoilDnaSample",
+            "type": "object"
+        },
+        "MicDnaExtractionInSubsample": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "MicDnaExtractionInSubsample",
+            "type": "object"
+        },
+        "MmsMetagenomeSequencingInProcessedSeqFileName": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "MmsMetagenomeSequencingInProcessedSeqFileName",
+            "type": "object"
+        },
+        "MoistureSamplePrep": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
                 "id": {
                     "description": "A unique identifier for a thing",
                     "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
@@ -93,7 +575,7 @@
             "required": [
                 "id"
             ],
-            "title": "MaterialEntity",
+            "title": "MoistureSamplePrep",
             "type": "object"
         },
         "NamedThing": {
@@ -120,15 +602,12 @@
             "title": "NamedThing",
             "type": "object"
         },
-        "Process": {
+        "PhSamplePrep": {
             "additionalProperties": false,
-            "description": "An entity that unfolds over time. Not composed of matter.",
+            "description": "",
             "properties": {
                 "description": {
                     "description": "A human-readable description for a thing",
-                    "type": "string"
-                },
-                "has_input": {
                     "type": "string"
                 },
                 "has_inputs": {
@@ -144,8 +623,105 @@
                     },
                     "type": "array"
                 },
-                "has_output": {
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
                     "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "PhSamplePrep",
+            "type": "object"
+        },
+        "Pooling": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "Pooling",
+            "type": "object"
+        },
+        "Process": {
+            "additionalProperties": false,
+            "description": "An entity that unfolds over time. Not composed of matter.",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
                 },
                 "has_outputs": {
                     "items": {
@@ -175,6 +751,556 @@
             ],
             "title": "Process",
             "type": "object"
+        },
+        "Sequencing": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "Sequencing",
+            "type": "object"
+        },
+        "SlsMetagenomicsPoolingInCompositeSample": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SlsMetagenomicsPoolingInCompositeSample",
+            "type": "object"
+        },
+        "SlsSoilCoreCollectionInGeneticArchiveSample1": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SlsSoilCoreCollectionInGeneticArchiveSample1",
+            "type": "object"
+        },
+        "SlsSoilCoreCollectionInGeneticArchiveSample2": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SlsSoilCoreCollectionInGeneticArchiveSample2",
+            "type": "object"
+        },
+        "SlsSoilCoreCollectionInGeneticArchiveSample3": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SlsSoilCoreCollectionInGeneticArchiveSample3",
+            "type": "object"
+        },
+        "SlsSoilCoreCollectionInGeneticArchiveSample4": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SlsSoilCoreCollectionInGeneticArchiveSample4",
+            "type": "object"
+        },
+        "SlsSoilCoreCollectionInGeneticArchiveSample5": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SlsSoilCoreCollectionInGeneticArchiveSample5",
+            "type": "object"
+        },
+        "SlsSoilCoreCollectionInGeneticSample": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SlsSoilCoreCollectionInGeneticSample",
+            "type": "object"
+        },
+        "SlsSoilCoreCollectionInSample": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SlsSoilCoreCollectionInSample",
+            "type": "object"
+        },
+        "SlsSoilMoistureInMoistureSample": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SlsSoilMoistureInMoistureSample",
+            "type": "object"
+        },
+        "SlsSoilpHInPhSample": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SlsSoilpHInPhSample",
+            "type": "object"
+        },
+        "SubsampleDnaExtract": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SubsampleDnaExtract",
+            "type": "object"
         }
     },
     "$id": "https://w3id.org/turbomam/split-pool-mod-schema",
@@ -182,6 +1308,24 @@
     "additionalProperties": true,
     "metamodel_version": "1.7.0",
     "properties": {
+        "dna_sample_prep_composite_set": {
+            "items": {
+                "$ref": "#/$defs/DnaSamplePrepComposite"
+            },
+            "type": "array"
+        },
+        "dna_sample_prep_simple_set": {
+            "items": {
+                "$ref": "#/$defs/DnaSamplePrepSimple"
+            },
+            "type": "array"
+        },
+        "genetic_sample_prep_set": {
+            "items": {
+                "$ref": "#/$defs/GeneticSamplePrep"
+            },
+            "type": "array"
+        },
         "id": {
             "description": "A unique identifier for a thing",
             "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
@@ -201,6 +1345,30 @@
             },
             "type": "array"
         },
+        "mic_dna_extraction_in_soil_dna_sample_set": {
+            "items": {
+                "$ref": "#/$defs/MicDnaExtractionInSoilDnaSample"
+            },
+            "type": "array"
+        },
+        "mic_dna_extraction_in_subsample_set": {
+            "items": {
+                "$ref": "#/$defs/MicDnaExtractionInSubsample"
+            },
+            "type": "array"
+        },
+        "mms_metagenome_sequencing_in_processed_seq_file_name_set": {
+            "items": {
+                "$ref": "#/$defs/MmsMetagenomeSequencingInProcessedSeqFileName"
+            },
+            "type": "array"
+        },
+        "moisture_sample_prep_set": {
+            "items": {
+                "$ref": "#/$defs/MoistureSamplePrep"
+            },
+            "type": "array"
+        },
         "name": {
             "description": "A human-readable name for a thing",
             "type": "string"
@@ -212,10 +1380,94 @@
             },
             "type": "array"
         },
+        "ph_sample_prep_set": {
+            "items": {
+                "$ref": "#/$defs/PhSamplePrep"
+            },
+            "type": "array"
+        },
+        "pooling_set": {
+            "items": {
+                "$ref": "#/$defs/Pooling"
+            },
+            "type": "array"
+        },
         "process_set": {
             "description": "Links a Database to a list of Processes",
             "items": {
                 "$ref": "#/$defs/Process"
+            },
+            "type": "array"
+        },
+        "sequencing_set": {
+            "items": {
+                "$ref": "#/$defs/Sequencing"
+            },
+            "type": "array"
+        },
+        "sls_metagenomics_pooling_in_composite_sample_set": {
+            "items": {
+                "$ref": "#/$defs/SlsMetagenomicsPoolingInCompositeSample"
+            },
+            "type": "array"
+        },
+        "sls_soil_core_collection_in_genetic_archive_sample1_set": {
+            "items": {
+                "$ref": "#/$defs/SlsSoilCoreCollectionInGeneticArchiveSample1"
+            },
+            "type": "array"
+        },
+        "sls_soil_core_collection_in_genetic_archive_sample2_set": {
+            "items": {
+                "$ref": "#/$defs/SlsSoilCoreCollectionInGeneticArchiveSample2"
+            },
+            "type": "array"
+        },
+        "sls_soil_core_collection_in_genetic_archive_sample3_set": {
+            "items": {
+                "$ref": "#/$defs/SlsSoilCoreCollectionInGeneticArchiveSample3"
+            },
+            "type": "array"
+        },
+        "sls_soil_core_collection_in_genetic_archive_sample4_set": {
+            "items": {
+                "$ref": "#/$defs/SlsSoilCoreCollectionInGeneticArchiveSample4"
+            },
+            "type": "array"
+        },
+        "sls_soil_core_collection_in_genetic_archive_sample5_set": {
+            "items": {
+                "$ref": "#/$defs/SlsSoilCoreCollectionInGeneticArchiveSample5"
+            },
+            "type": "array"
+        },
+        "sls_soil_core_collection_in_genetic_sample_set": {
+            "items": {
+                "$ref": "#/$defs/SlsSoilCoreCollectionInGeneticSample"
+            },
+            "type": "array"
+        },
+        "sls_soil_core_collection_in_sample_set": {
+            "items": {
+                "$ref": "#/$defs/SlsSoilCoreCollectionInSample"
+            },
+            "type": "array"
+        },
+        "sls_soil_moisture_in_moisture_sample_set": {
+            "items": {
+                "$ref": "#/$defs/SlsSoilMoistureInMoistureSample"
+            },
+            "type": "array"
+        },
+        "sls_soil_ph_in_ph_sample_set": {
+            "items": {
+                "$ref": "#/$defs/SlsSoilpHInPhSample"
+            },
+            "type": "array"
+        },
+        "subsample_dna_extract_set": {
+            "items": {
+                "$ref": "#/$defs/SubsampleDnaExtract"
             },
             "type": "array"
         }

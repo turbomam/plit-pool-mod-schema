@@ -1,0 +1,92 @@
+data:
+  sampleViews:
+  - archiveGuid: null
+    barcode: B00000038145
+    childSampleIdentifiers:
+    - archiveGuid: null
+      barcode: null
+      sampleClass: mic_dnaExtraction_in.soilDnaSampleID
+      sampleTag: YELL_052-O-25-2.5-20190820-GEN-DNA2
+      sampleUuid: 5ab4ca92-69f8-4a96-8662-aac770fcfc8c
+    parentSampleIdentifiers:
+    - archiveGuid: null
+      barcode: A00000113735
+      sampleClass: sls_soilCoreCollection_in.sampleID
+      sampleTag: YELL_052-O-25-2.5-20190820
+      sampleUuid: d597cb0c-061a-402c-9a28-dfaad5caf8b8
+    sampleClass: sls_soilCoreCollection_in.geneticSampleID
+    sampleEvents:
+    - ingestTableName: sls_soilCoreCollection_in
+      smsFieldEntries:
+      - smsKey: collect_end_date
+        smsValue: '2019-08-20T18:13:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2019-08-20T18:13:00Z'
+      - smsKey: collected_by
+        smsValue: 0000-0001-6877-7658
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2019-08-20T18:13:00Z'
+      - smsKey: fate_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: recorded_by
+        smsValue: 0000-0002-4260-8503
+      - smsKey: sample_code
+        smsValue: B00000038145
+      - smsKey: sample_condition
+        smsValue: OK
+      - smsKey: sample_tag
+        smsValue: YELL_052-O-25-2.5-20190820-GEN
+    - ingestTableName: scs_shipmentCreation_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2019-09-11T12:00:00Z'
+      - smsKey: fate_location
+        smsValue: D12
+      - smsKey: sample_code
+        smsValue: B00000038145
+      - smsKey: sample_tag
+        smsValue: YELL_052-O-25-2.5-20190820-GEN
+    - ingestTableName: scs_shipmentVerification_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2019-09-12T12:00:00Z'
+      - smsKey: fate_location
+        smsValue: Battelle Applied Genomics
+      - smsKey: sample_code
+        smsValue: B00000038145
+      - smsKey: sample_tag
+        smsValue: YELL_052-O-25-2.5-20190820-GEN
+    - ingestTableName: mic_dnaExtraction_in
+      smsFieldEntries:
+      - smsKey: analysis_type
+        smsValue: marker gene
+      - smsKey: collect_end_date
+        smsValue: '2019-08-20T18:13:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2019-08-20T18:13:00Z'
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-10-08T16:00:00Z'
+      - smsKey: fate_location
+        smsValue: Battelle Applied Genomics
+      - smsKey: sample_code
+        smsValue: B00000038145
+      - smsKey: sample_tag
+        smsValue: YELL_052-O-25-2.5-20190820-GEN
+      - smsKey: sample_type
+        smsValue: soil
+      - smsKey: sampling_protocol
+        smsValue: BMI_dnaExtractionSOP_v3
+    sampleTag: YELL_052-O-25-2.5-20190820-GEN
+    sampleUuid: 968152e5-6b99-4bfa-9cb9-4e26a18d0719
