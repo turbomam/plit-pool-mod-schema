@@ -1,3 +1,34 @@
+from file NEON.D12.YELL.DP1.10107.001.mms_rawDataFiles.2019-08.expanded.20230113T225346Z
+rawDataFileName = YELL_052-O-20190820-COMP-DNA1
+
+https://data.neonscience.org/api/v0/samples/classes?sampleTag=YELL_052-O-20190820-COMP-DNA1
+
+Download
+{
+  "data": {
+    "sampleClasses": [
+      "mic_dnaExtraction_in.soilDnaSampleID"
+    ]
+  }
+}
+
+wget "https://data.neonscience.org/api/v0/samples/view?sampleTag=YELL_052-O-20190820-COMP-DNA1&sampleClass=mic_dnaExtraction_in.soilDnaSampleID" -O YELL_052-O-20190820-COMP-DNA1.json
+----
+
+
+YELL_012-M-20190822-COMP-DNA1
+
+https://data.neonscience.org/api/v0/products
+      "productCode": "DP1.10107.001",
+      "productName": "Soil microbe metagenome sequences",
+https://data.neonscience.org/api/v0/releases
+https://data.neonscience.org/api/v0/sites
+YELL
+https://data.neonscience.org/api/v0/samples/supportedClasses
+https://www.neonscience.org/data-samples/data-management/data-formats-conventions
+
+
+
 Interactively download Soil microbe metagenome sequences data for all sites form all years
 
 https://data.neonscience.org/data-products/DP1.10107.001

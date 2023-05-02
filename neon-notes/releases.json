@@ -1,0 +1,2116 @@
+{
+  "data": [
+    {
+      "release": "RELEASE-2021",
+      "uuid": "e173c618-bbff-42da-ab70-23929a9c27bc",
+      "generationDate": "2021-01-23T02:30:02Z",
+      "artifacts": [
+        {
+          "name": "manifest-available-20210122T134505Z.json",
+          "type": "MANIFEST_AVAILABLE",
+          "url": "https://storage.googleapis.com/neon-publication/release/build/e173c618-bbff-42da-ab70-23929a9c27bc/manifest-available-20210122T134505Z.json",
+          "size": 1239239,
+          "md5": "14925b201dbfaf73b018fea35c778be1"
+        }
+      ],
+      "dataProducts": [
+        {
+          "productCode": "DP1.00001.001",
+          "productName": "2D wind speed and direction",
+          "productDescription": "Two-dimensional wind speed and direction, available as two- and thirty-minute aggregations of 1 Hz observations.  Observations are made by 2-D sonic anemometer sensors located at multiple heights on the tower infrastructure and by 2-D sonic anemometer sensors located on the aquatic meteorological station.",
+          "productDoi": "https://doi.org/10.48443/s9ya-zc81"
+        },
+        {
+          "productCode": "DP1.00002.001",
+          "productName": "Single aspirated air temperature",
+          "productDescription": "Air temperature, available as one- and thirty-minute averages of 1 Hz observations. Observations are made by sensors located at multiple heights on the tower infrastructure and by sensors located on the aquatic meteorological station. Temperature observations are made using platinum resistance thermometers, which are housed in a fan aspirated shield to reduce radiative bias.",
+          "productDoi": "https://doi.org/10.48443/2nt3-wj42"
+        },
+        {
+          "productCode": "DP1.00003.001",
+          "productName": "Triple aspirated air temperature",
+          "productDescription": "Air temperature, available as one- and thirty-minute averages derived from triplicate 1 Hz temperature observations. Observations are made by sensors located at the top of the tower infrastructure. Temperature observations are made by three platinum resistance thermometers, which are housed together in a fan aspirated shield to reduce radiative biases.",
+          "productDoi": "https://doi.org/10.48443/wyn4-9x37"
+        },
+        {
+          "productCode": "DP1.00004.001",
+          "productName": "Barometric pressure",
+          "productDescription": "Barometric pressure is available as one- and thirty-minute averages for station pressure, which is determined from 0.1 Hz observations. Barometric pressure corrected to sea level and surface level (defined as water surface at aquatic sites and soil surface at terrestrial sites) is derived from station pressure averages and available at one- and thirty-minute increments. Observations are made by a single digital barometer located on the tower infrastructure and a single digital barometer located on the aquatic meteorological station.",
+          "productDoi": "https://doi.org/10.48443/rxr7-pp32"
+        },
+        {
+          "productCode": "DP1.00005.001",
+          "productName": "IR biological temperature",
+          "productDescription": "Infrared temperature, available as one- and thirty-minute averages of 1 Hz observations.  Biological temperature (i.e. surface temperature) is measured via IR temperature sensors located in the soil array and at multiple heights on the tower infrastructure.",
+          "productDoi": "https://doi.org/10.48443/jnwy-b177"
+        },
+        {
+          "productCode": "DP1.00006.001",
+          "productName": "Precipitation",
+          "productDescription": "Bulk precipitation collected using up to three methods - primary, secondary, and throughfall. Bulk precipitation is determined at five- and thirty-minute intervals for primary precipitation and at one- and thirty-minute intervals for secondary and throughfall precipitation.",
+          "productDoi": "https://doi.org/10.48443/rpms-dx03"
+        },
+        {
+          "productCode": "DP1.00013.001",
+          "productName": "Wet deposition chemical analysis",
+          "productDescription": "Total dissolved chemical ion concentrations of sulfate (SO4 2-), nitrate (NO3-), chloride (Cl-), bromide (Br-), ammonium (NH4+), phosphate (PO4 3-), calcium (Ca2+), magnesium (Mg2+), potassium (K+), sodium (Na+), and pH/Conductivity in precipitation water; collected at TIS and AIS sites.",
+          "productDoi": "https://doi.org/10.48443/w1kw-re18"
+        },
+        {
+          "productCode": "DP1.00014.001",
+          "productName": "Shortwave radiation (direct and diffuse pyranometer)",
+          "productDescription": "Total, direct beam, and diffuse shortwave radiation, available as one- and thirty-minute averages of 1 Hz observations.  Observations are made by a sensor located at the top of the tower infrastructure.",
+          "productDoi": "https://doi.org/10.48443/n99s-rh60"
+        },
+        {
+          "productCode": "DP1.00017.001",
+          "productName": "Dust and particulate size distribution",
+          "productDescription": "Near real-time measurements of PM1.0, PM2.5, PM4, PM10, PM15 and TSP in the atmosphere using a optical sensor.",
+          "productDoi": "https://doi.org/10.48443/4e6x-v373"
+        },
+        {
+          "productCode": "DP1.00022.001",
+          "productName": "Shortwave radiation (primary pyranometer)",
+          "productDescription": "Total shortwave radiation, available as one- and thirty-minute averages of 1 Hz observations.  The primary pyranometer is housed in a heated and aspirated ventilation unit and observes incoming shortwave radiation at the top of the tower infrastructure.",
+          "productDoi": "https://doi.org/10.48443/3mp9-7269"
+        },
+        {
+          "productCode": "DP1.00023.001",
+          "productName": "Shortwave and longwave radiation (net radiometer)",
+          "productDescription": "Net radiation is composed of incoming and outgoing shortwave and longwave radiation. These data products are available as one- and thirty-minute averages of 1 Hz observations.  Observations of net shortwave and longwave radiation are made by a sensor located at the top of the tower infrastructure, while only net longwave radiation is observed in the soil array.  Observations of net shortwave and longwave radiation are made by a four-component sensor located on the aquatic meteorological station.",
+          "productDoi": "https://doi.org/10.48443/6d8w-a268"
+        },
+        {
+          "productCode": "DP1.00024.001",
+          "productName": "Photosynthetically active radiation (PAR)",
+          "productDescription": "Photosynthetically Active Radiation (PAR) observations represent the radiation flux at wavelengths between 400-700 nm, which constitute the wavelengths that drive photosynthesis. This data product is available as one- and thirty-minute averages of 1 Hz observations.  Observations are made by sensors located at multiple heights on the tower infrastructure and by sensors located on the aquatic meteorological station.",
+          "productDoi": "https://doi.org/10.48443/51ss-fm81"
+        },
+        {
+          "productCode": "DP1.00038.001",
+          "productName": "Stable isotopes in precipitation",
+          "productDescription": "Stable isotope ratios of 18O and 2H in precipitation water",
+          "productDoi": "https://doi.org/10.48443/hjdw-ka08"
+        },
+        {
+          "productCode": "DP1.00040.001",
+          "productName": "Soil heat flux plate",
+          "productDescription": "The amount of thermal energy moving by conduction across an area of soil in a unit of time. Measured at three of the five sensor-based soil plots at each terrestrial site..",
+          "productDoi": "https://doi.org/10.48443/ywx4-es49"
+        },
+        {
+          "productCode": "DP1.00041.001",
+          "productName": "Soil temperature",
+          "productDescription": "Temperature of the soil at various depth below the soil surface from 2 cm up to 200 cm at non-permafrost sites (up to 300 cm at Alaskan sites). Data are from all five Instrumented Soil Plots per site and presented as 1-minute and 30-minute averages.",
+          "productDoi": "https://doi.org/10.48443/zayg-n802"
+        },
+        {
+          "productCode": "DP1.00066.001",
+          "productName": "Photosynthetically active radiation (quantum line)",
+          "productDescription": "The quantum line sensor provides spatially averaged observations of photosynthetically active radiation (PAR), i.e., wavelengths between 400-700 nm, at the soil surface over a one meter length. This data product is available as one- and thirty-minute averages of 1 Hz observations.  Observations are obtained by sensors located throughout the soil array.",
+          "productDoi": "https://doi.org/10.48443/agbq-rh09"
+        },
+        {
+          "productCode": "DP1.00094.001",
+          "productName": "Soil water content and water salinity",
+          "productDescription": "Soil volumetric water content and an index of salinity at various depths below the soil surface from 6 cm down to 200 cm at non-permafrost sites (down to 300 cm at Alaskan sites). Data are from all five Instrumented soil plots per site and presented as 1-minute and 30-minute averages.\n\nMeasurement depths are not currently being reported correctly in the sensor positions file in the Soil water content and water salinity data product (DP1.00094.001). A readme file (readme_swc_depths.txt) and an associated file containing the sensor installation depths (swc_depthsV2.csv) have been added to the data product download package until the data product algorithms are corrected.",
+          "productDoi": "https://doi.org/10.48443/bakr-aj85"
+        },
+        {
+          "productCode": "DP1.00095.001",
+          "productName": "Soil CO2 concentration",
+          "productDescription": "CO2 concentration in soil air at various depth below the soil surface starting at approximately 2 cm. Data are from all five Instrumented Soil Plots per site and presented as 1-minute and 30-minute averages.",
+          "productDoi": "https://doi.org/10.48443/vxjs-4d20"
+        },
+        {
+          "productCode": "DP1.00096.001",
+          "productName": "Soil physical and chemical properties, Megapit",
+          "productDescription": "Soil taxonomy, horizon names, horizon depths, soil bulk density, texture, and chemical properties in the <= 2 mm soil fraction for each soil horizon in each Megapit. Data were derived from a sampling location expected to be representative of the area where the Instrumented Soil Plots are located and were collected once during site construction, in collaboration with the USDA Natural Resources Conservation Service. Also see distributed soil (DP1.10086.001) and initial characterization soil (DP1.10047.001) data products, as well as the root Megapit product (DP1.10066.001) for root biomass and chemistry measurements.",
+          "productDoi": "https://doi.org/10.48443/rfmw-p030"
+        },
+        {
+          "productCode": "DP1.00098.001",
+          "productName": "Relative humidity",
+          "productDescription": "Relative humidity, temperature, and dew or frost point temperature, available as one- and thirty-minute averages of 1 Hz observations. Observations are made by sensors located at the top of the tower infrastructure, in the soil array, and on the aquatic meteorologic station.",
+          "productDoi": "https://doi.org/10.48443/s9wy-t644"
+        },
+        {
+          "productCode": "DP1.00101.001",
+          "productName": "Particulate mass",
+          "productDescription": "Dust mass and density measured by a high volume dust sampler and quartz filters.",
+          "productDoi": "https://doi.org/10.48443/82nh-yg24"
+        },
+        {
+          "productCode": "DP1.10003.001",
+          "productName": "Breeding landbird point counts",
+          "productDescription": "Count, distance from observer, and taxonomic identification of breeding landbirds observed during point counts",
+          "productDoi": "https://doi.org/10.48443/s730-dy13"
+        },
+        {
+          "productCode": "DP1.10010.001",
+          "productName": "Coarse downed wood log survey",
+          "productDescription": "Tally and raw measurement of coarse downed wood >= 2 cm diameter",
+          "productDoi": "https://doi.org/10.48443/cv1a-5839"
+        },
+        {
+          "productCode": "DP1.10014.001",
+          "productName": "Coarse downed wood bulk density sampling",
+          "productDescription": "Raw bulk density measurements of coarse downed wood >= 2 cm diameter",
+          "productDoi": "https://doi.org/10.48443/wedh-6s27"
+        },
+        {
+          "productCode": "DP1.10017.001",
+          "productName": "Digital hemispheric photos of plot vegetation",
+          "productDescription": "Upward and/or downward facing digital 180-degree images of vegetation in plots used to calculate leaf area index",
+          "productDoi": "https://doi.org/10.48443/crh2-jr84"
+        },
+        {
+          "productCode": "DP1.10020.001",
+          "productName": "Ground beetle sequences DNA barcode",
+          "productDescription": "COI DNA sequences from select ground beetles",
+          "productDoi": "https://doi.org/10.48443/ey0c-1v43"
+        },
+        {
+          "productCode": "DP1.10022.001",
+          "productName": "Ground beetles sampled from pitfall traps",
+          "productDescription": "Taxonomically identified ground beetles and the plots and times from which they were collected.",
+          "productDoi": "https://doi.org/10.48443/tx5f-dy17"
+        },
+        {
+          "productCode": "DP1.10023.001",
+          "productName": "Herbaceous clip harvest",
+          "productDescription": "Dry weight of herbaceous vegetation harvested from individual clip strips, by functional type",
+          "productDoi": "https://doi.org/10.48443/xjxw-2p18"
+        },
+        {
+          "productCode": "DP1.10026.001",
+          "productName": "Plant foliar traits",
+          "productDescription": "Traits of sun-lit canopy plants reported at the level of the individual (woody plants) or community (herbaceous plants).",
+          "productDoi": "https://doi.org/10.48443/za0d-wn97"
+        },
+        {
+          "productCode": "DP1.10033.001",
+          "productName": "Litterfall and fine woody debris production and chemistry",
+          "productDescription": "Dry weight of litterfall and fine woody debris collected from elevated and ground traps, sorted to functional group, as well as periodic measurements of litter chemistry and stable isotopes.",
+          "productDoi": "https://doi.org/10.48443/jvrg-xp36"
+        },
+        {
+          "productCode": "DP1.10038.001",
+          "productName": "Mosquito sequences DNA barcode",
+          "productDescription": "COI DNA sequences from select mosquitoes",
+          "productDoi": "https://doi.org/10.48443/h0c5-bs71"
+        },
+        {
+          "productCode": "DP1.10041.001",
+          "productName": "Mosquito pathogen status",
+          "productDescription": "Presence/absence of a pathogen in a single mosquito sample (pool)",
+          "productDoi": "https://doi.org/10.48443/9wec-2r39"
+        },
+        {
+          "productCode": "DP1.10043.001",
+          "productName": "Mosquitoes sampled from CO2 traps",
+          "productDescription": "Taxonomically identified mosquitoes and the plots and times from which they were collected",
+          "productDoi": "https://doi.org/10.48443/9smm-v091"
+        },
+        {
+          "productCode": "DP1.10045.001",
+          "productName": "Non-herbaceous perennial vegetation structure",
+          "productDescription": "Field measurements of individual non-herbaceous perennial plants (e.g. cacti, ferns)",
+          "productDoi": "https://doi.org/10.48443/pgdv-wd42"
+        },
+        {
+          "productCode": "DP1.10047.001",
+          "productName": "Soil physical and chemical properties, distributed initial characterization",
+          "productDescription": "Soil physical and chemical properties measured as part of initial site characterization activities at NEON sites. Data are reported by pedogenic horizon, generally for the top 1m of the soil profile. Also see distributed periodic and Megapit soil data.",
+          "productDoi": "https://doi.org/10.48443/x9aj-3647"
+        },
+        {
+          "productCode": "DP1.10055.001",
+          "productName": "Plant phenology observations",
+          "productDescription": "Phenophase status and intensity of tagged plants",
+          "productDoi": "https://doi.org/10.48443/c0cy-kx61"
+        },
+        {
+          "productCode": "DP1.10058.001",
+          "productName": "Plant presence and percent cover",
+          "productDescription": "Plant species cover-abundance and presence observed in multi-scale plots. Plant species and associated percent cover in 1m2 subplots and plant species presence in 10m2 and 100m2 subplots are reported from 400m2 plots. Archived plant vouchers and foliar tissue support the data and additional analyses.",
+          "productDoi": "https://doi.org/10.48443/abge-r811"
+        },
+        {
+          "productCode": "DP1.10064.001",
+          "productName": "Rodent pathogen status, hantavirus",
+          "productDescription": "Presence/absence of hantavirus (or antibodies to hantavirus) in each single rodent sample from 2014-2019. Beginning in 2020, the protocol was switched to detection of tick-borne diseases; these data are available in the Rodent pathogen status, tick-borne data product (DP1.10064.002).",
+          "productDoi": "https://doi.org/10.48443/sztg-cj12"
+        },
+        {
+          "productCode": "DP1.10066.001",
+          "productName": "Root biomass and chemistry, Megapit",
+          "productDescription": "Standing stock of fine and coarse root biomass plus root carbon (C) and nitrogen (N) concentrations and stable isotopes from soil Megapits. Samples were collected in 10cm increments for the first 1m depth and 20cm increments thereafter to 2m depth. Ground, oven-dried root tissues from each depth increment are available for request from the NEON Biorepository. See the soil Megapit data product (DP1.00096.001) for physical and chemical data from Megapit soils.",
+          "productDoi": "https://doi.org/10.48443/s6k6-8h54"
+        },
+        {
+          "productCode": "DP1.10067.001",
+          "productName": "Root biomass and chemistry, periodic",
+          "productDescription": "Fine root biomass to 30cm depth via soil core sampling. Includes root carbon (C) and nitrogen (N) concentrations and stable isotopes.",
+          "productDoi": "https://doi.org/10.48443/5wvb-ww20"
+        },
+        {
+          "productCode": "DP1.10072.001",
+          "productName": "Small mammal box trapping",
+          "productDescription": "Individual- and trap-level data collected using box traps designed to capture small mammals",
+          "productDoi": "https://doi.org/10.48443/j1g9-2j27"
+        },
+        {
+          "productCode": "DP1.10076.001",
+          "productName": "Small mammal sequences DNA barcode",
+          "productDescription": "COI DNA sequences from select small mammals",
+          "productDoi": "https://doi.org/10.48443/2wt7-e375"
+        },
+        {
+          "productCode": "DP1.10081.001",
+          "productName": "Soil microbe community composition",
+          "productDescription": "Counts and relative abundances of archaeal, bacterial, and fungal taxa observed in soil microbial communities",
+          "productDoi": "https://doi.org/10.48443/3czr-g515"
+        },
+        {
+          "productCode": "DP1.10086.001",
+          "productName": "Soil physical and chemical properties, periodic",
+          "productDescription": "Soil physical and chemical properties from the top 30 cm of the profile from periodic soil core collections. Data are reported by horizon (mineral vs. organic). See initial characterization and megapit products for additional soil data.",
+          "productDoi": "https://doi.org/10.48443/3qtw-w090"
+        },
+        {
+          "productCode": "DP1.10092.001",
+          "productName": "Tick pathogen status",
+          "productDescription": "Presence/absence of a pathogen in each single tick sample",
+          "productDoi": "https://doi.org/10.48443/5fab-xv19"
+        },
+        {
+          "productCode": "DP1.10093.001",
+          "productName": "Ticks sampled using drag cloths",
+          "productDescription": "Abundance and density of ticks collected by drag and/or flag sampling (by species and/or lifestage)",
+          "productDoi": "https://doi.org/10.48443/dx40-wr20"
+        },
+        {
+          "productCode": "DP1.10098.001",
+          "productName": "Vegetation structure",
+          "productDescription": "Structure measurements of individual woody and non-woody plants, mapped positions of qualifying woody and non-woody plants, and metadata required to draw inference from individual measurements at the plot scale.",
+          "productDoi": "https://doi.org/10.48443/e3qn-xw47"
+        },
+        {
+          "productCode": "DP1.10104.001",
+          "productName": "Soil microbe biomass",
+          "productDescription": "Quantitative abundance of microbes in soil samples",
+          "productDoi": "https://doi.org/10.48443/xnbn-rw33"
+        },
+        {
+          "productCode": "DP1.10107.001",
+          "productName": "Soil microbe metagenome sequences",
+          "productDescription": "Metagenomic sequence data from soil samples",
+          "productDoi": "https://doi.org/10.48443/fzzj-g053"
+        },
+        {
+          "productCode": "DP1.10108.001",
+          "productName": "Soil microbe marker gene sequences",
+          "productDescription": "DNA sequence data from ribosomal RNA marker genes from soil samples",
+          "productDoi": "https://doi.org/10.48443/ybrs-zv89"
+        },
+        {
+          "productCode": "DP1.10109.001",
+          "productName": "Soil microbe group abundances",
+          "productDescription": "Counts and relative abundances of marker genes from total archaea, bacteria, and fungi observed by qPCR in soil microbial communities",
+          "productDoi": "https://doi.org/10.48443/3qkb-3m53"
+        },
+        {
+          "productCode": "DP1.10111.001",
+          "productName": "Site management and event reporting",
+          "productDescription": "This data product contains records of land management activities, disturbances, and other incidents of ecological note within all NEON sites",
+          "productDoi": "https://doi.org/10.48443/dtjh-q277"
+        },
+        {
+          "productCode": "DP1.20004.001",
+          "productName": "Barometric pressure above water on-buoy",
+          "productDescription": "Barometric pressure, available as one-minute instantaneous measurements and thirty-minute averages for both station pressure and pressure reduced to sea level. Observations are made on the meteorology station on the buoy in lakes and rivers.",
+          "productDoi": "https://doi.org/10.48443/y6xg-av43"
+        },
+        {
+          "productCode": "DP1.20015.001",
+          "productName": "Specific conductivity in groundwater",
+          "productDescription": "In situ sensor-based measurements of specific conductance of groundwater in wells",
+          "productDoi": "https://doi.org/10.48443/85bp-da76"
+        },
+        {
+          "productCode": "DP1.20016.001",
+          "productName": "Elevation of surface water",
+          "productDescription": "In situ sensor-based measurements of surface water elevation, available as five- and thirty-minute  averages in lakes, rivers, and wadeable streams. Based on sensor measurements of water pressure.",
+          "productDoi": "https://doi.org/10.48443/qser-8m94"
+        },
+        {
+          "productCode": "DP1.20032.001",
+          "productName": "Shortwave and longwave radiation above water on-buoy (net radiometer)",
+          "productDescription": "Net shortwave and longwave radiation on buoys is measured twice per minute and is reported as 1-minute and 30-minute mean values.",
+          "productDoi": "https://doi.org/10.48443/m44c-kd47"
+        },
+        {
+          "productCode": "DP1.20033.001",
+          "productName": "Nitrate in surface water",
+          "productDescription": "In situ sensor-based nitrate concentration, available as fifteen minute  averages in surface water in lakes, wadeable and non-wadeable streams",
+          "productDoi": "https://doi.org/10.48443/924t-1k41"
+        },
+        {
+          "productCode": "DP1.20042.001",
+          "productName": "Photosynthetically active radiation at water surface",
+          "productDescription": "Photosynthetically Active Radiation (PAR) observations represent the radiation flux at wavelengths between 400-700 nm, which constitute the wavelengths that drive photosynthesis. This data product is available as one-, five-,  and thirty-minute averages. Observations are made at the aquatic sensor set location at lakes, non-wadeable streams, and wadeable streams.",
+          "productDoi": "https://doi.org/10.48443/1hp4-g645"
+        },
+        {
+          "productCode": "DP1.20046.001",
+          "productName": "Air temperature above water on-buoy",
+          "productDescription": "Air temperature, available as one-minute instantaneous measurements and thirty-minute averages. Observations are made on the meteorology station on the buoy in lakes and rivers.",
+          "productDoi": "https://doi.org/10.48443/2bhx-s619"
+        },
+        {
+          "productCode": "DP1.20048.001",
+          "productName": "Discharge field collection",
+          "productDescription": "Discharge measurements from field-based surveys",
+          "productDoi": "https://doi.org/10.48443/8td9-4z94"
+        },
+        {
+          "productCode": "DP1.20053.001",
+          "productName": "Temperature (PRT) in surface water",
+          "productDescription": "Surface water temperature, available as one-, five-, and thirty-minute  averages, measured by a platinum resistance thermometer at the sensor location in lakes, wadeable and non-wadeable streams",
+          "productDoi": "https://doi.org/10.48443/ny19-pj91"
+        },
+        {
+          "productCode": "DP1.20063.001",
+          "productName": "Aquatic plant bryophyte chemical properties",
+          "productDescription": "Carbon (C) and nitrogen (N) concentrations of aquatic plant and bryophytes from benthic collections in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/qet7-z479"
+        },
+        {
+          "productCode": "DP1.20066.001",
+          "productName": "Aquatic plant bryophyte macroalgae clip harvest",
+          "productDescription": "Dry weight of aquatic plant, bryophyte, and macroalgae from benthic quadrats in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/jdbe-qh16"
+        },
+        {
+          "productCode": "DP1.20072.001",
+          "productName": "Aquatic plant, bryophyte, lichen, and macroalgae point counts in wadeable streams",
+          "productDescription": "Point counts of aquatic plants, bryophytes, lichens, and macroalgae from transects in wadeable streams",
+          "productDoi": "https://doi.org/10.48443/7yy3-v761"
+        },
+        {
+          "productCode": "DP1.20086.001",
+          "productName": "Benthic microbe community composition",
+          "productDescription": "Counts and relative abundances of archaeal, bacterial, and fungal taxa observed in benthic microbial communities from wadeable streams",
+          "productDoi": "https://doi.org/10.48443/cyxz-9m03"
+        },
+        {
+          "productCode": "DP1.20092.001",
+          "productName": "Chemical properties of groundwater",
+          "productDescription": "Grab samples of groundwater chemistry including general chemistry, anions, cations, and nutrients.",
+          "productDoi": "https://doi.org/10.48443/50gf-9h72"
+        },
+        {
+          "productCode": "DP1.20093.001",
+          "productName": "Chemical properties of surface water",
+          "productDescription": "Grab samples of surface water chemistry including general chemistry, anions, cations, and nutrients.",
+          "productDoi": "https://doi.org/10.48443/05k7-e011"
+        },
+        {
+          "productCode": "DP1.20097.001",
+          "productName": "Dissolved gases in surface water",
+          "productDescription": "Grab samples of surface water dissolved gases including carbon dioxide, methane, and nitrous oxide",
+          "productDoi": "https://doi.org/10.48443/fb19-g348"
+        },
+        {
+          "productCode": "DP1.20099.001",
+          "productName": "Groundwater and active layer measurements at permafrost sites",
+          "productDescription": "Measurements from ground surface to liquid groundwater and active layer thaw. Collected at sites with permafrost.",
+          "productDoi": "https://doi.org/10.48443/54nt-hx12"
+        },
+        {
+          "productCode": "DP1.20100.001",
+          "productName": "Elevation of groundwater",
+          "productDescription": "Sensor based measurement of groundwater elevation calculated from pressure transducer readings in each well",
+          "productDoi": "https://doi.org/10.48443/mw3c-tw08"
+        },
+        {
+          "productCode": "DP1.20105.001",
+          "productName": "Fish sequences DNA barcode",
+          "productDescription": "COI DNA sequences from select fish in lakes and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/7y7a-qz34"
+        },
+        {
+          "productCode": "DP1.20107.001",
+          "productName": "Fish electrofishing, gill netting, and fyke netting counts",
+          "productDescription": "Counts of fish from electrofishing surveys in wadeable streams, or electrofishing, gill netting, and/or fyke netting surveys in lakes. Includes fish standard length and individual mass",
+          "productDoi": "https://doi.org/10.48443/17cz-g567"
+        },
+        {
+          "productCode": "DP1.20120.001",
+          "productName": "Macroinvertebrate collection",
+          "productDescription": "Collection of benthic macroinvertebrates using multiple sampling methods in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/855x-0n27"
+        },
+        {
+          "productCode": "DP1.20126.001",
+          "productName": "Macroinvertebrate metabarcoding",
+          "productDescription": "CO1 DNA sequences of the aquatic macroinvertebrate community",
+          "productDoi": "https://doi.org/10.48443/raex-hc78"
+        },
+        {
+          "productCode": "DP1.20141.001",
+          "productName": "Surface water microbe community composition",
+          "productDescription": "Counts and relative abundances of archaeal, bacterial, and fungal taxa observed in surface water microbial communities in lakes, rivers and streams",
+          "productDoi": "https://doi.org/10.48443/p2hp-j476"
+        },
+        {
+          "productCode": "DP1.20163.001",
+          "productName": "Periphyton, seston, and phytoplankton chemical properties",
+          "productDescription": "Carbon (C), nitrogen (N), phosphorus (P), isotopes, chlorophyll a, and pheophytin of periphyton and phytoplankton from benthic and water column samples in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/1c6r-ke84"
+        },
+        {
+          "productCode": "DP1.20166.001",
+          "productName": "Periphyton, seston, and phytoplankton collection",
+          "productDescription": "Collection and biomass of periphyton and phytoplankton using multiple benthic and water column sampling methods in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/3cvp-hw55"
+        },
+        {
+          "productCode": "DP1.20190.001",
+          "productName": "Reaeration field and lab collection",
+          "productDescription": "Field and external laboratory data from the salt-tracer and gas injection field reaeration measurements, including stream widths, inert gas concentrations, conservative tracer concentrations, and conductivity times series.",
+          "productDoi": "https://doi.org/10.48443/pnt4-pk88"
+        },
+        {
+          "productCode": "DP1.20191.001",
+          "productName": "Riparian vegetation % cover",
+          "productDescription": "Assessment of riparian vegetation percent cover in wadeable streams",
+          "productDoi": "https://doi.org/10.48443/dws8-7f76"
+        },
+        {
+          "productCode": "DP1.20193.001",
+          "productName": "Salt-based stream discharge",
+          "productDescription": "Discharge measured using a constant-rate addition salt tracer during reaeration measurements",
+          "productDoi": "https://doi.org/10.48443/mjyn-kb38"
+        },
+        {
+          "productCode": "DP1.20194.001",
+          "productName": "Sediment chemical and physical properties",
+          "productDescription": "Field collection and analysis of nutrients, carbon, inorganics and physical properties in sediments of wadeable streams, rivers, and lakes",
+          "productDoi": "https://doi.org/10.48443/q633-ab72"
+        },
+        {
+          "productCode": "DP1.20197.001",
+          "productName": "Sediment physical properties",
+          "productDescription": "Field collection and analysis of size and texture of sediments in wadeable streams, rivers, and lakes",
+          "productDoi": "https://doi.org/10.48443/sjda-sa68"
+        },
+        {
+          "productCode": "DP1.20206.001",
+          "productName": "Stable isotopes in surface water",
+          "productDescription": "Grab samples for stable isotope chemistry including water and particulate organic matter, in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/ae8r-yx79"
+        },
+        {
+          "productCode": "DP1.20217.001",
+          "productName": "Temperature of groundwater",
+          "productDescription": "In situ sensor-based measurements of groundwater temperature in each well.",
+          "productDoi": "https://doi.org/10.48443/t7b3-r842"
+        },
+        {
+          "productCode": "DP1.20219.001",
+          "productName": "Zooplankton collection",
+          "productDescription": "Collection of zooplankton from water column samples in lakes",
+          "productDoi": "https://doi.org/10.48443/qzr1-jr79"
+        },
+        {
+          "productCode": "DP1.20221.001",
+          "productName": "Zooplankton metabarcoding",
+          "productDescription": "CO1 DNA sequences of the zooplankton community",
+          "productDoi": "https://doi.org/10.48443/3r52-c030"
+        },
+        {
+          "productCode": "DP1.20252.001",
+          "productName": "Secchi depth",
+          "productDescription": "Measurement of water column Secchi depth in non-wadeable streams and lakes",
+          "productDoi": "https://doi.org/10.48443/k08v-b743"
+        },
+        {
+          "productCode": "DP1.20254.001",
+          "productName": "Depth profile at specific depths",
+          "productDescription": "Measurements of water column temperature and depth profile in non-wadeable streams and lakes",
+          "productDoi": "https://doi.org/10.48443/zx1g-n349"
+        },
+        {
+          "productCode": "DP1.20261.001",
+          "productName": "Photosynthetically active radiation below water surface",
+          "productDescription": "Photosynthetically Active Radiation (PAR) observations represent the radiation flux at wavelengths between 400-700 nm, which constitute the wavelengths that drive photosynthesis. This data product is available as one- and thirty-minute averages. Observations are made at the aquatic sensor sets at the lake inlet, lake outlet, and both lake and river buoys.",
+          "productDoi": "https://doi.org/10.48443/bfz8-gh43"
+        },
+        {
+          "productCode": "DP1.20264.001",
+          "productName": "Temperature at specific depth in surface water",
+          "productDescription": "Sensor based measurements of water temperature in lake and river sites. Temperature is measured at specific depths by a fixed-length buoy-mounted array of temperature sensors.",
+          "productDoi": "https://doi.org/10.48443/k1yw-z025"
+        },
+        {
+          "productCode": "DP1.20267.001",
+          "productName": "Gauge height",
+          "productDescription": "Gauge height, in meters, measured at lakes, wadeable streams and non-wadeable streams.",
+          "productDoi": "https://doi.org/10.48443/rg4q-va30"
+        },
+        {
+          "productCode": "DP1.20271.001",
+          "productName": "Relative humidity above water on-buoy",
+          "productDescription": "Relative humidity, temperature, and dew or frost point temperature, available as one- and thirty-minute averages. Observations are made by sensors located on the buoy in lakes and rivers.",
+          "productDoi": "https://doi.org/10.48443/z99v-0502"
+        },
+        {
+          "productCode": "DP1.20275.001",
+          "productName": "Riparian composition and structure",
+          "productDescription": "Assessment of riparian vegetation composition and physical structure in lakes, non-wadeable streams, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/1xxb-1143"
+        },
+        {
+          "productCode": "DP1.20276.001",
+          "productName": "Stable isotopes in groundwater",
+          "productDescription": "Grab samples for stable isotopes of water in groundwater",
+          "productDoi": "https://doi.org/10.48443/ezf0-m066"
+        },
+        {
+          "productCode": "DP1.20277.001",
+          "productName": "Benthic microbe group abundances",
+          "productDescription": "Counts and relative abundances of marker genes from total archaea, bacteria, and fungi observed by qPCR in benthic microbial communities",
+          "productDoi": "https://doi.org/10.48443/35w5-6c19"
+        },
+        {
+          "productCode": "DP1.20278.001",
+          "productName": "Surface water microbe group abundances",
+          "productDescription": "Counts and relative abundances of marker genes from total archaea, bacteria, and fungi observed by qPCR in surface water microbial communities",
+          "productDoi": "https://doi.org/10.48443/qtwt-ad46"
+        },
+        {
+          "productCode": "DP1.20279.001",
+          "productName": "Benthic microbe metagenome sequences",
+          "productDescription": "Metagenomic sequence data from benthic samples",
+          "productDoi": "https://doi.org/10.48443/5ee7-k293"
+        },
+        {
+          "productCode": "DP1.20280.001",
+          "productName": "Benthic microbe marker gene sequences",
+          "productDescription": "DNA sequence data from ribosomal RNA marker genes from benthic samples",
+          "productDoi": "https://doi.org/10.48443/hwr3-3d82"
+        },
+        {
+          "productCode": "DP1.20281.001",
+          "productName": "Surface water microbe metagenome sequences",
+          "productDescription": "Metagenomic sequence data from surface water samples",
+          "productDoi": "https://doi.org/10.48443/wwn5-sm51"
+        },
+        {
+          "productCode": "DP1.20282.001",
+          "productName": "Surface water microbe marker gene sequences",
+          "productDescription": "DNA sequence data from ribosomal RNA marker genes from surface water samples",
+          "productDoi": "https://doi.org/10.48443/bxr4-d303"
+        },
+        {
+          "productCode": "DP1.20288.001",
+          "productName": "Water quality",
+          "productDescription": "In situ sensor-based specific conductivity, concentration of chlorophyll a, dissolved oxygen content, fDOM concentration, pH, and turbidity, available as one- or five-minute instantaneous measurements in surface water of lakes, wadeable streams, and non-wadeable streams.",
+          "productDoi": "https://doi.org/10.48443/d8kw-5j62"
+        },
+        {
+          "productCode": "DP1.30012.001",
+          "productName": "Field spectral data",
+          "productDescription": "Reflectance of collected sample(s) using leaf clip and hand-held field Spectrometer; opportunistic product, provided when collected.",
+          "productDoi": "https://doi.org/10.48443/245w-jr83"
+        },
+        {
+          "productCode": "DP4.00001.001",
+          "productName": "Summary weather statistics",
+          "productDescription": "Present summary statistics for biometeorological variables for NEON weather stations at core TIS sites. Statistics will include means, standard deviations, maxima, and minima for periods of days, months, and years. Engineering-grade product only.",
+          "productDoi": "https://doi.org/10.48443/4hnz-dw28"
+        },
+        {
+          "productCode": "DP4.00131.001",
+          "productName": "Stream morphology map",
+          "productDescription": "Map showing the morphology of streams. These maps denote topography of the stream basin as well as location of the thalweg, coarse woody debris, gravel/sand bars, and other features of interest.",
+          "productDoi": "https://doi.org/10.48443/f9qd-6t60"
+        },
+        {
+          "productCode": "DP4.00132.001",
+          "productName": "Bathymetric and morphological maps",
+          "productDescription": "Bathymetry of lake bottoms and non-wadeable streams for detecting environmental change as well as for determining lake morphology, estimating primary productivity, habitat features, and water quality.",
+          "productDoi": "https://doi.org/10.48443/55wa-5032"
+        },
+        {
+          "productCode": "DP4.00200.001",
+          "productName": "Bundled data products - eddy covariance",
+          "productDescription": "Bundle of eddy-covariance data products, including related meteorological and soil data products.",
+          "productDoi": "https://doi.org/10.48443/bway-hc74"
+        }
+      ]
+    },
+    {
+      "release": "RELEASE-2022",
+      "uuid": "130bdace-dd4f-4a5c-9812-23fd076c00f7",
+      "generationDate": "2022-01-20T17:39:46Z",
+      "artifacts": [
+        {
+          "name": "manifest-available-20220120T145005Z.json",
+          "type": "MANIFEST_AVAILABLE",
+          "url": "https://storage.googleapis.com/neon-publication/release/build/130bdace-dd4f-4a5c-9812-23fd076c00f7/manifest-available-20220120T145005Z.json",
+          "size": 1514564,
+          "md5": "e8b828c28b7be7a5d0aaad996138fd7a"
+        }
+      ],
+      "dataProducts": [
+        {
+          "productCode": "DP1.00001.001",
+          "productName": "2D wind speed and direction",
+          "productDescription": "Two-dimensional wind speed and direction, available as two- and thirty-minute aggregations of 1 Hz observations.  Observations are made by 2-D sonic anemometer sensors located at multiple heights on the tower infrastructure and by 2-D sonic anemometer sensors located on the aquatic meteorological station.",
+          "productDoi": "https://doi.org/10.48443/77n6-eh42"
+        },
+        {
+          "productCode": "DP1.00002.001",
+          "productName": "Single aspirated air temperature",
+          "productDescription": "Air temperature, available as one- and thirty-minute averages of 1 Hz observations. Observations are made by sensors located at multiple heights on the tower infrastructure and by sensors located on the aquatic meteorological station. Temperature observations are made using platinum resistance thermometers, which are housed in a fan aspirated shield to reduce radiative bias.",
+          "productDoi": "https://doi.org/10.48443/0tyt-ky71"
+        },
+        {
+          "productCode": "DP1.00003.001",
+          "productName": "Triple aspirated air temperature",
+          "productDescription": "Air temperature, available as one- and thirty-minute averages derived from triplicate 1 Hz temperature observations. Observations are made by sensors located at the top of the tower infrastructure. Temperature observations are made by three platinum resistance thermometers, which are housed together in a fan aspirated shield to reduce radiative biases.",
+          "productDoi": "https://doi.org/10.48443/q16j-sn13"
+        },
+        {
+          "productCode": "DP1.00004.001",
+          "productName": "Barometric pressure",
+          "productDescription": "Barometric pressure is available as one- and thirty-minute averages for station pressure, which is determined from 0.1 Hz observations. Barometric pressure corrected to sea level and surface level (defined as water surface at aquatic sites and soil surface at terrestrial sites) is derived from station pressure averages and available at one- and thirty-minute increments. Observations are made by a single digital barometer located on the tower infrastructure and a single digital barometer located on the aquatic meteorological station.",
+          "productDoi": "https://doi.org/10.48443/zr37-0238"
+        },
+        {
+          "productCode": "DP1.00005.001",
+          "productName": "IR biological temperature",
+          "productDescription": "Infrared temperature, available as one- and thirty-minute averages of 1 Hz observations.  Biological temperature (i.e. surface temperature) is measured via IR temperature sensors located in the soil array and at multiple heights on the tower infrastructure.",
+          "productDoi": "https://doi.org/10.48443/7rs6-ff56"
+        },
+        {
+          "productCode": "DP1.00006.001",
+          "productName": "Precipitation",
+          "productDescription": "Bulk precipitation collected using up to three methods - primary, secondary, and throughfall. Bulk precipitation is determined at five- and thirty-minute intervals for primary precipitation and at one- and thirty-minute intervals for secondary and throughfall precipitation.",
+          "productDoi": "https://doi.org/10.48443/6wkc-1p05"
+        },
+        {
+          "productCode": "DP1.00013.001",
+          "productName": "Wet deposition chemical analysis",
+          "productDescription": "Total dissolved chemical ion concentrations of sulfate (SO4 2-), nitrate (NO3-), chloride (Cl-), bromide (Br-), ammonium (NH4+), phosphate (PO4 3-), calcium (Ca2+), magnesium (Mg2+), potassium (K+), sodium (Na+), and pH/Conductivity in precipitation water; collected at TIS and AIS sites.",
+          "productDoi": "https://doi.org/10.48443/bzbm-tz94"
+        },
+        {
+          "productCode": "DP1.00014.001",
+          "productName": "Shortwave radiation (direct and diffuse pyranometer)",
+          "productDescription": "Total, direct beam, and diffuse shortwave radiation, available as one- and thirty-minute averages of 1 Hz observations.  Observations are made by a sensor located at the top of the tower infrastructure.",
+          "productDoi": "https://doi.org/10.48443/hv8e-5696"
+        },
+        {
+          "productCode": "DP1.00017.001",
+          "productName": "Dust and particulate size distribution",
+          "productDescription": "Near real-time measurements of PM1.0, PM2.5, PM4, PM10, PM15 and TSP in the atmosphere using a optical sensor.",
+          "productDoi": "https://doi.org/10.48443/rdz9-xr84"
+        },
+        {
+          "productCode": "DP1.00022.001",
+          "productName": "Shortwave radiation (primary pyranometer)",
+          "productDescription": "Total shortwave radiation, available as one- and thirty-minute averages of 1 Hz observations.  The primary pyranometer is housed in a heated and aspirated ventilation unit and observes incoming shortwave radiation at the top of the tower infrastructure.",
+          "productDoi": "https://doi.org/10.48443/47cp-3090"
+        },
+        {
+          "productCode": "DP1.00023.001",
+          "productName": "Shortwave and longwave radiation (net radiometer)",
+          "productDescription": "Net radiation is composed of incoming and outgoing shortwave and longwave radiation. These data products are available as one- and thirty-minute averages of 1 Hz observations.  Observations of net shortwave and longwave radiation are made by a sensor located at the top of the tower infrastructure, while only net longwave radiation is observed in the soil array.  Observations of net shortwave and longwave radiation are made by a four-component sensor located on the aquatic meteorological station.",
+          "productDoi": "https://doi.org/10.48443/stbf-bh38"
+        },
+        {
+          "productCode": "DP1.00024.001",
+          "productName": "Photosynthetically active radiation (PAR)",
+          "productDescription": "Photosynthetically Active Radiation (PAR) observations represent the radiation flux at wavelengths between 400-700 nm, which constitute the wavelengths that drive photosynthesis. This data product is available as one- and thirty-minute averages of 1 Hz observations.  Observations are made by sensors located at multiple heights on the tower infrastructure and by sensors located on the aquatic meteorological station.",
+          "productDoi": "https://doi.org/10.48443/8a01-0677"
+        },
+        {
+          "productCode": "DP1.00038.001",
+          "productName": "Stable isotopes in precipitation",
+          "productDescription": "Stable isotope ratios of 18O and 2H in precipitation water",
+          "productDoi": "https://doi.org/10.48443/e3my-7v57"
+        },
+        {
+          "productCode": "DP1.00040.001",
+          "productName": "Soil heat flux plate",
+          "productDescription": "The amount of thermal energy moving by conduction across an area of soil in a unit of time. Measured at three of the five sensor-based soil plots at each terrestrial site..",
+          "productDoi": "https://doi.org/10.48443/zfkp-e885"
+        },
+        {
+          "productCode": "DP1.00041.001",
+          "productName": "Soil temperature",
+          "productDescription": "Temperature of the soil at various depth below the soil surface from 2 cm up to 200 cm at non-permafrost sites (up to 300 cm at Alaskan sites). Data are from all five Instrumented Soil Plots per site and presented as 1-minute and 30-minute averages.",
+          "productDoi": "https://doi.org/10.48443/9e56-pj39"
+        },
+        {
+          "productCode": "DP1.00066.001",
+          "productName": "Photosynthetically active radiation (quantum line)",
+          "productDescription": "The quantum line sensor provides spatially averaged observations of photosynthetically active radiation (PAR), i.e., wavelengths between 400-700 nm, at the soil surface over a one meter length. This data product is available as one- and thirty-minute averages of 1 Hz observations.  Observations are obtained by sensors located throughout the soil array.",
+          "productDoi": "https://doi.org/10.48443/4ney-4g58"
+        },
+        {
+          "productCode": "DP1.00094.001",
+          "productName": "Soil water content and water salinity",
+          "productDescription": "Soil volumetric water content and an index of salinity at various depths below the soil surface from 6 cm down to 200 cm at non-permafrost sites (down to 300 cm at Alaskan sites). Data are from all five Instrumented soil plots per site and presented as 1-minute and 30-minute averages.\n\nMeasurement depths are not currently being reported correctly in the sensor positions file in the Soil water content and water salinity data product (DP1.00094.001). A readme file (readme_swc_depths.txt) and an associated file containing the sensor installation depths (swc_depthsV2.csv) have been added to the data product download package until the data product algorithms are corrected.",
+          "productDoi": "https://doi.org/10.48443/ghry-qw46"
+        },
+        {
+          "productCode": "DP1.00095.001",
+          "productName": "Soil CO2 concentration",
+          "productDescription": "CO2 concentration in soil air at various depth below the soil surface starting at approximately 2 cm. Data are from all five Instrumented Soil Plots per site and presented as 1-minute and 30-minute averages.",
+          "productDoi": "https://doi.org/10.48443/h4xx-yz37"
+        },
+        {
+          "productCode": "DP1.00096.001",
+          "productName": "Soil physical and chemical properties, Megapit",
+          "productDescription": "Soil taxonomy, horizon names, horizon depths, soil bulk density, texture, and chemical properties in the <= 2 mm soil fraction for each soil horizon in each Megapit. Data were derived from a sampling location expected to be representative of the area where the Instrumented Soil Plots are located and were collected once during site construction, in collaboration with the USDA Natural Resources Conservation Service. Also see distributed soil (DP1.10086.001) and initial characterization soil (DP1.10047.001) data products, as well as the root Megapit product (DP1.10066.001) for root biomass and chemistry measurements.",
+          "productDoi": "https://doi.org/10.48443/10dn-8031"
+        },
+        {
+          "productCode": "DP1.00098.001",
+          "productName": "Relative humidity",
+          "productDescription": "Relative humidity, temperature, and dew or frost point temperature, available as one- and thirty-minute averages of 1 Hz observations. Observations are made by sensors located at the top of the tower infrastructure, in the soil array, and on the aquatic meteorologic station.",
+          "productDoi": "https://doi.org/10.48443/w9nf-k476"
+        },
+        {
+          "productCode": "DP1.00101.001",
+          "productName": "Particulate mass",
+          "productDescription": "Dust mass and density measured by a high volume dust sampler and quartz filters.",
+          "productDoi": "https://doi.org/10.48443/f585-ny39"
+        },
+        {
+          "productCode": "DP1.10003.001",
+          "productName": "Breeding landbird point counts",
+          "productDescription": "Count, distance from observer, and taxonomic identification of breeding landbirds observed during point counts",
+          "productDoi": "https://doi.org/10.48443/88sy-ah40"
+        },
+        {
+          "productCode": "DP1.10010.001",
+          "productName": "Coarse downed wood log survey",
+          "productDescription": "Tally and raw measurement of coarse downed wood >= 2 cm diameter",
+          "productDoi": "https://doi.org/10.48443/54dd-9407"
+        },
+        {
+          "productCode": "DP1.10014.001",
+          "productName": "Coarse downed wood bulk density sampling",
+          "productDescription": "Raw bulk density measurements of coarse downed wood >= 2 cm diameter",
+          "productDoi": "https://doi.org/10.48443/z0tg-qs14"
+        },
+        {
+          "productCode": "DP1.10017.001",
+          "productName": "Digital hemispheric photos of plot vegetation",
+          "productDescription": "Upward and/or downward facing digital 180-degree images of vegetation in plots used to calculate leaf area index",
+          "productDoi": "https://doi.org/10.48443/x12v-n568"
+        },
+        {
+          "productCode": "DP1.10020.001",
+          "productName": "Ground beetle sequences DNA barcode",
+          "productDescription": "COI DNA sequences from select ground beetles",
+          "productDoi": "https://doi.org/10.48443/ja4j-es78"
+        },
+        {
+          "productCode": "DP1.10022.001",
+          "productName": "Ground beetles sampled from pitfall traps",
+          "productDescription": "Taxonomically identified ground beetles and the plots and times from which they were collected.",
+          "productDoi": "https://doi.org/10.48443/xgea-hw23"
+        },
+        {
+          "productCode": "DP1.10023.001",
+          "productName": "Herbaceous clip harvest",
+          "productDescription": "Dry weight of herbaceous vegetation harvested from individual clip strips, by functional type",
+          "productDoi": "https://doi.org/10.48443/gt56-0091"
+        },
+        {
+          "productCode": "DP1.10026.001",
+          "productName": "Plant foliar traits",
+          "productDescription": "Traits of sun-lit canopy plants reported at the level of the individual (woody plants) or community (herbaceous plants).",
+          "productDoi": "https://doi.org/10.48443/kmc7-8g05"
+        },
+        {
+          "productCode": "DP1.10033.001",
+          "productName": "Litterfall and fine woody debris production and chemistry",
+          "productDescription": "Dry weight of litterfall and fine woody debris collected from elevated and ground traps, sorted to functional group, as well as periodic measurements of litter chemistry and stable isotopes.",
+          "productDoi": "https://doi.org/10.48443/b2qt-7z79"
+        },
+        {
+          "productCode": "DP1.10038.001",
+          "productName": "Mosquito sequences DNA barcode",
+          "productDescription": "COI DNA sequences from select mosquitoes",
+          "productDoi": "https://doi.org/10.48443/3asf-1y28"
+        },
+        {
+          "productCode": "DP1.10041.001",
+          "productName": "Mosquito pathogen status",
+          "productDescription": "Presence/absence of a pathogen in a single mosquito sample (pool)",
+          "productDoi": "https://doi.org/10.48443/m7qd-mm61"
+        },
+        {
+          "productCode": "DP1.10043.001",
+          "productName": "Mosquitoes sampled from CO2 traps",
+          "productDescription": "Taxonomically identified mosquitoes and the plots and times from which they were collected",
+          "productDoi": "https://doi.org/10.48443/c7h7-q918"
+        },
+        {
+          "productCode": "DP1.10047.001",
+          "productName": "Soil physical and chemical properties, distributed initial characterization",
+          "productDescription": "Soil physical and chemical properties measured as part of initial site characterization activities at NEON sites. Data are reported by pedogenic horizon, generally for the top 1m of the soil profile. Also see distributed periodic and Megapit soil data.",
+          "productDoi": "https://doi.org/10.48443/tjgd-6m89"
+        },
+        {
+          "productCode": "DP1.10055.001",
+          "productName": "Plant phenology observations",
+          "productDescription": "Phenophase status and intensity of tagged plants",
+          "productDoi": "https://doi.org/10.48443/087c-7626"
+        },
+        {
+          "productCode": "DP1.10058.001",
+          "productName": "Plant presence and percent cover",
+          "productDescription": "Plant species cover-abundance and presence observed in multi-scale plots. Plant species and associated percent cover in 1m2 subplots and plant species presence in 10m2 and 100m2 subplots are reported from 400m2 plots. Archived plant vouchers and foliar tissue support the data and additional analyses.",
+          "productDoi": "https://doi.org/10.48443/pr5e-1q60"
+        },
+        {
+          "productCode": "DP1.10064.001",
+          "productName": "Rodent pathogen status, hantavirus",
+          "productDescription": "Presence/absence of hantavirus (or antibodies to hantavirus) in each single rodent sample from 2014-2019. Beginning in 2020, the protocol was switched to detection of tick-borne diseases; these data are available in the Rodent pathogen status, tick-borne data product (DP1.10064.002).",
+          "productDoi": "https://doi.org/10.48443/k651-fb97"
+        },
+        {
+          "productCode": "DP1.10064.002",
+          "productName": "Rodent pathogen status, tick-borne",
+          "productDescription": "Presence/absence of tick-borne diseases (or antibodies to same) in each single rodent sample from 2020-onward. Prior to 2020, the protocol was used to detect hantavirus; these data are available in the Rodent-borne pathogen status data product (DP1.10064.001).",
+          "productDoi": "https://doi.org/10.48443/6pfn-t955"
+        },
+        {
+          "productCode": "DP1.10066.001",
+          "productName": "Root biomass and chemistry, Megapit",
+          "productDescription": "Standing stock of fine and coarse root biomass plus root carbon (C) and nitrogen (N) concentrations and stable isotopes from soil Megapits. Samples were collected in 10cm increments for the first 1m depth and 20cm increments thereafter to 2m depth. Ground, oven-dried root tissues from each depth increment are available for request from the NEON Biorepository. See the soil Megapit data product (DP1.00096.001) for physical and chemical data from Megapit soils.",
+          "productDoi": "https://doi.org/10.48443/xmbe-7b55"
+        },
+        {
+          "productCode": "DP1.10067.001",
+          "productName": "Root biomass and chemistry, periodic",
+          "productDescription": "Fine root biomass to 30cm depth via soil core sampling. Includes root carbon (C) and nitrogen (N) concentrations and stable isotopes.",
+          "productDoi": "https://doi.org/10.48443/a2dn-8437"
+        },
+        {
+          "productCode": "DP1.10072.001",
+          "productName": "Small mammal box trapping",
+          "productDescription": "Individual- and trap-level data collected using box traps designed to capture small mammals",
+          "productDoi": "https://doi.org/10.48443/h3dk-3a71"
+        },
+        {
+          "productCode": "DP1.10076.001",
+          "productName": "Small mammal sequences DNA barcode",
+          "productDescription": "COI DNA sequences from select small mammals",
+          "productDoi": "https://doi.org/10.48443/zhr5-ea60"
+        },
+        {
+          "productCode": "DP1.10081.001",
+          "productName": "Soil microbe community composition",
+          "productDescription": "Counts and relative abundances of archaeal, bacterial, and fungal taxa observed in soil microbial communities",
+          "productDoi": "https://doi.org/10.48443/xsdz-js04"
+        },
+        {
+          "productCode": "DP1.10086.001",
+          "productName": "Soil physical and chemical properties, periodic",
+          "productDescription": "Soil physical and chemical properties from the top 30 cm of the profile from periodic soil core collections. Data are reported by horizon (mineral vs. organic). See initial characterization and megapit products for additional soil data.",
+          "productDoi": "https://doi.org/10.48443/fk4j-ax76"
+        },
+        {
+          "productCode": "DP1.10092.001",
+          "productName": "Tick pathogen status",
+          "productDescription": "Presence/absence of a pathogen in each single tick sample",
+          "productDoi": "https://doi.org/10.48443/nygx-dm71"
+        },
+        {
+          "productCode": "DP1.10093.001",
+          "productName": "Ticks sampled using drag cloths",
+          "productDescription": "Abundance and density of ticks collected by drag and/or flag sampling (by species and/or lifestage)",
+          "productDoi": "https://doi.org/10.48443/7jh5-8s51"
+        },
+        {
+          "productCode": "DP1.10098.001",
+          "productName": "Vegetation structure",
+          "productDescription": "Structure measurements of individual woody and non-woody plants, mapped positions of qualifying woody and non-woody plants, and metadata required to draw inference from individual measurements at the plot scale.",
+          "productDoi": "https://doi.org/10.48443/re8n-tn87"
+        },
+        {
+          "productCode": "DP1.10104.001",
+          "productName": "Soil microbe biomass",
+          "productDescription": "Quantitative abundance of microbes in soil samples",
+          "productDoi": "https://doi.org/10.48443/kkjv-md38"
+        },
+        {
+          "productCode": "DP1.10107.001",
+          "productName": "Soil microbe metagenome sequences",
+          "productDescription": "Metagenomic sequence data from soil samples",
+          "productDoi": "https://doi.org/10.48443/d03v-ae06"
+        },
+        {
+          "productCode": "DP1.10108.001",
+          "productName": "Soil microbe marker gene sequences",
+          "productDescription": "DNA sequence data from ribosomal RNA marker genes from soil samples",
+          "productDoi": "https://doi.org/10.48443/q8vr-k106"
+        },
+        {
+          "productCode": "DP1.10109.001",
+          "productName": "Soil microbe group abundances",
+          "productDescription": "Counts and relative abundances of marker genes from total archaea, bacteria, and fungi observed by qPCR in soil microbial communities",
+          "productDoi": "https://doi.org/10.48443/rg21-n212"
+        },
+        {
+          "productCode": "DP1.10111.001",
+          "productName": "Site management and event reporting",
+          "productDescription": "This data product contains records of land management activities, disturbances, and other incidents of ecological note within all NEON sites",
+          "productDoi": "https://doi.org/10.48443/n07g-j065"
+        },
+        {
+          "productCode": "DP1.20004.001",
+          "productName": "Barometric pressure above water on-buoy",
+          "productDescription": "Barometric pressure, available as one-minute instantaneous measurements and thirty-minute averages for both station pressure and pressure reduced to sea level. Observations are made on the meteorology station on the buoy in lakes and rivers.",
+          "productDoi": "https://doi.org/10.48443/v4ap-ny05"
+        },
+        {
+          "productCode": "DP1.20015.001",
+          "productName": "Specific conductivity in groundwater",
+          "productDescription": "In situ sensor-based measurements of specific conductance of groundwater in wells",
+          "productDoi": "https://doi.org/10.48443/3h1h-w630"
+        },
+        {
+          "productCode": "DP1.20016.001",
+          "productName": "Elevation of surface water",
+          "productDescription": "In situ sensor-based measurements of surface water elevation, available as five- and thirty-minute  averages in lakes, rivers, and wadeable streams. Based on sensor measurements of water pressure.",
+          "productDoi": "https://doi.org/10.48443/1p13-c355"
+        },
+        {
+          "productCode": "DP1.20032.001",
+          "productName": "Shortwave and longwave radiation above water on-buoy (net radiometer)",
+          "productDescription": "Net shortwave and longwave radiation on buoys is measured twice per minute and is reported as 1-minute and 30-minute mean values.",
+          "productDoi": "https://doi.org/10.48443/7mt8-6088"
+        },
+        {
+          "productCode": "DP1.20033.001",
+          "productName": "Nitrate in surface water",
+          "productDescription": "In situ sensor-based nitrate concentration, available as fifteen minute  averages in surface water in lakes, wadeable and non-wadeable streams",
+          "productDoi": "https://doi.org/10.48443/qrxz-9r68"
+        },
+        {
+          "productCode": "DP1.20042.001",
+          "productName": "Photosynthetically active radiation at water surface",
+          "productDescription": "Photosynthetically Active Radiation (PAR) observations represent the radiation flux at wavelengths between 400-700 nm, which constitute the wavelengths that drive photosynthesis. This data product is available as one-, five-,  and thirty-minute averages. Observations are made at the aquatic sensor set location at lakes, non-wadeable streams, and wadeable streams.",
+          "productDoi": "https://doi.org/10.48443/sse6-mf42"
+        },
+        {
+          "productCode": "DP1.20046.001",
+          "productName": "Air temperature above water on-buoy",
+          "productDescription": "Air temperature, available as one-minute instantaneous measurements and thirty-minute averages. Observations are made on the meteorology station on the buoy in lakes and rivers.",
+          "productDoi": "https://doi.org/10.48443/xkeg-bg94"
+        },
+        {
+          "productCode": "DP1.20048.001",
+          "productName": "Discharge field collection",
+          "productDescription": "Discharge measurements from field-based surveys",
+          "productDoi": "https://doi.org/10.48443/eaak-tt31"
+        },
+        {
+          "productCode": "DP1.20053.001",
+          "productName": "Temperature (PRT) in surface water",
+          "productDescription": "Surface water temperature, available as one-, five-, and thirty-minute  averages, measured by a platinum resistance thermometer at the sensor location in lakes, wadeable and non-wadeable streams",
+          "productDoi": "https://doi.org/10.48443/m9et-tm58"
+        },
+        {
+          "productCode": "DP1.20059.001",
+          "productName": "Windspeed and direction above water on-buoy",
+          "productDescription": "Wind speed and direction; observations are made by a wind monitor consisting of a propeller and vane design on lake and river buoys.",
+          "productDoi": "https://doi.org/10.48443/e16c-8686"
+        },
+        {
+          "productCode": "DP1.20063.001",
+          "productName": "Aquatic plant bryophyte chemical properties",
+          "productDescription": "Carbon (C) and nitrogen (N) concentrations of aquatic plant and bryophytes from benthic collections in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/g0fv-hr67"
+        },
+        {
+          "productCode": "DP1.20066.001",
+          "productName": "Aquatic plant bryophyte macroalgae clip harvest",
+          "productDescription": "Dry weight of aquatic plant, bryophyte, and macroalgae from benthic quadrats in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/9xx9-6q63"
+        },
+        {
+          "productCode": "DP1.20072.001",
+          "productName": "Aquatic plant, bryophyte, lichen, and macroalgae point counts in wadeable streams",
+          "productDescription": "Point counts of aquatic plants, bryophytes, lichens, and macroalgae from transects in wadeable streams",
+          "productDoi": "https://doi.org/10.48443/2sjq-hk67"
+        },
+        {
+          "productCode": "DP1.20086.001",
+          "productName": "Benthic microbe community composition",
+          "productDescription": "Counts and relative abundances of archaeal, bacterial, and fungal taxa observed in benthic microbial communities from wadeable streams",
+          "productDoi": "https://doi.org/10.48443/0rcq-1r09"
+        },
+        {
+          "productCode": "DP1.20092.001",
+          "productName": "Chemical properties of groundwater",
+          "productDescription": "Grab samples of groundwater chemistry including general chemistry, anions, cations, and nutrients.",
+          "productDoi": "https://doi.org/10.48443/h7vt-3v55"
+        },
+        {
+          "productCode": "DP1.20093.001",
+          "productName": "Chemical properties of surface water",
+          "productDescription": "Grab samples of surface water chemistry including general chemistry, anions, cations, and nutrients.",
+          "productDoi": "https://doi.org/10.48443/tx4b-zx50"
+        },
+        {
+          "productCode": "DP1.20097.001",
+          "productName": "Dissolved gases in surface water",
+          "productDescription": "Grab samples of surface water dissolved gases including carbon dioxide, methane, and nitrous oxide",
+          "productDoi": "https://doi.org/10.48443/4661-hh45"
+        },
+        {
+          "productCode": "DP1.20099.001",
+          "productName": "Groundwater and active layer measurements at permafrost sites",
+          "productDescription": "Measurements from ground surface to liquid groundwater and active layer thaw. Collected at sites with permafrost.",
+          "productDoi": "https://doi.org/10.48443/1v5y-av98"
+        },
+        {
+          "productCode": "DP1.20100.001",
+          "productName": "Elevation of groundwater",
+          "productDescription": "Sensor based measurement of groundwater elevation calculated from pressure transducer readings in each well",
+          "productDoi": "https://doi.org/10.48443/127f-h652"
+        },
+        {
+          "productCode": "DP1.20105.001",
+          "productName": "Fish sequences DNA barcode",
+          "productDescription": "COI DNA sequences from select fish in lakes and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/0rta-0614"
+        },
+        {
+          "productCode": "DP1.20107.001",
+          "productName": "Fish electrofishing, gill netting, and fyke netting counts",
+          "productDescription": "Counts of fish from electrofishing surveys in wadeable streams, or electrofishing, gill netting, and/or fyke netting surveys in lakes. Includes fish standard length and individual mass",
+          "productDoi": "https://doi.org/10.48443/7p84-6j62"
+        },
+        {
+          "productCode": "DP1.20120.001",
+          "productName": "Macroinvertebrate collection",
+          "productDescription": "Collection of benthic macroinvertebrates using multiple sampling methods in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/gn8x-k322"
+        },
+        {
+          "productCode": "DP1.20126.001",
+          "productName": "Macroinvertebrate metabarcoding",
+          "productDescription": "CO1 DNA sequences of the aquatic macroinvertebrate community",
+          "productDoi": "https://doi.org/10.48443/3m45-3j81"
+        },
+        {
+          "productCode": "DP1.20138.001",
+          "productName": "Surface water microbe cell count",
+          "productDescription": "Cell counts from surface water microbial collection in lakes, wadeable streams, and non-wadeable streams",
+          "productDoi": "https://doi.org/10.48443/2rrn-d980"
+        },
+        {
+          "productCode": "DP1.20141.001",
+          "productName": "Surface water microbe community composition",
+          "productDescription": "Counts and relative abundances of archaeal, bacterial, and fungal taxa observed in surface water microbial communities in lakes, rivers and streams",
+          "productDoi": "https://doi.org/10.48443/hya7-7h89"
+        },
+        {
+          "productCode": "DP1.20163.001",
+          "productName": "Periphyton, seston, and phytoplankton chemical properties",
+          "productDescription": "Carbon (C), nitrogen (N), phosphorus (P), isotopes, chlorophyll a, and pheophytin of periphyton and phytoplankton from benthic and water column samples in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/d399-y150"
+        },
+        {
+          "productCode": "DP1.20166.001",
+          "productName": "Periphyton, seston, and phytoplankton collection",
+          "productDescription": "Collection and biomass of periphyton and phytoplankton using multiple benthic and water column sampling methods in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/g2k4-d258"
+        },
+        {
+          "productCode": "DP1.20190.001",
+          "productName": "Reaeration field and lab collection",
+          "productDescription": "Field and external laboratory data from the salt-tracer and gas injection field reaeration measurements, including stream widths, inert gas concentrations, conservative tracer concentrations, and conductivity times series.",
+          "productDoi": "https://doi.org/10.48443/72cv-8c36"
+        },
+        {
+          "productCode": "DP1.20191.001",
+          "productName": "Riparian vegetation % cover",
+          "productDescription": "Assessment of riparian vegetation percent cover in wadeable streams",
+          "productDoi": "https://doi.org/10.48443/4dv1-ra14"
+        },
+        {
+          "productCode": "DP1.20193.001",
+          "productName": "Salt-based stream discharge",
+          "productDescription": "Discharge measured using a constant-rate addition salt tracer during reaeration measurements",
+          "productDoi": "https://doi.org/10.48443/j6wb-e036"
+        },
+        {
+          "productCode": "DP1.20194.001",
+          "productName": "Sediment chemical and physical properties",
+          "productDescription": "Field collection and analysis of nutrients, carbon, inorganics and physical properties in sediments of wadeable streams, rivers, and lakes",
+          "productDoi": "https://doi.org/10.48443/dbhc-5315"
+        },
+        {
+          "productCode": "DP1.20206.001",
+          "productName": "Stable isotopes in surface water",
+          "productDescription": "Grab samples for stable isotope chemistry including water and particulate organic matter, in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/yz7h-f560"
+        },
+        {
+          "productCode": "DP1.20217.001",
+          "productName": "Temperature of groundwater",
+          "productDescription": "In situ sensor-based measurements of groundwater temperature in each well.",
+          "productDoi": "https://doi.org/10.48443/kdrk-0e94"
+        },
+        {
+          "productCode": "DP1.20219.001",
+          "productName": "Zooplankton collection",
+          "productDescription": "Collection of zooplankton from water column samples in lakes",
+          "productDoi": "https://doi.org/10.48443/150d-yf27"
+        },
+        {
+          "productCode": "DP1.20221.001",
+          "productName": "Zooplankton metabarcoding",
+          "productDescription": "CO1 DNA sequences of the zooplankton community",
+          "productDoi": "https://doi.org/10.48443/db6v-z324"
+        },
+        {
+          "productCode": "DP1.20252.001",
+          "productName": "Secchi depth",
+          "productDescription": "Measurement of water column Secchi depth in non-wadeable streams and lakes",
+          "productDoi": "https://doi.org/10.48443/apke-mg44"
+        },
+        {
+          "productCode": "DP1.20254.001",
+          "productName": "Depth profile at specific depths",
+          "productDescription": "Measurements of water column temperature and depth profile in non-wadeable streams and lakes",
+          "productDoi": "https://doi.org/10.48443/d2pr-h658"
+        },
+        {
+          "productCode": "DP1.20261.001",
+          "productName": "Photosynthetically active radiation below water surface",
+          "productDescription": "Photosynthetically Active Radiation (PAR) observations represent the radiation flux at wavelengths between 400-700 nm, which constitute the wavelengths that drive photosynthesis. This data product is available as one- and thirty-minute averages. Observations are made at the aquatic sensor sets at the lake inlet, lake outlet, and both lake and river buoys.",
+          "productDoi": "https://doi.org/10.48443/2x88-b287"
+        },
+        {
+          "productCode": "DP1.20264.001",
+          "productName": "Temperature at specific depth in surface water",
+          "productDescription": "Sensor based measurements of water temperature in lake and river sites. Temperature is measured at specific depths by a fixed-length buoy-mounted array of temperature sensors.",
+          "productDoi": "https://doi.org/10.48443/g7bs-7j57"
+        },
+        {
+          "productCode": "DP1.20267.001",
+          "productName": "Gauge height",
+          "productDescription": "Gauge height, in meters, measured at lakes, wadeable streams and non-wadeable streams.",
+          "productDoi": "https://doi.org/10.48443/80nt-8v02"
+        },
+        {
+          "productCode": "DP1.20271.001",
+          "productName": "Relative humidity above water on-buoy",
+          "productDescription": "Relative humidity, temperature, and dew or frost point temperature, available as one- and thirty-minute averages. Observations are made by sensors located on the buoy in lakes and rivers.",
+          "productDoi": "https://doi.org/10.48443/1w06-wm51"
+        },
+        {
+          "productCode": "DP1.20275.001",
+          "productName": "Riparian composition and structure",
+          "productDescription": "Assessment of riparian vegetation composition and physical structure in lakes, non-wadeable streams, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/7bsg-aq96"
+        },
+        {
+          "productCode": "DP1.20276.001",
+          "productName": "Stable isotopes in groundwater",
+          "productDescription": "Grab samples for stable isotopes of water in groundwater",
+          "productDoi": "https://doi.org/10.48443/wr27-bp14"
+        },
+        {
+          "productCode": "DP1.20277.001",
+          "productName": "Benthic microbe group abundances",
+          "productDescription": "Counts and relative abundances of marker genes from total archaea, bacteria, and fungi observed by qPCR in benthic microbial communities",
+          "productDoi": "https://doi.org/10.48443/0kcp-y362"
+        },
+        {
+          "productCode": "DP1.20278.001",
+          "productName": "Surface water microbe group abundances",
+          "productDescription": "Counts and relative abundances of marker genes from total archaea, bacteria, and fungi observed by qPCR in surface water microbial communities",
+          "productDoi": "https://doi.org/10.48443/6w6c-y950"
+        },
+        {
+          "productCode": "DP1.20279.001",
+          "productName": "Benthic microbe metagenome sequences",
+          "productDescription": "Metagenomic sequence data from benthic samples",
+          "productDoi": "https://doi.org/10.48443/et0v-rv36"
+        },
+        {
+          "productCode": "DP1.20280.001",
+          "productName": "Benthic microbe marker gene sequences",
+          "productDescription": "DNA sequence data from ribosomal RNA marker genes from benthic samples",
+          "productDoi": "https://doi.org/10.48443/bfnz-1275"
+        },
+        {
+          "productCode": "DP1.20281.001",
+          "productName": "Surface water microbe metagenome sequences",
+          "productDescription": "Metagenomic sequence data from surface water samples",
+          "productDoi": "https://doi.org/10.48443/zkw8-kk23"
+        },
+        {
+          "productCode": "DP1.20282.001",
+          "productName": "Surface water microbe marker gene sequences",
+          "productDescription": "DNA sequence data from ribosomal RNA marker genes from surface water samples",
+          "productDoi": "https://doi.org/10.48443/shph-dz42"
+        },
+        {
+          "productCode": "DP1.20288.001",
+          "productName": "Water quality",
+          "productDescription": "In situ sensor-based specific conductivity, concentration of chlorophyll a, dissolved oxygen content, fDOM concentration, pH, and turbidity, available as one- or five-minute instantaneous measurements in surface water of lakes, wadeable streams, and non-wadeable streams.",
+          "productDoi": "https://doi.org/10.48443/2ny7-q241"
+        },
+        {
+          "productCode": "DP1.30012.001",
+          "productName": "Field spectral data",
+          "productDescription": "Reflectance of collected sample(s) using leaf clip and hand-held field Spectrometer; opportunistic product, provided when collected.",
+          "productDoi": "https://doi.org/10.48443/qy50-d561"
+        },
+        {
+          "productCode": "DP4.00001.001",
+          "productName": "Summary weather statistics",
+          "productDescription": "Present summary statistics for biometeorological variables for NEON weather stations at core TIS sites. Statistics will include means, standard deviations, maxima, and minima for periods of days, months, and years. Engineering-grade product only.",
+          "productDoi": "https://doi.org/10.48443/sbhw-4n59"
+        },
+        {
+          "productCode": "DP4.00130.001",
+          "productName": "Continuous discharge",
+          "productDescription": "Continuous measurements of stream discharge calculated from a stage-discharge rating curve and sensor-based measurements of water surface elevation.",
+          "productDoi": "https://doi.org/10.48443/xz4k-5j04"
+        },
+        {
+          "productCode": "DP4.00131.001",
+          "productName": "Stream morphology map",
+          "productDescription": "Map showing the morphology of streams. These maps denote topography of the stream basin as well as location of the thalweg, coarse woody debris, gravel/sand bars, and other features of interest.",
+          "productDoi": "https://doi.org/10.48443/7px2-ve98"
+        },
+        {
+          "productCode": "DP4.00132.001",
+          "productName": "Bathymetric and morphological maps",
+          "productDescription": "Bathymetry of lake bottoms and non-wadeable streams for detecting environmental change as well as for determining lake morphology, estimating primary productivity, habitat features, and water quality.",
+          "productDoi": "https://doi.org/10.48443/hx8v-r804"
+        },
+        {
+          "productCode": "DP4.00133.001",
+          "productName": "Stage-discharge rating curves",
+          "productDescription": "Stage discharge rating curve is generated from the relationship between staff gauge measurements and surveys of stream, river, and lake inflow/outflow discharge. It is used to calculate the L4 Continuous discharge (DP4.00130.001) data product.",
+          "productDoi": "https://doi.org/10.48443/02pm-1t67"
+        },
+        {
+          "productCode": "DP4.00200.001",
+          "productName": "Bundled data products - eddy covariance",
+          "productDescription": "Bundle of eddy-covariance data products, including related meteorological and soil data products.",
+          "productDoi": "https://doi.org/10.48443/7cqp-3j73"
+        }
+      ]
+    },
+    {
+      "release": "RELEASE-2023",
+      "uuid": "5e34db3a-ba38-4f2d-9097-181eabd063d8",
+      "generationDate": "2023-01-27T12:07:53Z",
+      "artifacts": [
+        {
+          "name": "manifest-available-20230127T120736Z.json",
+          "type": "MANIFEST_AVAILABLE",
+          "url": "https://storage.googleapis.com/neon-publication/release/build/5e34db3a-ba38-4f2d-9097-181eabd063d8/manifest-available-20230127T120736Z.json",
+          "size": 1762975,
+          "md5": "60e9019a039b874ed04e0122fbebc6e5"
+        }
+      ],
+      "dataProducts": [
+        {
+          "productCode": "DP1.00001.001",
+          "productName": "2D wind speed and direction",
+          "productDescription": "Two-dimensional wind speed and direction, available as two- and thirty-minute aggregations of 1 Hz observations.  Observations are made by 2-D sonic anemometer sensors located at multiple heights on the tower infrastructure and by 2-D sonic anemometer sensors located on the aquatic meteorological station.",
+          "productDoi": "https://doi.org/10.48443/afw1-t682"
+        },
+        {
+          "productCode": "DP1.00002.001",
+          "productName": "Single aspirated air temperature",
+          "productDescription": "Air temperature, available as one- and thirty-minute averages of 1 Hz observations. Observations are made by sensors located at multiple heights on the tower infrastructure and by sensors located on the aquatic meteorological station. Temperature observations are made using platinum resistance thermometers, which are housed in a fan aspirated shield to reduce radiative bias.",
+          "productDoi": "https://doi.org/10.48443/vcd3-rz94"
+        },
+        {
+          "productCode": "DP1.00003.001",
+          "productName": "Triple aspirated air temperature",
+          "productDescription": "Air temperature, available as one- and thirty-minute averages derived from triplicate 1 Hz temperature observations. Observations are made by sensors located at the top of the tower infrastructure. Temperature observations are made by three platinum resistance thermometers, which are housed together in a fan aspirated shield to reduce radiative biases.",
+          "productDoi": "https://doi.org/10.48443/x8tc-n094"
+        },
+        {
+          "productCode": "DP1.00004.001",
+          "productName": "Barometric pressure",
+          "productDescription": "Barometric pressure is available as one- and thirty-minute averages for station pressure, which is determined from 0.1 Hz observations. Barometric pressure corrected to sea level and surface level (defined as water surface at aquatic sites and soil surface at terrestrial sites) is derived from station pressure averages and available at one- and thirty-minute increments. Observations are made by a single digital barometer located on the tower infrastructure and a single digital barometer located on the aquatic meteorological station.",
+          "productDoi": "https://doi.org/10.48443/14rp-wt42"
+        },
+        {
+          "productCode": "DP1.00005.001",
+          "productName": "IR biological temperature",
+          "productDescription": "Infrared temperature, available as one- and thirty-minute averages of 1 Hz observations.  Biological temperature (i.e. surface temperature) is measured via IR temperature sensors located in the soil array and at multiple heights on the tower infrastructure.",
+          "productDoi": "https://doi.org/10.48443/rvk7-7237"
+        },
+        {
+          "productCode": "DP1.00006.001",
+          "productName": "Precipitation",
+          "productDescription": "Bulk precipitation collected using up to three methods - primary, secondary, and throughfall. Bulk precipitation is determined at five- and thirty-minute intervals for primary precipitation and at one- and thirty-minute intervals for secondary and throughfall precipitation.",
+          "productDoi": "https://doi.org/10.48443/dxdr-w376"
+        },
+        {
+          "productCode": "DP1.00013.001",
+          "productName": "Wet deposition chemical analysis",
+          "productDescription": "Total dissolved chemical ion concentrations of sulfate (SO4 2-), nitrate (NO3-), chloride (Cl-), bromide (Br-), ammonium (NH4+), phosphate (PO4 3-), calcium (Ca2+), magnesium (Mg2+), potassium (K+), sodium (Na+), and pH/Conductivity in precipitation water; collected at TIS and AIS sites.",
+          "productDoi": "https://doi.org/10.48443/naax-q953"
+        },
+        {
+          "productCode": "DP1.00014.001",
+          "productName": "Shortwave radiation (direct and diffuse pyranometer)",
+          "productDescription": "Total, direct beam, and diffuse shortwave radiation, available as one- and thirty-minute averages of 1 Hz observations.  Observations are made by a sensor located at the top of the tower infrastructure.",
+          "productDoi": "https://doi.org/10.48443/21r1-x479"
+        },
+        {
+          "productCode": "DP1.00017.001",
+          "productName": "Dust and particulate size distribution",
+          "productDescription": "Near real-time measurements of PM1.0, PM2.5, PM4, PM10, PM15 and TSP in the atmosphere using a optical sensor.",
+          "productDoi": "https://doi.org/10.48443/f6am-1291"
+        },
+        {
+          "productCode": "DP1.00022.001",
+          "productName": "Shortwave radiation (primary pyranometer)",
+          "productDescription": "Total shortwave radiation, available as one- and thirty-minute averages of 1 Hz observations.  The primary pyranometer is housed in a heated and aspirated ventilation unit and observes incoming shortwave radiation at the top of the tower infrastructure.",
+          "productDoi": "https://doi.org/10.48443/qd5t-e148"
+        },
+        {
+          "productCode": "DP1.00023.001",
+          "productName": "Shortwave and longwave radiation (net radiometer)",
+          "productDescription": "Net radiation is composed of incoming and outgoing shortwave and longwave radiation. These data products are available as one- and thirty-minute averages of 1 Hz observations.  Observations of net shortwave and longwave radiation are made by a sensor located at the top of the tower infrastructure, while only net longwave radiation is observed in the soil array.  Observations of net shortwave and longwave radiation are made by a four-component sensor located on the aquatic meteorological station.",
+          "productDoi": "https://doi.org/10.48443/tsnx-2995"
+        },
+        {
+          "productCode": "DP1.00024.001",
+          "productName": "Photosynthetically active radiation (PAR)",
+          "productDescription": "Photosynthetically Active Radiation (PAR) observations represent the radiation flux at wavelengths between 400-700 nm, which constitute the wavelengths that drive photosynthesis. This data product is available as one- and thirty-minute averages of 1 Hz observations.  Observations are made by sensors located at multiple heights on the tower infrastructure and by sensors located on the aquatic meteorological station.",
+          "productDoi": "https://doi.org/10.48443/vzfh-7675"
+        },
+        {
+          "productCode": "DP1.00038.001",
+          "productName": "Stable isotopes in precipitation",
+          "productDescription": "Stable isotope ratios of 18O and 2H in precipitation water",
+          "productDoi": "https://doi.org/10.48443/zpq0-h953"
+        },
+        {
+          "productCode": "DP1.00040.001",
+          "productName": "Soil heat flux plate",
+          "productDescription": "The amount of thermal energy moving by conduction across an area of soil in a unit of time. Measured at three of the five sensor-based soil plots at each terrestrial site..",
+          "productDoi": "https://doi.org/10.48443/xe3a-s042"
+        },
+        {
+          "productCode": "DP1.00041.001",
+          "productName": "Soil temperature",
+          "productDescription": "Temperature of the soil at various depth below the soil surface from 2 cm up to 200 cm at non-permafrost sites (up to 300 cm at Alaskan sites). Data are from all five Instrumented Soil Plots per site and presented as 1-minute and 30-minute averages.",
+          "productDoi": "https://doi.org/10.48443/9g10-ep60"
+        },
+        {
+          "productCode": "DP1.00066.001",
+          "productName": "Photosynthetically active radiation (quantum line)",
+          "productDescription": "The quantum line sensor provides spatially averaged observations of photosynthetically active radiation (PAR), i.e., wavelengths between 400-700 nm, at the soil surface over a one meter length. This data product is available as one- and thirty-minute averages of 1 Hz observations.  Observations are obtained by sensors located throughout the soil array.",
+          "productDoi": "https://doi.org/10.48443/ny4p-ts70"
+        },
+        {
+          "productCode": "DP1.00094.001",
+          "productName": "Soil water content and water salinity",
+          "productDescription": "Soil volumetric water content and an index of salinity at various depths below the soil surface from 6 cm down to 200 cm at non-permafrost sites (down to 300 cm at Alaskan sites). Data are from all five Instrumented soil plots per site and presented as 1-minute and 30-minute averages.\n\nMeasurement depths are not currently being reported correctly in the sensor positions file in the Soil water content and water salinity data product (DP1.00094.001). A readme file (readme_swc_depths.txt) and an associated file containing the sensor installation depths (swc_depthsV2.csv) have been added to the data product download package until the data product algorithms are corrected.",
+          "productDoi": "https://doi.org/10.48443/7exd-n727"
+        },
+        {
+          "productCode": "DP1.00095.001",
+          "productName": "Soil CO2 concentration",
+          "productDescription": "CO2 concentration in soil air at various depth below the soil surface starting at approximately 2 cm. Data are from all five Instrumented Soil Plots per site and presented as 1-minute and 30-minute averages.",
+          "productDoi": "https://doi.org/10.48443/bdgb-5v03"
+        },
+        {
+          "productCode": "DP1.00096.001",
+          "productName": "Soil physical and chemical properties, Megapit",
+          "productDescription": "Soil taxonomy, horizon names, horizon depths, soil bulk density, texture, and chemical properties in the <= 2 mm soil fraction for each soil horizon in each Megapit. Data were derived from a sampling location expected to be representative of the area where the Instrumented Soil Plots are located and were collected once during site construction, in collaboration with the USDA Natural Resources Conservation Service. Also see distributed soil (DP1.10086.001) and initial characterization soil (DP1.10047.001) data products, as well as the root Megapit product (DP1.10066.001) for root biomass and chemistry measurements.",
+          "productDoi": "https://doi.org/10.48443/t70z-np08"
+        },
+        {
+          "productCode": "DP1.00098.001",
+          "productName": "Relative humidity",
+          "productDescription": "Relative humidity, temperature, and dew or frost point temperature, available as one- and thirty-minute averages of 1 Hz observations. Observations are made by sensors located at the top of the tower infrastructure, in the soil array, and on the aquatic meteorologic station.",
+          "productDoi": "https://doi.org/10.48443/g2j6-sr14"
+        },
+        {
+          "productCode": "DP1.00101.001",
+          "productName": "Particulate mass",
+          "productDescription": "Dust mass and density measured by a high volume dust sampler and quartz filters.",
+          "productDoi": "https://doi.org/10.48443/vwhh-tr08"
+        },
+        {
+          "productCode": "DP1.10003.001",
+          "productName": "Breeding landbird point counts",
+          "productDescription": "Count, distance from observer, and taxonomic identification of breeding landbirds observed during point counts",
+          "productDoi": "https://doi.org/10.48443/00pg-vm19"
+        },
+        {
+          "productCode": "DP1.10010.001",
+          "productName": "Coarse downed wood log survey",
+          "productDescription": "Tally and raw measurement of coarse downed wood >= 2 cm diameter",
+          "productDoi": "https://doi.org/10.48443/re5e-z642"
+        },
+        {
+          "productCode": "DP1.10014.001",
+          "productName": "Coarse downed wood bulk density sampling",
+          "productDescription": "Raw bulk density measurements of coarse downed wood >= 2 cm diameter",
+          "productDoi": "https://doi.org/10.48443/aw3w-8s63"
+        },
+        {
+          "productCode": "DP1.10017.001",
+          "productName": "Digital hemispheric photos of plot vegetation",
+          "productDescription": "Upward and/or downward facing digital 180-degree images of vegetation in plots used to calculate leaf area index",
+          "productDoi": "https://doi.org/10.48443/t8a4-vk69"
+        },
+        {
+          "productCode": "DP1.10020.001",
+          "productName": "Ground beetle sequences DNA barcode",
+          "productDescription": "COI DNA sequences from select ground beetles",
+          "productDoi": "https://doi.org/10.48443/c7s3-nw69"
+        },
+        {
+          "productCode": "DP1.10022.001",
+          "productName": "Ground beetles sampled from pitfall traps",
+          "productDescription": "Taxonomically identified ground beetles and the plots and times from which they were collected.",
+          "productDoi": "https://doi.org/10.48443/3v35-v852"
+        },
+        {
+          "productCode": "DP1.10023.001",
+          "productName": "Herbaceous clip harvest",
+          "productDescription": "Dry weight of herbaceous vegetation harvested from individual clip strips, by functional type",
+          "productDoi": "https://doi.org/10.48443/kbnv-bz87"
+        },
+        {
+          "productCode": "DP1.10026.001",
+          "productName": "Plant foliar traits",
+          "productDescription": "Traits of sun-lit canopy plants reported at the level of the individual (woody plants) or community (herbaceous plants).",
+          "productDoi": "https://doi.org/10.48443/tmrs-fb32"
+        },
+        {
+          "productCode": "DP1.10033.001",
+          "productName": "Litterfall and fine woody debris production and chemistry",
+          "productDescription": "Dry weight of litterfall and fine woody debris collected from elevated and ground traps, sorted to functional group, as well as periodic measurements of litter chemistry and stable isotopes.",
+          "productDoi": "https://doi.org/10.48443/gf8z-g297"
+        },
+        {
+          "productCode": "DP1.10038.001",
+          "productName": "Mosquito sequences DNA barcode",
+          "productDescription": "COI DNA sequences from select mosquitoes",
+          "productDoi": "https://doi.org/10.48443/zfzk-v965"
+        },
+        {
+          "productCode": "DP1.10041.001",
+          "productName": "Mosquito pathogen status",
+          "productDescription": "Presence/absence of a pathogen in a single mosquito sample (pool)",
+          "productDoi": "https://doi.org/10.48443/k4gc-r927"
+        },
+        {
+          "productCode": "DP1.10043.001",
+          "productName": "Mosquitoes sampled from CO2 traps",
+          "productDescription": "Taxonomically identified mosquitoes and the plots and times from which they were collected",
+          "productDoi": "https://doi.org/10.48443/bxnk-jb11"
+        },
+        {
+          "productCode": "DP1.10047.001",
+          "productName": "Soil physical and chemical properties, distributed initial characterization",
+          "productDescription": "Soil physical and chemical properties measured as part of initial site characterization activities at NEON sites. Data are reported by pedogenic horizon, generally for the top 1m of the soil profile. Also see distributed periodic and Megapit soil data.",
+          "productDoi": "https://doi.org/10.48443/ka55-2852"
+        },
+        {
+          "productCode": "DP1.10055.001",
+          "productName": "Plant phenology observations",
+          "productDescription": "Phenophase status and intensity of tagged plants",
+          "productDoi": "https://doi.org/10.48443/11m1-9043"
+        },
+        {
+          "productCode": "DP1.10058.001",
+          "productName": "Plant presence and percent cover",
+          "productDescription": "Plant species cover-abundance and presence observed in multi-scale plots. Plant species and associated percent cover in 1m2 subplots and plant species presence in 10m2 and 100m2 subplots are reported from 400m2 plots. Archived plant vouchers and foliar tissue support the data and additional analyses.",
+          "productDoi": "https://doi.org/10.48443/9579-a253"
+        },
+        {
+          "productCode": "DP1.10064.001",
+          "productName": "Rodent pathogen status, hantavirus",
+          "productDescription": "Presence/absence of hantavirus (or antibodies to hantavirus) in each single rodent sample from 2014-2019. Beginning in 2020, the protocol was switched to detection of tick-borne diseases; these data are available in the Rodent pathogen status, tick-borne data product (DP1.10064.002).",
+          "productDoi": "https://doi.org/10.48443/5ze0-6p72"
+        },
+        {
+          "productCode": "DP1.10064.002",
+          "productName": "Rodent pathogen status, tick-borne",
+          "productDescription": "Presence/absence of tick-borne diseases (or antibodies to same) in each single rodent sample from 2020-onward. Prior to 2020, the protocol was used to detect hantavirus; these data are available in the Rodent-borne pathogen status data product (DP1.10064.001).",
+          "productDoi": "https://doi.org/10.48443/qs3c-vf23"
+        },
+        {
+          "productCode": "DP1.10066.001",
+          "productName": "Root biomass and chemistry, Megapit",
+          "productDescription": "Standing stock of fine and coarse root biomass plus root carbon (C) and nitrogen (N) concentrations and stable isotopes from soil Megapits. Samples were collected in 10cm increments for the first 1m depth and 20cm increments thereafter to 2m depth. Ground, oven-dried root tissues from each depth increment are available for request from the NEON Biorepository. See the soil Megapit data product (DP1.00096.001) for physical and chemical data from Megapit soils.",
+          "productDoi": "https://doi.org/10.48443/584d-hn85"
+        },
+        {
+          "productCode": "DP1.10067.001",
+          "productName": "Root biomass and chemistry, periodic",
+          "productDescription": "Fine root biomass to 30cm depth via soil core sampling. Includes root carbon (C) and nitrogen (N) concentrations and stable isotopes.",
+          "productDoi": "https://doi.org/10.48443/ecg2-af83"
+        },
+        {
+          "productCode": "DP1.10072.001",
+          "productName": "Small mammal box trapping",
+          "productDescription": "Individual- and trap-level data collected using box traps designed to capture small mammals",
+          "productDoi": "https://doi.org/10.48443/p4re-p954"
+        },
+        {
+          "productCode": "DP1.10076.001",
+          "productName": "Small mammal sequences DNA barcode",
+          "productDescription": "COI DNA sequences from select small mammals",
+          "productDoi": "https://doi.org/10.48443/pqzc-wq87"
+        },
+        {
+          "productCode": "DP1.10081.001",
+          "productName": "Soil microbe community composition",
+          "productDescription": "Counts and relative abundances of archaeal, bacterial, and fungal taxa observed in soil microbial communities",
+          "productDoi": "https://doi.org/10.48443/p0ge-z118"
+        },
+        {
+          "productCode": "DP1.10086.001",
+          "productName": "Soil physical and chemical properties, periodic",
+          "productDescription": "Soil physical and chemical properties from the top 30 cm of the profile from periodic soil core collections. Data are reported by horizon (mineral vs. organic). See initial characterization and megapit products for additional soil data.",
+          "productDoi": "https://doi.org/10.48443/0phb-j505"
+        },
+        {
+          "productCode": "DP1.10092.001",
+          "productName": "Tick pathogen status",
+          "productDescription": "Presence/absence of a pathogen in each single tick sample",
+          "productDoi": "https://doi.org/10.48443/nyst-jp72"
+        },
+        {
+          "productCode": "DP1.10093.001",
+          "productName": "Ticks sampled using drag cloths",
+          "productDescription": "Abundance and density of ticks collected by drag and/or flag sampling (by species and/or lifestage)",
+          "productDoi": "https://doi.org/10.48443/fh83-k817"
+        },
+        {
+          "productCode": "DP1.10098.001",
+          "productName": "Vegetation structure",
+          "productDescription": "Structure measurements of individual woody and non-woody plants, mapped positions of qualifying woody and non-woody plants, and metadata required to draw inference from individual measurements at the plot scale.",
+          "productDoi": "https://doi.org/10.48443/73zn-k414"
+        },
+        {
+          "productCode": "DP1.10104.001",
+          "productName": "Soil microbe biomass",
+          "productDescription": "Quantitative abundance of microbes in soil samples",
+          "productDoi": "https://doi.org/10.48443/rwbj-ry66"
+        },
+        {
+          "productCode": "DP1.10107.001",
+          "productName": "Soil microbe metagenome sequences",
+          "productDescription": "Metagenomic sequence data from soil samples",
+          "productDoi": "https://doi.org/10.48443/e4zf-b917"
+        },
+        {
+          "productCode": "DP1.10108.001",
+          "productName": "Soil microbe marker gene sequences",
+          "productDescription": "DNA sequence data from ribosomal RNA marker genes from soil samples",
+          "productDoi": "https://doi.org/10.48443/y0ry-xp72"
+        },
+        {
+          "productCode": "DP1.10109.001",
+          "productName": "Soil microbe group abundances",
+          "productDescription": "Counts and relative abundances of marker genes from total archaea, bacteria, and fungi observed by qPCR in soil microbial communities",
+          "productDoi": "https://doi.org/10.48443/pfs0-c061"
+        },
+        {
+          "productCode": "DP1.10111.001",
+          "productName": "Site management and event reporting",
+          "productDescription": "This data product contains records of land management activities, disturbances, and other incidents of ecological note within all NEON sites",
+          "productDoi": "https://doi.org/10.48443/qc0a-ve34"
+        },
+        {
+          "productCode": "DP1.20004.001",
+          "productName": "Barometric pressure above water on-buoy",
+          "productDescription": "Barometric pressure, available as one-minute instantaneous measurements and thirty-minute averages for both station pressure and pressure reduced to sea level. Observations are made on the meteorology station on the buoy in lakes and rivers.",
+          "productDoi": "https://doi.org/10.48443/mka5-3385"
+        },
+        {
+          "productCode": "DP1.20015.001",
+          "productName": "Specific conductivity in groundwater",
+          "productDescription": "In situ sensor-based measurements of specific conductance of groundwater in wells",
+          "productDoi": "https://doi.org/10.48443/het9-3q22"
+        },
+        {
+          "productCode": "DP1.20016.001",
+          "productName": "Elevation of surface water",
+          "productDescription": "In situ sensor-based measurements of surface water elevation, available as five- and thirty-minute  averages in lakes, rivers, and wadeable streams. Based on sensor measurements of water pressure.",
+          "productDoi": "https://doi.org/10.48443/a1rz-9x22"
+        },
+        {
+          "productCode": "DP1.20032.001",
+          "productName": "Shortwave and longwave radiation above water on-buoy (net radiometer)",
+          "productDescription": "Net shortwave and longwave radiation on buoys is measured twice per minute and is reported as 1-minute and 30-minute mean values.",
+          "productDoi": "https://doi.org/10.48443/sj11-6q44"
+        },
+        {
+          "productCode": "DP1.20033.001",
+          "productName": "Nitrate in surface water",
+          "productDescription": "In situ sensor-based nitrate concentration, available as fifteen minute  averages in surface water in lakes, wadeable and non-wadeable streams",
+          "productDoi": "https://doi.org/10.48443/mm5s-df23"
+        },
+        {
+          "productCode": "DP1.20042.001",
+          "productName": "Photosynthetically active radiation at water surface",
+          "productDescription": "Photosynthetically Active Radiation (PAR) observations represent the radiation flux at wavelengths between 400-700 nm, which constitute the wavelengths that drive photosynthesis. This data product is available as one-, five-,  and thirty-minute averages. Observations are made at the aquatic sensor set location at lakes, non-wadeable streams, and wadeable streams.",
+          "productDoi": "https://doi.org/10.48443/qbrt-jq78"
+        },
+        {
+          "productCode": "DP1.20046.001",
+          "productName": "Air temperature above water on-buoy",
+          "productDescription": "Air temperature, available as one-minute instantaneous measurements and thirty-minute averages. Observations are made on the meteorology station on the buoy in lakes and rivers.",
+          "productDoi": "https://doi.org/10.48443/9tdw-0g70"
+        },
+        {
+          "productCode": "DP1.20048.001",
+          "productName": "Discharge field collection",
+          "productDescription": "Discharge measurements from field-based surveys",
+          "productDoi": "https://doi.org/10.48443/tys0-ze83"
+        },
+        {
+          "productCode": "DP1.20053.001",
+          "productName": "Temperature (PRT) in surface water",
+          "productDescription": "Surface water temperature, available as one-, five-, and thirty-minute  averages, measured by a platinum resistance thermometer at the sensor location in lakes, wadeable and non-wadeable streams",
+          "productDoi": "https://doi.org/10.48443/33zj-cq24"
+        },
+        {
+          "productCode": "DP1.20059.001",
+          "productName": "Windspeed and direction above water on-buoy",
+          "productDescription": "Wind speed and direction; observations are made by a wind monitor consisting of a propeller and vane design on lake and river buoys.",
+          "productDoi": "https://doi.org/10.48443/7k86-ey55"
+        },
+        {
+          "productCode": "DP1.20063.001",
+          "productName": "Aquatic plant bryophyte chemical properties",
+          "productDescription": "Carbon (C) and nitrogen (N) concentrations of aquatic plant and bryophytes from benthic collections in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/f1f5-rq28"
+        },
+        {
+          "productCode": "DP1.20066.001",
+          "productName": "Aquatic plant bryophyte macroalgae clip harvest",
+          "productDescription": "Dry weight of aquatic plant, bryophyte, and macroalgae from benthic quadrats in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/h2mp-bq47"
+        },
+        {
+          "productCode": "DP1.20072.001",
+          "productName": "Aquatic plant, bryophyte, lichen, and macroalgae point counts in wadeable streams",
+          "productDescription": "Point counts of aquatic plants, bryophytes, lichens, and macroalgae from transects in wadeable streams",
+          "productDoi": "https://doi.org/10.48443/dryb-xf51"
+        },
+        {
+          "productCode": "DP1.20086.001",
+          "productName": "Benthic microbe community composition",
+          "productDescription": "Counts and relative abundances of archaeal, bacterial, and fungal taxa observed in benthic microbial communities from wadeable streams",
+          "productDoi": "https://doi.org/10.48443/cgqd-bm36"
+        },
+        {
+          "productCode": "DP1.20092.001",
+          "productName": "Chemical properties of groundwater",
+          "productDescription": "Grab samples of groundwater chemistry including general chemistry, anions, cations, and nutrients.",
+          "productDoi": "https://doi.org/10.48443/vx6a-be60"
+        },
+        {
+          "productCode": "DP1.20093.001",
+          "productName": "Chemical properties of surface water",
+          "productDescription": "Grab samples of surface water chemistry including general chemistry, anions, cations, and nutrients.",
+          "productDoi": "https://doi.org/10.48443/wf2d-h925"
+        },
+        {
+          "productCode": "DP1.20097.001",
+          "productName": "Dissolved gases in surface water",
+          "productDescription": "Grab samples of surface water dissolved gases including carbon dioxide, methane, and nitrous oxide",
+          "productDoi": "https://doi.org/10.48443/pf8r-wz28"
+        },
+        {
+          "productCode": "DP1.20099.001",
+          "productName": "Groundwater and active layer measurements at permafrost sites",
+          "productDescription": "Measurements from ground surface to liquid groundwater and active layer thaw. Collected at sites with permafrost.",
+          "productDoi": "https://doi.org/10.48443/4d20-5292"
+        },
+        {
+          "productCode": "DP1.20100.001",
+          "productName": "Elevation of groundwater",
+          "productDescription": "Sensor based measurement of groundwater elevation calculated from pressure transducer readings in each well",
+          "productDoi": "https://doi.org/10.48443/jhag-hc60"
+        },
+        {
+          "productCode": "DP1.20105.001",
+          "productName": "Fish sequences DNA barcode",
+          "productDescription": "COI DNA sequences from select fish in lakes and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/4pfx-2c72"
+        },
+        {
+          "productCode": "DP1.20107.001",
+          "productName": "Fish electrofishing, gill netting, and fyke netting counts",
+          "productDescription": "Counts of fish from electrofishing surveys in wadeable streams, or electrofishing, gill netting, and/or fyke netting surveys in lakes. Includes fish standard length and individual mass",
+          "productDoi": "https://doi.org/10.48443/etgd-3s49"
+        },
+        {
+          "productCode": "DP1.20120.001",
+          "productName": "Macroinvertebrate collection",
+          "productDescription": "Collection of benthic macroinvertebrates using multiple sampling methods in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/zj4y-4073"
+        },
+        {
+          "productCode": "DP1.20126.001",
+          "productName": "Macroinvertebrate metabarcoding",
+          "productDescription": "CO1 DNA sequences of the aquatic macroinvertebrate community",
+          "productDoi": "https://doi.org/10.48443/06t7-1b34"
+        },
+        {
+          "productCode": "DP1.20138.001",
+          "productName": "Surface water microbe cell count",
+          "productDescription": "Cell counts from surface water microbial collection in lakes, wadeable streams, and non-wadeable streams",
+          "productDoi": "https://doi.org/10.48443/8ah9-h316"
+        },
+        {
+          "productCode": "DP1.20141.001",
+          "productName": "Surface water microbe community composition",
+          "productDescription": "Counts and relative abundances of archaeal, bacterial, and fungal taxa observed in surface water microbial communities in lakes, rivers and streams",
+          "productDoi": "https://doi.org/10.48443/0g3r-kw93"
+        },
+        {
+          "productCode": "DP1.20163.001",
+          "productName": "Periphyton, seston, and phytoplankton chemical properties",
+          "productDescription": "Carbon (C), nitrogen (N), phosphorus (P), isotopes, chlorophyll a, and pheophytin of periphyton and phytoplankton from benthic and water column samples in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/j0k0-cv96"
+        },
+        {
+          "productCode": "DP1.20166.001",
+          "productName": "Periphyton, seston, and phytoplankton collection",
+          "productDescription": "Collection and biomass of periphyton and phytoplankton using multiple benthic and water column sampling methods in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/cebv-nn73"
+        },
+        {
+          "productCode": "DP1.20190.001",
+          "productName": "Reaeration field and lab collection",
+          "productDescription": "Field and external laboratory data from the salt-tracer and gas injection field reaeration measurements, including stream widths, inert gas concentrations, conservative tracer concentrations, and conductivity times series.",
+          "productDoi": "https://doi.org/10.48443/bk29-6c91"
+        },
+        {
+          "productCode": "DP1.20191.001",
+          "productName": "Riparian vegetation % cover",
+          "productDescription": "Assessment of riparian vegetation percent cover in wadeable streams",
+          "productDoi": "https://doi.org/10.48443/rfxv-jg44"
+        },
+        {
+          "productCode": "DP1.20193.001",
+          "productName": "Salt-based stream discharge",
+          "productDescription": "Discharge measured using a constant-rate addition salt tracer during reaeration measurements",
+          "productDoi": "https://doi.org/10.48443/s8ca-bw29"
+        },
+        {
+          "productCode": "DP1.20194.001",
+          "productName": "Sediment chemical and physical properties",
+          "productDescription": "Field collection and analysis of nutrients, carbon, inorganics and physical properties in sediments of wadeable streams, rivers, and lakes",
+          "productDoi": "https://doi.org/10.48443/114c-we90"
+        },
+        {
+          "productCode": "DP1.20206.001",
+          "productName": "Stable isotopes in surface water",
+          "productDescription": "Grab samples for stable isotope chemistry including water and particulate organic matter, in lakes, rivers, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/szkp-nr11"
+        },
+        {
+          "productCode": "DP1.20217.001",
+          "productName": "Temperature of groundwater",
+          "productDescription": "In situ sensor-based measurements of groundwater temperature in each well.",
+          "productDoi": "https://doi.org/10.48443/jtw2-x761"
+        },
+        {
+          "productCode": "DP1.20219.001",
+          "productName": "Zooplankton collection",
+          "productDescription": "Collection of zooplankton from water column samples in lakes",
+          "productDoi": "https://doi.org/10.48443/eqmn-5b37"
+        },
+        {
+          "productCode": "DP1.20221.001",
+          "productName": "Zooplankton metabarcoding",
+          "productDescription": "CO1 DNA sequences of the zooplankton community",
+          "productDoi": "https://doi.org/10.48443/t300-6f64"
+        },
+        {
+          "productCode": "DP1.20252.001",
+          "productName": "Secchi depth",
+          "productDescription": "Measurement of water column Secchi depth in non-wadeable streams and lakes",
+          "productDoi": "https://doi.org/10.48443/js74-8y83"
+        },
+        {
+          "productCode": "DP1.20254.001",
+          "productName": "Depth profile at specific depths",
+          "productDescription": "Measurements of water column temperature and depth profile in non-wadeable streams and lakes",
+          "productDoi": "https://doi.org/10.48443/6z4t-6f03"
+        },
+        {
+          "productCode": "DP1.20261.001",
+          "productName": "Photosynthetically active radiation below water surface",
+          "productDescription": "Photosynthetically Active Radiation (PAR) observations represent the radiation flux at wavelengths between 400-700 nm, which constitute the wavelengths that drive photosynthesis. This data product is available as one- and thirty-minute averages. Observations are made at the aquatic sensor sets at the lake inlet, lake outlet, and both lake and river buoys.",
+          "productDoi": "https://doi.org/10.48443/jtnt-6r86"
+        },
+        {
+          "productCode": "DP1.20264.001",
+          "productName": "Temperature at specific depth in surface water",
+          "productDescription": "Sensor based measurements of water temperature in lake and river sites. Temperature is measured at specific depths by a fixed-length buoy-mounted array of temperature sensors.",
+          "productDoi": "https://doi.org/10.48443/rghw-ek76"
+        },
+        {
+          "productCode": "DP1.20267.001",
+          "productName": "Gauge height",
+          "productDescription": "Gauge height, in meters, measured at lakes, wadeable streams and non-wadeable streams.",
+          "productDoi": "https://doi.org/10.48443/vt9n-q488"
+        },
+        {
+          "productCode": "DP1.20271.001",
+          "productName": "Relative humidity above water on-buoy",
+          "productDescription": "Relative humidity, temperature, and dew or frost point temperature, available as one- and thirty-minute averages. Observations are made by sensors located on the buoy in lakes and rivers.",
+          "productDoi": "https://doi.org/10.48443/x0jh-tp02"
+        },
+        {
+          "productCode": "DP1.20275.001",
+          "productName": "Riparian composition and structure",
+          "productDescription": "Assessment of riparian vegetation composition and physical structure in lakes, non-wadeable streams, and wadeable streams",
+          "productDoi": "https://doi.org/10.48443/rz4c-1f46"
+        },
+        {
+          "productCode": "DP1.20276.001",
+          "productName": "Stable isotopes in groundwater",
+          "productDescription": "Grab samples for stable isotopes of water in groundwater",
+          "productDoi": "https://doi.org/10.48443/y4rd-h577"
+        },
+        {
+          "productCode": "DP1.20277.001",
+          "productName": "Benthic microbe group abundances",
+          "productDescription": "Counts and relative abundances of marker genes from total archaea, bacteria, and fungi observed by qPCR in benthic microbial communities",
+          "productDoi": "https://doi.org/10.48443/375p-a586"
+        },
+        {
+          "productCode": "DP1.20278.001",
+          "productName": "Surface water microbe group abundances",
+          "productDescription": "Counts and relative abundances of marker genes from total archaea, bacteria, and fungi observed by qPCR in surface water microbial communities",
+          "productDoi": "https://doi.org/10.48443/h0v3-kw40"
+        },
+        {
+          "productCode": "DP1.20279.001",
+          "productName": "Benthic microbe metagenome sequences",
+          "productDescription": "Metagenomic sequence data from benthic samples",
+          "productDoi": "https://doi.org/10.48443/d71h-8947"
+        },
+        {
+          "productCode": "DP1.20280.001",
+          "productName": "Benthic microbe marker gene sequences",
+          "productDescription": "DNA sequence data from ribosomal RNA marker genes from benthic samples",
+          "productDoi": "https://doi.org/10.48443/r7ab-5625"
+        },
+        {
+          "productCode": "DP1.20281.001",
+          "productName": "Surface water microbe metagenome sequences",
+          "productDescription": "Metagenomic sequence data from surface water samples",
+          "productDoi": "https://doi.org/10.48443/m6px-z996"
+        },
+        {
+          "productCode": "DP1.20282.001",
+          "productName": "Surface water microbe marker gene sequences",
+          "productDescription": "DNA sequence data from ribosomal RNA marker genes from surface water samples",
+          "productDoi": "https://doi.org/10.48443/653r-pp57"
+        },
+        {
+          "productCode": "DP1.20288.001",
+          "productName": "Water quality",
+          "productDescription": "In situ sensor-based specific conductivity, concentration of chlorophyll a, dissolved oxygen content, fDOM concentration, pH, and turbidity, available as one- or five-minute instantaneous measurements in surface water of lakes, wadeable streams, and non-wadeable streams.",
+          "productDoi": "https://doi.org/10.48443/mpw3-3q06"
+        },
+        {
+          "productCode": "DP1.30001.001",
+          "productName": "LiDAR slant range waveform",
+          "productDescription": "Outgoing pulse and slant range return waveform signals with geolocation information provided. Data are provided by flightline in the Pulsewaves format.",
+          "productDoi": "https://doi.org/10.48443/2y88-kp17"
+        },
+        {
+          "productCode": "DP1.30003.001",
+          "productName": "Discrete return LiDAR point cloud",
+          "productDescription": "Unclassified three-dimensional point cloud stored in LAS format. Classifications follow ASPRS definition. All point coordinates are provided in meters. Data provided by flightline.",
+          "productDoi": "https://doi.org/10.48443/xxby-5a18"
+        },
+        {
+          "productCode": "DP1.30006.001",
+          "productName": "Spectrometer orthorectified surface directional reflectance - flightline",
+          "productDescription": "Surface reflectance (0-1 unitless, scaled by 10,000) computed from the NEON Imaging Spectrometer using ATCOR4r is orthorectified and output onto a fixed, uniform spatial grid using nearest-neighbor resampling. Fixed spatial grid is based on the native spatial resolution which is driven by the aircraft altitude; data are provided by flightline.",
+          "productDoi": "https://doi.org/10.48443/ypjz-et36"
+        },
+        {
+          "productCode": "DP1.30008.001",
+          "productName": "Spectrometer orthrorectified at-sensor radiance - flightline",
+          "productDescription": "Calibrated radiance in units of uW/cm^2-sr-nm as measured by the NEON Imaging Spectrometer is orthorectified and output onto a fixed, uniform spatial grid using nearest-neighbor resampling. Fixed spatial grid is based on the native spatial resolution which is driven by the aircraft altitude; data are provided by flightline.",
+          "productDoi": "https://doi.org/10.48443/ehnm-xd88"
+        },
+        {
+          "productCode": "DP1.30010.001",
+          "productName": "High-resolution orthorectified camera imagery",
+          "productDescription": "White balanced 8 bit RGB images orthorectified and output onto a fixed, uniform spatial grid using nearest neighbor resampling to a 10 cm spatial resolution.",
+          "productDoi": "https://doi.org/10.48443/wbts-hh07"
+        },
+        {
+          "productCode": "DP1.30012.001",
+          "productName": "Field spectral data",
+          "productDescription": "Reflectance of collected sample(s) using leaf clip and hand-held field Spectrometer; opportunistic product, provided when collected.",
+          "productDoi": "https://doi.org/10.48443/cmwe-1d83"
+        },
+        {
+          "productCode": "DP2.30011.001",
+          "productName": "Albedo - spectrometer - flightline",
+          "productDescription": "Total amount of solar radiation in the 0.4 to 2.5 micron band reflected by the Earth surface into an upward hemisphere divided by the total amount incident from this hemisphere; data are provided by flightline",
+          "productDoi": "https://doi.org/10.48443/5r9v-5j27"
+        },
+        {
+          "productCode": "DP2.30012.001",
+          "productName": "LAI - spectrometer - flightline",
+          "productDescription": "The ratio of upper leaf surface area to ground area (for broadleaf canopies), or projected conifer needle surface area to ground area (for coniferous plants) for a given unit area; measured by an industry standard (ATCOR) algorithm based on Soil Adjusted Vegetation Index (SAVI) as input; level 2 data are provided by flightline.",
+          "productDoi": "https://doi.org/10.48443/8ghh-st06"
+        },
+        {
+          "productCode": "DP2.30014.001",
+          "productName": "fPAR - spectrometer - flightline",
+          "productDescription": "The fraction of incident photosynthetically active radiation (400-700 nm) absorbed by the green elements of a vegetation canopy; calculated by an industry standard (ATCOR) algorithm based on Soil Adjusted Vegetation Index (SAVI) as input; data are provided by flightline at equivalent resolution to spectrometer orthorectified surface directional reflectance, carbon and nutrient cycling due to its relationship with vegetative productivity.",
+          "productDoi": "https://doi.org/10.48443/4008-ms32"
+        },
+        {
+          "productCode": "DP2.30019.001",
+          "productName": "Canopy water indices - flightline",
+          "productDescription": "Normalized index of canopy water content; data are provided by flightline",
+          "productDoi": "https://doi.org/10.48443/yke0-3889"
+        },
+        {
+          "productCode": "DP2.30026.001",
+          "productName": "Vegetation indices - spectrometer - flightline",
+          "productDescription": "NDVI - Normalized ratio of NIR and IR bands; characterizes the \"red edge\" in vegetation spectra. SAVI - Normalized ratio of 850 nm and 650 nm bands with gain and offset factors to minimize soil contribution in result; primary input to LAI product. EVI - Normalized ratio of NIR and IR bans (red edge characterization); includes Blue channel for better aerosol characterization. Data are provided by flightline; additional indices will be assessed and added to this product",
+          "productDoi": "https://doi.org/10.48443/xw8m-tt12"
+        },
+        {
+          "productCode": "DP3.30006.001",
+          "productName": "Spectrometer orthorectified surface directional reflectance - mosaic",
+          "productDescription": "Orthorectified Surface reflectance (0-1 unitless, scaled by 10,000) computed from the NEON Imaging Spectrometer (NIS) per pixel; data are orthorectified and output onto a fixed, uniform spatial grid using nearest-neighbor resampling (tbr). Level 1 flight lines over a given site are mosaicked into 1 km by 1 km tiles with a spatial resolution of 1m.",
+          "productDoi": "https://doi.org/10.48443/wzwj-nm11"
+        },
+        {
+          "productCode": "DP3.30010.001",
+          "productName": "High-resolution orthorectified camera imagery mosaic",
+          "productDescription": "Level 1 high-resolution orthorectified camera images are mosaiced and tiled into 1 km by 1 km data sets. Mosiac is output onto a fixed, uniform spatial grid using nearest-neighbor resampling; spatial resolution is at least 0.1 m.",
+          "productDoi": "https://doi.org/10.48443/67by-mq58"
+        },
+        {
+          "productCode": "DP3.30011.001",
+          "productName": "Albedo - spectrometer - mosaic",
+          "productDescription": "Total amount of solar radiation in the 0.4 to 2.5 micron band reflected by the Earth’s surface into an upward hemisphere divided by the total amount incident from this hemisphere",
+          "productDoi": "https://doi.org/10.48443/1zt0-p584"
+        },
+        {
+          "productCode": "DP3.30012.001",
+          "productName": "LAI - spectrometer - mosaic",
+          "productDescription": "The ratio of upper leaf surface area to ground area (for broadleaf canopies), or projected conifer needle surface area to ground area (for coniferous plants) for a given unit area; measured by an industry standard (ATCOR) algorithm based on Soil Adjusted Vegetation Index (SAVI) as input; level 3 data are provided as 1 km by 1 km mosaic tiles.",
+          "productDoi": "https://doi.org/10.48443/7x5a-mn68"
+        },
+        {
+          "productCode": "DP3.30014.001",
+          "productName": "fPAR - spectrometer - mosaic",
+          "productDescription": "The fraction of incident photosynthetically active radiation (400-700 nm) absorbed by the green elements of a vegetation canopy; mosaiced from the fPAR level 2 product onto a spatially uniform grid at 1 m spatial resolution and provided as 1 km by 1 km tiles.",
+          "productDoi": "https://doi.org/10.48443/398q-a647"
+        },
+        {
+          "productCode": "DP3.30015.001",
+          "productName": "Ecosystem structure",
+          "productDescription": "Height of the top of canopy above bare earth (Canopy Height Model (CHM));  data are mosaicked over AOP footprint; mosaicked onto a spatially uniform grid at 1 m spatial resolution in 1 km by 1 km tiles.",
+          "productDoi": "https://doi.org/10.48443/y26y-sj42"
+        },
+        {
+          "productCode": "DP3.30019.001",
+          "productName": "Canopy water indices - mosaic",
+          "productDescription": "Normalized index of canopy water content. Level 2 products derived from individual flight lines over a given site are mosaicked into single product; spatial resolution is 1m.",
+          "productDoi": "https://doi.org/10.48443/3cph-5t07"
+        },
+        {
+          "productCode": "DP3.30024.001",
+          "productName": "Elevation - LiDAR",
+          "productDescription": "All features and bare earth elevation given in meters in the NAVD88 (Geoid12A realization) reference frame as a DSM and DTM respectively. Bare earth is created by classifying and removing vegetation and man-made structures. Both the DSM and DTM are mosaicked onto a spatially uniform grid at 1 m spatial resolution in 1 km by 1 km tiles.",
+          "productDoi": "https://doi.org/10.48443/kvb6-4322"
+        },
+        {
+          "productCode": "DP3.30025.001",
+          "productName": "Slope and Aspect - LiDAR",
+          "productDescription": "Slope is a ratio of rise over run (height over distance) of the bare earth elevation product given in degrees; aspect is the direction of the steepest slope of the bare earth elevation product (e.g., north, east, south, west) given in degrees clockwise from grid north; both mosaicked onto a spatially uniform grid at 1 m spatial resolution in 1 km by 1 km tiles.",
+          "productDoi": "https://doi.org/10.48443/bce8-av16"
+        },
+        {
+          "productCode": "DP3.30026.001",
+          "productName": "Vegetation indices - spectrometer - mosaic",
+          "productDescription": "NDVI - Normalized ratio of NIR and IR bands; characterizes the \"red edge\" in vegetation spectra. SAVI - Normalized ratio of 850 nm and 650 nm bands with gain and offset factors to minimize soil contribution in result; primary input to LAI product. EVI - Normalized ratio of NIR and IR bans (red edge characterization); includes Blue channel for better aerosol characterization.  Level 2 products derived from individual flight lines over a given site are mosaicked into single product; spatial resolution is 1m.",
+          "productDoi": "https://doi.org/10.48443/4esn-pb38"
+        },
+        {
+          "productCode": "DP4.00001.001",
+          "productName": "Summary weather statistics",
+          "productDescription": "Present summary statistics for biometeorological variables for NEON weather stations at core TIS sites. Statistics will include means, standard deviations, maxima, and minima for periods of days, months, and years. Engineering-grade product only.",
+          "productDoi": "https://doi.org/10.48443/g7m7-8v38"
+        },
+        {
+          "productCode": "DP4.00130.001",
+          "productName": "Continuous discharge",
+          "productDescription": "Continuous measurements of stream discharge calculated from a stage-discharge rating curve and sensor-based measurements of water surface elevation.",
+          "productDoi": "https://doi.org/10.48443/h2ze-2f12"
+        },
+        {
+          "productCode": "DP4.00131.001",
+          "productName": "Stream morphology map",
+          "productDescription": "Map showing the morphology of streams. These maps denote topography of the stream basin as well as location of the thalweg, coarse woody debris, gravel/sand bars, and other features of interest.",
+          "productDoi": "https://doi.org/10.48443/c50j-m773"
+        },
+        {
+          "productCode": "DP4.00132.001",
+          "productName": "Bathymetric and morphological maps",
+          "productDescription": "Bathymetry of lake bottoms and non-wadeable streams for detecting environmental change as well as for determining lake morphology, estimating primary productivity, habitat features, and water quality.",
+          "productDoi": "https://doi.org/10.48443/h7rd-wd29"
+        },
+        {
+          "productCode": "DP4.00133.001",
+          "productName": "Stage-discharge rating curves",
+          "productDescription": "Stage discharge rating curve is generated from the relationship between staff gauge measurements and surveys of stream, river, and lake inflow/outflow discharge. It is used to calculate the L4 Continuous discharge (DP4.00130.001) data product.",
+          "productDoi": "https://doi.org/10.48443/1sy2-v104"
+        },
+        {
+          "productCode": "DP4.00200.001",
+          "productName": "Bundled data products - eddy covariance",
+          "productDescription": "Bundle of eddy-covariance data products, including related meteorological and soil data products.",
+          "productDoi": "https://doi.org/10.48443/2ms3-a333"
+        }
+      ]
+    }
+  ]
+}

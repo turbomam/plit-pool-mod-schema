@@ -1,0 +1,1114 @@
+{
+  "data": {
+    "entries": [
+      {
+        "key": "wdp_collection_in.sampleID",
+        "value": "Wet deposition sample from automated collector"
+      },
+      {
+        "key": "wdp_collection_in.chemSubsampleID",
+        "value": "Wet deposition subsample for chemical analysis"
+      },
+      {
+        "key": "inv_dnaExtraction_in.dnaSampleID",
+        "value": "Subsample for macroinvertebrate DNA extraction"
+      },
+      {
+        "key": "zoo_dnaExtraction_in.dnaSampleID",
+        "value": "Subsample for zooplankton DNA extraction"
+      },
+      {
+        "key": "cdw_fieldtally_in.individualID",
+        "value": "Coarse downed wood individual log measured in the field"
+      },
+      {
+        "key": "apc_voucher_in.herbariumSubsampleID",
+        "value": null
+      },
+      {
+        "key": "apc_perTaxon_in.herbariumSubsampleID",
+        "value": null
+      },
+      {
+        "key": "apl_domainLab_in.herbariumSampleID",
+        "value": null
+      },
+      {
+        "key": "asc_fieldDataStation_in.organicSedimentSampleID",
+        "value": "Subsample for organic sediment chemical properties"
+      },
+      {
+        "key": "asc_fieldDataStation_in.inorganicSedimentSampleID",
+        "value": "Subsample for inorganic sediment chemical properties"
+      },
+      {
+        "key": "asc_fieldDataStation_in.carbonSedimentSampleID",
+        "value": "Subsample for carbon in sediment chemical properties"
+      },
+      {
+        "key": "asc_fieldDataStation_in.physicalSedimentSampleID",
+        "value": "Subsample for sediment physical properties"
+      },
+      {
+        "key": "asc_fieldDataStation_in.sedimentSampleID",
+        "value": "Sample for aquatic sediment physical or chemical properties"
+      },
+      {
+        "key": "mcc_taxonTableMetadata_16S_in.communitySubsampleID",
+        "value": null
+      },
+      {
+        "key": "mcc_taxonTableMetadata_ITS_in.communitySubsampleID",
+        "value": null
+      },
+      {
+        "key": "mcc_taxonTableMetadata_ITS_in .communitySubsampleID",
+        "value": "Subsample identifier of microbial taxon table from ITS sequencing analysis"
+      },
+      {
+        "key": "mcc_taxonTableMetadata_16S_in .communitySubsampleID",
+        "value": "Subsample identifier of microbial taxon table from 16S sequencing analysis"
+      },
+      {
+        "key": "mms_metagenomeSequencing_in.processedSeqFileNameID",
+        "value": "Identifier for file containing quality-processed, microbial metagenomics sequence data"
+      },
+      {
+        "key": "fsh_perFish_in.dnaSampleID",
+        "value": "Individual fish fin clip sent to facility for DNA barcoding"
+      },
+      {
+        "key": "fsh_perFish_in.voucherSampleID",
+        "value": "Individual fish identified as a target taxon and collected as a voucher specimen"
+      },
+      {
+        "key": "inv_fielddata_in.geneticSampleID",
+        "value": "Subsample of a  macroinvertebrate sample sent to facility for genetic barcoding"
+      },
+      {
+        "key": "fsp_sampleMetadata_in.spectraISampleID",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.rawNutSampleIDgwc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.pcnSampleIDswc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.rawNutSampleIDswc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.rawSampleIDswc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.filtSampleIDswc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.rawSampleIDgwc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.filtNutSampleIDswc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.filtNutSampleIDgwc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.pcnSampleIDgwc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.filtSampleIDgwc",
+        "value": null
+      },
+      {
+        "key": "div_voucher_in.voucherSampleID.herp",
+        "value": "Herptile voucher specimen collected opportunistically"
+      },
+      {
+        "key": "mgp_perarchivesample_in.archiveID",
+        "value": "Soil sample from the megapit for archive"
+      },
+      {
+        "key": "mgp_perbulksample_in.bulkDensID",
+        "value": "Soil bulk density sample from the megapit"
+      },
+      {
+        "key": "mgp_perhorizon_in.horizonID",
+        "value": "Soil horizon within the megapit"
+      },
+      {
+        "key": "mgp_perbiogeosample_in.biogeoID",
+        "value": "Soil biogeochemistry sample from the megapit"
+      },
+      {
+        "key": "mpr_perpitprofile_in.pitProfileClassID",
+        "value": "Roots from a vertical profile, sorted to size and live/dead status"
+      },
+      {
+        "key": "rea_backgroundFieldSaltData_in.saltBackgroundSampleID.NaCl",
+        "value": "Background salt sample for a constant rate NaCl/SF6 tracer injection"
+      },
+      {
+        "key": "rea_plateauSampleFieldData_in.syringeID",
+        "value": "Identifier for syringe used for water/air equilibration at plateau"
+      },
+      {
+        "key": "rea_plateauSampleFieldData_in.gasSampleID",
+        "value": "Gas sample following equilibration with stream water for SF6 concentration at plateau"
+      },
+      {
+        "key": "rea_backgroundFieldCondData_in.hoboSampleID",
+        "value": "Identifier to link to in situ conductivity sensor data files"
+      },
+      {
+        "key": "rea_backgroundFieldSaltData_in.saltBackgroundSampleID.model",
+        "value": "Background salt sample for a NaCl slug only injection"
+      },
+      {
+        "key": "rea_fieldData_in.injectateSampleID",
+        "value": "NaCl or NaBr constant rate injectate sample"
+      },
+      {
+        "key": "rea_plateauSampleFieldData_in.saltTracerSampleID",
+        "value": "Aqueous salt sample for NaCl or NaBr concentration in stream at plateau"
+      },
+      {
+        "key": "rea_backgroundFieldSaltData_in.saltBackgroundSampleID.NaBr",
+        "value": "Background salt sample for a constant rate NaBr/SF6 and NaCl slug tracer injection"
+      },
+      {
+        "key": "tck_archiving_in.archiveID",
+        "value": "Ticks sent to archive facility"
+      },
+      {
+        "key": "yearPlant",
+        "value": "Individual plant measured for vegetation structure with year-specific identifier"
+      },
+      {
+        "key": "cfc_fieldData_in.sampleID",
+        "value": "Plant foliar sample collected in the field"
+      },
+      {
+        "key": "cfc_chemistrySubsampling_in.archiveSampleID",
+        "value": "Plant foliar subsample for archive"
+      },
+      {
+        "key": "cfc_chemistrySubsampling_in.ligninSampleID",
+        "value": "Plant foliar subsample for lignin analysis"
+      },
+      {
+        "key": "vst_mapping_in.tagID",
+        "value": "Tagged, mapped plant"
+      },
+      {
+        "key": "cfc_LMA_in.lmaSampleID",
+        "value": "Plant foliar subsample for leaf mass per area analysis"
+      },
+      {
+        "key": "cfc_fieldData_in.chlorophyllSampleID",
+        "value": "Plant foliar subsample for chlorophyll analysis"
+      },
+      {
+        "key": "ntr_internalLab_in.kclSampleID",
+        "value": "Soil sample for KCl extraction for nitrogen transformation analysis"
+      },
+      {
+        "key": "ntr_internalLabBlanks_in.kclBlank3ID",
+        "value": "Blank sample 3 from reference KCl to be analyzed for background concentration"
+      },
+      {
+        "key": "ntr_internalLabBlanks_in.kclBlank2ID",
+        "value": "Blank sample 2 from reference KCl to be analyzed for background concentration"
+      },
+      {
+        "key": "ntr_internalLabBlanks_in.kclBlank1ID",
+        "value": "Blank sample 1 from reference KCl to be analyzed for background concentration"
+      },
+      {
+        "key": "ntr_internalLabBlanks_in.kclReferenceID",
+        "value": "Reference KCl for domain lab extraction protocol"
+      },
+      {
+        "key": "mcc_sequenceVariantMetadata_ITS_in.communitySubsampleID",
+        "value": null
+      },
+      {
+        "key": "mcc_sequenceVariantMetadata_16S_in.communitySubsampleID",
+        "value": null
+      },
+      {
+        "key": "dpm_fieldData_in.sampleID",
+        "value": "Particulate mass filter from automated collector"
+      },
+      {
+        "key": "alg_fieldData_in.parentSampleID",
+        "value": "Sample for algae field collection"
+      },
+      {
+        "key": "alg_domainLab_in.sampleIDafdm",
+        "value": "Subsample for algae ash free dry mass"
+      },
+      {
+        "key": "amb_fieldParent_in.geneticSampleID",
+        "value": "Subsample for benthic microbes DNA"
+      },
+      {
+        "key": "amb_fieldParent_in.archiveID",
+        "value": "Subsample for benthic microbes archive"
+      },
+      {
+        "key": "amb_fieldParent_in.sampleID",
+        "value": "Sample for benthic microbes"
+      },
+      {
+        "key": "inv_metabarcodeTaxonList_in.taxonomyListID",
+        "value": null
+      },
+      {
+        "key": "taggedPlant",
+        "value": "Individual plant measured for vegetation structure"
+      },
+      {
+        "key": "tck_collection_in.sampleID",
+        "value": "Bulk pool of ticks collected in the field"
+      },
+      {
+        "key": "tck_identification_in.subsampleID",
+        "value": "Pool of ticks subsampled for identification"
+      },
+      {
+        "key": "tck_pathogenresults_in.testingID",
+        "value": "Ticks sent for pathogen analysis"
+      },
+      {
+        "key": "bbc_chemistryPooling_in.poolSampleID",
+        "value": "Roots pooled across size categories for chemical analysis"
+      },
+      {
+        "key": "bbc_dilution_in.subsampleID",
+        "value": "Deprecated sample class; no longer in use"
+      },
+      {
+        "key": "bbc_chemistryPooling_in.bgcArchiveID",
+        "value": "Root subsample for archive"
+      },
+      {
+        "key": "aaOnly",
+        "value": null
+      },
+      {
+        "key": "bbc_rootmass_in.subsampleID",
+        "value": "Roots extracted from soil core by size category and live or dead status"
+      },
+      {
+        "key": "bbc_chemistryPooling_in.cnSampleID",
+        "value": "Root subsample for carbon and nitrogen analysis"
+      },
+      {
+        "key": "bbc_percore_in.sampleID",
+        "value": "Soil core for root sampling collected in the field"
+      },
+      {
+        "key": "mic_dnaExtraction_in.subsampleID",
+        "value": "DNA extraction sample for sequencing"
+      },
+      {
+        "key": "ptx_taxonomy_in.preserved",
+        "value": "Algae preserved subsample for archive"
+      },
+      {
+        "key": "ptx_taxonomy_in.freezeDried",
+        "value": "Algae freeze-dried subsample for archive"
+      },
+      {
+        "key": "mam_voucher_in.voucherSampleID.noV",
+        "value": "Off-grid voucher specimen collected but discarded"
+      },
+      {
+        "key": "mam_voucher_in.voucherSampleID.mam",
+        "value": "Small mammal voucher specimen collected off-grid"
+      },
+      {
+        "key": "mam_voucher_in.voucherSampleID.herp",
+        "value": "Herptile voucher specimen collected off-grid"
+      },
+      {
+        "key": "mpr_perdepthincrement_in.depthIncrementID",
+        "value": "Roots originating from a particular depth increment"
+      },
+      {
+        "key": "mpr_perpitprofile_in.pitProfileID",
+        "value": "Vertical profile in soil pit"
+      },
+      {
+        "key": "mgp_permegapit_in.pitID",
+        "value": "Soil megapit for site characterization"
+      },
+      {
+        "key": "mpr_perrootsample_in.archiveID",
+        "value": "Roots originating from a particular depth increment and sorted by size and live/dead status and sent to an archive facility"
+      },
+      {
+        "key": "mpr_perrootsample_in.sampleID",
+        "value": "Roots originating from a particular depth increment and sorted by size and live/dead status"
+      },
+      {
+        "key": "cfc_chemistrySubsampling_in.cnSampleID",
+        "value": "Plant foliar subsample for carbon and nitrogen analysis"
+      },
+      {
+        "key": "cdw_densitydisk_in.subsampleID",
+        "value": "Disk subsample from coarse downed wood log for density analysis"
+      },
+      {
+        "key": "cdw_densitylog_in.sampleID",
+        "value": "Coarse downed wood sample collected from a log in the field"
+      },
+      {
+        "key": "swc_fieldData_in.dicSampleID",
+        "value": "Water chemistry subsample for dissolved inorganic carbon"
+      },
+      {
+        "key": "mmg_markerGeneSequencing_16S_in.processedSeqFileNameID",
+        "value": "Identifier for file containing quality-processed, microbial marker gene 16S sequence data"
+      },
+      {
+        "key": "mmg_markerGeneSequencing_ITS_in.processedSeqFileNameID",
+        "value": "Identifier for file containing quality-processed, microbial marker gene ITS sequence data"
+      },
+      {
+        "key": "fsh_nonTarget_in.voucherSampleID",
+        "value": "Individual fish identified as a non-target taxon and collected as a voucher specimen"
+      },
+      {
+        "key": "rea_fieldData_in.injectateSampleID_dsc",
+        "value": "NaCl or NaBr constant rate injectate sample used only for discharge measurement"
+      },
+      {
+        "key": "rea_backgroundFieldCondData_in.hoboSampleID_dsc",
+        "value": "Identifier to link to in situ conductivity sensor data files collected during salt based discharge bouts"
+      },
+      {
+        "key": "zoo_fieldData_in.sampleID.both",
+        "value": null
+      },
+      {
+        "key": "inv_persample_in.largeInvertVialID",
+        "value": null
+      },
+      {
+        "key": "zoo_fieldData_in.sampleID",
+        "value": "Sample for zooplankton"
+      },
+      {
+        "key": "zoo_perVial_in.referenceID",
+        "value": "Individual zooplankton removed from the archived sample vial to be kept by the expert taxonomy lab as part of the reference collection"
+      },
+      {
+        "key": "zoo_fieldData_in.sampleID.dna",
+        "value": "Subsample of a zooplankton sample sent to facility for genetic barcoding"
+      },
+      {
+        "key": "zoo_perTaxon_in.referencePhotoID",
+        "value": "Reference photo for zooplankton taxonomy"
+      },
+      {
+        "key": "div_voucher_in.voucherSampleID.pla",
+        "value": "Plant vouchers for the domain reference herbaria and for the external archive"
+      },
+      {
+        "key": "div_geneticarchive_in.geneticSampleID",
+        "value": "Leaf tissue samples for the external archive (no NEON analysis completed on these samples)"
+      },
+      {
+        "key": "mam_pertrapnight_in.tagID",
+        "value": "Individual small mammal trapped in the field"
+      },
+      {
+        "key": "div_voucher_in.voucherSampleID.mam",
+        "value": "Small mammal voucher specimen collected off-grid"
+      },
+      {
+        "key": "inv_persample_in.oligochaeteVialID",
+        "value": null
+      },
+      {
+        "key": "mos_sorting_in.subsampleID",
+        "value": "Pool of mosquitoes subsampled from the trap for identification"
+      },
+      {
+        "key": "mos_archivepooling_in.archiveVialIDList",
+        "value": "List of vials containing mosquitoes sent to archive facility"
+      },
+      {
+        "key": "mos_identification_in.archiveID",
+        "value": "Pool of mosquitoes sent to archive facility"
+      },
+      {
+        "key": "mos_barcoding_in.geneticSampleID",
+        "value": "Mosquito sample sent for genetic barcoding"
+      },
+      {
+        "key": "mos_identification_in.individualIDList",
+        "value": "List of individual mosquitoes preserved as vouchers"
+      },
+      {
+        "key": "mos_pathogenpooling_in.testingVialID",
+        "value": "Vial of mosquitoes sent for pathogen analysis"
+      },
+      {
+        "key": "mos_trapping_in.sampleID",
+        "value": "Mosquito trap collected in the field"
+      },
+      {
+        "key": "mos_identification_in.testingID",
+        "value": "Pool of mosquitoes sent for pathogen analysis"
+      },
+      {
+        "key": "dhp_perimagefile_in.subsampleID",
+        "value": "Identifier for a DHP photo at a given point"
+      },
+      {
+        "key": "dhp_perplot_in.sampleID",
+        "value": "Identifier of an event and plot for a given DHP sampling event"
+      },
+      {
+        "key": "bet_sorting_in.subsampleID.ib",
+        "value": "Subsample of adult non-Carabid or larval invertebrates collected as bycatch from a beetle trap"
+      },
+      {
+        "key": "bet_IDandpinning_in.individualID",
+        "value": "Individual Carabid identified and pinned"
+      },
+      {
+        "key": "bet_expertTaxonomistID_in.geneticSampleID",
+        "value": "Sample taken from a Carabid leg for genetic barcoding"
+      },
+      {
+        "key": "bet_fielddata_in.sampleID",
+        "value": "Beetle trap collected in the field"
+      },
+      {
+        "key": "bet_archivepooling_in.subsampleID.ib",
+        "value": "Subsample of adult non-Carabid or larval invertebrates collected as bycatch and sent to archive facility"
+      },
+      {
+        "key": "bbc_dilution_in.dilutionSubsampleID",
+        "value": "Subsample of root dilution sample to determine mass of root fragments"
+      },
+      {
+        "key": "bbc_dilution_in.dilutionSampleID",
+        "value": "Root sample for dilution to determine mass of root fragments"
+      },
+      {
+        "key": "rpt_bloodtesting_in.internalLabID",
+        "value": "Blood sample collected from a small mammal sent to facility for pathogen analysis"
+      },
+      {
+        "key": "apl_clipHarvest_in.fieldID",
+        "value": "Sample for aquatic plant clip harvest field collection"
+      },
+      {
+        "key": "ptx_taxonomy_in.slideID",
+        "value": "Algae slide-mounted subsample for taxonomy"
+      },
+      {
+        "key": "alg_domainLab_in.sampleIDtaxonomy",
+        "value": "Subsample for algae taxonomy"
+      },
+      {
+        "key": "mam_pertrapnight_in.earSampleID",
+        "value": "Ear punch sample collected from a small mammal for DNA barcoding"
+      },
+      {
+        "key": "mam_pertrapnight_in.bloodSampleID",
+        "value": "Blood sample collected from a small mammal for pathogen analyses"
+      },
+      {
+        "key": "mam_pertrapnight_in.hairSampleID",
+        "value": "Hair sample collected from a small mammal for potential isotopic analyses"
+      },
+      {
+        "key": "mam_pertrapnight_in.fecalSampleID",
+        "value": "Fecal sample collected from a small mammal for physiological analyses"
+      },
+      {
+        "key": "mam_pertrapnight_in.voucherSampleID",
+        "value": "Voucher small mammal specimen"
+      },
+      {
+        "key": "inv_dnaStandard_in.dnaStandardSampleID",
+        "value": "Macroinvertebrate standard community extraction sample for sequencing"
+      },
+      {
+        "key": "audit_sample",
+        "value": "Samples sent as part of NEON external lab audit activities"
+      },
+      {
+        "key": "aud_sampleCreation_in.sampleID",
+        "value": null
+      },
+      {
+        "key": "fsh_invertBycatch_in.voucherSampleID",
+        "value": null
+      },
+      {
+        "key": "ltr_chemistrySubsampling_in.ligninSampleID",
+        "value": "Litter subsample for lignin analysis"
+      },
+      {
+        "key": "ltr_chemistrySubsampling_in.archiveSampleID",
+        "value": "Litter subsample for archive"
+      },
+      {
+        "key": "ltr_chemistrySubsampling_in.cnSampleID",
+        "value": "Litter subsample for carbon and nitrogen analysis"
+      },
+      {
+        "key": "dpm_filterBlank_in.sampleID",
+        "value": null
+      },
+      {
+        "key": "ltr_chemistrySubsampling_in.massSampleMixtureID",
+        "value": "Pooled litter sample for chemistry analyses and archive"
+      },
+      {
+        "key": "ltr_massdata_in.massSampleID",
+        "value": "Litter sample weighed in the domain lab"
+      },
+      {
+        "key": "ltr_fielddata_in.fieldSampleID",
+        "value": "Litter sampled from a litter trap in the field"
+      },
+      {
+        "key": "sdg.amc",
+        "value": "Field super parent sample when only dissolved gas and microbe cell count samples are collected"
+      },
+      {
+        "key": "asi",
+        "value": "Field super parent sample when only surface water aquatic stable isotopes samples are collected"
+      },
+      {
+        "key": "gsi",
+        "value": "Field super parent sample when only groundwater aquatic stable isotopes samples are collected"
+      },
+      {
+        "key": "asi.sdg.amc",
+        "value": "Field super parent sample when aquatic stable isotopes, dissolved gas and microbe cell count samples are collected"
+      },
+      {
+        "key": "swc.asi.amc",
+        "value": "Field super parent sample when water chemistry, aquatic stable isotopes and microbe cell count samples are collected"
+      },
+      {
+        "key": "sdg",
+        "value": "Field super parent sample when only dissolved gas samples are collected"
+      },
+      {
+        "key": "asi.amc",
+        "value": "Field super parent sample when only aquatic stables isotopes and microbe cell count samples are collected"
+      },
+      {
+        "key": "swc.asi",
+        "value": "Field super parent sample when only water chemistry and aquatic stable isotopes samples are collected"
+      },
+      {
+        "key": "swc.sdg.amc",
+        "value": "Field super parent sample when water chemistry, dissolved gas and microbe cell count samples are collected"
+      },
+      {
+        "key": "swc.sdg",
+        "value": "Field super parent sample when only water chemistry and dissolved gas samples are collected"
+      },
+      {
+        "key": "gwc.gsi",
+        "value": "Field super parent sample when only groundwater chemistry and groundwater stable isotopes samples are collected"
+      },
+      {
+        "key": "swc",
+        "value": "Field super parent sample when only surface water chemistry samples are collected"
+      },
+      {
+        "key": "asi.sdg",
+        "value": "Field super parent sample when only aquatic stable isotopes and dissolved gas samples are collected"
+      },
+      {
+        "key": "swc.asi.sdg.amc",
+        "value": "Field super parent sample when water chemistry, aquatic stable isotopes, dissolved gas and microbe cell count samples are collected"
+      },
+      {
+        "key": "swc.amc",
+        "value": "Field super parent sample when only water chemistry and microbe cell count samples are collected"
+      },
+      {
+        "key": "gwc",
+        "value": "Field super parent sample when only groundwater chemistry samples are collected"
+      },
+      {
+        "key": "amc",
+        "value": "Field super parent sample when only surface water microbe cell count samples are collected"
+      },
+      {
+        "key": "swc.asi.sdg",
+        "value": "Field super parent sample when water chemistry, aquatic stable isotopes, and dissolved gas samples are collected"
+      },
+      {
+        "key": "swc_fieldData_in.filtSampleID",
+        "value": "Subsample for filtered water for water chemistry"
+      },
+      {
+        "key": "swc_fieldData_in.pcnSampleID",
+        "value": "Subsample for particulates (filter) for water chemistry"
+      },
+      {
+        "key": "swc_domainLabData_in.domainSampleID",
+        "value": "Subsample for ALK and ANC processed in the domain lab facility for water chemistry"
+      },
+      {
+        "key": "swc_fieldData_in.sampleIDswc",
+        "value": "Sample for surface water chemistry"
+      },
+      {
+        "key": "swc_fieldData_in.rawSampleID",
+        "value": "Subsample for unfiltered water for water chemistry"
+      },
+      {
+        "key": "swc_fieldData_in.sampleIDgwc",
+        "value": "Sample for groundwater chemistry"
+      },
+      {
+        "key": "asi_fieldData_in.isotopePOMRep2sampleID",
+        "value": "Sample for surface water particulate stable isotopes replicate 2"
+      },
+      {
+        "key": "asi_fieldData_in.isotopeH2OSampleIDasi",
+        "value": "Sample for surface water H and O stable isotopes"
+      },
+      {
+        "key": "asi_fieldData_in.isotopePOMsampleID",
+        "value": "Sample for surface water particulate stable isotopes"
+      },
+      {
+        "key": "asi_fieldData_in.isotopeH2OSampleIDgsi",
+        "value": "Sample for groundwater H and O stable isotopes"
+      },
+      {
+        "key": "apl_domainLab_in.chemSubsampleID",
+        "value": "Subsample for aquatic plants or macroalgae chemistry"
+      },
+      {
+        "key": "alg_domainLab_in.sampleIDchem",
+        "value": "Subsample for algae chemistry"
+      },
+      {
+        "key": "sdg_fieldDataAir_in.referenceAirSampleID",
+        "value": "Sample for the reference air for dissolved gas"
+      },
+      {
+        "key": "sdg_fieldData_in.waterSampleID",
+        "value": "Sample for dissolved gas in water"
+      },
+      {
+        "key": "sdg_fieldDataProc_in.equilibratedAirSampleID",
+        "value": "Sample for the equilibrated air for dissolved gas"
+      },
+      {
+        "key": "amc_fieldCellCounts_in.cellCountSampleID",
+        "value": "Sample for surface water microbe cell counts"
+      },
+      {
+        "key": "amc_fieldCellCounts_in.geneticSampleID",
+        "value": "Sample for surface water microbe DNA"
+      },
+      {
+        "key": "amc_fieldCellCounts_in.archiveID",
+        "value": "Sample for surface water microbe archive"
+      },
+      {
+        "key": "sls_metagenomicsPooling_in.compositeSampleID",
+        "value": "Pooled soil sample for metagenomic analysis"
+      },
+      {
+        "key": "sls_soilMoisture_in.moistureSampleID",
+        "value": "Soil subsample for soil moisture analysis"
+      },
+      {
+        "key": "sls_soilCoreCollection_in.geneticArchiveSample4ID",
+        "value": "Interchangeable soil subsample 4 for microbial sequencing analyses"
+      },
+      {
+        "key": "sls_soilCoreCollection_in.biomassID",
+        "value": "Soil subsample for microbial biomass analysis"
+      },
+      {
+        "key": "sls_soilCoreCollection_in.geneticArchiveSample5ID",
+        "value": "Interchangeable soil subsample 5 for microbial sequencing analyses"
+      },
+      {
+        "key": "sls_soilCoreCollection_in.geneticArchiveSample3ID",
+        "value": "Interchangeable soil subsample 3 for microbial sequencing analyses"
+      },
+      {
+        "key": "sls_soilpH_in.pHSampleID",
+        "value": "Soil subsample for pH analysis"
+      },
+      {
+        "key": "sls_soilCoreCollection_in.geneticSampleID",
+        "value": "Soil subsample for microbial sequencing analyses"
+      },
+      {
+        "key": "sls_bgcSubsampling_in.bgcArchiveID",
+        "value": "Soil subsample for archive"
+      },
+      {
+        "key": "sls_soilCoreCollection_in.geneticArchiveSample2ID",
+        "value": "Interchangeable soil subsample 2 for microbial sequencing analyses"
+      },
+      {
+        "key": "sls_soilCoreCollection_in.sampleID",
+        "value": "Soil core collected in the field for distributed periodic soil sampling"
+      },
+      {
+        "key": "sls_bgcSubsampling_in.cnSampleID",
+        "value": "Soil subsample for carbon and nitrogen analysis"
+      },
+      {
+        "key": "sls_soilCoreCollection_in.geneticArchiveSample1ID",
+        "value": "Interchangeable soil subsample 1 for microbial sequencing analyses"
+      },
+      {
+        "key": "inv_pervial_in.referenceID",
+        "value": "Individual invertebrate removed from the archived sample vial to be kept by the expert taxonomy lab as part of the reference collection"
+      },
+      {
+        "key": "inv_pertaxon_in.slideID",
+        "value": "Subsample of macroinvertebrate sample placed on a slide for identification purposes"
+      },
+      {
+        "key": "inv_fielddata_in.sampleID",
+        "value": "Macroinvertebrate sample taken in the field"
+      },
+      {
+        "key": "inv_fielddata_in.dnaSampleID",
+        "value": "Macroinvetebrate sample for DNA analysis"
+      },
+      {
+        "key": "hbp_massdata_in.subsampleID",
+        "value": "Herbaceous clip harvest sample, total or sorted into functional groups for weighing"
+      },
+      {
+        "key": "hbp_perbout_in.sampleID",
+        "value": "Herbaceous clip harvest sample collected in the field"
+      },
+      {
+        "key": "mmg_dnaExtraction_in.amcDnaSampleID",
+        "value": "deprecated: replaced with���mic_dnaExtraction_in.amcDnaSampleID"
+      },
+      {
+        "key": "mmg_dnaExtraction_in.ambDnaSampleID",
+        "value": "deprecated: replaced with mic_dnaExtraction_in.ambDnaSampleID"
+      },
+      {
+        "key": "mmg_dnaExtraction_in.soilDnaSampleID",
+        "value": "deprecated: replaced with mic_dnaExtraction_in.soilDnaSampleID"
+      },
+      {
+        "key": "mic_dnaExtraction_in.ambDnaSampleID",
+        "value": "Benthic microbes DNA extraction sample for sequencing"
+      },
+      {
+        "key": "mic_dnaExtraction_in.amcDnaSampleID",
+        "value": "Surface water microbes DNA extraction sample for sequencing"
+      },
+      {
+        "key": "mic_dnaExtraction_in.soilDnaSampleID",
+        "value": "Soil DNA extraction sample"
+      },
+      {
+        "key": "swc_fieldData_in.fieldBlankRawNutSampleID",
+        "value": null
+      },
+      {
+        "key": "spc_perbiogeosample_in.biogeoIDnrcs",
+        "value": "Soil biogeochemistry sample for soil characterization"
+      },
+      {
+        "key": "spc_perbulksample_in.bulkDensIDnrcs",
+        "value": "Soil bulk density sample for soil characterization"
+      },
+      {
+        "key": "spc_perplot_in.pitID",
+        "value": "Soil pit for soil characterization"
+      },
+      {
+        "key": "spc_perhorizon_in.horizonID",
+        "value": "Soil horizon within soil pit for soil characterization"
+      },
+      {
+        "key": "spc_perbiogeosample_in.archiveID",
+        "value": "Soil sample for archive from soil characterization"
+      },
+      {
+        "key": "div_geneticarchive_in.geneticSampleID.noSample",
+        "value": "Placeholder for genetic sample not collected"
+      },
+      {
+        "key": "div_voucher_in.voucherSampleID.noV",
+        "value": "Voucher specimen collected but discarded"
+      },
+      {
+        "key": "alg_labBlank_in.filterBlankRep2",
+        "value": "Identifier for the algal chemistry DI blank filter rep 2"
+      },
+      {
+        "key": "alg_labBlank_in.diBlankID",
+        "value": "Identifier for the algal chemistry DI blank filter parent"
+      },
+      {
+        "key": "alg_labBlank_in.filterBlankRep1",
+        "value": "Identifier for the algal chemistry DI blank filter rep 1"
+      },
+      {
+        "key": "mga_groupAbundances_in.targetTaxonSampleID",
+        "value": "Subsample for taxon specific groups for microbe DNA extraction"
+      },
+      {
+        "key": "inv_dnaStandard_in.sampleID",
+        "value": "Macroinvertebrate standard community sample for DNA analysis"
+      },
+      {
+        "key": "inv_persample_in.chironomidVialID",
+        "value": "Subsample of sorted and identified chironomids"
+      },
+      {
+        "key": "rawNutswc",
+        "value": "Unfiltered frozen subsample collected from surface water for nutrient analysis"
+      },
+      {
+        "key": "rawNutgwc",
+        "value": "Unfiltered frozen subsample collected from groundwater for nutrient analysis"
+      },
+      {
+        "key": "filtNutgwc",
+        "value": "Filtered frozen subsample collected from groundwater for nutrient analysis"
+      },
+      {
+        "key": "filtNutswc",
+        "value": "Filtered frozen subsample collected from surface water for nutrient analysis"
+      },
+      {
+        "key": "ANY_SAMPLE_CLASS",
+        "value": null
+      },
+      {
+        "key": "bet_sorting_in.subsampleID.mam",
+        "value": "Subsample of small mammals collected as bycatch from a beetle trap"
+      },
+      {
+        "key": "bet_sorting_in.subsampleID.herp",
+        "value": "Subsample of herptiles collected as bycatch from a beetle trap"
+      },
+      {
+        "key": "bet_sorting_in.subsampleID.bet",
+        "value": "Subsample of Carabid adults collected from a beetle trap"
+      },
+      {
+        "key": "apl_domainLab_in.sampleIDplant",
+        "value": "Subsample for aquatic plant taxonomy"
+      },
+      {
+        "key": "apl_domainLab_in.sampleIDmacroalgae",
+        "value": "Subsample for aquatic macroalgae taxonomy"
+      },
+      {
+        "key": "apl_domainLab_in.sampleIDplantChem",
+        "value": "Subsample for aquatic plant taxonomy that will also be sent for chemistry analysis"
+      },
+      {
+        "key": "apl_domainLab_in.sampleIDmacroalgaeChem",
+        "value": "Subsample for aquatic macroalgae taxonomy that will also be sent for chemistry analysis"
+      },
+      {
+        "key": "apc_perTaxon_in.sampleIDplant",
+        "value": "Subsample for aquatic plant point counts plant taxonomy"
+      },
+      {
+        "key": "apc_perTaxon_in.sampleIDmacroalgae",
+        "value": "Subsample for aquatic plant point counts macroalgae taxonomy"
+      },
+      {
+        "key": "apc_voucher_in.sampleID",
+        "value": "Sample for aquatic plant voucher"
+      },
+      {
+        "key": "bet_archivepooling_in.subsampleID.mam",
+        "value": "Subsample of small mammals collected as bycatch and sent to archive facility"
+      },
+      {
+        "key": "bet_archivepooling_in.subsampleID.herp",
+        "value": "Subsample of herptiles collected as bycatch and sent to archive facility"
+      },
+      {
+        "key": "bet_archivepooling_in.subsampleID.bet",
+        "value": "Subsample of Carabid adults collected and sent to archive facility"
+      },
+      {
+        "key": "wdp_collection_in.isoTestSubsampleID",
+        "value": "Wet deposition sub-subsample for isotope analysis"
+      },
+      {
+        "key": "wdp_collection_in.isoSubsampleID",
+        "value": "Wet deposition subsample for isotope analysis and archive"
+      },
+      {
+        "key": "bry_productivity_in.sampleID",
+        "value": "Bryophyte sample collected in the field"
+      },
+      {
+        "key": "mam_barcoding_in.dnaSubsampleID.fsh",
+        "value": null
+      },
+      {
+        "key": "mam_barcoding_in.dnaSubsampleID.mam",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.fieldBlankFilNutSampleID",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.labBlankNutSampleIDgwc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.fieldBlankRawNutSampleIDgwc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.fieldBlankFilNutSampleIDgwc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.labBlankNutSampleID",
+        "value": null
+      },
+      {
+        "key": "inv_persample_in.mixedInvertVialID",
+        "value": null
+      },
+      {
+        "key": "rpt2_pathogentesting_in.testingID",
+        "value": null
+      },
+      {
+        "key": "rpt2_pathogentesting_in.bloodExtract",
+        "value": null
+      },
+      {
+        "key": "rpt2_pathogentesting_in.earExtract",
+        "value": null
+      },
+      {
+        "key": "asc_fieldDataStation_in.archive4SedimentSampleID",
+        "value": null
+      },
+      {
+        "key": "asc_fieldDataStation_in.archive3SedimentSampleID",
+        "value": null
+      },
+      {
+        "key": "asc_fieldDataStation_in.chemistrySedimentSampleID",
+        "value": null
+      },
+      {
+        "key": "asc_fieldDataStation_in.archive2SedimentSampleID",
+        "value": null
+      },
+      {
+        "key": "asc_fieldDataStation_in.archive1SedimentSampleID",
+        "value": null
+      },
+      {
+        "key": "zoo_perSample_in.mixedZooVialID",
+        "value": null
+      },
+      {
+        "key": "amb_fieldParent_in.metagenomicSampleID",
+        "value": null
+      },
+      {
+        "key": "apc_voucher_in.sampleIDmacroalgae",
+        "value": "Subsample for aquatic macroalgae taxonomy from voucher collections"
+      },
+      {
+        "key": "amc_fieldCellCounts_in.metagenomicSampleID",
+        "value": null
+      },
+      {
+        "key": "mic_dnaExtraction_in.amcMetaSampleID",
+        "value": null
+      },
+      {
+        "key": "mic_dnaExtraction_in.ambMetaSampleID",
+        "value": null
+      },
+      {
+        "key": "amb_fieldParent_in.geneticOnlySampleID",
+        "value": null
+      },
+      {
+        "key": "amc_fieldCellCounts_in.geneticOnlySampleID",
+        "value": null
+      },
+      {
+        "key": "mic_dnaExtraction_in.amcDnaOnlySampleID",
+        "value": null
+      },
+      {
+        "key": "mic_dnaExtraction_in.ambDnaOnlySampleID",
+        "value": null
+      },
+      {
+        "key": "mos_pathogenresults_in.dnaExtract",
+        "value": null
+      },
+      {
+        "key": "tck_pathogenresults_in.dnaExtract",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.labBlankWcSampleID",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.fieldBlankFilWcSampleIDgwc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.fieldBlankRawWcSampleID",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.fieldBlankRawWcSampleIDgwc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.labBlankWcSampleIDgwc",
+        "value": null
+      },
+      {
+        "key": "swc_fieldData_in.fieldBlankFilWcSampleID",
+        "value": null
+      }
+    ]
+  }
+}

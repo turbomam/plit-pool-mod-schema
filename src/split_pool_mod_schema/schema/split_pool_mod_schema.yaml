@@ -9,14 +9,17 @@ see_also:
   - https://turbomam.github.io/split-pool-mod-schema
 
 prefixes:
-  split_pool_mod_schema: https://w3id.org/turbomam/split-pool-mod-schema/
-  linkml: https://w3id.org/linkml/
+  # NEON_SAMP_VIEW: https://data.neonscience.org/api/v0/samples/view?
+  # NEON_SAMP_UUID: https://data.neonscience.org/api/v0/samples/view?sampleUuid=
   BFO: http://purl.obolibrary.org/obo/BFO_
-  IAO: http://purl.obolibrary.org/obo/IAO_
-  schema: http://schema.org/
   BIOPROJECT: https://www.ncbi.nlm.nih.gov/bioproject/ # https://identifiers.org/bioproject/
-  NEON_SAMP_VIEW: https://data.neonscience.org/api/v0/samples/view?
+  IAO: http://purl.obolibrary.org/obo/IAO_
+  NEON_SAMP_UUID: https://data.neonscience.org/api/v0/samples/ # not resolvable
   example: https://example.org/
+  linkml: https://w3id.org/linkml/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  schema: http://schema.org/
+  split_pool_mod_schema: https://w3id.org/turbomam/split-pool-mod-schema/
 default_prefix: split_pool_mod_schema
 default_range: string
 
@@ -24,7 +27,6 @@ imports:
   - linkml:types
 
 classes:
-
   NamedThing:
     description: >-
       An identifiable entity
@@ -49,6 +51,28 @@ classes:
       - material_entity_set
       - named_thing_set
       - process_set
+      - mic_dna_extraction_in_soil_dna_sample_set
+      - mic_dna_extraction_in_subsample_set
+      - mms_metagenome_sequencing_in_processed_seq_file_name_set
+      - sls_metagenomics_pooling_in_composite_sample_set
+      - sls_soil_core_collection_in_genetic_archive_sample1_set
+      - sls_soil_core_collection_in_genetic_archive_sample2_set
+      - sls_soil_core_collection_in_genetic_archive_sample3_set
+      - sls_soil_core_collection_in_genetic_archive_sample4_set
+      - sls_soil_core_collection_in_genetic_archive_sample5_set
+      - sls_soil_core_collection_in_genetic_sample_set
+      - sls_soil_core_collection_in_sample_set
+      - sls_soil_moisture_in_moisture_sample_set
+      - sls_soil_ph_in_ph_sample_set
+      - dna_sample_prep_composite_set
+      - dna_sample_prep_simple_set
+      - genetic_sample_prep_set
+      - moisture_sample_prep_set
+      - ph_sample_prep_set
+      - pooling_set
+      - sequencing_set
+      - subsample_dna_extract_set
+  #      - archiving_set
 
   MaterialEntity:
     comments:
@@ -62,6 +86,12 @@ classes:
     description: An entity that consists of matter. Has an identity that persists over time.
     is_a: NamedThing
     title: Material Entity
+    slots:
+      - neon_sample_class
+      - neon_sample_tag
+      - neon_sample_uuid
+      - has_children
+      - has_parents
 
   Process:
     description: >-
@@ -69,8 +99,8 @@ classes:
     slots:
       - has_inputs
       - has_outputs
-      - has_input
-      - has_output
+    #      - has_input
+    #      - has_output
     exact_mappings:
       - BFO:0000015
     is_a: NamedThing
@@ -89,6 +119,106 @@ classes:
       - IAO:0000030
     #    abstract: true
 
+  MicDnaExtractionInSoilDnaSample:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: mic_dnaExtraction_in.soilDnaSampleID
+  MicDnaExtractionInSubsample:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: mic_dnaExtraction_in.subsampleID
+  SlsMetagenomicsPoolingInCompositeSample:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: sls_metagenomicsPooling_in.compositeSampleID
+  SlsSoilCoreCollectionInGeneticArchiveSample1:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: sls_soilCoreCollection_in.geneticArchiveSample1ID
+  SlsSoilCoreCollectionInGeneticArchiveSample2:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: sls_soilCoreCollection_in.geneticArchiveSample2ID
+  SlsSoilCoreCollectionInGeneticArchiveSample3:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: sls_soilCoreCollection_in.geneticArchiveSample3ID
+  SlsSoilCoreCollectionInGeneticArchiveSample4:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: sls_soilCoreCollection_in.geneticArchiveSample4ID
+  SlsSoilCoreCollectionInGeneticArchiveSample5:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: sls_soilCoreCollection_in.geneticArchiveSample5ID
+  SlsSoilCoreCollectionInGeneticSample:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: sls_soilCoreCollection_in.geneticSampleID
+  SlsSoilCoreCollectionInSample:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: sls_soilCoreCollection_in.sampleID
+  SlsSoilMoistureInMoistureSample:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: sls_soilMoisture_in.moistureSampleID
+  SlsSoilpHInPhSample:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: sls_soilpH_in.pHSampleID
+
+  MmsMetagenomeSequencingInProcessedSeqFileName:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: mms_metagenomeSequencing_in.processedSeqFileNameID
+
+  SubsampleDnaExtract:
+    is_a: Process
+    annotations:
+      neon_input_class: mic_dnaExtraction_in.soilDnaSampleID
+      neon_output_class: mic_dnaExtraction_in.subsampleID
+  Sequencing:
+    is_a: Process
+    annotations:
+      neon_input_class: mic_dnaExtraction_in.soilDnaSampleID
+      neon_output_class: mms_metagenomeSequencing_in.processedSeqFileNameID
+  DnaSamplePrepSimple:
+    is_a: Process
+    annotations:
+      neon_input_class: sls_soilCoreCollection_in.geneticSampleID
+      neon_output_class: mic_dnaExtraction_in.soilDnaSampleID
+  DnaSamplePrepComposite:
+    is_a: Process
+    annotations:
+      neon_input_class: sls_metagenomicsPooling_in.compositeSampleID
+      neon_output_class: mic_dnaExtraction_in.soilDnaSampleID
+  Pooling:
+    is_a: Process
+    annotations:
+      neon_input_class: sls_soilCoreCollection_in.sampleID
+      neon_output_class: sls_metagenomicsPooling_in.compositeSampleID
+  #  Archiving:
+  #    is_a: Process
+  #    annotations:
+  #      neon_input_class: { }
+  #      neon_output_class: { }
+  GeneticSamplePrep:
+    is_a: Process
+    annotations:
+      neon_input_class: sls_soilCoreCollection_in.sampleID
+      neon_output_class: sls_soilCoreCollection_in.geneticSampleID
+  MoistureSamplePrep:
+    is_a: Process
+    annotations:
+      neon_input_class: sls_soilCoreCollection_in.sampleID
+      neon_output_class: sls_soilMoisture_in.moistureSampleID
+  PhSamplePrep:
+    is_a: Process
+    annotations:
+      neon_input_class: sls_soilCoreCollection_in.sampleID
+      neon_output_class: sls_soilpH_in.pHSampleID
+
 slots:
   id:
     description: A unique identifier for a thing
@@ -98,7 +228,7 @@ slots:
     required: true
     slot_uri: schema:identifier
   name:
-    slot_uri: schema:name
+    slot_uri: rdfs:label
     description: A human-readable name for a thing
   description:
     slot_uri: schema:description
@@ -130,20 +260,151 @@ slots:
   has_inputs:
     domain: Process
     multivalued: true
+    range: MaterialEntity
     any_of:
       - range: MaterialEntity
       - range: Information
   has_outputs:
     domain: Process
     multivalued: true
+    range: MaterialEntity
     any_of:
       - range: MaterialEntity
       - range: Information
-  has_input:
-    domain: Process
-    multivalued: false
+    #  has_input:
+    #    domain: Process
+    #    multivalued: false
+    #    range: NamedThing
+    #  has_output:
+    #    domain: Process
+    #    multivalued: false
+    #    range: NamedThing
+  has_children:
+    domain: NamedThing
+    multivalued: true
     range: NamedThing
-  has_output:
-    domain: Process
-    multivalued: false
+    comments:
+      - This is a temporary shortcut that bypasses process instances
+  has_parents:
+    domain: NamedThing
+    multivalued: true
     range: NamedThing
+    comments:
+      - This is a temporary shortcut that bypasses process instances
+  neon_sample_class: { }
+  neon_sample_tag: { }
+  neon_sample_uuid: { }
+
+  mic_dna_extraction_in_soil_dna_sample_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: MicDnaExtractionInSoilDnaSample
+  mic_dna_extraction_in_subsample_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: MicDnaExtractionInSubsample
+  mms_metagenome_sequencing_in_processed_seq_file_name_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: MmsMetagenomeSequencingInProcessedSeqFileName
+  sls_metagenomics_pooling_in_composite_sample_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: SlsMetagenomicsPoolingInCompositeSample
+  sls_soil_core_collection_in_genetic_archive_sample1_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: SlsSoilCoreCollectionInGeneticArchiveSample1
+  sls_soil_core_collection_in_genetic_archive_sample2_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: SlsSoilCoreCollectionInGeneticArchiveSample2
+  sls_soil_core_collection_in_genetic_archive_sample3_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: SlsSoilCoreCollectionInGeneticArchiveSample3
+  sls_soil_core_collection_in_genetic_archive_sample4_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: SlsSoilCoreCollectionInGeneticArchiveSample4
+  sls_soil_core_collection_in_genetic_archive_sample5_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: SlsSoilCoreCollectionInGeneticArchiveSample5
+  sls_soil_core_collection_in_genetic_sample_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: SlsSoilCoreCollectionInGeneticSample
+  sls_soil_core_collection_in_sample_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: SlsSoilCoreCollectionInSample
+  sls_soil_moisture_in_moisture_sample_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: SlsSoilMoistureInMoistureSample
+  sls_soil_ph_in_ph_sample_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: SlsSoilpHInPhSample
+
+  ##  archiving_set:
+  ##    domain: Database
+  ##    inlined_as_list: true
+  ##    multivalued: true
+  ##    range: Archiving
+
+  dna_sample_prep_composite_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: DnaSamplePrepComposite
+  dna_sample_prep_simple_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: DnaSamplePrepSimple
+  genetic_sample_prep_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: GeneticSamplePrep
+  moisture_sample_prep_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: MoistureSamplePrep
+  ph_sample_prep_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: PhSamplePrep
+  pooling_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: Pooling
+  sequencing_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: Sequencing
+  subsample_dna_extract_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: SubsampleDnaExtract
+

@@ -1,0 +1,162 @@
+@prefix NEON_SAMP_UUID: <https://data.neonscience.org/api/v0/samples/> .
+@prefix example: <https://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix split_pool_mod_schema: <https://w3id.org/turbomam/split-pool-mod-schema/> .
+
+example:db1 a split_pool_mod_schema:Database ;
+    rdfs:label "Example Database 1" ;
+    split_pool_mod_schema:dna_sample_prep_composite_set example:36f91159-8ff7-41e9-a53d-568885749897 ;
+    split_pool_mod_schema:dna_sample_prep_simple_set example:d3427a47-5e78-4345-90f9-86cea834b31c ;
+    split_pool_mod_schema:genetic_sample_prep_set example:82713006-e5bb-4399-b5de-6f92653649ac ;
+    split_pool_mod_schema:mic_dna_extraction_in_soil_dna_sample_set NEON_SAMP_UUID:5ab4ca92-69f8-4a96-8662-aac770fcfc8c,
+        NEON_SAMP_UUID:e68ff983-54a4-4e4a-aa3b-3fcc95fdd765 ;
+    split_pool_mod_schema:mic_dna_extraction_in_subsample_set NEON_SAMP_UUID:a0f647ff-8887-4690-918e-feadff0c7237,
+        NEON_SAMP_UUID:fede0df9-1eb9-4d1e-b8c7-670dfd25f81d ;
+    split_pool_mod_schema:mms_metagenome_sequencing_in_processed_seq_file_name_set NEON_SAMP_UUID:a9b215e5-45cb-404d-a205-21eff0d03888 ;
+    split_pool_mod_schema:moisture_sample_prep_set example:615ef808-7125-4b67-bb3d-7931a3894624 ;
+    split_pool_mod_schema:ph_sample_prep_set example:2ca640e0-53f3-4750-a2b3-08076db2cff6 ;
+    split_pool_mod_schema:pooling_set example:ef700498-d5a0-4dc4-af92-3dff251f3482 ;
+    split_pool_mod_schema:process_set example:44481c13-af55-4f7e-b071-b2bec35f72d2,
+        example:459baba2-a4b1-4af8-9dd8-b47d93043817,
+        example:aabb7a92-fc1d-4f55-9cc7-f79883521390,
+        example:ab4dea8c-c36a-48dc-b957-f9f335994887,
+        example:b0109547-4c46-4995-87de-6b9ba0ddee14 ;
+    split_pool_mod_schema:sequencing_set example:0dfed4d8-5b40-4bdc-a9f8-d1f69fbc4a12 ;
+    split_pool_mod_schema:sls_metagenomics_pooling_in_composite_sample_set NEON_SAMP_UUID:084fa101-5f9e-4b8e-9930-63f1164fc44d ;
+    split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample1_set NEON_SAMP_UUID:1df7b3d8-356c-4a8a-8c5c-55d2de9ce699 ;
+    split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample2_set NEON_SAMP_UUID:aaaed272-7835-4821-ac87-5a9d4ee545c5 ;
+    split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample3_set NEON_SAMP_UUID:d06548a8-33d7-4b44-905c-7f25a479b7d0 ;
+    split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample4_set NEON_SAMP_UUID:19d4c0d2-3aad-4115-9d24-b5f097911561 ;
+    split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample5_set NEON_SAMP_UUID:3f0c3ddb-3bba-420f-af73-c5b02e5b7f8b ;
+    split_pool_mod_schema:sls_soil_core_collection_in_genetic_sample_set NEON_SAMP_UUID:968152e5-6b99-4bfa-9cb9-4e26a18d0719 ;
+    split_pool_mod_schema:sls_soil_core_collection_in_sample_set NEON_SAMP_UUID:d597cb0c-061a-402c-9a28-dfaad5caf8b8 ;
+    split_pool_mod_schema:sls_soil_moisture_in_moisture_sample_set NEON_SAMP_UUID:daf4f088-feec-4d88-a729-163103927df0 ;
+    split_pool_mod_schema:sls_soil_ph_in_ph_sample_set NEON_SAMP_UUID:f613214b-0d37-4d09-8bd3-9025228a1f56 ;
+    split_pool_mod_schema:subsample_dna_extract_set example:423b811a-c4d2-4c52-8e71-bc51bc26f6a6,
+        example:5469b253-7226-4fd5-a206-fcd5b081b0cd .
+
+example:0dfed4d8-5b40-4bdc-a9f8-d1f69fbc4a12 a split_pool_mod_schema:Sequencing ;
+    split_pool_mod_schema:has_inputs NEON_SAMP_UUID:e68ff983-54a4-4e4a-aa3b-3fcc95fdd765 ;
+    split_pool_mod_schema:has_outputs NEON_SAMP_UUID:a9b215e5-45cb-404d-a205-21eff0d03888 .
+
+example:2ca640e0-53f3-4750-a2b3-08076db2cff6 a split_pool_mod_schema:PhSamplePrep ;
+    split_pool_mod_schema:has_inputs NEON_SAMP_UUID:d597cb0c-061a-402c-9a28-dfaad5caf8b8 ;
+    split_pool_mod_schema:has_outputs NEON_SAMP_UUID:f613214b-0d37-4d09-8bd3-9025228a1f56 .
+
+example:36f91159-8ff7-41e9-a53d-568885749897 a split_pool_mod_schema:DnaSamplePrepComposite ;
+    split_pool_mod_schema:has_inputs NEON_SAMP_UUID:084fa101-5f9e-4b8e-9930-63f1164fc44d ;
+    split_pool_mod_schema:has_outputs NEON_SAMP_UUID:e68ff983-54a4-4e4a-aa3b-3fcc95fdd765 .
+
+example:423b811a-c4d2-4c52-8e71-bc51bc26f6a6 a split_pool_mod_schema:SubsampleDnaExtract ;
+    split_pool_mod_schema:has_inputs NEON_SAMP_UUID:5ab4ca92-69f8-4a96-8662-aac770fcfc8c ;
+    split_pool_mod_schema:has_outputs NEON_SAMP_UUID:a0f647ff-8887-4690-918e-feadff0c7237 .
+
+example:44481c13-af55-4f7e-b071-b2bec35f72d2 a split_pool_mod_schema:Process ;
+    split_pool_mod_schema:has_inputs NEON_SAMP_UUID:084fa101-5f9e-4b8e-9930-63f1164fc44d ;
+    split_pool_mod_schema:has_outputs NEON_SAMP_UUID:e68ff983-54a4-4e4a-aa3b-3fcc95fdd765 .
+
+example:459baba2-a4b1-4af8-9dd8-b47d93043817 a split_pool_mod_schema:Process ;
+    split_pool_mod_schema:has_inputs NEON_SAMP_UUID:5ab4ca92-69f8-4a96-8662-aac770fcfc8c ;
+    split_pool_mod_schema:has_outputs NEON_SAMP_UUID:a0f647ff-8887-4690-918e-feadff0c7237 .
+
+example:5469b253-7226-4fd5-a206-fcd5b081b0cd a split_pool_mod_schema:SubsampleDnaExtract ;
+    split_pool_mod_schema:has_inputs NEON_SAMP_UUID:e68ff983-54a4-4e4a-aa3b-3fcc95fdd765 ;
+    split_pool_mod_schema:has_outputs NEON_SAMP_UUID:fede0df9-1eb9-4d1e-b8c7-670dfd25f81d .
+
+example:615ef808-7125-4b67-bb3d-7931a3894624 a split_pool_mod_schema:MoistureSamplePrep ;
+    split_pool_mod_schema:has_inputs NEON_SAMP_UUID:d597cb0c-061a-402c-9a28-dfaad5caf8b8 ;
+    split_pool_mod_schema:has_outputs NEON_SAMP_UUID:daf4f088-feec-4d88-a729-163103927df0 .
+
+example:82713006-e5bb-4399-b5de-6f92653649ac a split_pool_mod_schema:GeneticSamplePrep ;
+    split_pool_mod_schema:has_inputs NEON_SAMP_UUID:d597cb0c-061a-402c-9a28-dfaad5caf8b8 ;
+    split_pool_mod_schema:has_outputs NEON_SAMP_UUID:968152e5-6b99-4bfa-9cb9-4e26a18d0719 .
+
+example:aabb7a92-fc1d-4f55-9cc7-f79883521390 a split_pool_mod_schema:Process ;
+    split_pool_mod_schema:has_inputs NEON_SAMP_UUID:d597cb0c-061a-402c-9a28-dfaad5caf8b8 ;
+    split_pool_mod_schema:has_outputs NEON_SAMP_UUID:084fa101-5f9e-4b8e-9930-63f1164fc44d,
+        NEON_SAMP_UUID:19d4c0d2-3aad-4115-9d24-b5f097911561,
+        NEON_SAMP_UUID:1df7b3d8-356c-4a8a-8c5c-55d2de9ce699,
+        NEON_SAMP_UUID:3f0c3ddb-3bba-420f-af73-c5b02e5b7f8b,
+        NEON_SAMP_UUID:968152e5-6b99-4bfa-9cb9-4e26a18d0719,
+        NEON_SAMP_UUID:aaaed272-7835-4821-ac87-5a9d4ee545c5,
+        NEON_SAMP_UUID:d06548a8-33d7-4b44-905c-7f25a479b7d0,
+        NEON_SAMP_UUID:daf4f088-feec-4d88-a729-163103927df0,
+        NEON_SAMP_UUID:f613214b-0d37-4d09-8bd3-9025228a1f56 .
+
+example:ab4dea8c-c36a-48dc-b957-f9f335994887 a split_pool_mod_schema:Process ;
+    split_pool_mod_schema:has_inputs NEON_SAMP_UUID:968152e5-6b99-4bfa-9cb9-4e26a18d0719 ;
+    split_pool_mod_schema:has_outputs NEON_SAMP_UUID:5ab4ca92-69f8-4a96-8662-aac770fcfc8c .
+
+example:b0109547-4c46-4995-87de-6b9ba0ddee14 a split_pool_mod_schema:Process ;
+    split_pool_mod_schema:has_inputs NEON_SAMP_UUID:e68ff983-54a4-4e4a-aa3b-3fcc95fdd765 ;
+    split_pool_mod_schema:has_outputs NEON_SAMP_UUID:a9b215e5-45cb-404d-a205-21eff0d03888,
+        NEON_SAMP_UUID:fede0df9-1eb9-4d1e-b8c7-670dfd25f81d .
+
+example:d3427a47-5e78-4345-90f9-86cea834b31c a split_pool_mod_schema:DnaSamplePrepSimple ;
+    split_pool_mod_schema:has_inputs NEON_SAMP_UUID:968152e5-6b99-4bfa-9cb9-4e26a18d0719 ;
+    split_pool_mod_schema:has_outputs NEON_SAMP_UUID:5ab4ca92-69f8-4a96-8662-aac770fcfc8c .
+
+example:ef700498-d5a0-4dc4-af92-3dff251f3482 a split_pool_mod_schema:Pooling ;
+    split_pool_mod_schema:has_inputs NEON_SAMP_UUID:d597cb0c-061a-402c-9a28-dfaad5caf8b8 ;
+    split_pool_mod_schema:has_outputs NEON_SAMP_UUID:084fa101-5f9e-4b8e-9930-63f1164fc44d .
+
+NEON_SAMP_UUID:19d4c0d2-3aad-4115-9d24-b5f097911561 a split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample4 ;
+    rdfs:label "YELL_052-O-25-2.5-20190820-GA4" ;
+    split_pool_mod_schema:neon_sample_class "sls_soilCoreCollection_in.geneticArchiveSample4ID" .
+
+NEON_SAMP_UUID:1df7b3d8-356c-4a8a-8c5c-55d2de9ce699 a split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample1 ;
+    rdfs:label "YELL_052-O-25-2.5-20190820-GA1" ;
+    split_pool_mod_schema:neon_sample_class "sls_soilCoreCollection_in.geneticArchiveSample1ID" .
+
+NEON_SAMP_UUID:3f0c3ddb-3bba-420f-af73-c5b02e5b7f8b a split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample5 ;
+    rdfs:label "YELL_052-O-25-2.5-20190820-GA5" ;
+    split_pool_mod_schema:neon_sample_class "sls_soilCoreCollection_in.geneticArchiveSample5ID" .
+
+NEON_SAMP_UUID:aaaed272-7835-4821-ac87-5a9d4ee545c5 a split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample2 ;
+    rdfs:label "YELL_052-O-25-2.5-20190820-GA2" ;
+    split_pool_mod_schema:neon_sample_class "sls_soilCoreCollection_in.geneticArchiveSample2ID" .
+
+NEON_SAMP_UUID:d06548a8-33d7-4b44-905c-7f25a479b7d0 a split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample3 ;
+    rdfs:label "YELL_052-O-25-2.5-20190820-GA3" ;
+    split_pool_mod_schema:neon_sample_class "sls_soilCoreCollection_in.geneticArchiveSample3ID" .
+
+NEON_SAMP_UUID:a0f647ff-8887-4690-918e-feadff0c7237 a split_pool_mod_schema:MicDnaExtractionInSubsample ;
+    rdfs:label "YELL_052-O-25-2.5-20190820-GEN-DNA2_19S_24_2248" ;
+    split_pool_mod_schema:neon_sample_class "mic_dnaExtraction_in.subsampleID" .
+
+NEON_SAMP_UUID:a9b215e5-45cb-404d-a205-21eff0d03888 a split_pool_mod_schema:MmsMetagenomeSequencingInProcessedSeqFileName ;
+    rdfs:label "BMI_HY5W2BGXG_PLATE19S_31WELLG3.FASTQ.GZ" ;
+    split_pool_mod_schema:neon_sample_class "mms_metagenomeSequencing_in.processedSeqFileNameID" .
+
+NEON_SAMP_UUID:daf4f088-feec-4d88-a729-163103927df0 a split_pool_mod_schema:SlsSoilMoistureInMoistureSample ;
+    rdfs:label "YELL_052-O-25-2.5-20190820-SM" ;
+    split_pool_mod_schema:neon_sample_class "sls_soilMoisture_in.moistureSampleID" .
+
+NEON_SAMP_UUID:f613214b-0d37-4d09-8bd3-9025228a1f56 a split_pool_mod_schema:SlsSoilpHInPhSample ;
+    rdfs:label "YELL_052-O-25-2.5-20190820-PH" ;
+    split_pool_mod_schema:neon_sample_class "sls_soilpH_in.pHSampleID" .
+
+NEON_SAMP_UUID:fede0df9-1eb9-4d1e-b8c7-670dfd25f81d a split_pool_mod_schema:MicDnaExtractionInSubsample ;
+    rdfs:label "YELL_052-O-20190820-COMP-DNA1_19S_31_2842" ;
+    split_pool_mod_schema:neon_sample_class "mic_dnaExtraction_in.subsampleID" .
+
+NEON_SAMP_UUID:084fa101-5f9e-4b8e-9930-63f1164fc44d a split_pool_mod_schema:SlsMetagenomicsPoolingInCompositeSample ;
+    rdfs:label "YELL_052-O-20190820-COMP" ;
+    split_pool_mod_schema:neon_sample_class "sls_metagenomicsPooling_in.compositeSampleID" .
+
+NEON_SAMP_UUID:5ab4ca92-69f8-4a96-8662-aac770fcfc8c a split_pool_mod_schema:MicDnaExtractionInSoilDnaSample ;
+    rdfs:label "YELL_052-O-25-2.5-20190820-GEN-DNA2" ;
+    split_pool_mod_schema:neon_sample_class "mic_dnaExtraction_in.soilDnaSampleID" .
+
+NEON_SAMP_UUID:968152e5-6b99-4bfa-9cb9-4e26a18d0719 a split_pool_mod_schema:SlsSoilCoreCollectionInGeneticSample ;
+    rdfs:label "YELL_052-O-25-2.5-20190820-GEN" ;
+    split_pool_mod_schema:neon_sample_class "sls_soilCoreCollection_in.geneticSampleID" .
+
+NEON_SAMP_UUID:d597cb0c-061a-402c-9a28-dfaad5caf8b8 a split_pool_mod_schema:SlsSoilCoreCollectionInSample ;
+    rdfs:label "YELL_052-O-25-2.5-20190820" ;
+    split_pool_mod_schema:neon_sample_class "sls_soilCoreCollection_in.sampleID" .
+
+NEON_SAMP_UUID:e68ff983-54a4-4e4a-aa3b-3fcc95fdd765 a split_pool_mod_schema:MicDnaExtractionInSoilDnaSample ;
+    rdfs:label "YELL_052-O-20190820-COMP-DNA1" ;
+    split_pool_mod_schema:neon_sample_class "mic_dnaExtraction_in.soilDnaSampleID" .
+

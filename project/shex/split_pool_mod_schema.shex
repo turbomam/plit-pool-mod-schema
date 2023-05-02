@@ -1,5 +1,6 @@
 BASE <https://w3id.org/turbomam/split-pool-mod-schema/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX linkml: <https://w3id.org/linkml/>
 PREFIX schema1: <http://schema.org/>
@@ -38,13 +39,58 @@ linkml:Objectidentifier IRI
 linkml:Nodeidentifier NONLITERAL
 
 <Database> CLOSED {
-    (  $<Database_tes> (  schema1:name @linkml:String ? ;
+    (  $<Database_tes> (  rdfs:label @linkml:String ? ;
           <information_set> @<Information> * ;
           <material_entity_set> @<MaterialEntity> * ;
           <named_thing_set> @<NamedThing> * ;
-          <process_set> @<Process> *
+          <process_set> @<Process> * ;
+          <mic_dna_extraction_in_soil_dna_sample_set> @<MicDnaExtractionInSoilDnaSample> * ;
+          <mic_dna_extraction_in_subsample_set> @<MicDnaExtractionInSubsample> * ;
+          <mms_metagenome_sequencing_in_processed_seq_file_name_set> @<MmsMetagenomeSequencingInProcessedSeqFileName> * ;
+          <sls_metagenomics_pooling_in_composite_sample_set> @<SlsMetagenomicsPoolingInCompositeSample> * ;
+          <sls_soil_core_collection_in_genetic_archive_sample1_set> @<SlsSoilCoreCollectionInGeneticArchiveSample1> * ;
+          <sls_soil_core_collection_in_genetic_archive_sample2_set> @<SlsSoilCoreCollectionInGeneticArchiveSample2> * ;
+          <sls_soil_core_collection_in_genetic_archive_sample3_set> @<SlsSoilCoreCollectionInGeneticArchiveSample3> * ;
+          <sls_soil_core_collection_in_genetic_archive_sample4_set> @<SlsSoilCoreCollectionInGeneticArchiveSample4> * ;
+          <sls_soil_core_collection_in_genetic_archive_sample5_set> @<SlsSoilCoreCollectionInGeneticArchiveSample5> * ;
+          <sls_soil_core_collection_in_genetic_sample_set> @<SlsSoilCoreCollectionInGeneticSample> * ;
+          <sls_soil_core_collection_in_sample_set> @<SlsSoilCoreCollectionInSample> * ;
+          <sls_soil_moisture_in_moisture_sample_set> @<SlsSoilMoistureInMoistureSample> * ;
+          <sls_soil_ph_in_ph_sample_set> @<SlsSoilpHInPhSample> * ;
+          <dna_sample_prep_composite_set> @<DnaSamplePrepComposite> * ;
+          <dna_sample_prep_simple_set> @<DnaSamplePrepSimple> * ;
+          <genetic_sample_prep_set> @<GeneticSamplePrep> * ;
+          <moisture_sample_prep_set> @<MoistureSamplePrep> * ;
+          <ph_sample_prep_set> @<PhSamplePrep> * ;
+          <pooling_set> @<Pooling> * ;
+          <sequencing_set> @<Sequencing> * ;
+          <subsample_dna_extract_set> @<SubsampleDnaExtract> *
        ) ;
        rdf:type [ <Database> ]
+    )
+}
+
+<DnaSamplePrepComposite> CLOSED {
+    (  $<DnaSamplePrepComposite_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <DnaSamplePrepComposite> ]
+    )
+}
+
+<DnaSamplePrepSimple> CLOSED {
+    (  $<DnaSamplePrepSimple_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <DnaSamplePrepSimple> ]
+    )
+}
+
+<GeneticSamplePrep> CLOSED {
+    (  $<GeneticSamplePrep_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <GeneticSamplePrep> ]
     )
 }
 
@@ -56,17 +102,61 @@ linkml:Nodeidentifier NONLITERAL
     )
 }
 
-<MaterialEntity> CLOSED {
-    (  $<MaterialEntity_tes> (  &<NamedThing_tes> ;
-          rdf:type [ schema1:Thing ] ?
+<MaterialEntity>  (
+    CLOSED {
+       (  $<MaterialEntity_tes> (  &<NamedThing_tes> ;
+             rdf:type [ schema1:Thing ] ? ;
+             <neon_sample_class> @linkml:String ? ;
+             <neon_sample_tag> @linkml:String ? ;
+             <neon_sample_uuid> @linkml:String ? ;
+             <has_children> @<NamedThing> * ;
+             <has_parents> @<NamedThing> *
+          ) ;
+          rdf:type [ <MaterialEntity> ]
+       )
+    } OR @<MicDnaExtractionInSoilDnaSample> OR @<MicDnaExtractionInSubsample> OR @<MmsMetagenomeSequencingInProcessedSeqFileName>
+    OR @<SlsMetagenomicsPoolingInCompositeSample> OR @<SlsSoilCoreCollectionInGeneticArchiveSample1> OR
+    @<SlsSoilCoreCollectionInGeneticArchiveSample2> OR @<SlsSoilCoreCollectionInGeneticArchiveSample3> OR
+    @<SlsSoilCoreCollectionInGeneticArchiveSample4> OR @<SlsSoilCoreCollectionInGeneticArchiveSample5> OR
+    @<SlsSoilCoreCollectionInGeneticSample> OR @<SlsSoilCoreCollectionInSample> OR @<SlsSoilMoistureInMoistureSample> OR
+    @<SlsSoilpHInPhSample>
+)
+
+<MicDnaExtractionInSoilDnaSample> CLOSED {
+    (  $<MicDnaExtractionInSoilDnaSample_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
        ) ;
-       rdf:type [ <MaterialEntity> ]
+       rdf:type [ <MicDnaExtractionInSoilDnaSample> ]
+    )
+}
+
+<MicDnaExtractionInSubsample> CLOSED {
+    (  $<MicDnaExtractionInSubsample_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <MicDnaExtractionInSubsample> ]
+    )
+}
+
+<MmsMetagenomeSequencingInProcessedSeqFileName> CLOSED {
+    (  $<MmsMetagenomeSequencingInProcessedSeqFileName_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <MmsMetagenomeSequencingInProcessedSeqFileName> ]
+    )
+}
+
+<MoistureSamplePrep> CLOSED {
+    (  $<MoistureSamplePrep_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <MoistureSamplePrep> ]
     )
 }
 
 <NamedThing>  (
     CLOSED {
-       (  $<NamedThing_tes> (  schema1:name @linkml:String ? ;
+       (  $<NamedThing_tes> (  rdfs:label @linkml:String ? ;
              schema1:description @linkml:String ?
           ) ;
           rdf:type [ schema1:Thing ]
@@ -74,15 +164,128 @@ linkml:Nodeidentifier NONLITERAL
     } OR @<Information> OR @<MaterialEntity> OR @<Process>
 )
 
-<Process> CLOSED {
-    (  $<Process_tes> (  &<NamedThing_tes> ;
-          rdf:type [ schema1:Thing ] ? ;
-          <has_inputs> @linkml:String * ;
-          <has_outputs> @linkml:String * ;
-          <has_input> @<NamedThing> ? ;
-          <has_output> @<NamedThing> ?
+<PhSamplePrep> CLOSED {
+    (  $<PhSamplePrep_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
        ) ;
-       rdf:type [ <Process> ]
+       rdf:type [ <PhSamplePrep> ]
+    )
+}
+
+<Pooling> CLOSED {
+    (  $<Pooling_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <Pooling> ]
+    )
+}
+
+<Process>  (
+    CLOSED {
+       (  $<Process_tes> (  &<NamedThing_tes> ;
+             rdf:type [ schema1:Thing ] ? ;
+             <has_inputs> @<MaterialEntity> * ;
+             <has_outputs> @<MaterialEntity> *
+          ) ;
+          rdf:type [ <Process> ]
+       )
+    } OR @<DnaSamplePrepComposite> OR @<DnaSamplePrepSimple> OR @<GeneticSamplePrep> OR @<MoistureSamplePrep> OR @<PhSamplePrep> OR
+    @<Pooling> OR @<Sequencing> OR @<SubsampleDnaExtract>
+)
+
+<Sequencing> CLOSED {
+    (  $<Sequencing_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <Sequencing> ]
+    )
+}
+
+<SlsMetagenomicsPoolingInCompositeSample> CLOSED {
+    (  $<SlsMetagenomicsPoolingInCompositeSample_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <SlsMetagenomicsPoolingInCompositeSample> ]
+    )
+}
+
+<SlsSoilCoreCollectionInGeneticArchiveSample1> CLOSED {
+    (  $<SlsSoilCoreCollectionInGeneticArchiveSample1_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample1> ]
+    )
+}
+
+<SlsSoilCoreCollectionInGeneticArchiveSample2> CLOSED {
+    (  $<SlsSoilCoreCollectionInGeneticArchiveSample2_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample2> ]
+    )
+}
+
+<SlsSoilCoreCollectionInGeneticArchiveSample3> CLOSED {
+    (  $<SlsSoilCoreCollectionInGeneticArchiveSample3_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample3> ]
+    )
+}
+
+<SlsSoilCoreCollectionInGeneticArchiveSample4> CLOSED {
+    (  $<SlsSoilCoreCollectionInGeneticArchiveSample4_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample4> ]
+    )
+}
+
+<SlsSoilCoreCollectionInGeneticArchiveSample5> CLOSED {
+    (  $<SlsSoilCoreCollectionInGeneticArchiveSample5_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample5> ]
+    )
+}
+
+<SlsSoilCoreCollectionInGeneticSample> CLOSED {
+    (  $<SlsSoilCoreCollectionInGeneticSample_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <SlsSoilCoreCollectionInGeneticSample> ]
+    )
+}
+
+<SlsSoilCoreCollectionInSample> CLOSED {
+    (  $<SlsSoilCoreCollectionInSample_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <SlsSoilCoreCollectionInSample> ]
+    )
+}
+
+<SlsSoilMoistureInMoistureSample> CLOSED {
+    (  $<SlsSoilMoistureInMoistureSample_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <SlsSoilMoistureInMoistureSample> ]
+    )
+}
+
+<SlsSoilpHInPhSample> CLOSED {
+    (  $<SlsSoilpHInPhSample_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <SlsSoilpHInPhSample> ]
+    )
+}
+
+<SubsampleDnaExtract> CLOSED {
+    (  $<SubsampleDnaExtract_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <SubsampleDnaExtract> ]
     )
 }
 

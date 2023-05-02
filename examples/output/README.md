@@ -45,23 +45,23 @@ process_set:
   name: Sequencing of soil from Yellowstone
 
 ```
-## DatabaseCollection-undefined-slot
-### Input
-```yaml
-entries:
-- id: example:Database001
-  name: foo bar
-- id: example:Database002
-  name: foo bar
-  undefined: undefined
-
-```
 ## DatabaseCollection-no-id
 ### Input
 ```yaml
 age_in_years: 33
 name: foo bar
 primary_email: foo.bar@example.com
+
+```
+## DatabaseCollection-dupe-ids
+### Input
+```yaml
+entries:
+- id: example:Database001
+  name: foo bar
+- id: example:Database001
+  name: foo bar
+  undefined: undefined
 
 ```
 ## DatabaseCollection-bad-id-pattern
@@ -74,13 +74,13 @@ entries:
   name: foo bar
 
 ```
-## DatabaseCollection-dupe-ids
+## DatabaseCollection-undefined-slot
 ### Input
 ```yaml
 entries:
 - id: example:Database001
   name: foo bar
-- id: example:Database001
+- id: example:Database002
   name: foo bar
   undefined: undefined
 

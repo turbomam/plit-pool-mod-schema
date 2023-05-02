@@ -6,6 +6,54 @@ type Database
     materialEntitySet: [MaterialEntity]
     namedThingSet: [NamedThing]
     processSet: [Process]
+    micDnaExtractionInSoilDnaSampleSet: [MicDnaExtractionInSoilDnaSample]
+    micDnaExtractionInSubsampleSet: [MicDnaExtractionInSubsample]
+    mmsMetagenomeSequencingInProcessedSeqFileNameSet: [MmsMetagenomeSequencingInProcessedSeqFileName]
+    slsMetagenomicsPoolingInCompositeSampleSet: [SlsMetagenomicsPoolingInCompositeSample]
+    slsSoilCoreCollectionInGeneticArchiveSample1Set: [SlsSoilCoreCollectionInGeneticArchiveSample1]
+    slsSoilCoreCollectionInGeneticArchiveSample2Set: [SlsSoilCoreCollectionInGeneticArchiveSample2]
+    slsSoilCoreCollectionInGeneticArchiveSample3Set: [SlsSoilCoreCollectionInGeneticArchiveSample3]
+    slsSoilCoreCollectionInGeneticArchiveSample4Set: [SlsSoilCoreCollectionInGeneticArchiveSample4]
+    slsSoilCoreCollectionInGeneticArchiveSample5Set: [SlsSoilCoreCollectionInGeneticArchiveSample5]
+    slsSoilCoreCollectionInGeneticSampleSet: [SlsSoilCoreCollectionInGeneticSample]
+    slsSoilCoreCollectionInSampleSet: [SlsSoilCoreCollectionInSample]
+    slsSoilMoistureInMoistureSampleSet: [SlsSoilMoistureInMoistureSample]
+    slsSoilPhInPhSampleSet: [SlsSoilpHInPhSample]
+    dnaSamplePrepCompositeSet: [DnaSamplePrepComposite]
+    dnaSamplePrepSimpleSet: [DnaSamplePrepSimple]
+    geneticSamplePrepSet: [GeneticSamplePrep]
+    moistureSamplePrepSet: [MoistureSamplePrep]
+    phSamplePrepSet: [PhSamplePrep]
+    poolingSet: [Pooling]
+    sequencingSet: [Sequencing]
+    subsampleDnaExtractSet: [SubsampleDnaExtract]
+  }
+
+type DnaSamplePrepComposite
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
+  }
+
+type DnaSamplePrepSimple
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
+  }
+
+type GeneticSamplePrep
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
   }
 
 type Information
@@ -20,6 +68,56 @@ type MaterialEntity
     id: Uriorcurie!
     name: String
     description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type MicDnaExtractionInSoilDnaSample
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type MicDnaExtractionInSubsample
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type MmsMetagenomeSequencingInProcessedSeqFileName
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type MoistureSamplePrep
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
   }
 
 type NamedThing
@@ -29,14 +127,168 @@ type NamedThing
     description: String
   }
 
+type PhSamplePrep
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
+  }
+
+type Pooling
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
+  }
+
 type Process
   {
     id: Uriorcurie!
     name: String
     description: String
-    hasInputs: [String]
-    hasOutputs: [String]
-    hasInput: NamedThing
-    hasOutput: NamedThing
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
+  }
+
+type Sequencing
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
+  }
+
+type SlsMetagenomicsPoolingInCompositeSample
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type SlsSoilCoreCollectionInGeneticArchiveSample1
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type SlsSoilCoreCollectionInGeneticArchiveSample2
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type SlsSoilCoreCollectionInGeneticArchiveSample3
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type SlsSoilCoreCollectionInGeneticArchiveSample4
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type SlsSoilCoreCollectionInGeneticArchiveSample5
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type SlsSoilCoreCollectionInGeneticSample
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type SlsSoilCoreCollectionInSample
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type SlsSoilMoistureInMoistureSample
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type SlsSoilpHInPhSample
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type SubsampleDnaExtract
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
   }
 
