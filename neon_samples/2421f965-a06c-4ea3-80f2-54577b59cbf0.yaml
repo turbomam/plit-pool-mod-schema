@@ -1,0 +1,73 @@
+data:
+  sampleViews:
+  - archiveGuid: null
+    barcode: null
+    childSampleIdentifiers:
+    - archiveGuid: null
+      barcode: null
+      sampleClass: mms_metagenomeSequencing_in.processedSeqFileNameID
+      sampleTag: BMI_HLHJLBGXK_20S_09_0788.FASTQ.GZ
+      sampleUuid: b179f977-9e45-4aa6-8615-ee504c81d6a4
+    - archiveGuid: null
+      barcode: null
+      sampleClass: mic_dnaExtraction_in.subsampleID
+      sampleTag: YELL_052-M-20200709-COMP-DNA1_20S_09_0788
+      sampleUuid: 0bc1a3c8-66b8-4809-997a-24a326b1a33d
+    parentSampleIdentifiers:
+    - archiveGuid: null
+      barcode: B00000038575
+      sampleClass: sls_metagenomicsPooling_in.compositeSampleID
+      sampleTag: YELL_052-M-20200709-COMP
+      sampleUuid: b5da430c-6a8b-42fa-9df4-dfda9817927d
+    sampleClass: mic_dnaExtraction_in.soilDnaSampleID
+    sampleEvents:
+    - ingestTableName: mms_rawDataFiles_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-20200709-COMP-DNA1
+    - ingestTableName: mms_rawDataFiles_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-20200709-COMP-DNA1
+    - ingestTableName: mms_metagenomeSequencing_in
+      smsFieldEntries:
+      - smsKey: analysis_type
+        smsValue: Illumina
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2021-11-01T16:00:00Z'
+      - smsKey: fate_location
+        smsValue: Battelle Memorial Institute
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-20200709-COMP-DNA1
+    - ingestTableName: mic_dnaExtraction_in
+      smsFieldEntries:
+      - smsKey: analysis_type
+        smsValue: metagenomics
+      - smsKey: collect_end_date
+        smsValue: '2020-07-09T23:04:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2020-07-09T22:17:00Z'
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2021-08-19T16:00:00Z'
+      - smsKey: fate_location
+        smsValue: Battelle Applied Genomics
+      - smsKey: sample_class
+        smsValue: mic_dnaExtraction_in.soilDnaSampleID
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-20200709-COMP-DNA1
+      - smsKey: sample_type
+        smsValue: soil
+      - smsKey: sampling_protocol
+        smsValue: BMI_dnaExtractionSOP_v5
+    sampleTag: YELL_052-M-20200709-COMP-DNA1
+    sampleUuid: 2421f965-a06c-4ea3-80f2-54577b59cbf0

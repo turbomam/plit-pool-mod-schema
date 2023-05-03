@@ -5,129 +5,66 @@
 @prefix split_pool_mod_schema: <https://w3id.org/turbomam/split-pool-mod-schema/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-split_pool_mod_schema:Database a sh:NodeShape ;
+split_pool_mod_schema:BgcArchiving a sh:NodeShape ;
     sh:closed true ;
-    sh:description "A possibly heterogeneous collections of data" ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:class split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample3 ;
-            sh:nodeKind sh:IRI ;
-            sh:order 12 ;
-            sh:path split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample3_set ],
-        [ sh:class split_pool_mod_schema:PhSamplePrep ;
-            sh:nodeKind sh:IRI ;
-            sh:order 23 ;
-            sh:path split_pool_mod_schema:ph_sample_prep_set ],
-        [ sh:class split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample5 ;
-            sh:nodeKind sh:IRI ;
-            sh:order 14 ;
-            sh:path split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample5_set ],
-        [ sh:class split_pool_mod_schema:GeneticSamplePrep ;
-            sh:nodeKind sh:IRI ;
-            sh:order 21 ;
-            sh:path split_pool_mod_schema:genetic_sample_prep_set ],
+    sh:name "preparation of samples for pH measurement" ;
+    sh:property [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 2 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
         [ sh:description "A human-readable name for a thing" ;
             sh:maxCount 1 ;
-            sh:order 1 ;
-            sh:path rdfs:label ],
-        [ sh:class split_pool_mod_schema:SubsampleDnaExtract ;
-            sh:nodeKind sh:IRI ;
-            sh:order 26 ;
-            sh:path split_pool_mod_schema:subsample_dna_extract_set ],
-        [ sh:class split_pool_mod_schema:SlsSoilCoreCollectionInSample ;
-            sh:nodeKind sh:IRI ;
-            sh:order 16 ;
-            sh:path split_pool_mod_schema:sls_soil_core_collection_in_sample_set ],
-        [ sh:class split_pool_mod_schema:SlsSoilpHInPhSample ;
-            sh:nodeKind sh:IRI ;
-            sh:order 18 ;
-            sh:path split_pool_mod_schema:sls_soil_ph_in_ph_sample_set ],
-        [ sh:class split_pool_mod_schema:Process ;
-            sh:description "Links a Database to a list of Processes" ;
-            sh:nodeKind sh:IRI ;
-            sh:order 5 ;
-            sh:path split_pool_mod_schema:process_set ],
-        [ sh:class split_pool_mod_schema:DnaSamplePrepSimple ;
-            sh:nodeKind sh:IRI ;
-            sh:order 20 ;
-            sh:path split_pool_mod_schema:dna_sample_prep_simple_set ],
-        [ sh:class split_pool_mod_schema:SlsSoilMoistureInMoistureSample ;
-            sh:nodeKind sh:IRI ;
-            sh:order 17 ;
-            sh:path split_pool_mod_schema:sls_soil_moisture_in_moisture_sample_set ],
-        [ sh:class split_pool_mod_schema:MicDnaExtractionInSoilDnaSample ;
-            sh:nodeKind sh:IRI ;
-            sh:order 6 ;
-            sh:path split_pool_mod_schema:mic_dna_extraction_in_soil_dna_sample_set ],
-        [ sh:class split_pool_mod_schema:MaterialEntity ;
-            sh:description "Links a Database to a list of MaterialEntities" ;
-            sh:nodeKind sh:IRI ;
             sh:order 3 ;
-            sh:path split_pool_mod_schema:material_entity_set ],
-        [ sh:class split_pool_mod_schema:SlsMetagenomicsPoolingInCompositeSample ;
+            sh:path rdfs:label ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
             sh:nodeKind sh:IRI ;
-            sh:order 9 ;
-            sh:path split_pool_mod_schema:sls_metagenomics_pooling_in_composite_sample_set ],
-        [ sh:class split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample2 ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
             sh:nodeKind sh:IRI ;
-            sh:order 11 ;
-            sh:path split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample2_set ],
-        [ sh:class split_pool_mod_schema:MoistureSamplePrep ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:has_outputs ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 4 ;
+            sh:path schema1:description ] ;
+    sh:targetClass split_pool_mod_schema:BgcArchiving .
+
+split_pool_mod_schema:BiomassSamplePrep a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "preparation of samples for pH measurement" ;
+    sh:property [ sh:class split_pool_mod_schema:MaterialEntity ;
             sh:nodeKind sh:IRI ;
-            sh:order 22 ;
-            sh:path split_pool_mod_schema:moisture_sample_prep_set ],
-        [ sh:class split_pool_mod_schema:MmsMetagenomeSequencingInProcessedSeqFileName ;
-            sh:nodeKind sh:IRI ;
-            sh:order 8 ;
-            sh:path split_pool_mod_schema:mms_metagenome_sequencing_in_processed_seq_file_name_set ],
-        [ sh:class split_pool_mod_schema:DnaSamplePrepComposite ;
-            sh:nodeKind sh:IRI ;
-            sh:order 19 ;
-            sh:path split_pool_mod_schema:dna_sample_prep_composite_set ],
-        [ sh:class split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample4 ;
-            sh:nodeKind sh:IRI ;
-            sh:order 13 ;
-            sh:path split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample4_set ],
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:has_outputs ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 4 ;
+            sh:path schema1:description ],
         [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
-            sh:order 0 ;
+            sh:order 2 ;
             sh:path schema1:identifier ;
             sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
-        [ sh:class split_pool_mod_schema:SlsSoilCoreCollectionInGeneticSample ;
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path rdfs:label ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
             sh:nodeKind sh:IRI ;
-            sh:order 15 ;
-            sh:path split_pool_mod_schema:sls_soil_core_collection_in_genetic_sample_set ],
-        [ sh:class split_pool_mod_schema:Information ;
-            sh:description "Links a Database to a list of Informations" ;
-            sh:nodeKind sh:IRI ;
-            sh:order 2 ;
-            sh:path split_pool_mod_schema:information_set ],
-        [ sh:class schema1:Thing ;
-            sh:description "Links a Database to a list of NamedThings" ;
-            sh:nodeKind sh:IRI ;
-            sh:order 4 ;
-            sh:path split_pool_mod_schema:named_thing_set ],
-        [ sh:class split_pool_mod_schema:Sequencing ;
-            sh:nodeKind sh:IRI ;
-            sh:order 25 ;
-            sh:path split_pool_mod_schema:sequencing_set ],
-        [ sh:class split_pool_mod_schema:Pooling ;
-            sh:nodeKind sh:IRI ;
-            sh:order 24 ;
-            sh:path split_pool_mod_schema:pooling_set ],
-        [ sh:class split_pool_mod_schema:MicDnaExtractionInSubsample ;
-            sh:nodeKind sh:IRI ;
-            sh:order 7 ;
-            sh:path split_pool_mod_schema:mic_dna_extraction_in_subsample_set ],
-        [ sh:class split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample1 ;
-            sh:nodeKind sh:IRI ;
-            sh:order 10 ;
-            sh:path split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample1_set ] ;
-    sh:targetClass split_pool_mod_schema:Database .
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ] ;
+    sh:targetClass split_pool_mod_schema:BiomassSamplePrep .
 
-split_pool_mod_schema:DnaSamplePrepComposite a sh:NodeShape ;
+split_pool_mod_schema:CnSamplePrep a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
+    sh:name "preparation of samples for pH measurement" ;
     sh:property [ sh:class split_pool_mod_schema:MaterialEntity ;
             sh:nodeKind sh:IRI ;
             sh:order 0 ;
@@ -138,6 +75,158 @@ split_pool_mod_schema:DnaSamplePrepComposite a sh:NodeShape ;
             sh:order 2 ;
             sh:path schema1:identifier ;
             sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 4 ;
+            sh:path schema1:description ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path rdfs:label ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:has_outputs ] ;
+    sh:targetClass split_pool_mod_schema:CnSamplePrep .
+
+split_pool_mod_schema:Database a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "A possibly heterogeneous collections of data" ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class split_pool_mod_schema:Pooling ;
+            sh:nodeKind sh:IRI ;
+            sh:order 24 ;
+            sh:path split_pool_mod_schema:pooling_set ],
+        [ sh:class split_pool_mod_schema:SlsSoilCoreCollectionInGeneticSample ;
+            sh:nodeKind sh:IRI ;
+            sh:order 15 ;
+            sh:path split_pool_mod_schema:sls_soil_core_collection_in_genetic_sample_set ],
+        [ sh:class split_pool_mod_schema:MicDnaExtractionInSoilDnaSample ;
+            sh:nodeKind sh:IRI ;
+            sh:order 6 ;
+            sh:path split_pool_mod_schema:mic_dna_extraction_in_soil_dna_sample_set ],
+        [ sh:class split_pool_mod_schema:SubsampleDnaExtract ;
+            sh:nodeKind sh:IRI ;
+            sh:order 26 ;
+            sh:path split_pool_mod_schema:subsample_dna_extract_set ],
+        [ sh:class split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample2 ;
+            sh:nodeKind sh:IRI ;
+            sh:order 11 ;
+            sh:path split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample2_set ],
+        [ sh:class split_pool_mod_schema:DnaSamplePrepComposite ;
+            sh:nodeKind sh:IRI ;
+            sh:order 19 ;
+            sh:path split_pool_mod_schema:dna_sample_prep_composite_set ],
+        [ sh:class split_pool_mod_schema:GeneticSamplePrep ;
+            sh:nodeKind sh:IRI ;
+            sh:order 21 ;
+            sh:path split_pool_mod_schema:genetic_sample_prep_set ],
+        [ sh:class split_pool_mod_schema:Process ;
+            sh:description "Links a Database to a list of Processes" ;
+            sh:nodeKind sh:IRI ;
+            sh:order 5 ;
+            sh:path split_pool_mod_schema:process_set ],
+        [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 0 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:class split_pool_mod_schema:SlsSoilCoreCollectionInSample ;
+            sh:nodeKind sh:IRI ;
+            sh:order 16 ;
+            sh:path split_pool_mod_schema:sls_soil_core_collection_in_sample_set ],
+        [ sh:class split_pool_mod_schema:MmsMetagenomeSequencingInProcessedSeqFileName ;
+            sh:nodeKind sh:IRI ;
+            sh:order 8 ;
+            sh:path split_pool_mod_schema:mms_metagenome_sequencing_in_processed_seq_file_name_set ],
+        [ sh:class split_pool_mod_schema:Sequencing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 25 ;
+            sh:path split_pool_mod_schema:sequencing_set ],
+        [ sh:class split_pool_mod_schema:MicDnaExtractionInSubsample ;
+            sh:nodeKind sh:IRI ;
+            sh:order 7 ;
+            sh:path split_pool_mod_schema:mic_dna_extraction_in_subsample_set ],
+        [ sh:class split_pool_mod_schema:MoistureSamplePrep ;
+            sh:nodeKind sh:IRI ;
+            sh:order 22 ;
+            sh:path split_pool_mod_schema:moisture_sample_prep_set ],
+        [ sh:class split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample1 ;
+            sh:nodeKind sh:IRI ;
+            sh:order 10 ;
+            sh:path split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample1_set ],
+        [ sh:class split_pool_mod_schema:DnaSamplePrepSimple ;
+            sh:nodeKind sh:IRI ;
+            sh:order 20 ;
+            sh:path split_pool_mod_schema:dna_sample_prep_simple_set ],
+        [ sh:class split_pool_mod_schema:SlsSoilMoistureInMoistureSample ;
+            sh:nodeKind sh:IRI ;
+            sh:order 17 ;
+            sh:path split_pool_mod_schema:sls_soil_moisture_in_moisture_sample_set ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 1 ;
+            sh:path rdfs:label ],
+        [ sh:class schema1:Thing ;
+            sh:description "Links a Database to a list of NamedThings" ;
+            sh:nodeKind sh:IRI ;
+            sh:order 4 ;
+            sh:path split_pool_mod_schema:named_thing_set ],
+        [ sh:class split_pool_mod_schema:SlsMetagenomicsPoolingInCompositeSample ;
+            sh:nodeKind sh:IRI ;
+            sh:order 9 ;
+            sh:path split_pool_mod_schema:sls_metagenomics_pooling_in_composite_sample_set ],
+        [ sh:class split_pool_mod_schema:Information ;
+            sh:description "Links a Database to a list of Informations" ;
+            sh:nodeKind sh:IRI ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:information_set ],
+        [ sh:class split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample3 ;
+            sh:nodeKind sh:IRI ;
+            sh:order 12 ;
+            sh:path split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample3_set ],
+        [ sh:class split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample5 ;
+            sh:nodeKind sh:IRI ;
+            sh:order 14 ;
+            sh:path split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample5_set ],
+        [ sh:class split_pool_mod_schema:PhSamplePrep ;
+            sh:nodeKind sh:IRI ;
+            sh:order 23 ;
+            sh:path split_pool_mod_schema:ph_sample_prep_set ],
+        [ sh:class split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample4 ;
+            sh:nodeKind sh:IRI ;
+            sh:order 13 ;
+            sh:path split_pool_mod_schema:sls_soil_core_collection_in_genetic_archive_sample4_set ],
+        [ sh:class split_pool_mod_schema:SlsSoilpHInPhSample ;
+            sh:nodeKind sh:IRI ;
+            sh:order 18 ;
+            sh:path split_pool_mod_schema:sls_soil_ph_in_ph_sample_set ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:description "Links a Database to a list of MaterialEntities" ;
+            sh:nodeKind sh:IRI ;
+            sh:order 3 ;
+            sh:path split_pool_mod_schema:material_entity_set ] ;
+    sh:targetClass split_pool_mod_schema:Database .
+
+split_pool_mod_schema:GeneticArchiving1 a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "preparation of samples for pH measurement" ;
+    sh:property [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 4 ;
+            sh:path schema1:description ],
+        [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 2 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ],
         [ sh:class split_pool_mod_schema:MaterialEntity ;
             sh:nodeKind sh:IRI ;
             sh:order 1 ;
@@ -145,17 +234,338 @@ split_pool_mod_schema:DnaSamplePrepComposite a sh:NodeShape ;
         [ sh:description "A human-readable name for a thing" ;
             sh:maxCount 1 ;
             sh:order 3 ;
-            sh:path rdfs:label ],
+            sh:path rdfs:label ] ;
+    sh:targetClass split_pool_mod_schema:GeneticArchiving1 .
+
+split_pool_mod_schema:GeneticArchiving2 a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "preparation of samples for pH measurement" ;
+    sh:property [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:has_outputs ],
         [ sh:description "A human-readable description for a thing" ;
             sh:maxCount 1 ;
             sh:order 4 ;
-            sh:path schema1:description ] ;
-    sh:targetClass split_pool_mod_schema:DnaSamplePrepComposite .
+            sh:path schema1:description ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path rdfs:label ],
+        [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 2 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ] ;
+    sh:targetClass split_pool_mod_schema:GeneticArchiving2 .
 
-split_pool_mod_schema:DnaSamplePrepSimple a sh:NodeShape ;
+split_pool_mod_schema:GeneticArchiving3 a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:description "A human-readable name for a thing" ;
+    sh:name "preparation of samples for pH measurement" ;
+    sh:property [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 2 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:has_outputs ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 4 ;
+            sh:path schema1:description ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path rdfs:label ] ;
+    sh:targetClass split_pool_mod_schema:GeneticArchiving3 .
+
+split_pool_mod_schema:GeneticArchiving4 a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "preparation of samples for pH measurement" ;
+    sh:property [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:has_outputs ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 4 ;
+            sh:path schema1:description ],
+        [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 2 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path rdfs:label ] ;
+    sh:targetClass split_pool_mod_schema:GeneticArchiving4 .
+
+split_pool_mod_schema:GeneticArchiving5 a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "preparation of samples for pH measurement" ;
+    sh:property [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 4 ;
+            sh:path schema1:description ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:has_outputs ],
+        [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 2 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path rdfs:label ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ] ;
+    sh:targetClass split_pool_mod_schema:GeneticArchiving5 .
+
+split_pool_mod_schema:KclSamplePrep a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "preparation of samples for pH measurement" ;
+    sh:property [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 2 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 4 ;
+            sh:path schema1:description ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:has_outputs ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path rdfs:label ] ;
+    sh:targetClass split_pool_mod_schema:KclSamplePrep .
+
+split_pool_mod_schema:NtrInternalLabInKclSample a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:maxCount 1 ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:neon_sample_tag ],
+        [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 5 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 6 ;
+            sh:path rdfs:label ],
+        [ sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:description ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 4 ;
+            sh:path split_pool_mod_schema:has_parents ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 3 ;
+            sh:path split_pool_mod_schema:has_children ] ;
+    sh:targetClass split_pool_mod_schema:NtrInternalLabInKclSample .
+
+split_pool_mod_schema:SlsBgcSubsamplingInBgcArchive a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 3 ;
+            sh:path split_pool_mod_schema:has_children ],
+        [ sh:maxCount 1 ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:neon_sample_tag ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 4 ;
+            sh:path split_pool_mod_schema:has_parents ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:description ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 6 ;
+            sh:path rdfs:label ],
+        [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 5 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ] ;
+    sh:targetClass split_pool_mod_schema:SlsBgcSubsamplingInBgcArchive .
+
+split_pool_mod_schema:SlsBgcSubsamplingInCnSample a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 4 ;
+            sh:path split_pool_mod_schema:has_parents ],
+        [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 5 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:description ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 6 ;
+            sh:path rdfs:label ],
+        [ sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
+        [ sh:maxCount 1 ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:neon_sample_tag ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 3 ;
+            sh:path split_pool_mod_schema:has_children ] ;
+    sh:targetClass split_pool_mod_schema:SlsBgcSubsamplingInCnSample .
+
+split_pool_mod_schema:SlsSoilCoreCollectionInBiomass a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 5 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:description ],
+        [ sh:maxCount 1 ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:neon_sample_tag ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 4 ;
+            sh:path split_pool_mod_schema:has_parents ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 6 ;
+            sh:path rdfs:label ],
+        [ sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 3 ;
+            sh:path split_pool_mod_schema:has_children ] ;
+    sh:targetClass split_pool_mod_schema:SlsSoilCoreCollectionInBiomass .
+
+split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 4 ;
+            sh:path split_pool_mod_schema:has_parents ],
+        [ sh:maxCount 1 ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:neon_sample_tag ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 3 ;
+            sh:path split_pool_mod_schema:has_children ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 6 ;
+            sh:path rdfs:label ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ],
+        [ sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
+        [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 5 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:description ] ;
+    sh:targetClass split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample .
+
+split_pool_mod_schema:DnaSamplePrepComposite a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "preparation of DNA from a composite sample" ;
+    sh:property [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 4 ;
+            sh:path schema1:description ],
+        [ sh:description "A human-readable name for a thing" ;
             sh:maxCount 1 ;
             sh:order 3 ;
             sh:path rdfs:label ],
@@ -169,6 +579,30 @@ split_pool_mod_schema:DnaSamplePrepSimple a sh:NodeShape ;
             sh:order 2 ;
             sh:path schema1:identifier ;
             sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ] ;
+    sh:targetClass split_pool_mod_schema:DnaSamplePrepComposite .
+
+split_pool_mod_schema:DnaSamplePrepSimple a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "preparation of DNA from a simple sample" ;
+    sh:property [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path rdfs:label ],
+        [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 2 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:has_outputs ],
         [ sh:description "A human-readable description for a thing" ;
             sh:maxCount 1 ;
             sh:order 4 ;
@@ -182,39 +616,36 @@ split_pool_mod_schema:DnaSamplePrepSimple a sh:NodeShape ;
 split_pool_mod_schema:GeneticSamplePrep a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
+    sh:name "preparation of genetic samples" ;
     sh:property [ sh:class split_pool_mod_schema:MaterialEntity ;
             sh:nodeKind sh:IRI ;
-            sh:order 1 ;
-            sh:path split_pool_mod_schema:has_outputs ],
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ],
         [ sh:description "A human-readable description for a thing" ;
             sh:maxCount 1 ;
             sh:order 4 ;
             sh:path schema1:description ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:has_outputs ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path rdfs:label ],
         [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 2 ;
             sh:path schema1:identifier ;
-            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
-        [ sh:description "A human-readable name for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 3 ;
-            sh:path rdfs:label ],
-        [ sh:class split_pool_mod_schema:MaterialEntity ;
-            sh:nodeKind sh:IRI ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:has_inputs ] ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ] ;
     sh:targetClass split_pool_mod_schema:GeneticSamplePrep .
 
 split_pool_mod_schema:Information a sh:NodeShape ;
     sh:closed true ;
     sh:description "Anything that informs, or reduces uncertainty. Can be about a material entity or a process." ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:description "A human-readable description for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path schema1:description ],
-        [ sh:description "A human-readable name for a thing" ;
+    sh:property [ sh:description "A human-readable name for a thing" ;
             sh:maxCount 1 ;
             sh:order 1 ;
             sh:path rdfs:label ],
@@ -223,7 +654,11 @@ split_pool_mod_schema:Information a sh:NodeShape ;
             sh:minCount 1 ;
             sh:order 0 ;
             sh:path schema1:identifier ;
-            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ] ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path schema1:description ] ;
     sh:targetClass split_pool_mod_schema:Information .
 
 split_pool_mod_schema:MicDnaExtractionInSoilDnaSample a sh:NodeShape ;
@@ -231,42 +666,6 @@ split_pool_mod_schema:MicDnaExtractionInSoilDnaSample a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:class schema1:Thing ;
             sh:nodeKind sh:IRI ;
-            sh:order 4 ;
-            sh:path split_pool_mod_schema:has_parents ],
-        [ sh:description "A human-readable description for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 7 ;
-            sh:path schema1:description ],
-        [ sh:maxCount 1 ;
-            sh:order 1 ;
-            sh:path split_pool_mod_schema:neon_sample_tag ],
-        [ sh:class schema1:Thing ;
-            sh:nodeKind sh:IRI ;
-            sh:order 3 ;
-            sh:path split_pool_mod_schema:has_children ],
-        [ sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path split_pool_mod_schema:neon_sample_uuid ],
-        [ sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:neon_sample_class ],
-        [ sh:description "A unique identifier for a thing" ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:order 5 ;
-            sh:path schema1:identifier ;
-            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
-        [ sh:description "A human-readable name for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 6 ;
-            sh:path rdfs:label ] ;
-    sh:targetClass split_pool_mod_schema:MicDnaExtractionInSoilDnaSample .
-
-split_pool_mod_schema:MicDnaExtractionInSubsample a sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:class schema1:Thing ;
-            sh:nodeKind sh:IRI ;
             sh:order 3 ;
             sh:path split_pool_mod_schema:has_children ],
         [ sh:description "A human-readable name for a thing" ;
@@ -276,37 +675,35 @@ split_pool_mod_schema:MicDnaExtractionInSubsample a sh:NodeShape ;
         [ sh:maxCount 1 ;
             sh:order 0 ;
             sh:path split_pool_mod_schema:neon_sample_class ],
-        [ sh:class schema1:Thing ;
-            sh:nodeKind sh:IRI ;
-            sh:order 4 ;
-            sh:path split_pool_mod_schema:has_parents ],
         [ sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path split_pool_mod_schema:neon_sample_uuid ],
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:neon_sample_tag ],
         [ sh:description "A human-readable description for a thing" ;
             sh:maxCount 1 ;
             sh:order 7 ;
             sh:path schema1:description ],
         [ sh:maxCount 1 ;
-            sh:order 1 ;
-            sh:path split_pool_mod_schema:neon_sample_tag ],
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 4 ;
+            sh:path split_pool_mod_schema:has_parents ],
         [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 5 ;
             sh:path schema1:identifier ;
             sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ] ;
-    sh:targetClass split_pool_mod_schema:MicDnaExtractionInSubsample .
+    sh:targetClass split_pool_mod_schema:MicDnaExtractionInSoilDnaSample .
 
-split_pool_mod_schema:MmsMetagenomeSequencingInProcessedSeqFileName a sh:NodeShape ;
+split_pool_mod_schema:MicDnaExtractionInSubsample a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path split_pool_mod_schema:neon_sample_uuid ],
-        [ sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:neon_sample_class ],
+    sh:property [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:description ],
         [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -318,26 +715,69 @@ split_pool_mod_schema:MmsMetagenomeSequencingInProcessedSeqFileName a sh:NodeSha
             sh:path split_pool_mod_schema:neon_sample_tag ],
         [ sh:class schema1:Thing ;
             sh:nodeKind sh:IRI ;
+            sh:order 3 ;
+            sh:path split_pool_mod_schema:has_children ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
             sh:order 4 ;
             sh:path split_pool_mod_schema:has_parents ],
         [ sh:description "A human-readable name for a thing" ;
             sh:maxCount 1 ;
             sh:order 6 ;
             sh:path rdfs:label ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ],
+        [ sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ] ;
+    sh:targetClass split_pool_mod_schema:MicDnaExtractionInSubsample .
+
+split_pool_mod_schema:MmsMetagenomeSequencingInProcessedSeqFileName a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:description ],
+        [ sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
         [ sh:class schema1:Thing ;
             sh:nodeKind sh:IRI ;
             sh:order 3 ;
             sh:path split_pool_mod_schema:has_children ],
-        [ sh:description "A human-readable description for a thing" ;
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 4 ;
+            sh:path split_pool_mod_schema:has_parents ],
+        [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
-            sh:order 7 ;
-            sh:path schema1:description ] ;
+            sh:minCount 1 ;
+            sh:order 5 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 6 ;
+            sh:path rdfs:label ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ],
+        [ sh:maxCount 1 ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:neon_sample_tag ] ;
     sh:targetClass split_pool_mod_schema:MmsMetagenomeSequencingInProcessedSeqFileName .
 
 split_pool_mod_schema:MoistureSamplePrep a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:description "A human-readable name for a thing" ;
+    sh:name "preparation of samples for moisture measurement" ;
+    sh:property [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ],
+        [ sh:description "A human-readable name for a thing" ;
             sh:maxCount 1 ;
             sh:order 3 ;
             sh:path rdfs:label ],
@@ -345,10 +785,6 @@ split_pool_mod_schema:MoistureSamplePrep a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:order 4 ;
             sh:path schema1:description ],
-        [ sh:class split_pool_mod_schema:MaterialEntity ;
-            sh:nodeKind sh:IRI ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:has_inputs ],
         [ sh:class split_pool_mod_schema:MaterialEntity ;
             sh:nodeKind sh:IRI ;
             sh:order 1 ;
@@ -364,7 +800,40 @@ split_pool_mod_schema:MoistureSamplePrep a sh:NodeShape ;
 split_pool_mod_schema:PhSamplePrep a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:description "A human-readable description for a thing" ;
+    sh:name "preparation of samples for pH measurement" ;
+    sh:property [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path rdfs:label ],
+        [ sh:description "A unique identifier for a thing" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 2 ;
+            sh:path schema1:identifier ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 4 ;
+            sh:path schema1:description ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:has_outputs ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ] ;
+    sh:targetClass split_pool_mod_schema:PhSamplePrep .
+
+split_pool_mod_schema:Pooling a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "pooling of samples" ;
+    sh:property [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:has_outputs ],
+        [ sh:description "A human-readable description for a thing" ;
             sh:maxCount 1 ;
             sh:order 4 ;
             sh:path schema1:description ],
@@ -381,83 +850,53 @@ split_pool_mod_schema:PhSamplePrep a sh:NodeShape ;
         [ sh:class split_pool_mod_schema:MaterialEntity ;
             sh:nodeKind sh:IRI ;
             sh:order 0 ;
-            sh:path split_pool_mod_schema:has_inputs ],
-        [ sh:class split_pool_mod_schema:MaterialEntity ;
-            sh:nodeKind sh:IRI ;
-            sh:order 1 ;
-            sh:path split_pool_mod_schema:has_outputs ] ;
-    sh:targetClass split_pool_mod_schema:PhSamplePrep .
-
-split_pool_mod_schema:Pooling a sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:class split_pool_mod_schema:MaterialEntity ;
-            sh:nodeKind sh:IRI ;
-            sh:order 1 ;
-            sh:path split_pool_mod_schema:has_outputs ],
-        [ sh:description "A human-readable description for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 4 ;
-            sh:path schema1:description ],
-        [ sh:description "A unique identifier for a thing" ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:order 2 ;
-            sh:path schema1:identifier ;
-            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
-        [ sh:class split_pool_mod_schema:MaterialEntity ;
-            sh:nodeKind sh:IRI ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:has_inputs ],
-        [ sh:description "A human-readable name for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 3 ;
-            sh:path rdfs:label ] ;
+            sh:path split_pool_mod_schema:has_inputs ] ;
     sh:targetClass split_pool_mod_schema:Pooling .
 
 split_pool_mod_schema:Process a sh:NodeShape ;
     sh:closed true ;
     sh:description "An entity that unfolds over time. Not composed of matter." ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:class split_pool_mod_schema:MaterialEntity ;
-            sh:nodeKind sh:IRI ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:has_inputs ],
-        [ sh:class split_pool_mod_schema:MaterialEntity ;
-            sh:nodeKind sh:IRI ;
-            sh:order 1 ;
-            sh:path split_pool_mod_schema:has_outputs ],
-        [ sh:description "A human-readable name for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 3 ;
-            sh:path rdfs:label ],
-        [ sh:description "A human-readable description for a thing" ;
+    sh:property [ sh:description "A human-readable description for a thing" ;
             sh:maxCount 1 ;
             sh:order 4 ;
             sh:path schema1:description ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ],
         [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 2 ;
             sh:path schema1:identifier ;
-            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ] ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path rdfs:label ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:has_outputs ] ;
     sh:targetClass split_pool_mod_schema:Process .
 
 split_pool_mod_schema:Sequencing a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
+    sh:name "sequencing" ;
     sh:property [ sh:class split_pool_mod_schema:MaterialEntity ;
             sh:nodeKind sh:IRI ;
             sh:order 1 ;
             sh:path split_pool_mod_schema:has_outputs ],
-        [ sh:class split_pool_mod_schema:MaterialEntity ;
-            sh:nodeKind sh:IRI ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:has_inputs ],
         [ sh:description "A human-readable name for a thing" ;
             sh:maxCount 1 ;
             sh:order 3 ;
             sh:path rdfs:label ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ],
         [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -473,10 +912,18 @@ split_pool_mod_schema:Sequencing a sh:NodeShape ;
 split_pool_mod_schema:SlsMetagenomicsPoolingInCompositeSample a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:class schema1:Thing ;
+    sh:property [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 6 ;
+            sh:path rdfs:label ],
+        [ sh:class schema1:Thing ;
             sh:nodeKind sh:IRI ;
             sh:order 4 ;
             sh:path split_pool_mod_schema:has_parents ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 3 ;
+            sh:path split_pool_mod_schema:has_children ],
         [ sh:description "A human-readable description for a thing" ;
             sh:maxCount 1 ;
             sh:order 7 ;
@@ -484,44 +931,36 @@ split_pool_mod_schema:SlsMetagenomicsPoolingInCompositeSample a sh:NodeShape ;
         [ sh:maxCount 1 ;
             sh:order 1 ;
             sh:path split_pool_mod_schema:neon_sample_tag ],
+        [ sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
         [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 5 ;
             sh:path schema1:identifier ;
             sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
-        [ sh:class schema1:Thing ;
-            sh:nodeKind sh:IRI ;
-            sh:order 3 ;
-            sh:path split_pool_mod_schema:has_children ],
-        [ sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path split_pool_mod_schema:neon_sample_uuid ],
         [ sh:maxCount 1 ;
             sh:order 0 ;
-            sh:path split_pool_mod_schema:neon_sample_class ],
-        [ sh:description "A human-readable name for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 6 ;
-            sh:path rdfs:label ] ;
+            sh:path split_pool_mod_schema:neon_sample_class ] ;
     sh:targetClass split_pool_mod_schema:SlsMetagenomicsPoolingInCompositeSample .
 
 split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample1 a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:class schema1:Thing ;
-            sh:nodeKind sh:IRI ;
-            sh:order 3 ;
-            sh:path split_pool_mod_schema:has_children ],
-        [ sh:description "A unique identifier for a thing" ;
+    sh:property [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 5 ;
             sh:path schema1:identifier ;
             sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
         [ sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:neon_sample_class ],
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:description ],
         [ sh:maxCount 1 ;
             sh:order 1 ;
             sh:path split_pool_mod_schema:neon_sample_tag ],
@@ -534,40 +973,40 @@ split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample1 a sh:NodeShap
             sh:order 4 ;
             sh:path split_pool_mod_schema:has_parents ],
         [ sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path split_pool_mod_schema:neon_sample_uuid ],
-        [ sh:description "A human-readable description for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 7 ;
-            sh:path schema1:description ] ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 3 ;
+            sh:path split_pool_mod_schema:has_children ] ;
     sh:targetClass split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample1 .
 
 split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample2 a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path split_pool_mod_schema:neon_sample_uuid ],
-        [ sh:description "A human-readable name for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 6 ;
-            sh:path rdfs:label ],
-        [ sh:description "A unique identifier for a thing" ;
+    sh:property [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 5 ;
             sh:path schema1:identifier ;
             sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
         [ sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:neon_sample_class ],
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:neon_sample_tag ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 6 ;
+            sh:path rdfs:label ],
+        [ sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
         [ sh:class schema1:Thing ;
             sh:nodeKind sh:IRI ;
             sh:order 3 ;
             sh:path split_pool_mod_schema:has_children ],
         [ sh:maxCount 1 ;
-            sh:order 1 ;
-            sh:path split_pool_mod_schema:neon_sample_tag ],
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ],
         [ sh:class schema1:Thing ;
             sh:nodeKind sh:IRI ;
             sh:order 4 ;
@@ -581,17 +1020,10 @@ split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample2 a sh:NodeShap
 split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample3 a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:description "A human-readable description for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 7 ;
-            sh:path schema1:description ],
-        [ sh:description "A human-readable name for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 6 ;
-            sh:path rdfs:label ],
-        [ sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path split_pool_mod_schema:neon_sample_uuid ],
+    sh:property [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 3 ;
+            sh:path split_pool_mod_schema:has_children ],
         [ sh:maxCount 1 ;
             sh:order 1 ;
             sh:path split_pool_mod_schema:neon_sample_tag ],
@@ -599,13 +1031,20 @@ split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample3 a sh:NodeShap
             sh:nodeKind sh:IRI ;
             sh:order 4 ;
             sh:path split_pool_mod_schema:has_parents ],
-        [ sh:class schema1:Thing ;
-            sh:nodeKind sh:IRI ;
-            sh:order 3 ;
-            sh:path split_pool_mod_schema:has_children ],
         [ sh:maxCount 1 ;
             sh:order 0 ;
             sh:path split_pool_mod_schema:neon_sample_class ],
+        [ sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 6 ;
+            sh:path rdfs:label ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:description ],
         [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -617,73 +1056,73 @@ split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample3 a sh:NodeShap
 split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample4 a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:description "A human-readable name for a thing" ;
+    sh:property [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 3 ;
+            sh:path split_pool_mod_schema:has_children ],
+        [ sh:description "A human-readable name for a thing" ;
             sh:maxCount 1 ;
             sh:order 6 ;
             sh:path rdfs:label ],
-        [ sh:description "A human-readable description for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 7 ;
-            sh:path schema1:description ],
+        [ sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ],
         [ sh:maxCount 1 ;
             sh:order 1 ;
             sh:path split_pool_mod_schema:neon_sample_tag ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 4 ;
+            sh:path split_pool_mod_schema:has_parents ],
         [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 5 ;
             sh:path schema1:identifier ;
             sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
-        [ sh:class schema1:Thing ;
-            sh:nodeKind sh:IRI ;
-            sh:order 4 ;
-            sh:path split_pool_mod_schema:has_parents ],
-        [ sh:class schema1:Thing ;
-            sh:nodeKind sh:IRI ;
-            sh:order 3 ;
-            sh:path split_pool_mod_schema:has_children ],
-        [ sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path split_pool_mod_schema:neon_sample_uuid ],
-        [ sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:neon_sample_class ] ;
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:description ] ;
     sh:targetClass split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample4 .
 
 split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample5 a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:neon_sample_class ],
-        [ sh:class schema1:Thing ;
-            sh:nodeKind sh:IRI ;
-            sh:order 4 ;
-            sh:path split_pool_mod_schema:has_parents ],
-        [ sh:maxCount 1 ;
             sh:order 2 ;
             sh:path split_pool_mod_schema:neon_sample_uuid ],
         [ sh:class schema1:Thing ;
             sh:nodeKind sh:IRI ;
             sh:order 3 ;
             sh:path split_pool_mod_schema:has_children ],
-        [ sh:description "A human-readable description for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 7 ;
-            sh:path schema1:description ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 4 ;
+            sh:path split_pool_mod_schema:has_parents ],
         [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 5 ;
             sh:path schema1:identifier ;
             sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:description ],
         [ sh:maxCount 1 ;
             sh:order 1 ;
             sh:path split_pool_mod_schema:neon_sample_tag ],
         [ sh:description "A human-readable name for a thing" ;
             sh:maxCount 1 ;
             sh:order 6 ;
-            sh:path rdfs:label ] ;
+            sh:path rdfs:label ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ] ;
     sh:targetClass split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample5 .
 
 split_pool_mod_schema:SlsSoilCoreCollectionInGeneticSample a sh:NodeShape ;
@@ -698,13 +1137,10 @@ split_pool_mod_schema:SlsSoilCoreCollectionInGeneticSample a sh:NodeShape ;
             sh:order 5 ;
             sh:path schema1:identifier ;
             sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
-        [ sh:description "A human-readable name for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 6 ;
-            sh:path rdfs:label ],
-        [ sh:maxCount 1 ;
-            sh:order 1 ;
-            sh:path split_pool_mod_schema:neon_sample_tag ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 4 ;
+            sh:path split_pool_mod_schema:has_parents ],
         [ sh:class schema1:Thing ;
             sh:nodeKind sh:IRI ;
             sh:order 3 ;
@@ -712,14 +1148,17 @@ split_pool_mod_schema:SlsSoilCoreCollectionInGeneticSample a sh:NodeShape ;
         [ sh:maxCount 1 ;
             sh:order 2 ;
             sh:path split_pool_mod_schema:neon_sample_uuid ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 6 ;
+            sh:path rdfs:label ],
+        [ sh:maxCount 1 ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:neon_sample_tag ],
         [ sh:description "A human-readable description for a thing" ;
             sh:maxCount 1 ;
             sh:order 7 ;
-            sh:path schema1:description ],
-        [ sh:class schema1:Thing ;
-            sh:nodeKind sh:IRI ;
-            sh:order 4 ;
-            sh:path split_pool_mod_schema:has_parents ] ;
+            sh:path schema1:description ] ;
     sh:targetClass split_pool_mod_schema:SlsSoilCoreCollectionInGeneticSample .
 
 split_pool_mod_schema:SlsSoilCoreCollectionInSample a sh:NodeShape ;
@@ -728,124 +1167,115 @@ split_pool_mod_schema:SlsSoilCoreCollectionInSample a sh:NodeShape ;
     sh:property [ sh:maxCount 1 ;
             sh:order 1 ;
             sh:path split_pool_mod_schema:neon_sample_tag ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 4 ;
+            sh:path split_pool_mod_schema:has_parents ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ],
         [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 5 ;
             sh:path schema1:identifier ;
             sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
         [ sh:description "A human-readable description for a thing" ;
             sh:maxCount 1 ;
             sh:order 7 ;
             sh:path schema1:description ],
         [ sh:class schema1:Thing ;
             sh:nodeKind sh:IRI ;
-            sh:order 4 ;
-            sh:path split_pool_mod_schema:has_parents ],
-        [ sh:class schema1:Thing ;
-            sh:nodeKind sh:IRI ;
             sh:order 3 ;
             sh:path split_pool_mod_schema:has_children ],
-        [ sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:neon_sample_class ],
         [ sh:description "A human-readable name for a thing" ;
             sh:maxCount 1 ;
             sh:order 6 ;
-            sh:path rdfs:label ],
-        [ sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path split_pool_mod_schema:neon_sample_uuid ] ;
+            sh:path rdfs:label ] ;
     sh:targetClass split_pool_mod_schema:SlsSoilCoreCollectionInSample .
 
 split_pool_mod_schema:SlsSoilMoistureInMoistureSample a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:description "A human-readable description for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 7 ;
-            sh:path schema1:description ],
-        [ sh:class schema1:Thing ;
-            sh:nodeKind sh:IRI ;
-            sh:order 4 ;
-            sh:path split_pool_mod_schema:has_parents ],
+    sh:name "soil moisture sample" ;
+    sh:property [ sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
         [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 5 ;
             sh:path schema1:identifier ;
             sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
-        [ sh:description "A human-readable name for a thing" ;
+        [ sh:description "A human-readable description for a thing" ;
             sh:maxCount 1 ;
-            sh:order 6 ;
-            sh:path rdfs:label ],
-        [ sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:neon_sample_class ],
+            sh:order 7 ;
+            sh:path schema1:description ],
         [ sh:class schema1:Thing ;
             sh:nodeKind sh:IRI ;
             sh:order 3 ;
             sh:path split_pool_mod_schema:has_children ],
-        [ sh:maxCount 1 ;
-            sh:order 1 ;
-            sh:path split_pool_mod_schema:neon_sample_tag ],
-        [ sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path split_pool_mod_schema:neon_sample_uuid ] ;
-    sh:targetClass split_pool_mod_schema:SlsSoilMoistureInMoistureSample .
-
-split_pool_mod_schema:SlsSoilpHInPhSample a sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:class schema1:Thing ;
-            sh:nodeKind sh:IRI ;
-            sh:order 3 ;
-            sh:path split_pool_mod_schema:has_children ],
         [ sh:description "A human-readable name for a thing" ;
             sh:maxCount 1 ;
             sh:order 6 ;
             sh:path rdfs:label ],
+        [ sh:maxCount 1 ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:neon_sample_tag ],
         [ sh:class schema1:Thing ;
             sh:nodeKind sh:IRI ;
             sh:order 4 ;
             sh:path split_pool_mod_schema:has_parents ],
         [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ] ;
+    sh:targetClass split_pool_mod_schema:SlsSoilMoistureInMoistureSample .
+
+split_pool_mod_schema:SlsSoilpHInPhSample a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "soil pH sample" ;
+    sh:property [ sh:maxCount 1 ;
             sh:order 2 ;
             sh:path split_pool_mod_schema:neon_sample_uuid ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 3 ;
+            sh:path split_pool_mod_schema:has_children ],
         [ sh:maxCount 1 ;
             sh:order 1 ;
             sh:path split_pool_mod_schema:neon_sample_tag ],
-        [ sh:description "A human-readable description for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 7 ;
-            sh:path schema1:description ],
-        [ sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:neon_sample_class ],
         [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 5 ;
             sh:path schema1:identifier ;
-            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ] ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 7 ;
+            sh:path schema1:description ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 4 ;
+            sh:path split_pool_mod_schema:has_parents ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 6 ;
+            sh:path rdfs:label ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ] ;
     sh:targetClass split_pool_mod_schema:SlsSoilpHInPhSample .
 
 split_pool_mod_schema:SubsampleDnaExtract a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:description "A human-readable description for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 4 ;
-            sh:path schema1:description ],
-        [ sh:class split_pool_mod_schema:MaterialEntity ;
-            sh:nodeKind sh:IRI ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:has_inputs ],
-        [ sh:class split_pool_mod_schema:MaterialEntity ;
-            sh:nodeKind sh:IRI ;
-            sh:order 1 ;
-            sh:path split_pool_mod_schema:has_outputs ],
-        [ sh:description "A human-readable name for a thing" ;
+    sh:name "extraction of DNA" ;
+    sh:property [ sh:description "A human-readable name for a thing" ;
             sh:maxCount 1 ;
             sh:order 3 ;
             sh:path rdfs:label ],
@@ -854,7 +1284,19 @@ split_pool_mod_schema:SubsampleDnaExtract a sh:NodeShape ;
             sh:minCount 1 ;
             sh:order 2 ;
             sh:path schema1:identifier ;
-            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ] ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 4 ;
+            sh:path schema1:description ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:has_outputs ],
+        [ sh:class split_pool_mod_schema:MaterialEntity ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:has_inputs ] ;
     sh:targetClass split_pool_mod_schema:SubsampleDnaExtract .
 
 split_pool_mod_schema:MaterialEntity a sh:NodeShape ;
@@ -866,33 +1308,33 @@ split_pool_mod_schema:MaterialEntity a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:order 7 ;
             sh:path schema1:description ],
-        [ sh:maxCount 1 ;
-            sh:order 1 ;
-            sh:path split_pool_mod_schema:neon_sample_tag ],
-        [ sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path split_pool_mod_schema:neon_sample_class ],
+        [ sh:class schema1:Thing ;
+            sh:nodeKind sh:IRI ;
+            sh:order 4 ;
+            sh:path split_pool_mod_schema:has_parents ],
         [ sh:class schema1:Thing ;
             sh:nodeKind sh:IRI ;
             sh:order 3 ;
             sh:path split_pool_mod_schema:has_children ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path split_pool_mod_schema:neon_sample_class ],
+        [ sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path split_pool_mod_schema:neon_sample_uuid ],
+        [ sh:maxCount 1 ;
+            sh:order 1 ;
+            sh:path split_pool_mod_schema:neon_sample_tag ],
+        [ sh:description "A human-readable name for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 6 ;
+            sh:path rdfs:label ],
         [ sh:description "A unique identifier for a thing" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:order 5 ;
             sh:path schema1:identifier ;
-            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
-        [ sh:class schema1:Thing ;
-            sh:nodeKind sh:IRI ;
-            sh:order 4 ;
-            sh:path split_pool_mod_schema:has_parents ],
-        [ sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path split_pool_mod_schema:neon_sample_uuid ],
-        [ sh:description "A human-readable name for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 6 ;
-            sh:path rdfs:label ] ;
+            sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ] ;
     sh:targetClass split_pool_mod_schema:MaterialEntity .
 
 schema1:Thing a sh:NodeShape ;
@@ -905,13 +1347,13 @@ schema1:Thing a sh:NodeShape ;
             sh:order 0 ;
             sh:path schema1:identifier ;
             sh:pattern "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+" ],
-        [ sh:description "A human-readable description for a thing" ;
-            sh:maxCount 1 ;
-            sh:order 2 ;
-            sh:path schema1:description ],
         [ sh:description "A human-readable name for a thing" ;
             sh:maxCount 1 ;
             sh:order 1 ;
-            sh:path rdfs:label ] ;
+            sh:path rdfs:label ],
+        [ sh:description "A human-readable description for a thing" ;
+            sh:maxCount 1 ;
+            sh:order 2 ;
+            sh:path schema1:description ] ;
     sh:targetClass schema1:Thing .
 

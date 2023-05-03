@@ -1,0 +1,21 @@
+data:
+  sampleViews:
+  - archiveGuid: null
+    barcode: null
+    childSampleIdentifiers: null
+    parentSampleIdentifiers:
+    - archiveGuid: null
+      barcode: null
+      sampleClass: mic_dnaExtraction_in.soilDnaSampleID
+      sampleTag: YELL_052-M-20200709-COMP-DNA1
+      sampleUuid: 2421f965-a06c-4ea3-80f2-54577b59cbf0
+    sampleClass: mms_metagenomeSequencing_in.processedSeqFileNameID
+    sampleEvents:
+    - ingestTableName: mms_metagenomeSequencing_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: not a physical sample
+      - smsKey: sample_tag
+        smsValue: BMI_HLHJLBGXK_20S_09_0788.FASTQ.GZ
+    sampleTag: BMI_HLHJLBGXK_20S_09_0788.FASTQ.GZ
+    sampleUuid: b179f977-9e45-4aa6-8615-ee504c81d6a4

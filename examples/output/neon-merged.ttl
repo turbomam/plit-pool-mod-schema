@@ -1,0 +1,1246 @@
+@prefix : <https://w3id.org/turbomam/split-pool-mod-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/turbomam/split-pool-mod-schema> .
+
+<https://w3id.org/turbomam/split-pool-mod-schema> rdf:type owl:Ontology ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000700> <https://w3id.org/turbomam/split-pool-mod-schema/Database> ,
+                                                                                                <https://w3id.org/turbomam/split-pool-mod-schema/NamedThing> ;
+                                                   rdfs:label "split-pool-mod-schema" ;
+                                                   <https://w3id.org/linkml/classes> "{'NamedThing': ClassDefinition(name='NamedThing', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/NamedThing', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='An identifiable entity', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=['provided by cookiecutter'], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=['schema:Thing'], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a=None, abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description'], slot_usage={}, attributes={}, class_uri='schema:Thing', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'Database': ClassDefinition(name='Database', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/Database', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='A possibly heterogeneous collections of data', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=['handcrafted but very similar to the Database from nmdc-schema'], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a=None, abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'information_set', 'material_entity_set', 'named_thing_set', 'process_set', 'mic_dna_extraction_in_soil_dna_sample_set', 'mic_dna_extraction_in_subsample_set', 'mms_metagenome_sequencing_in_processed_seq_file_name_set', 'sls_metagenomics_pooling_in_composite_sample_set', 'sls_soil_core_collection_in_genetic_archive_sample1_set', 'sls_soil_core_collection_in_genetic_archive_sample2_set', 'sls_soil_core_collection_in_genetic_archive_sample3_set', 'sls_soil_core_collection_in_genetic_archive_sample4_set', 'sls_soil_core_collection_in_genetic_archive_sample5_set', 'sls_soil_core_collection_in_genetic_sample_set', 'sls_soil_core_collection_in_sample_set', 'sls_soil_moisture_in_moisture_sample_set', 'sls_soil_ph_in_ph_sample_set', 'dna_sample_prep_composite_set', 'dna_sample_prep_simple_set', 'genetic_sample_prep_set', 'moisture_sample_prep_set', 'ph_sample_prep_set', 'pooling_set', 'sequencing_set', 'subsample_dna_extract_set'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:Database', subclass_of=None, union_of=[], defining_slots=[], tree_root=True, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'MaterialEntity': ClassDefinition(name='MaterialEntity', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='An entity that consists of matter. Has an identity that persists over time.', alt_descriptions={}, title='Material Entity', deprecated=None, todos=[], notes=[], comments=['bootstrapped from https://github.com/microbiomedata/nmdc-schema/pull/710'], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=['Material', 'Physical entity'], structured_aliases={}, mappings=[], exact_mappings=['BFO:0000040'], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='NamedThing', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'neon_sample_class', 'neon_sample_tag', 'neon_sample_uuid', 'has_children', 'has_parents'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:MaterialEntity', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'Process': ClassDefinition(name='Process', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/Process', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='An entity that unfolds over time. Not composed of matter.', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=['BFO:0000015'], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='NamedThing', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'has_inputs', 'has_outputs'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:Process', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'Information': ClassDefinition(name='Information', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/Information', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='Anything that informs, or reduces uncertainty. Can be about a material entity or a process.', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=['Information is (almost?) always conveyed by something, like a book printed on paper, electrical charges stored on a computer disk, or human speech. Those information bearers are not the information itself.'], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=['IAO:0000030'], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='NamedThing', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:Information', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'MicDnaExtractionInSoilDnaSample': ClassDefinition(name='MicDnaExtractionInSoilDnaSample', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSoilDnaSample', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_term': Annotation(tag='neon_term', value='mic_dnaExtraction_in.soilDnaSampleID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='MaterialEntity', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'neon_sample_class', 'neon_sample_tag', 'neon_sample_uuid', 'has_children', 'has_parents'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:MicDnaExtractionInSoilDnaSample', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'MicDnaExtractionInSubsample': ClassDefinition(name='MicDnaExtractionInSubsample', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSubsample', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_term': Annotation(tag='neon_term', value='mic_dnaExtraction_in.subsampleID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='MaterialEntity', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'neon_sample_class', 'neon_sample_tag', 'neon_sample_uuid', 'has_children', 'has_parents'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:MicDnaExtractionInSubsample', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'SlsMetagenomicsPoolingInCompositeSample': ClassDefinition(name='SlsMetagenomicsPoolingInCompositeSample', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/SlsMetagenomicsPoolingInCompositeSample', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_term': Annotation(tag='neon_term', value='sls_metagenomicsPooling_in.compositeSampleID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='MaterialEntity', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'neon_sample_class', 'neon_sample_tag', 'neon_sample_uuid', 'has_children', 'has_parents'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:SlsMetagenomicsPoolingInCompositeSample', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'SlsSoilCoreCollectionInGeneticArchiveSample1': ClassDefinition(name='SlsSoilCoreCollectionInGeneticArchiveSample1', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample1', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_term': Annotation(tag='neon_term', value='sls_soilCoreCollection_in.geneticArchiveSample1ID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='MaterialEntity', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'neon_sample_class', 'neon_sample_tag', 'neon_sample_uuid', 'has_children', 'has_parents'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample1', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'SlsSoilCoreCollectionInGeneticArchiveSample2': ClassDefinition(name='SlsSoilCoreCollectionInGeneticArchiveSample2', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample2', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_term': Annotation(tag='neon_term', value='sls_soilCoreCollection_in.geneticArchiveSample2ID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='MaterialEntity', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'neon_sample_class', 'neon_sample_tag', 'neon_sample_uuid', 'has_children', 'has_parents'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample2', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'SlsSoilCoreCollectionInGeneticArchiveSample3': ClassDefinition(name='SlsSoilCoreCollectionInGeneticArchiveSample3', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample3', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_term': Annotation(tag='neon_term', value='sls_soilCoreCollection_in.geneticArchiveSample3ID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='MaterialEntity', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'neon_sample_class', 'neon_sample_tag', 'neon_sample_uuid', 'has_children', 'has_parents'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample3', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'SlsSoilCoreCollectionInGeneticArchiveSample4': ClassDefinition(name='SlsSoilCoreCollectionInGeneticArchiveSample4', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample4', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_term': Annotation(tag='neon_term', value='sls_soilCoreCollection_in.geneticArchiveSample4ID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='MaterialEntity', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'neon_sample_class', 'neon_sample_tag', 'neon_sample_uuid', 'has_children', 'has_parents'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample4', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'SlsSoilCoreCollectionInGeneticArchiveSample5': ClassDefinition(name='SlsSoilCoreCollectionInGeneticArchiveSample5', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample5', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_term': Annotation(tag='neon_term', value='sls_soilCoreCollection_in.geneticArchiveSample5ID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='MaterialEntity', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'neon_sample_class', 'neon_sample_tag', 'neon_sample_uuid', 'has_children', 'has_parents'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample5', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'SlsSoilCoreCollectionInGeneticSample': ClassDefinition(name='SlsSoilCoreCollectionInGeneticSample', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticSample', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_term': Annotation(tag='neon_term', value='sls_soilCoreCollection_in.geneticSampleID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='MaterialEntity', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'neon_sample_class', 'neon_sample_tag', 'neon_sample_uuid', 'has_children', 'has_parents'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:SlsSoilCoreCollectionInGeneticSample', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'SlsSoilCoreCollectionInSample': ClassDefinition(name='SlsSoilCoreCollectionInSample', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInSample', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_term': Annotation(tag='neon_term', value='sls_soilCoreCollection_in.sampleID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='MaterialEntity', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'neon_sample_class', 'neon_sample_tag', 'neon_sample_uuid', 'has_children', 'has_parents'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:SlsSoilCoreCollectionInSample', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'SlsSoilMoistureInMoistureSample': ClassDefinition(name='SlsSoilMoistureInMoistureSample', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilMoistureInMoistureSample', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_term': Annotation(tag='neon_term', value='sls_soilMoisture_in.moistureSampleID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='MaterialEntity', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'neon_sample_class', 'neon_sample_tag', 'neon_sample_uuid', 'has_children', 'has_parents'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:SlsSoilMoistureInMoistureSample', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'SlsSoilpHInPhSample': ClassDefinition(name='SlsSoilpHInPhSample', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilpHInPhSample', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_term': Annotation(tag='neon_term', value='sls_soilpH_in.pHSampleID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='MaterialEntity', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'neon_sample_class', 'neon_sample_tag', 'neon_sample_uuid', 'has_children', 'has_parents'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:SlsSoilpHInPhSample', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'MmsMetagenomeSequencingInProcessedSeqFileName': ClassDefinition(name='MmsMetagenomeSequencingInProcessedSeqFileName', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/MmsMetagenomeSequencingInProcessedSeqFileName', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_term': Annotation(tag='neon_term', value='mms_metagenomeSequencing_in.processedSeqFileNameID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='MaterialEntity', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'neon_sample_class', 'neon_sample_tag', 'neon_sample_uuid', 'has_children', 'has_parents'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:MmsMetagenomeSequencingInProcessedSeqFileName', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'SubsampleDnaExtract': ClassDefinition(name='SubsampleDnaExtract', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/SubsampleDnaExtract', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_input_class': Annotation(tag='neon_input_class', value='mic_dnaExtraction_in.soilDnaSampleID', extensions={}, annotations={}), 'neon_output_class': Annotation(tag='neon_output_class', value='mic_dnaExtraction_in.subsampleID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='Process', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'has_inputs', 'has_outputs'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:SubsampleDnaExtract', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'Sequencing': ClassDefinition(name='Sequencing', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/Sequencing', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_input_class': Annotation(tag='neon_input_class', value='mic_dnaExtraction_in.soilDnaSampleID', extensions={}, annotations={}), 'neon_output_class': Annotation(tag='neon_output_class', value='mms_metagenomeSequencing_in.processedSeqFileNameID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='Process', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'has_inputs', 'has_outputs'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:Sequencing', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'DnaSamplePrepSimple': ClassDefinition(name='DnaSamplePrepSimple', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepSimple', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_input_class': Annotation(tag='neon_input_class', value='sls_soilCoreCollection_in.geneticSampleID', extensions={}, annotations={}), 'neon_output_class': Annotation(tag='neon_output_class', value='mic_dnaExtraction_in.soilDnaSampleID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='Process', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'has_inputs', 'has_outputs'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:DnaSamplePrepSimple', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'DnaSamplePrepComposite': ClassDefinition(name='DnaSamplePrepComposite', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepComposite', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_input_class': Annotation(tag='neon_input_class', value='sls_metagenomicsPooling_in.compositeSampleID', extensions={}, annotations={}), 'neon_output_class': Annotation(tag='neon_output_class', value='mic_dnaExtraction_in.soilDnaSampleID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='Process', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'has_inputs', 'has_outputs'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:DnaSamplePrepComposite', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'Pooling': ClassDefinition(name='Pooling', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/Pooling', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_input_class': Annotation(tag='neon_input_class', value='sls_soilCoreCollection_in.sampleID', extensions={}, annotations={}), 'neon_output_class': Annotation(tag='neon_output_class', value='sls_metagenomicsPooling_in.compositeSampleID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='Process', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'has_inputs', 'has_outputs'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:Pooling', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'GeneticSamplePrep': ClassDefinition(name='GeneticSamplePrep', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/GeneticSamplePrep', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_input_class': Annotation(tag='neon_input_class', value='sls_soilCoreCollection_in.sampleID', extensions={}, annotations={}), 'neon_output_class': Annotation(tag='neon_output_class', value='sls_soilCoreCollection_in.geneticSampleID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='Process', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'has_inputs', 'has_outputs'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:GeneticSamplePrep', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'MoistureSamplePrep': ClassDefinition(name='MoistureSamplePrep', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/MoistureSamplePrep', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_input_class': Annotation(tag='neon_input_class', value='sls_soilCoreCollection_in.sampleID', extensions={}, annotations={}), 'neon_output_class': Annotation(tag='neon_output_class', value='sls_soilMoisture_in.moistureSampleID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='Process', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'has_inputs', 'has_outputs'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:MoistureSamplePrep', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={}), 'PhSamplePrep': ClassDefinition(name='PhSamplePrep', id_prefixes=[], definition_uri='https://w3id.org/turbomam/split-pool-mod-schema/PhSamplePrep', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={'neon_input_class': Annotation(tag='neon_input_class', value='sls_soilCoreCollection_in.sampleID', extensions={}, annotations={}), 'neon_output_class': Annotation(tag='neon_output_class', value='sls_soilpH_in.pHSampleID', extensions={}, annotations={})}, description=None, alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/turbomam/split-pool-mod-schema', imported_from=None, source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, is_a='Process', abstract=None, mixin=None, mixins=[], apply_to=[], values_from=[], string_serialization=None, slots=['id', 'name', 'description', 'has_inputs', 'has_outputs'], slot_usage={}, attributes={}, class_uri='split_pool_mod_schema:PhSamplePrep', subclass_of=None, union_of=[], defining_slots=[], tree_root=None, unique_keys={}, rules=[], classification_rules=[], slot_names_unique=None, represents_relationship=None, disjoint_with=[], children_are_mutually_disjoint=None, any_of=[], exactly_one_of=[], none_of=[], all_of=[], slot_conditions={})}" ;
+                                                   <https://w3id.org/linkml/enums> "{}" ;
+                                                   <https://w3id.org/linkml/id> "https://w3id.org/turbomam/split-pool-mod-schema" ;
+                                                   <https://w3id.org/linkml/imports> "linkml:types" ;
+                                                   <https://w3id.org/linkml/types> "{'string': TypeDefinition(name='string', id_prefixes=[], definition_uri='https://w3id.org/linkml/String', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='A character string', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=['schema:Text'], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='str', uri='xsd:string', repr=None, union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'integer': TypeDefinition(name='integer', id_prefixes=[], definition_uri='https://w3id.org/linkml/Integer', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='An integer', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=['schema:Integer'], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='int', uri='xsd:integer', repr=None, union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'boolean': TypeDefinition(name='boolean', id_prefixes=[], definition_uri='https://w3id.org/linkml/Boolean', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='A binary (true or false) value', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=['schema:Boolean'], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='Bool', uri='xsd:boolean', repr='bool', union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'float': TypeDefinition(name='float', id_prefixes=[], definition_uri='https://w3id.org/linkml/Float', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='A real number that conforms to the xsd:float specification', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=['schema:Float'], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='float', uri='xsd:float', repr=None, union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'double': TypeDefinition(name='double', id_prefixes=[], definition_uri='https://w3id.org/linkml/Double', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='A real number that conforms to the xsd:double specification', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=['schema:Float'], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='float', uri='xsd:double', repr=None, union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'decimal': TypeDefinition(name='decimal', id_prefixes=[], definition_uri='https://w3id.org/linkml/Decimal', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='A real number with arbitrary precision that conforms to the xsd:decimal specification', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=['schema:Number'], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='Decimal', uri='xsd:decimal', repr=None, union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'time': TypeDefinition(name='time', id_prefixes=[], definition_uri='https://w3id.org/linkml/Time', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='A time object represents a (local) time of day, independent of any particular day', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=['URI is dateTime because OWL reasoners do not work with straight date or time'], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=['schema:Time'], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='XSDTime', uri='xsd:time', repr='str', union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'date': TypeDefinition(name='date', id_prefixes=[], definition_uri='https://w3id.org/linkml/Date', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='a date (year, month and day) in an idealized calendar', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[\"URI is dateTime because OWL reasoners don't work with straight date or time\"], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=['schema:Date'], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='XSDDate', uri='xsd:date', repr='str', union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'datetime': TypeDefinition(name='datetime', id_prefixes=[], definition_uri='https://w3id.org/linkml/Datetime', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='The combination of a date and time', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=['schema:DateTime'], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='XSDDateTime', uri='xsd:dateTime', repr='str', union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'date_or_datetime': TypeDefinition(name='date_or_datetime', id_prefixes=[], definition_uri='https://w3id.org/linkml/DateOrDatetime', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='Either a date or a datetime', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='str', uri='linkml:DateOrDatetime', repr='str', union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'uriorcurie': TypeDefinition(name='uriorcurie', id_prefixes=[], definition_uri='https://w3id.org/linkml/Uriorcurie', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='a URI or a CURIE', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='URIorCURIE', uri='xsd:anyURI', repr='str', union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'curie': TypeDefinition(name='curie', id_prefixes=[], definition_uri='https://w3id.org/linkml/Curie', local_names={}, conforms_to='https://www.w3.org/TR/curie/', implements=[], extensions={}, annotations={}, description='a compact URI', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=['in RDF serializations this MUST be expanded to a URI', 'in non-RDF serializations MAY be serialized as the compact representation'], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='Curie', uri='xsd:string', repr='str', union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'uri': TypeDefinition(name='uri', id_prefixes=[], definition_uri='https://w3id.org/linkml/Uri', local_names={}, conforms_to='https://www.ietf.org/rfc/rfc3987.txt', implements=[], extensions={}, annotations={}, description='a complete URI', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=['in RDF serializations a slot with range of uri is treated as a literal or type xsd:anyURI unless it is an identifier or a reference to an identifier, in which case it is translated directly to a node'], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=['schema:URL'], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='URI', uri='xsd:anyURI', repr='str', union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'ncname': TypeDefinition(name='ncname', id_prefixes=[], definition_uri='https://w3id.org/linkml/Ncname', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='Prefix part of CURIE', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='NCName', uri='xsd:string', repr='str', union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'objectidentifier': TypeDefinition(name='objectidentifier', id_prefixes=[], definition_uri='https://w3id.org/linkml/Objectidentifier', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='A URI or CURIE that represents an object in the model.', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=['Used for inheritence and type checking'], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='ElementIdentifier', uri='shex:iri', repr='str', union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[]), 'nodeidentifier': TypeDefinition(name='nodeidentifier', id_prefixes=[], definition_uri='https://w3id.org/linkml/Nodeidentifier', local_names={}, conforms_to=None, implements=[], extensions={}, annotations={}, description='A URI, CURIE or BNODE that represents a node in a model.', alt_descriptions={}, title=None, deprecated=None, todos=[], notes=[], comments=[], examples=[], in_subset=[], from_schema='https://w3id.org/linkml/types', imported_from='linkml:types', source=None, in_language=None, see_also=[], deprecated_element_has_exact_replacement=None, deprecated_element_has_possible_replacement=None, aliases=[], structured_aliases={}, mappings=[], exact_mappings=[], close_mappings=[], related_mappings=[], narrow_mappings=[], broad_mappings=[], created_by=None, created_on=None, last_updated_on=None, modified_by=None, status=None, rank=None, typeof=None, base='NodeIdentifier', uri='shex:nonLiteral', repr='str', union_of=[], pattern=None, structured_pattern=None, unit=None, implicit_prefix=None, equals_string=None, equals_string_in=[], equals_number=None, minimum_value=None, maximum_value=None, none_of=[], exactly_one_of=[], any_of=[], all_of=[])}" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/name
+<http://schema.org/name> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+<http://www.w3.org/2004/02/skos/core#exactMatch> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/linkml/attributes
+<https://w3id.org/linkml/attributes> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/linkml/is_a
+<https://w3id.org/linkml/is_a> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/linkml/mixins
+<https://w3id.org/linkml/mixins> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/has_input
+<https://w3id.org/turbomam/split-pool-mod-schema/has_input> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/has_output
+<https://w3id.org/turbomam/split-pool-mod-schema/has_output> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/neon_input_class
+<https://w3id.org/turbomam/split-pool-mod-schema/neon_input_class> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/neon_output_class
+<https://w3id.org/turbomam/split-pool-mod-schema/neon_output_class> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/neon_term
+<https://w3id.org/turbomam/split-pool-mod-schema/neon_term> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://schema.org/description
+<http://schema.org/description> rdf:type owl:ObjectProperty ;
+                                rdfs:range <https://w3id.org/linkml/String> .
+
+
+###  http://schema.org/identifier
+<http://schema.org/identifier> rdf:type owl:ObjectProperty ;
+                               rdfs:range <https://w3id.org/linkml/Uriorcurie> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:ObjectProperty ;
+           rdfs:range <https://w3id.org/linkml/String> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_composite_set
+<https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_composite_set> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                                rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepComposite> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_simple_set
+<https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_simple_set> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                             rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepSimple> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/genetic_sample_prep_set
+<https://w3id.org/turbomam/split-pool-mod-schema/genetic_sample_prep_set> rdf:type owl:ObjectProperty ;
+                                                                          rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                          rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/GeneticSamplePrep> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/has_children
+<https://w3id.org/turbomam/split-pool-mod-schema/has_children> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/NamedThing> ;
+                                                               rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/NamedThing> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/has_inputs
+<https://w3id.org/turbomam/split-pool-mod-schema/has_inputs> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Process> ;
+                                                             rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/has_outputs
+<https://w3id.org/turbomam/split-pool-mod-schema/has_outputs> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Process> ;
+                                                              rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/has_parents
+<https://w3id.org/turbomam/split-pool-mod-schema/has_parents> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/NamedThing> ;
+                                                              rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/NamedThing> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/information_set
+<https://w3id.org/turbomam/split-pool-mod-schema/information_set> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                  rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/Information> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/material_entity_set
+<https://w3id.org/turbomam/split-pool-mod-schema/material_entity_set> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                      rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_soil_dna_sample_set
+<https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_soil_dna_sample_set> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                                            rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSoilDnaSample> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_subsample_set
+<https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_subsample_set> rdf:type owl:ObjectProperty ;
+                                                                                      rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                                      rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSubsample> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/mms_metagenome_sequencing_in_processed_seq_file_name_set
+<https://w3id.org/turbomam/split-pool-mod-schema/mms_metagenome_sequencing_in_processed_seq_file_name_set> rdf:type owl:ObjectProperty ;
+                                                                                                           rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                                                           rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/MmsMetagenomeSequencingInProcessedSeqFileName> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/moisture_sample_prep_set
+<https://w3id.org/turbomam/split-pool-mod-schema/moisture_sample_prep_set> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                           rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/MoistureSamplePrep> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/named_thing_set
+<https://w3id.org/turbomam/split-pool-mod-schema/named_thing_set> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                  rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/NamedThing> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_class
+<https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_class> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:range <https://w3id.org/linkml/String> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_tag
+<https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_tag> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:range <https://w3id.org/linkml/String> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_uuid
+<https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_uuid> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:range <https://w3id.org/linkml/String> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/ph_sample_prep_set
+<https://w3id.org/turbomam/split-pool-mod-schema/ph_sample_prep_set> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                     rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/PhSamplePrep> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/pooling_set
+<https://w3id.org/turbomam/split-pool-mod-schema/pooling_set> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                              rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/Pooling> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/process_set
+<https://w3id.org/turbomam/split-pool-mod-schema/process_set> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                              rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/Process> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sequencing_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sequencing_set> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                 rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/Sequencing> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_metagenomics_pooling_in_composite_sample_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_metagenomics_pooling_in_composite_sample_set> rdf:type owl:ObjectProperty ;
+                                                                                                   rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                                                   rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/SlsMetagenomicsPoolingInCompositeSample> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample1_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample1_set> rdf:type owl:ObjectProperty ;
+                                                                                                          rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                                                          rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample1> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample2_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample2_set> rdf:type owl:ObjectProperty ;
+                                                                                                          rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                                                          rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample2> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample3_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample3_set> rdf:type owl:ObjectProperty ;
+                                                                                                          rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                                                          rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample3> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample4_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample4_set> rdf:type owl:ObjectProperty ;
+                                                                                                          rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                                                          rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample4> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample5_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample5_set> rdf:type owl:ObjectProperty ;
+                                                                                                          rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                                                          rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample5> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_sample_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_sample_set> rdf:type owl:ObjectProperty ;
+                                                                                                 rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                                                 rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticSample> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_sample_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_sample_set> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                                         rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInSample> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_moisture_in_moisture_sample_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_moisture_in_moisture_sample_set> rdf:type owl:ObjectProperty ;
+                                                                                           rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                                           rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilMoistureInMoistureSample> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_ph_in_ph_sample_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_ph_in_ph_sample_set> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                               rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilpHInPhSample> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/subsample_dna_extract_set
+<https://w3id.org/turbomam/split-pool-mod-schema/subsample_dna_extract_set> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:domain <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                                                                            rdfs:range <https://w3id.org/turbomam/split-pool-mod-schema/SubsampleDnaExtract> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/linkml/topValue
+<https://w3id.org/linkml/topValue> rdf:type owl:DatatypeProperty ;
+                                   rdfs:label "value" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/linkml/ClassDefinition
+<https://w3id.org/linkml/ClassDefinition> rdf:type owl:Class ;
+                                          rdfs:label "class_definition" ;
+                                          <https://w3id.org/linkml/attributes> "{}" ;
+                                          <https://w3id.org/linkml/is_a> "definition" ;
+                                          <https://w3id.org/linkml/mixins> "class_expression" .
+
+
+###  https://w3id.org/linkml/SlotDefinition
+<https://w3id.org/linkml/SlotDefinition> rdf:type owl:Class ;
+                                         rdfs:label "slot_definition" ;
+                                         <https://w3id.org/linkml/attributes> "{}" ;
+                                         <https://w3id.org/linkml/is_a> "definition" ;
+                                         <https://w3id.org/linkml/mixins> "slot_expression" .
+
+
+###  https://w3id.org/linkml/String
+<https://w3id.org/linkml/String> rdf:type owl:Class .
+
+
+###  https://w3id.org/linkml/SubsetDefinition
+<https://w3id.org/linkml/SubsetDefinition> rdf:type owl:Class ;
+                                           rdfs:label "subset_definition" ;
+                                           <https://w3id.org/linkml/attributes> "{}" ;
+                                           <https://w3id.org/linkml/is_a> "element" .
+
+
+###  https://w3id.org/linkml/TypeDefinition
+<https://w3id.org/linkml/TypeDefinition> rdf:type owl:Class ;
+                                         rdfs:label "type_definition" ;
+                                         <https://w3id.org/linkml/attributes> "{}" ;
+                                         <https://w3id.org/linkml/is_a> "element" ;
+                                         <https://w3id.org/linkml/mixins> "type_expression" .
+
+
+###  https://w3id.org/linkml/Uriorcurie
+<https://w3id.org/linkml/Uriorcurie> rdf:type owl:Class .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/Database
+<https://w3id.org/turbomam/split-pool-mod-schema/Database> rdf:type owl:Class ;
+                                                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_composite_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepComposite>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_simple_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepSimple>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/genetic_sample_prep_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/GeneticSamplePrep>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/information_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/Information>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/material_entity_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_soil_dna_sample_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSoilDnaSample>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_subsample_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSubsample>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/mms_metagenome_sequencing_in_processed_seq_file_name_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/MmsMetagenomeSequencingInProcessedSeqFileName>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/moisture_sample_prep_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/MoistureSamplePrep>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/named_thing_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/NamedThing>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/ph_sample_prep_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/PhSamplePrep>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/pooling_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/Pooling>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/process_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/Process>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/sequencing_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/Sequencing>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/sls_metagenomics_pooling_in_composite_sample_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/SlsMetagenomicsPoolingInCompositeSample>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample1_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample1>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample2_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample2>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample3_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample3>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample4_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample4>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample5_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample5>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_sample_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticSample>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_sample_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInSample>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_moisture_in_moisture_sample_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilMoistureInMoistureSample>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_ph_in_ph_sample_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilpHInPhSample>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/subsample_dna_extract_set> ;
+                                                                             owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/SubsampleDnaExtract>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <http://schema.org/identifier> ;
+                                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                             owl:onClass <https://w3id.org/linkml/Uriorcurie>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty rdfs:label ;
+                                                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                             owl:onClass <https://w3id.org/linkml/String>
+                                                                           ] .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepComposite
+<https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepComposite> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/Process> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepSimple
+<https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepSimple> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/Process> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/GeneticSamplePrep
+<https://w3id.org/turbomam/split-pool-mod-schema/GeneticSamplePrep> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/Process> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/Information
+<https://w3id.org/turbomam/split-pool-mod-schema/Information> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/NamedThing> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity
+<https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/NamedThing> ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/has_children> ;
+                                                                                   owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/NamedThing>
+                                                                                 ] ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/has_parents> ;
+                                                                                   owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/NamedThing>
+                                                                                 ] ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_class> ;
+                                                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                   owl:onClass <https://w3id.org/linkml/String>
+                                                                                 ] ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_tag> ;
+                                                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                   owl:onClass <https://w3id.org/linkml/String>
+                                                                                 ] ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_uuid> ;
+                                                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                   owl:onClass <https://w3id.org/linkml/String>
+                                                                                 ] .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSoilDnaSample
+<https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSoilDnaSample> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSubsample
+<https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSubsample> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/MmsMetagenomeSequencingInProcessedSeqFileName
+<https://w3id.org/turbomam/split-pool-mod-schema/MmsMetagenomeSequencingInProcessedSeqFileName> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/MoistureSamplePrep
+<https://w3id.org/turbomam/split-pool-mod-schema/MoistureSamplePrep> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/Process> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/NamedThing
+<https://w3id.org/turbomam/split-pool-mod-schema/NamedThing> rdf:type owl:Class ;
+                                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://schema.org/identifier> ;
+                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                               owl:onClass <https://w3id.org/linkml/Uriorcurie>
+                                                                             ] ,
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://schema.org/description> ;
+                                                                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                               owl:onClass <https://w3id.org/linkml/String>
+                                                                             ] ,
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty rdfs:label ;
+                                                                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                               owl:onClass <https://w3id.org/linkml/String>
+                                                                             ] .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/PhSamplePrep
+<https://w3id.org/turbomam/split-pool-mod-schema/PhSamplePrep> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/Process> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/Pooling
+<https://w3id.org/turbomam/split-pool-mod-schema/Pooling> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/Process> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/Process
+<https://w3id.org/turbomam/split-pool-mod-schema/Process> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/NamedThing> ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/has_inputs> ;
+                                                                            owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity>
+                                                                          ] ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <https://w3id.org/turbomam/split-pool-mod-schema/has_outputs> ;
+                                                                            owl:allValuesFrom <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity>
+                                                                          ] .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/Sequencing
+<https://w3id.org/turbomam/split-pool-mod-schema/Sequencing> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/Process> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsMetagenomicsPoolingInCompositeSample
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsMetagenomicsPoolingInCompositeSample> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample1
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample1> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample2
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample2> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample3
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample3> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample4
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample4> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample5
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample5> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticSample
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticSample> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInSample
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInSample> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilMoistureInMoistureSample
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilMoistureInMoistureSample> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilpHInPhSample
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilpHInPhSample> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SubsampleDnaExtract
+<https://w3id.org/turbomam/split-pool-mod-schema/SubsampleDnaExtract> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://w3id.org/turbomam/split-pool-mod-schema/Process> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://schema.org/description
+<http://schema.org/description> rdf:type owl:NamedIndividual ,
+                                         <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  http://schema.org/identifier
+<http://schema.org/identifier> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:NamedIndividual ,
+                    <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://data.neonscience.org/api/v0/samples/view?YELL_046-M-4.5-0.5-20191002-GEN-DNA2
+<https://data.neonscience.org/api/v0/samples/view?YELL_046-M-4.5-0.5-20191002-GEN-DNA2> rdf:type owl:NamedIndividual ,
+                                                                                                 <https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> ;
+                                                                                        <http://schema.org/description> "intended for sequencing and metagenomic analysis" ;
+                                                                                        <http://schema.org/name> "extracted dna from neon soil sample" .
+
+
+###  https://example.org/SampleNeonSoilMetagenomeSequencing
+<https://example.org/SampleNeonSoilMetagenomeSequencing> rdf:type owl:NamedIndividual ,
+                                                                  <https://w3id.org/turbomam/split-pool-mod-schema/Process> ;
+                                                         <http://schema.org/name> "Sequencing of soil from Yellowstone" ;
+                                                         <https://w3id.org/turbomam/split-pool-mod-schema/has_input> <https://data.neonscience.org/api/v0/samples/view?YELL_046-M-4.5-0.5-20191002-GEN-DNA2> ;
+                                                         <https://w3id.org/turbomam/split-pool-mod-schema/has_output> <https://www.ncbi.nlm.nih.gov/bioproject/PRJNA406974> .
+
+
+###  https://example.org/db1
+<https://example.org/db1> rdf:type owl:NamedIndividual ,
+                                   <https://w3id.org/turbomam/split-pool-mod-schema/Database> ;
+                          <http://schema.org/name> "example database" ;
+                          <https://w3id.org/turbomam/split-pool-mod-schema/information_set> <https://www.ncbi.nlm.nih.gov/bioproject/PRJNA406974> ;
+                          <https://w3id.org/turbomam/split-pool-mod-schema/material_entity_set> <https://data.neonscience.org/api/v0/samples/view?YELL_046-M-4.5-0.5-20191002-GEN-DNA2> ;
+                          <https://w3id.org/turbomam/split-pool-mod-schema/process_set> <https://example.org/SampleNeonSoilMetagenomeSequencing> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/Database
+<https://w3id.org/turbomam/split-pool-mod-schema/Database> rdf:type owl:NamedIndividual ,
+                                                                    <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepComposite
+<https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepComposite> rdf:type owl:NamedIndividual ,
+                                                                                  <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepSimple
+<https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepSimple> rdf:type owl:NamedIndividual ,
+                                                                               <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/GeneticSamplePrep
+<https://w3id.org/turbomam/split-pool-mod-schema/GeneticSamplePrep> rdf:type owl:NamedIndividual ,
+                                                                             <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/Information
+<https://w3id.org/turbomam/split-pool-mod-schema/Information> rdf:type owl:NamedIndividual ,
+                                                                       <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity
+<https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> rdf:type owl:NamedIndividual ,
+                                                                          <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSoilDnaSample
+<https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSoilDnaSample> rdf:type owl:NamedIndividual ,
+                                                                                           <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSubsample
+<https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSubsample> rdf:type owl:NamedIndividual ,
+                                                                                       <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/MmsMetagenomeSequencingInProcessedSeqFileName
+<https://w3id.org/turbomam/split-pool-mod-schema/MmsMetagenomeSequencingInProcessedSeqFileName> rdf:type owl:NamedIndividual ,
+                                                                                                         <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/MoistureSamplePrep
+<https://w3id.org/turbomam/split-pool-mod-schema/MoistureSamplePrep> rdf:type owl:NamedIndividual ,
+                                                                              <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/NamedThing
+<https://w3id.org/turbomam/split-pool-mod-schema/NamedThing> rdf:type owl:NamedIndividual ,
+                                                                      <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/PhSamplePrep
+<https://w3id.org/turbomam/split-pool-mod-schema/PhSamplePrep> rdf:type owl:NamedIndividual ,
+                                                                        <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/Pooling
+<https://w3id.org/turbomam/split-pool-mod-schema/Pooling> rdf:type owl:NamedIndividual ,
+                                                                   <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/Process
+<https://w3id.org/turbomam/split-pool-mod-schema/Process> rdf:type owl:NamedIndividual ,
+                                                                   <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/Sequencing
+<https://w3id.org/turbomam/split-pool-mod-schema/Sequencing> rdf:type owl:NamedIndividual ,
+                                                                      <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsMetagenomicsPoolingInCompositeSample
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsMetagenomicsPoolingInCompositeSample> rdf:type owl:NamedIndividual ,
+                                                                                                   <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample1
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample1> rdf:type owl:NamedIndividual ,
+                                                                                                        <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample2
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample2> rdf:type owl:NamedIndividual ,
+                                                                                                        <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample3
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample3> rdf:type owl:NamedIndividual ,
+                                                                                                        <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample4
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample4> rdf:type owl:NamedIndividual ,
+                                                                                                        <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample5
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample5> rdf:type owl:NamedIndividual ,
+                                                                                                        <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticSample
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticSample> rdf:type owl:NamedIndividual ,
+                                                                                                <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInSample
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInSample> rdf:type owl:NamedIndividual ,
+                                                                                         <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilMoistureInMoistureSample
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilMoistureInMoistureSample> rdf:type owl:NamedIndividual ,
+                                                                                           <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilpHInPhSample
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilpHInPhSample> rdf:type owl:NamedIndividual ,
+                                                                               <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/SubsampleDnaExtract
+<https://w3id.org/turbomam/split-pool-mod-schema/SubsampleDnaExtract> rdf:type owl:NamedIndividual ,
+                                                                               <https://w3id.org/linkml/ClassDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_composite_set
+<https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_composite_set> rdf:type owl:NamedIndividual ,
+                                                                                         <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_simple_set
+<https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_simple_set> rdf:type owl:NamedIndividual ,
+                                                                                      <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/genetic_sample_prep_set
+<https://w3id.org/turbomam/split-pool-mod-schema/genetic_sample_prep_set> rdf:type owl:NamedIndividual ,
+                                                                                   <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/has_children
+<https://w3id.org/turbomam/split-pool-mod-schema/has_children> rdf:type owl:NamedIndividual ,
+                                                                        <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/has_inputs
+<https://w3id.org/turbomam/split-pool-mod-schema/has_inputs> rdf:type owl:NamedIndividual ,
+                                                                      <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/has_outputs
+<https://w3id.org/turbomam/split-pool-mod-schema/has_outputs> rdf:type owl:NamedIndividual ,
+                                                                       <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/has_parents
+<https://w3id.org/turbomam/split-pool-mod-schema/has_parents> rdf:type owl:NamedIndividual ,
+                                                                       <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/information_set
+<https://w3id.org/turbomam/split-pool-mod-schema/information_set> rdf:type owl:NamedIndividual ,
+                                                                           <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/material_entity_set
+<https://w3id.org/turbomam/split-pool-mod-schema/material_entity_set> rdf:type owl:NamedIndividual ,
+                                                                               <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_soil_dna_sample_set
+<https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_soil_dna_sample_set> rdf:type owl:NamedIndividual ,
+                                                                                                     <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_subsample_set
+<https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_subsample_set> rdf:type owl:NamedIndividual ,
+                                                                                               <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/mms_metagenome_sequencing_in_processed_seq_file_name_set
+<https://w3id.org/turbomam/split-pool-mod-schema/mms_metagenome_sequencing_in_processed_seq_file_name_set> rdf:type owl:NamedIndividual ,
+                                                                                                                    <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/moisture_sample_prep_set
+<https://w3id.org/turbomam/split-pool-mod-schema/moisture_sample_prep_set> rdf:type owl:NamedIndividual ,
+                                                                                    <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/named_thing_set
+<https://w3id.org/turbomam/split-pool-mod-schema/named_thing_set> rdf:type owl:NamedIndividual ,
+                                                                           <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_class
+<https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_class> rdf:type owl:NamedIndividual ,
+                                                                             <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_tag
+<https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_tag> rdf:type owl:NamedIndividual ,
+                                                                           <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_uuid
+<https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_uuid> rdf:type owl:NamedIndividual ,
+                                                                            <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/ph_sample_prep_set
+<https://w3id.org/turbomam/split-pool-mod-schema/ph_sample_prep_set> rdf:type owl:NamedIndividual ,
+                                                                              <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/pooling_set
+<https://w3id.org/turbomam/split-pool-mod-schema/pooling_set> rdf:type owl:NamedIndividual ,
+                                                                       <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/process_set
+<https://w3id.org/turbomam/split-pool-mod-schema/process_set> rdf:type owl:NamedIndividual ,
+                                                                       <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sequencing_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sequencing_set> rdf:type owl:NamedIndividual ,
+                                                                          <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_metagenomics_pooling_in_composite_sample_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_metagenomics_pooling_in_composite_sample_set> rdf:type owl:NamedIndividual ,
+                                                                                                            <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample1_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample1_set> rdf:type owl:NamedIndividual ,
+                                                                                                                   <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample2_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample2_set> rdf:type owl:NamedIndividual ,
+                                                                                                                   <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample3_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample3_set> rdf:type owl:NamedIndividual ,
+                                                                                                                   <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample4_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample4_set> rdf:type owl:NamedIndividual ,
+                                                                                                                   <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample5_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample5_set> rdf:type owl:NamedIndividual ,
+                                                                                                                   <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_sample_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_sample_set> rdf:type owl:NamedIndividual ,
+                                                                                                          <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_sample_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_sample_set> rdf:type owl:NamedIndividual ,
+                                                                                                  <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_moisture_in_moisture_sample_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_moisture_in_moisture_sample_set> rdf:type owl:NamedIndividual ,
+                                                                                                    <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_ph_in_ph_sample_set
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_ph_in_ph_sample_set> rdf:type owl:NamedIndividual ,
+                                                                                        <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://w3id.org/turbomam/split-pool-mod-schema/subsample_dna_extract_set
+<https://w3id.org/turbomam/split-pool-mod-schema/subsample_dna_extract_set> rdf:type owl:NamedIndividual ,
+                                                                                     <https://w3id.org/linkml/SlotDefinition> .
+
+
+###  https://www.ncbi.nlm.nih.gov/bioproject/PRJNA406974
+<https://www.ncbi.nlm.nih.gov/bioproject/PRJNA406974> rdf:type owl:NamedIndividual ,
+                                                               <https://w3id.org/turbomam/split-pool-mod-schema/Information> ;
+                                                      <http://schema.org/name> "empty/invalid bioproject claimed by neon" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://schema.org/description> rdfs:label "description" ;
+                                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://schema.org/description> ;
+                                <http://www.w3.org/2004/02/skos/core#definition> "A human-readable description for a thing" .
+
+
+<http://schema.org/identifier> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://schema.org/identifier> ;
+                               <http://www.w3.org/2004/02/skos/core#definition> "A unique identifier for a thing" ;
+                               rdfs:label "id" .
+
+
+rdfs:label <http://www.w3.org/2004/02/skos/core#exactMatch> rdfs:label ;
+           <http://www.w3.org/2004/02/skos/core#definition> "A human-readable name for a thing" ;
+           rdfs:label "name" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/Database> <http://www.w3.org/2004/02/skos/core#definition> "A possibly heterogeneous collections of data" ;
+                                                           rdfs:label "Database" ;
+                                                           <https://w3id.org/linkml/attributes> "{}" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepComposite> <https://w3id.org/turbomam/split-pool-mod-schema/neon_output_class> "mic_dnaExtraction_in.soilDnaSampleID" ;
+                                                                         <https://w3id.org/turbomam/split-pool-mod-schema/neon_input_class> "sls_metagenomicsPooling_in.compositeSampleID" ;
+                                                                         rdfs:label "DnaSamplePrepComposite" ;
+                                                                         <https://w3id.org/linkml/attributes> "{}" ;
+                                                                         <https://w3id.org/linkml/is_a> "Process" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/DnaSamplePrepSimple> rdfs:label "DnaSamplePrepSimple" ;
+                                                                      <https://w3id.org/linkml/is_a> "Process" ;
+                                                                      <https://w3id.org/turbomam/split-pool-mod-schema/neon_output_class> "mic_dnaExtraction_in.soilDnaSampleID" ;
+                                                                      <https://w3id.org/linkml/attributes> "{}" ;
+                                                                      <https://w3id.org/turbomam/split-pool-mod-schema/neon_input_class> "sls_soilCoreCollection_in.geneticSampleID" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/GeneticSamplePrep> <https://w3id.org/linkml/attributes> "{}" ;
+                                                                    <https://w3id.org/turbomam/split-pool-mod-schema/neon_output_class> "sls_soilCoreCollection_in.geneticSampleID" ;
+                                                                    <https://w3id.org/turbomam/split-pool-mod-schema/neon_input_class> "sls_soilCoreCollection_in.sampleID" ;
+                                                                    rdfs:label "GeneticSamplePrep" ;
+                                                                    <https://w3id.org/linkml/is_a> "Process" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/Information> rdfs:label "Information" ;
+                                                              <https://w3id.org/linkml/is_a> "NamedThing" ;
+                                                              <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                                                              <https://w3id.org/linkml/attributes> "{}" ;
+                                                              <http://www.w3.org/2004/02/skos/core#definition> "Anything that informs, or reduces uncertainty. Can be about a material entity or a process." .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/MaterialEntity> <https://w3id.org/linkml/attributes> "{}" ;
+                                                                 <http://purl.org/dc/terms/title> "Material Entity" ;
+                                                                 <https://w3id.org/linkml/is_a> "NamedThing" ;
+                                                                 <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                                                 <http://www.w3.org/2004/02/skos/core#altLabel> "Material" ;
+                                                                 rdfs:label "MaterialEntity" ;
+                                                                 <http://www.w3.org/2004/02/skos/core#altLabel> "Physical entity" ;
+                                                                 <http://www.w3.org/2004/02/skos/core#definition> "An entity that consists of matter. Has an identity that persists over time." .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSoilDnaSample> <https://w3id.org/linkml/attributes> "{}" ;
+                                                                                  rdfs:label "MicDnaExtractionInSoilDnaSample" ;
+                                                                                  <https://w3id.org/linkml/is_a> "MaterialEntity" ;
+                                                                                  <https://w3id.org/turbomam/split-pool-mod-schema/neon_term> "mic_dnaExtraction_in.soilDnaSampleID" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSubsample> rdfs:label "MicDnaExtractionInSubsample" ;
+                                                                              <https://w3id.org/linkml/attributes> "{}" ;
+                                                                              <https://w3id.org/turbomam/split-pool-mod-schema/neon_term> "mic_dnaExtraction_in.subsampleID" ;
+                                                                              <https://w3id.org/linkml/is_a> "MaterialEntity" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/MmsMetagenomeSequencingInProcessedSeqFileName> rdfs:label "MmsMetagenomeSequencingInProcessedSeqFileName" ;
+                                                                                                <https://w3id.org/linkml/is_a> "MaterialEntity" ;
+                                                                                                <https://w3id.org/turbomam/split-pool-mod-schema/neon_term> "mms_metagenomeSequencing_in.processedSeqFileNameID" ;
+                                                                                                <https://w3id.org/linkml/attributes> "{}" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/MoistureSamplePrep> <https://w3id.org/turbomam/split-pool-mod-schema/neon_output_class> "sls_soilMoisture_in.moistureSampleID" ;
+                                                                     <https://w3id.org/linkml/is_a> "Process" ;
+                                                                     <https://w3id.org/turbomam/split-pool-mod-schema/neon_input_class> "sls_soilCoreCollection_in.sampleID" ;
+                                                                     rdfs:label "MoistureSamplePrep" ;
+                                                                     <https://w3id.org/linkml/attributes> "{}" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/NamedThing> <https://w3id.org/linkml/attributes> "{}" ;
+                                                             rdfs:label "NamedThing" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "An identifiable entity" ;
+                                                             <http://www.w3.org/2004/02/skos/core#exactMatch> <http://schema.org/Thing> .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/PhSamplePrep> <https://w3id.org/turbomam/split-pool-mod-schema/neon_output_class> "sls_soilpH_in.pHSampleID" ;
+                                                               <https://w3id.org/linkml/attributes> "{}" ;
+                                                               rdfs:label "PhSamplePrep" ;
+                                                               <https://w3id.org/turbomam/split-pool-mod-schema/neon_input_class> "sls_soilCoreCollection_in.sampleID" ;
+                                                               <https://w3id.org/linkml/is_a> "Process" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/Pooling> <https://w3id.org/turbomam/split-pool-mod-schema/neon_input_class> "sls_soilCoreCollection_in.sampleID" ;
+                                                          <https://w3id.org/turbomam/split-pool-mod-schema/neon_output_class> "sls_metagenomicsPooling_in.compositeSampleID" ;
+                                                          <https://w3id.org/linkml/attributes> "{}" ;
+                                                          <https://w3id.org/linkml/is_a> "Process" ;
+                                                          rdfs:label "Pooling" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/Process> rdfs:label "Process" ;
+                                                          <https://w3id.org/linkml/attributes> "{}" ;
+                                                          <https://w3id.org/linkml/is_a> "NamedThing" ;
+                                                          <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                          <http://www.w3.org/2004/02/skos/core#definition> "An entity that unfolds over time. Not composed of matter." .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/Sequencing> <https://w3id.org/turbomam/split-pool-mod-schema/neon_output_class> "mms_metagenomeSequencing_in.processedSeqFileNameID" ;
+                                                             rdfs:label "Sequencing" ;
+                                                             <https://w3id.org/turbomam/split-pool-mod-schema/neon_input_class> "mic_dnaExtraction_in.soilDnaSampleID" ;
+                                                             <https://w3id.org/linkml/attributes> "{}" ;
+                                                             <https://w3id.org/linkml/is_a> "Process" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsMetagenomicsPoolingInCompositeSample> <https://w3id.org/linkml/is_a> "MaterialEntity" ;
+                                                                                          <https://w3id.org/linkml/attributes> "{}" ;
+                                                                                          rdfs:label "SlsMetagenomicsPoolingInCompositeSample" ;
+                                                                                          <https://w3id.org/turbomam/split-pool-mod-schema/neon_term> "sls_metagenomicsPooling_in.compositeSampleID" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample1> <https://w3id.org/linkml/is_a> "MaterialEntity" ;
+                                                                                               <https://w3id.org/turbomam/split-pool-mod-schema/neon_term> "sls_soilCoreCollection_in.geneticArchiveSample1ID" ;
+                                                                                               rdfs:label "SlsSoilCoreCollectionInGeneticArchiveSample1" ;
+                                                                                               <https://w3id.org/linkml/attributes> "{}" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample2> <https://w3id.org/linkml/is_a> "MaterialEntity" ;
+                                                                                               <https://w3id.org/turbomam/split-pool-mod-schema/neon_term> "sls_soilCoreCollection_in.geneticArchiveSample2ID" ;
+                                                                                               <https://w3id.org/linkml/attributes> "{}" ;
+                                                                                               rdfs:label "SlsSoilCoreCollectionInGeneticArchiveSample2" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample3> <https://w3id.org/linkml/is_a> "MaterialEntity" ;
+                                                                                               <https://w3id.org/turbomam/split-pool-mod-schema/neon_term> "sls_soilCoreCollection_in.geneticArchiveSample3ID" ;
+                                                                                               rdfs:label "SlsSoilCoreCollectionInGeneticArchiveSample3" ;
+                                                                                               <https://w3id.org/linkml/attributes> "{}" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample4> <https://w3id.org/linkml/is_a> "MaterialEntity" ;
+                                                                                               <https://w3id.org/turbomam/split-pool-mod-schema/neon_term> "sls_soilCoreCollection_in.geneticArchiveSample4ID" ;
+                                                                                               rdfs:label "SlsSoilCoreCollectionInGeneticArchiveSample4" ;
+                                                                                               <https://w3id.org/linkml/attributes> "{}" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample5> <https://w3id.org/turbomam/split-pool-mod-schema/neon_term> "sls_soilCoreCollection_in.geneticArchiveSample5ID" ;
+                                                                                               rdfs:label "SlsSoilCoreCollectionInGeneticArchiveSample5" ;
+                                                                                               <https://w3id.org/linkml/is_a> "MaterialEntity" ;
+                                                                                               <https://w3id.org/linkml/attributes> "{}" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticSample> <https://w3id.org/turbomam/split-pool-mod-schema/neon_term> "sls_soilCoreCollection_in.geneticSampleID" ;
+                                                                                       rdfs:label "SlsSoilCoreCollectionInGeneticSample" ;
+                                                                                       <https://w3id.org/linkml/is_a> "MaterialEntity" ;
+                                                                                       <https://w3id.org/linkml/attributes> "{}" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInSample> <https://w3id.org/turbomam/split-pool-mod-schema/neon_term> "sls_soilCoreCollection_in.sampleID" ;
+                                                                                <https://w3id.org/linkml/is_a> "MaterialEntity" ;
+                                                                                rdfs:label "SlsSoilCoreCollectionInSample" ;
+                                                                                <https://w3id.org/linkml/attributes> "{}" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilMoistureInMoistureSample> <https://w3id.org/linkml/is_a> "MaterialEntity" ;
+                                                                                  rdfs:label "SlsSoilMoistureInMoistureSample" ;
+                                                                                  <https://w3id.org/linkml/attributes> "{}" ;
+                                                                                  <https://w3id.org/turbomam/split-pool-mod-schema/neon_term> "sls_soilMoisture_in.moistureSampleID" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilpHInPhSample> <https://w3id.org/linkml/attributes> "{}" ;
+                                                                      <https://w3id.org/turbomam/split-pool-mod-schema/neon_term> "sls_soilpH_in.pHSampleID" ;
+                                                                      <https://w3id.org/linkml/is_a> "MaterialEntity" ;
+                                                                      rdfs:label "SlsSoilpHInPhSample" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/SubsampleDnaExtract> <https://w3id.org/turbomam/split-pool-mod-schema/neon_output_class> "mic_dnaExtraction_in.subsampleID" ;
+                                                                      rdfs:label "SubsampleDnaExtract" ;
+                                                                      <https://w3id.org/linkml/attributes> "{}" ;
+                                                                      <https://w3id.org/linkml/is_a> "Process" ;
+                                                                      <https://w3id.org/turbomam/split-pool-mod-schema/neon_input_class> "mic_dnaExtraction_in.soilDnaSampleID" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_composite_set> rdfs:label "dna_sample_prep_composite_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/dna_sample_prep_simple_set> rdfs:label "dna_sample_prep_simple_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/genetic_sample_prep_set> rdfs:label "genetic_sample_prep_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/has_children> rdfs:label "has_children" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/has_inputs> rdfs:label "has_inputs" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/has_outputs> rdfs:label "has_outputs" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/has_parents> rdfs:label "has_parents" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/information_set> <http://www.w3.org/2004/02/skos/core#definition> "Links a Database to a list of Informations" ;
+                                                                  rdfs:label "information_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/material_entity_set> <http://www.w3.org/2004/02/skos/core#definition> "Links a Database to a list of MaterialEntities" ;
+                                                                      rdfs:label "material_entity_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_soil_dna_sample_set> rdfs:label "mic_dna_extraction_in_soil_dna_sample_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/mic_dna_extraction_in_subsample_set> rdfs:label "mic_dna_extraction_in_subsample_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/mms_metagenome_sequencing_in_processed_seq_file_name_set> rdfs:label "mms_metagenome_sequencing_in_processed_seq_file_name_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/moisture_sample_prep_set> rdfs:label "moisture_sample_prep_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/named_thing_set> <http://www.w3.org/2004/02/skos/core#definition> "Links a Database to a list of NamedThings" ;
+                                                                  rdfs:label "named_thing_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_class> rdfs:label "neon_sample_class" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_tag> rdfs:label "neon_sample_tag" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/neon_sample_uuid> rdfs:label "neon_sample_uuid" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/ph_sample_prep_set> rdfs:label "ph_sample_prep_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/pooling_set> rdfs:label "pooling_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/process_set> <http://www.w3.org/2004/02/skos/core#definition> "Links a Database to a list of Processes" ;
+                                                              rdfs:label "process_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/sequencing_set> rdfs:label "sequencing_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_metagenomics_pooling_in_composite_sample_set> rdfs:label "sls_metagenomics_pooling_in_composite_sample_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample1_set> rdfs:label "sls_soil_core_collection_in_genetic_archive_sample1_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample2_set> rdfs:label "sls_soil_core_collection_in_genetic_archive_sample2_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample3_set> rdfs:label "sls_soil_core_collection_in_genetic_archive_sample3_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample4_set> rdfs:label "sls_soil_core_collection_in_genetic_archive_sample4_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_archive_sample5_set> rdfs:label "sls_soil_core_collection_in_genetic_archive_sample5_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_genetic_sample_set> rdfs:label "sls_soil_core_collection_in_genetic_sample_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_core_collection_in_sample_set> rdfs:label "sls_soil_core_collection_in_sample_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_moisture_in_moisture_sample_set> rdfs:label "sls_soil_moisture_in_moisture_sample_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/sls_soil_ph_in_ph_sample_set> rdfs:label "sls_soil_ph_in_ph_sample_set" .
+
+
+<https://w3id.org/turbomam/split-pool-mod-schema/subsample_dna_extract_set> rdfs:label "subsample_dna_extract_set" .
+
+
+###  Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi

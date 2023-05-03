@@ -1,0 +1,83 @@
+data:
+  sampleViews:
+  - archiveGuid: NEON04GCQ
+    barcode: C00000039207
+    childSampleIdentifiers: null
+    parentSampleIdentifiers:
+    - archiveGuid: null
+      barcode: A00000114885
+      sampleClass: sls_soilCoreCollection_in.sampleID
+      sampleTag: YELL_052-M-30.5-31.5-20200709
+      sampleUuid: 38d05f16-5872-49c3-9c61-1854c6e8a84f
+    sampleClass: sls_soilCoreCollection_in.geneticArchiveSample2ID
+    sampleEvents:
+    - ingestTableName: sls_soilCoreCollection_in
+      smsFieldEntries:
+      - smsKey: collect_end_date
+        smsValue: '2020-07-09T23:04:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2020-07-09T23:04:00Z'
+      - smsKey: collected_by
+        smsValue: 0000-0002-8294-0383
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: event_id
+        smsValue: YELL.peakGreenness.2020
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-07-09T23:04:00Z'
+      - smsKey: fate_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: recorded_by
+        smsValue: 0000-0003-0814-3869
+      - smsKey: sample_code
+        smsValue: C00000039207
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-GA2
+    - ingestTableName: scs_shipmentCreation_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2021-06-14T12:00:00Z'
+      - smsKey: fate_location
+        smsValue: D12
+      - smsKey: sample_code
+        smsValue: C00000039207
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-GA2
+    - ingestTableName: scs_archivedata_in
+      smsFieldEntries:
+      - smsKey: associated_media
+        smsValue: https://biorepo.neonscience.org/portal/collections/individual/index.php?occid=841042
+      - smsKey: catalogue_number
+        smsValue: NEON04GCQ
+      - smsKey: fate
+        smsValue: archived
+      - smsKey: fate_date
+        smsValue: '2021-06-21T12:00:00Z'
+      - smsKey: fate_location
+        smsValue: Arizona State University
+      - smsKey: guid
+        smsValue: NEON04GCQ
+      - smsKey: preservative_type
+        smsValue: liquid nitrogen
+      - smsKey: sample_code
+        smsValue: C00000039207
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-GA2
+    - ingestTableName: scs_shipmentVerification_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2021-06-21T12:00:00Z'
+      - smsKey: fate_location
+        smsValue: Arizona State University
+      - smsKey: sample_code
+        smsValue: C00000039207
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-GA2
+    sampleTag: YELL_052-M-30.5-31.5-20200709-GA2
+    sampleUuid: ec68e961-d854-4145-8c34-833a2cc758aa

@@ -1,0 +1,85 @@
+data:
+  sampleViews:
+  - archiveGuid: NEON02MHM
+    barcode: A00000116934
+    childSampleIdentifiers: null
+    parentSampleIdentifiers:
+    - archiveGuid: null
+      barcode: A00000116861
+      sampleClass: sls_soilCoreCollection_in.sampleID
+      sampleTag: YELL_052-M-28.5-4-20200709
+      sampleUuid: 906d4d0d-2b49-4df9-83f8-a207de15765f
+    sampleClass: sls_bgcSubsampling_in.bgcArchiveID
+    sampleEvents:
+    - ingestTableName: scs_shipmentCreation_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-09-02T12:00:00Z'
+      - smsKey: fate_location
+        smsValue: D12
+      - smsKey: sample_code
+        smsValue: A00000116934
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-28.5-4-20200709-BA
+    - ingestTableName: scs_shipmentVerification_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-09-14T12:00:00Z'
+      - smsKey: fate_location
+        smsValue: Arizona State University
+      - smsKey: sample_code
+        smsValue: A00000116934
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-28.5-4-20200709-BA
+    - ingestTableName: sls_bgcSubsampling_in
+      smsFieldEntries:
+      - smsKey: collect_end_date
+        smsValue: '2020-07-09T22:35:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2020-07-09T22:35:00Z'
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-07-17T23:30:00Z'
+      - smsKey: recorded_by
+        smsValue: 0000-0001-7235-2193
+      - smsKey: sample_code
+        smsValue: A00000116934
+      - smsKey: sample_condition
+        smsValue: OK
+      - smsKey: sample_mass
+        smsValue: '134.7'
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-28.5-4-20200709-BA
+      - smsKey: sample_type
+        smsValue: M
+      - smsKey: sampling_protocol
+        smsValue: NEON.DOC.014048vN
+    - ingestTableName: scs_archivedata_in
+      smsFieldEntries:
+      - smsKey: associated_media
+        smsValue: https://biorepo.neonscience.org/portal/collections/individual/index.php?occid=733241
+      - smsKey: catalogue_number
+        smsValue: NEON02MHM
+      - smsKey: fate
+        smsValue: archived
+      - smsKey: fate_date
+        smsValue: '2020-09-14T12:00:00Z'
+      - smsKey: fate_location
+        smsValue: Arizona State University
+      - smsKey: guid
+        smsValue: NEON02MHM
+      - smsKey: preservative_type
+        smsValue: ambient
+      - smsKey: sample_code
+        smsValue: A00000116934
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-28.5-4-20200709-BA
+    sampleTag: YELL_052-M-28.5-4-20200709-BA
+    sampleUuid: e48eff69-9be7-4fbc-98d1-d0b4005ded24

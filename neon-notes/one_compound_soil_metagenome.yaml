@@ -1,0 +1,303 @@
+id: example:db1
+name: genetic_archiving_3_set
+material_entity_set:
+- id: NEON_SAMP_UUID:019d1c3d-4370-4b7e-a67f-e4ca3b6a4705
+  name: YELL_052-M-28.5-4-20200709-GA2
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample2ID
+  has_parents:
+  - NEON_SAMP_UUID:906d4d0d-2b49-4df9-83f8-a207de15765f
+- id: NEON_SAMP_UUID:01bbfd25-dbe1-438d-98ed-f571c6052c8f
+  name: YELL_052-M-30.5-31.5-20200709-GEN-DNA1
+  neon_sample_class: mic_dnaExtraction_in.soilDnaSampleID
+  has_children:
+  - NEON_SAMP_UUID:d132a6df-532c-4442-9606-d7a97e400dab
+  has_parents:
+  - NEON_SAMP_UUID:0f2242d9-af54-45fa-9db9-7d151d01d97e
+- id: NEON_SAMP_UUID:02027ce8-9315-4336-a28c-2db450cfeb6d
+  name: YELL_052-M-15.5-9-20200709-GA2
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample2ID
+  has_parents:
+  - NEON_SAMP_UUID:bc90f339-149d-410b-ae18-ef70e3b82221
+- id: NEON_SAMP_UUID:0bc1a3c8-66b8-4809-997a-24a326b1a33d
+  name: YELL_052-M-20200709-COMP-DNA1_20S_09_0788
+  neon_sample_class: mic_dnaExtraction_in.subsampleID
+  has_parents:
+  - NEON_SAMP_UUID:2421f965-a06c-4ea3-80f2-54577b59cbf0
+- id: NEON_SAMP_UUID:0f2242d9-af54-45fa-9db9-7d151d01d97e
+  name: YELL_052-M-30.5-31.5-20200709-GEN
+  neon_sample_class: sls_soilCoreCollection_in.geneticSampleID
+  has_children:
+  - NEON_SAMP_UUID:01bbfd25-dbe1-438d-98ed-f571c6052c8f
+  has_parents:
+  - NEON_SAMP_UUID:38d05f16-5872-49c3-9c61-1854c6e8a84f
+- id: NEON_SAMP_UUID:0f2c5520-e61d-42cb-9a61-69dde5408d90
+  name: YELL_052-M-28.5-4-20200709-GA3
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample3ID
+  has_parents:
+  - NEON_SAMP_UUID:906d4d0d-2b49-4df9-83f8-a207de15765f
+- id: NEON_SAMP_UUID:106e11f1-3e7b-46ba-bf7a-7b4553aee4c4
+  name: YELL_052-M-30.5-31.5-20200709-GA1
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample1ID
+  has_parents:
+  - NEON_SAMP_UUID:38d05f16-5872-49c3-9c61-1854c6e8a84f
+- id: NEON_SAMP_UUID:1168b855-9d20-4768-96a3-315052059439
+  name: YELL_052-M-30.5-31.5-20200709-BM
+  neon_sample_class: sls_soilCoreCollection_in.biomassID
+  has_parents:
+  - NEON_SAMP_UUID:38d05f16-5872-49c3-9c61-1854c6e8a84f
+- id: NEON_SAMP_UUID:17d64116-6b44-4720-9fe4-d0299a43ead7
+  name: YELL_052-M-15.5-9-20200709-GEN-DNA1
+  neon_sample_class: mic_dnaExtraction_in.soilDnaSampleID
+  has_children:
+  - NEON_SAMP_UUID:d7b04364-6cab-4a1c-a05f-af31f5e6ab8a
+  has_parents:
+  - NEON_SAMP_UUID:dbfcb5ad-2b36-4372-be7c-fbff985838a6
+- id: NEON_SAMP_UUID:1ea6015a-55f2-4217-809f-236402292740
+  name: YELL_052-M-15.5-9-20200709-GA1
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample1ID
+  has_parents:
+  - NEON_SAMP_UUID:bc90f339-149d-410b-ae18-ef70e3b82221
+- id: NEON_SAMP_UUID:2421f965-a06c-4ea3-80f2-54577b59cbf0
+  name: YELL_052-M-20200709-COMP-DNA1
+  neon_sample_class: mic_dnaExtraction_in.soilDnaSampleID
+  has_children:
+  - NEON_SAMP_UUID:b179f977-9e45-4aa6-8615-ee504c81d6a4
+  - NEON_SAMP_UUID:0bc1a3c8-66b8-4809-997a-24a326b1a33d
+  has_parents:
+  - NEON_SAMP_UUID:b5da430c-6a8b-42fa-9df4-dfda9817927d
+- id: NEON_SAMP_UUID:27382950-491b-4439-8030-8db48a3b9927
+  name: YELL_052-M-28.5-4-20200709-KCL
+  neon_sample_class: ntr_internalLab_in.kclSampleID
+  has_parents:
+  - NEON_SAMP_UUID:906d4d0d-2b49-4df9-83f8-a207de15765f
+- id: NEON_SAMP_UUID:2873e60f-4ff1-45b0-953c-d16576c00677
+  name: YELL_052-M-15.5-9-20200709-PH
+  neon_sample_class: sls_soilpH_in.pHSampleID
+  has_parents:
+  - NEON_SAMP_UUID:bc90f339-149d-410b-ae18-ef70e3b82221
+- id: NEON_SAMP_UUID:3089ddcf-9243-481f-a673-1af1640e17a2
+  name: YELL_052-M-15.5-9-20200709-CN
+  neon_sample_class: sls_bgcSubsampling_in.cnSampleID
+  has_parents:
+  - NEON_SAMP_UUID:bc90f339-149d-410b-ae18-ef70e3b82221
+- id: NEON_SAMP_UUID:354d382d-4bf6-4417-97a6-ed91b57bbd49
+  name: YELL_052-M-28.5-4-20200709-GA5
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample5ID
+  has_parents:
+  - NEON_SAMP_UUID:906d4d0d-2b49-4df9-83f8-a207de15765f
+- id: NEON_SAMP_UUID:38d05f16-5872-49c3-9c61-1854c6e8a84f
+  name: YELL_052-M-30.5-31.5-20200709
+  neon_sample_class: sls_soilCoreCollection_in.sampleID
+  has_children:
+  - NEON_SAMP_UUID:b5da430c-6a8b-42fa-9df4-dfda9817927d
+  - NEON_SAMP_UUID:da9420b2-9f11-4804-ba98-bfe93339a963
+  - NEON_SAMP_UUID:1168b855-9d20-4768-96a3-315052059439
+  - NEON_SAMP_UUID:63877bbf-844f-4be5-8818-c5ae1f6baf28
+  - NEON_SAMP_UUID:106e11f1-3e7b-46ba-bf7a-7b4553aee4c4
+  - NEON_SAMP_UUID:ec68e961-d854-4145-8c34-833a2cc758aa
+  - NEON_SAMP_UUID:edda141e-2258-4ad4-8a59-df784ae5cee7
+  - NEON_SAMP_UUID:935636f2-44ba-47cb-b884-6546e5c7f937
+  - NEON_SAMP_UUID:d0f54bfb-ea58-483e-b123-8ac59862c404
+  - NEON_SAMP_UUID:0f2242d9-af54-45fa-9db9-7d151d01d97e
+  - NEON_SAMP_UUID:d3fd1355-73c2-4c38-8a69-b1622319e954
+  - NEON_SAMP_UUID:beb01900-3f5c-4a36-b441-1b1efe06a279
+  - NEON_SAMP_UUID:41fedf0d-26f2-4255-88a4-226197c8d528
+- id: NEON_SAMP_UUID:41fedf0d-26f2-4255-88a4-226197c8d528
+  name: YELL_052-M-30.5-31.5-20200709-SM
+  neon_sample_class: sls_soilMoisture_in.moistureSampleID
+  has_parents:
+  - NEON_SAMP_UUID:38d05f16-5872-49c3-9c61-1854c6e8a84f
+- id: NEON_SAMP_UUID:424e34eb-0fe4-4fc9-b9d6-81e6c0100a2c
+  name: YELL_052-M-28.5-4-20200709-GEN-DNA1
+  neon_sample_class: mic_dnaExtraction_in.soilDnaSampleID
+  has_children:
+  - NEON_SAMP_UUID:4748839b-c846-4c8b-8ea1-98b9fdfe3daf
+  has_parents:
+  - NEON_SAMP_UUID:846a6f96-69bb-4ff6-9c13-2e294fd42883
+- id: NEON_SAMP_UUID:4386a2a9-a566-4c19-9af9-55583afb3d13
+  name: YELL_052-M-28.5-4-20200709-BM
+  neon_sample_class: sls_soilCoreCollection_in.biomassID
+  has_parents:
+  - NEON_SAMP_UUID:906d4d0d-2b49-4df9-83f8-a207de15765f
+- id: NEON_SAMP_UUID:4748839b-c846-4c8b-8ea1-98b9fdfe3daf
+  name: YELL_052-M-28.5-4-20200709-GEN-DNA1_20S_10_0895
+  neon_sample_class: mic_dnaExtraction_in.subsampleID
+  has_parents:
+  - NEON_SAMP_UUID:424e34eb-0fe4-4fc9-b9d6-81e6c0100a2c
+- id: NEON_SAMP_UUID:47a10e0c-523f-4789-b7f9-97fa1aa61b3a
+  name: YELL_052-M-28.5-4-20200709-SM
+  neon_sample_class: sls_soilMoisture_in.moistureSampleID
+  has_parents:
+  - NEON_SAMP_UUID:906d4d0d-2b49-4df9-83f8-a207de15765f
+- id: NEON_SAMP_UUID:49cc5d68-3513-402f-ba73-48031dcac204
+  name: YELL_052-M-28.5-4-20200709-CN
+  neon_sample_class: sls_bgcSubsampling_in.cnSampleID
+  has_parents:
+  - NEON_SAMP_UUID:906d4d0d-2b49-4df9-83f8-a207de15765f
+- id: NEON_SAMP_UUID:4cf90723-225c-48a3-a9e1-9bae83f9ae79
+  name: YELL_052-M-15.5-9-20200709-GA5
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample5ID
+  has_parents:
+  - NEON_SAMP_UUID:bc90f339-149d-410b-ae18-ef70e3b82221
+- id: NEON_SAMP_UUID:5f4ee010-b983-4c46-855d-b182e6b0886a
+  name: YELL_052-M-15.5-9-20200709-BM
+  neon_sample_class: sls_soilCoreCollection_in.biomassID
+  has_parents:
+  - NEON_SAMP_UUID:bc90f339-149d-410b-ae18-ef70e3b82221
+- id: NEON_SAMP_UUID:63877bbf-844f-4be5-8818-c5ae1f6baf28
+  name: YELL_052-M-30.5-31.5-20200709-CN
+  neon_sample_class: sls_bgcSubsampling_in.cnSampleID
+  has_parents:
+  - NEON_SAMP_UUID:38d05f16-5872-49c3-9c61-1854c6e8a84f
+- id: NEON_SAMP_UUID:75d0f6fc-9bd9-4830-8ab6-6548ac379b5e
+  name: YELL_052-M-28.5-4-20200709-PH
+  neon_sample_class: sls_soilpH_in.pHSampleID
+  has_parents:
+  - NEON_SAMP_UUID:906d4d0d-2b49-4df9-83f8-a207de15765f
+- id: NEON_SAMP_UUID:846a6f96-69bb-4ff6-9c13-2e294fd42883
+  name: YELL_052-M-28.5-4-20200709-GEN
+  neon_sample_class: sls_soilCoreCollection_in.geneticSampleID
+  has_children:
+  - NEON_SAMP_UUID:424e34eb-0fe4-4fc9-b9d6-81e6c0100a2c
+  has_parents:
+  - NEON_SAMP_UUID:906d4d0d-2b49-4df9-83f8-a207de15765f
+- id: NEON_SAMP_UUID:906d4d0d-2b49-4df9-83f8-a207de15765f
+  name: YELL_052-M-28.5-4-20200709
+  neon_sample_class: sls_soilCoreCollection_in.sampleID
+  has_children:
+  - NEON_SAMP_UUID:b5da430c-6a8b-42fa-9df4-dfda9817927d
+  - NEON_SAMP_UUID:e48eff69-9be7-4fbc-98d1-d0b4005ded24
+  - NEON_SAMP_UUID:4386a2a9-a566-4c19-9af9-55583afb3d13
+  - NEON_SAMP_UUID:49cc5d68-3513-402f-ba73-48031dcac204
+  - NEON_SAMP_UUID:964c5363-05a3-4f60-a789-c2b9bcb13692
+  - NEON_SAMP_UUID:019d1c3d-4370-4b7e-a67f-e4ca3b6a4705
+  - NEON_SAMP_UUID:0f2c5520-e61d-42cb-9a61-69dde5408d90
+  - NEON_SAMP_UUID:92fcb6d1-4d7a-4060-9ed2-a00cb42cf89a
+  - NEON_SAMP_UUID:354d382d-4bf6-4417-97a6-ed91b57bbd49
+  - NEON_SAMP_UUID:846a6f96-69bb-4ff6-9c13-2e294fd42883
+  - NEON_SAMP_UUID:27382950-491b-4439-8030-8db48a3b9927
+  - NEON_SAMP_UUID:75d0f6fc-9bd9-4830-8ab6-6548ac379b5e
+  - NEON_SAMP_UUID:47a10e0c-523f-4789-b7f9-97fa1aa61b3a
+- id: NEON_SAMP_UUID:92fcb6d1-4d7a-4060-9ed2-a00cb42cf89a
+  name: YELL_052-M-28.5-4-20200709-GA4
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample4ID
+  has_parents:
+  - NEON_SAMP_UUID:906d4d0d-2b49-4df9-83f8-a207de15765f
+- id: NEON_SAMP_UUID:935636f2-44ba-47cb-b884-6546e5c7f937
+  name: YELL_052-M-30.5-31.5-20200709-GA4
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample4ID
+  has_parents:
+  - NEON_SAMP_UUID:38d05f16-5872-49c3-9c61-1854c6e8a84f
+- id: NEON_SAMP_UUID:964c5363-05a3-4f60-a789-c2b9bcb13692
+  name: YELL_052-M-28.5-4-20200709-GA1
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample1ID
+  has_parents:
+  - NEON_SAMP_UUID:906d4d0d-2b49-4df9-83f8-a207de15765f
+- id: NEON_SAMP_UUID:a584c039-ff73-419e-99de-294800bd8fc3
+  name: YELL_052-M-15.5-9-20200709-GA4
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample4ID
+  has_parents:
+  - NEON_SAMP_UUID:bc90f339-149d-410b-ae18-ef70e3b82221
+- id: NEON_SAMP_UUID:a7d48882-12a1-453b-9413-eac800de3eaa
+  name: YELL_052-M-15.5-9-20200709-SM
+  neon_sample_class: sls_soilMoisture_in.moistureSampleID
+  has_parents:
+  - NEON_SAMP_UUID:bc90f339-149d-410b-ae18-ef70e3b82221
+- id: NEON_SAMP_UUID:b179f977-9e45-4aa6-8615-ee504c81d6a4
+  name: BMI_HLHJLBGXK_20S_09_0788.FASTQ.GZ
+  neon_sample_class: mms_metagenomeSequencing_in.processedSeqFileNameID
+  has_parents:
+  - NEON_SAMP_UUID:2421f965-a06c-4ea3-80f2-54577b59cbf0
+- id: NEON_SAMP_UUID:b45de3dc-ae23-4c50-98f3-f7e42be5d7ba
+  name: YELL_052-M-15.5-9-20200709-BA
+  neon_sample_class: sls_bgcSubsampling_in.bgcArchiveID
+  has_parents:
+  - NEON_SAMP_UUID:bc90f339-149d-410b-ae18-ef70e3b82221
+- id: NEON_SAMP_UUID:b5da430c-6a8b-42fa-9df4-dfda9817927d
+  name: YELL_052-M-20200709-COMP
+  neon_sample_class: sls_metagenomicsPooling_in.compositeSampleID
+  has_children:
+  - NEON_SAMP_UUID:2421f965-a06c-4ea3-80f2-54577b59cbf0
+  has_parents:
+  - NEON_SAMP_UUID:bc90f339-149d-410b-ae18-ef70e3b82221
+  - NEON_SAMP_UUID:906d4d0d-2b49-4df9-83f8-a207de15765f
+  - NEON_SAMP_UUID:38d05f16-5872-49c3-9c61-1854c6e8a84f
+- id: NEON_SAMP_UUID:bc90f339-149d-410b-ae18-ef70e3b82221
+  name: YELL_052-M-15.5-9-20200709
+  neon_sample_class: sls_soilCoreCollection_in.sampleID
+  has_children:
+  - NEON_SAMP_UUID:b45de3dc-ae23-4c50-98f3-f7e42be5d7ba
+  - NEON_SAMP_UUID:5f4ee010-b983-4c46-855d-b182e6b0886a
+  - NEON_SAMP_UUID:3089ddcf-9243-481f-a673-1af1640e17a2
+  - NEON_SAMP_UUID:1ea6015a-55f2-4217-809f-236402292740
+  - NEON_SAMP_UUID:02027ce8-9315-4336-a28c-2db450cfeb6d
+  - NEON_SAMP_UUID:eedba5b4-d8e3-4e7e-9cef-0e3c2637d52e
+  - NEON_SAMP_UUID:a584c039-ff73-419e-99de-294800bd8fc3
+  - NEON_SAMP_UUID:4cf90723-225c-48a3-a9e1-9bae83f9ae79
+  - NEON_SAMP_UUID:dbfcb5ad-2b36-4372-be7c-fbff985838a6
+  - NEON_SAMP_UUID:dad1ad5b-1ec0-4366-805c-509783bc7e8a
+  - NEON_SAMP_UUID:2873e60f-4ff1-45b0-953c-d16576c00677
+  - NEON_SAMP_UUID:a7d48882-12a1-453b-9413-eac800de3eaa
+  - NEON_SAMP_UUID:b5da430c-6a8b-42fa-9df4-dfda9817927d
+- id: NEON_SAMP_UUID:beb01900-3f5c-4a36-b441-1b1efe06a279
+  name: YELL_052-M-30.5-31.5-20200709-PH
+  neon_sample_class: sls_soilpH_in.pHSampleID
+  has_parents:
+  - NEON_SAMP_UUID:38d05f16-5872-49c3-9c61-1854c6e8a84f
+- id: NEON_SAMP_UUID:d0f54bfb-ea58-483e-b123-8ac59862c404
+  name: YELL_052-M-30.5-31.5-20200709-GA5
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample5ID
+  has_parents:
+  - NEON_SAMP_UUID:38d05f16-5872-49c3-9c61-1854c6e8a84f
+- id: NEON_SAMP_UUID:d132a6df-532c-4442-9606-d7a97e400dab
+  name: YELL_052-M-30.5-31.5-20200709-GEN-DNA1_20S_10_0896
+  neon_sample_class: mic_dnaExtraction_in.subsampleID
+  has_parents:
+  - NEON_SAMP_UUID:01bbfd25-dbe1-438d-98ed-f571c6052c8f
+- id: NEON_SAMP_UUID:d3fd1355-73c2-4c38-8a69-b1622319e954
+  name: YELL_052-M-30.5-31.5-20200709-KCL
+  neon_sample_class: ntr_internalLab_in.kclSampleID
+  has_parents:
+  - NEON_SAMP_UUID:38d05f16-5872-49c3-9c61-1854c6e8a84f
+- id: NEON_SAMP_UUID:d7b04364-6cab-4a1c-a05f-af31f5e6ab8a
+  name: YELL_052-M-15.5-9-20200709-GEN-DNA1_20S_10_0894
+  neon_sample_class: mic_dnaExtraction_in.subsampleID
+  has_parents:
+  - NEON_SAMP_UUID:17d64116-6b44-4720-9fe4-d0299a43ead7
+- id: NEON_SAMP_UUID:da9420b2-9f11-4804-ba98-bfe93339a963
+  name: YELL_052-M-30.5-31.5-20200709-BA
+  neon_sample_class: sls_bgcSubsampling_in.bgcArchiveID
+  has_parents:
+  - NEON_SAMP_UUID:38d05f16-5872-49c3-9c61-1854c6e8a84f
+- id: NEON_SAMP_UUID:dad1ad5b-1ec0-4366-805c-509783bc7e8a
+  name: YELL_052-M-15.5-9-20200709-KCL
+  neon_sample_class: ntr_internalLab_in.kclSampleID
+  has_parents:
+  - NEON_SAMP_UUID:bc90f339-149d-410b-ae18-ef70e3b82221
+- id: NEON_SAMP_UUID:dbfcb5ad-2b36-4372-be7c-fbff985838a6
+  name: YELL_052-M-15.5-9-20200709-GEN
+  neon_sample_class: sls_soilCoreCollection_in.geneticSampleID
+  has_children:
+  - NEON_SAMP_UUID:17d64116-6b44-4720-9fe4-d0299a43ead7
+  has_parents:
+  - NEON_SAMP_UUID:bc90f339-149d-410b-ae18-ef70e3b82221
+- id: NEON_SAMP_UUID:e48eff69-9be7-4fbc-98d1-d0b4005ded24
+  name: YELL_052-M-28.5-4-20200709-BA
+  neon_sample_class: sls_bgcSubsampling_in.bgcArchiveID
+  has_parents:
+  - NEON_SAMP_UUID:906d4d0d-2b49-4df9-83f8-a207de15765f
+- id: NEON_SAMP_UUID:ec68e961-d854-4145-8c34-833a2cc758aa
+  name: YELL_052-M-30.5-31.5-20200709-GA2
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample2ID
+  has_parents:
+  - NEON_SAMP_UUID:38d05f16-5872-49c3-9c61-1854c6e8a84f
+- id: NEON_SAMP_UUID:edda141e-2258-4ad4-8a59-df784ae5cee7
+  name: YELL_052-M-30.5-31.5-20200709-GA3
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample3ID
+  has_parents:
+  - NEON_SAMP_UUID:38d05f16-5872-49c3-9c61-1854c6e8a84f
+- id: NEON_SAMP_UUID:eedba5b4-d8e3-4e7e-9cef-0e3c2637d52e
+  name: YELL_052-M-15.5-9-20200709-GA3
+  neon_sample_class: sls_soilCoreCollection_in.geneticArchiveSample3ID
+  has_parents:
+  - NEON_SAMP_UUID:bc90f339-149d-410b-ae18-ef70e3b82221

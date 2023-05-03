@@ -1,3 +1,30 @@
+type BgcArchiving
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
+  }
+
+type BiomassSamplePrep
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
+  }
+
+type CnSamplePrep
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
+  }
+
 type Database
   {
     id: Uriorcurie!
@@ -47,6 +74,51 @@ type DnaSamplePrepSimple
     hasOutputs: [MaterialEntity]
   }
 
+type GeneticArchiving1
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
+  }
+
+type GeneticArchiving2
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
+  }
+
+type GeneticArchiving3
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
+  }
+
+type GeneticArchiving4
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
+  }
+
+type GeneticArchiving5
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
+  }
+
 type GeneticSamplePrep
   {
     id: Uriorcurie!
@@ -61,6 +133,15 @@ type Information
     id: Uriorcurie!
     name: String
     description: String
+  }
+
+type KclSamplePrep
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasInputs: [MaterialEntity]
+    hasOutputs: [MaterialEntity]
   }
 
 type MaterialEntity
@@ -127,6 +208,18 @@ type NamedThing
     description: String
   }
 
+type NtrInternalLabInKclSample
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
 type PhSamplePrep
   {
     id: Uriorcurie!
@@ -163,7 +256,55 @@ type Sequencing
     hasOutputs: [MaterialEntity]
   }
 
+type SlsBgcSubsamplingInBgcArchive
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type SlsBgcSubsamplingInCnSample
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
 type SlsMetagenomicsPoolingInCompositeSample
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type SlsSoilCoreCollectionInBiomass
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    neonSampleClass: String
+    neonSampleTag: String
+    neonSampleUuid: String
+    hasChildren: [NamedThing]
+    hasParents: [NamedThing]
+  }
+
+type SlsSoilCoreCollectionInGeneticArchiveSample
   {
     id: Uriorcurie!
     name: String

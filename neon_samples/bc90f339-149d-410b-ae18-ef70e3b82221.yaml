@@ -1,0 +1,209 @@
+data:
+  sampleViews:
+  - archiveGuid: null
+    barcode: A00000116862
+    childSampleIdentifiers:
+    - archiveGuid: NEON02MHN
+      barcode: A00000116932
+      sampleClass: sls_bgcSubsampling_in.bgcArchiveID
+      sampleTag: YELL_052-M-15.5-9-20200709-BA
+      sampleUuid: b45de3dc-ae23-4c50-98f3-f7e42be5d7ba
+    - archiveGuid: null
+      barcode: B00000115662
+      sampleClass: sls_soilCoreCollection_in.biomassID
+      sampleTag: YELL_052-M-15.5-9-20200709-BM
+      sampleUuid: 5f4ee010-b983-4c46-855d-b182e6b0886a
+    - archiveGuid: null
+      barcode: A00000116893
+      sampleClass: sls_bgcSubsampling_in.cnSampleID
+      sampleTag: YELL_052-M-15.5-9-20200709-CN
+      sampleUuid: 3089ddcf-9243-481f-a673-1af1640e17a2
+    - archiveGuid: NEON04GC2
+      barcode: C00000039231
+      sampleClass: sls_soilCoreCollection_in.geneticArchiveSample1ID
+      sampleTag: YELL_052-M-15.5-9-20200709-GA1
+      sampleUuid: 1ea6015a-55f2-4217-809f-236402292740
+    - archiveGuid: NEON04GC1
+      barcode: C00000039221
+      sampleClass: sls_soilCoreCollection_in.geneticArchiveSample2ID
+      sampleTag: YELL_052-M-15.5-9-20200709-GA2
+      sampleUuid: 02027ce8-9315-4336-a28c-2db450cfeb6d
+    - archiveGuid: NEON04GC0
+      barcode: C00000039220
+      sampleClass: sls_soilCoreCollection_in.geneticArchiveSample3ID
+      sampleTag: YELL_052-M-15.5-9-20200709-GA3
+      sampleUuid: eedba5b4-d8e3-4e7e-9cef-0e3c2637d52e
+    - archiveGuid: NEON04GBZ
+      barcode: C00000039223
+      sampleClass: sls_soilCoreCollection_in.geneticArchiveSample4ID
+      sampleTag: YELL_052-M-15.5-9-20200709-GA4
+      sampleUuid: a584c039-ff73-419e-99de-294800bd8fc3
+    - archiveGuid: NEON04GBY
+      barcode: C00000039222
+      sampleClass: sls_soilCoreCollection_in.geneticArchiveSample5ID
+      sampleTag: YELL_052-M-15.5-9-20200709-GA5
+      sampleUuid: 4cf90723-225c-48a3-a9e1-9bae83f9ae79
+    - archiveGuid: null
+      barcode: B00000038578
+      sampleClass: sls_soilCoreCollection_in.geneticSampleID
+      sampleTag: YELL_052-M-15.5-9-20200709-GEN
+      sampleUuid: dbfcb5ad-2b36-4372-be7c-fbff985838a6
+    - archiveGuid: null
+      barcode: B00000038708
+      sampleClass: ntr_internalLab_in.kclSampleID
+      sampleTag: YELL_052-M-15.5-9-20200709-KCL
+      sampleUuid: dad1ad5b-1ec0-4366-805c-509783bc7e8a
+    - archiveGuid: null
+      barcode: null
+      sampleClass: sls_soilpH_in.pHSampleID
+      sampleTag: YELL_052-M-15.5-9-20200709-PH
+      sampleUuid: 2873e60f-4ff1-45b0-953c-d16576c00677
+    - archiveGuid: null
+      barcode: null
+      sampleClass: sls_soilMoisture_in.moistureSampleID
+      sampleTag: YELL_052-M-15.5-9-20200709-SM
+      sampleUuid: a7d48882-12a1-453b-9413-eac800de3eaa
+    - archiveGuid: null
+      barcode: B00000038575
+      sampleClass: sls_metagenomicsPooling_in.compositeSampleID
+      sampleTag: YELL_052-M-20200709-COMP
+      sampleUuid: b5da430c-6a8b-42fa-9df4-dfda9817927d
+    parentSampleIdentifiers: null
+    sampleClass: sls_soilCoreCollection_in.sampleID
+    sampleEvents:
+    - ingestTableName: sls_bgcSubsampling_in
+      smsFieldEntries:
+      - smsKey: collect_end_date
+        smsValue: '2020-07-09T22:17:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2020-07-09T22:17:00Z'
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-07-17T23:30:00Z'
+      - smsKey: recorded_by
+        smsValue: 0000-0001-7235-2193
+      - smsKey: sample_code
+        smsValue: A00000116862
+      - smsKey: sample_condition
+        smsValue: OK
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-15.5-9-20200709
+      - smsKey: sample_type
+        smsValue: M
+      - smsKey: sampling_protocol
+        smsValue: NEON.DOC.014048vN
+    - ingestTableName: sls_soilCoreCollection_in
+      smsFieldEntries:
+      - smsKey: collect_end_date
+        smsValue: '2020-07-09T22:17:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2020-07-09T22:17:00Z'
+      - smsKey: collected_by
+        smsValue: 0000-0002-8294-0383
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: event_id
+        smsValue: YELL.peakGreenness.2020
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-07-09T22:17:00Z'
+      - smsKey: fate_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: recorded_by
+        smsValue: 0000-0003-0814-3869
+      - smsKey: sample_code
+        smsValue: A00000116862
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-15.5-9-20200709
+      - smsKey: sample_type
+        smsValue: M
+      - smsKey: sampling_protocol
+        smsValue: NEON.DOC.014048vN
+      - smsKey: temperature
+        smsValue: '11.9'
+      - smsKey: verbatim_depth
+        smsValue: '32'
+    - ingestTableName: sls_soilMoisture_in
+      smsFieldEntries:
+      - smsKey: collect_end_date
+        smsValue: '2020-07-09T22:17:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2020-07-09T22:17:00Z'
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-07-23T20:38:00Z'
+      - smsKey: recorded_by
+        smsValue: 0000-0001-7235-2193
+      - smsKey: sample_code
+        smsValue: A00000116862
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-15.5-9-20200709
+      - smsKey: sample_type
+        smsValue: M
+      - smsKey: sampling_protocol
+        smsValue: NEON.DOC.014048vN
+    - ingestTableName: sls_soilpH_in
+      smsFieldEntries:
+      - smsKey: collect_end_date
+        smsValue: '2020-07-09T22:17:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2020-07-09T22:17:00Z'
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-08-08T18:00:00Z'
+      - smsKey: recorded_by
+        smsValue: 0000-0003-0814-3869
+      - smsKey: sample_code
+        smsValue: A00000116862
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-15.5-9-20200709
+      - smsKey: sample_type
+        smsValue: M
+      - smsKey: sampling_protocol
+        smsValue: NEON.DOC.014048vN
+    - ingestTableName: ntr_internalLab_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-07-09T22:17:00Z'
+      - smsKey: fate_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: sample_code
+        smsValue: A00000116862
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-15.5-9-20200709
+    - ingestTableName: sls_metagenomicsPooling_in
+      smsFieldEntries:
+      - smsKey: collect_end_date
+        smsValue: '2020-07-09T23:04:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2020-07-09T22:17:00Z'
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: event_id
+        smsValue: YELL.peakGreenness.2020
+      - smsKey: fate
+        smsValue: consumed
+      - smsKey: sample_code
+        smsValue: A00000116862
+      - smsKey: sample_condition
+        smsValue: OK
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-15.5-9-20200709
+      - smsKey: sample_type
+        smsValue: M
+      - smsKey: sampling_protocol
+        smsValue: NEON.DOC.014048vN
+    sampleTag: YELL_052-M-15.5-9-20200709
+    sampleUuid: bc90f339-149d-410b-ae18-ef70e3b82221

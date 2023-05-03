@@ -38,6 +38,30 @@ linkml:Objectidentifier IRI
 
 linkml:Nodeidentifier NONLITERAL
 
+<BgcArchiving> CLOSED {
+    (  $<BgcArchiving_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <BgcArchiving> ]
+    )
+}
+
+<BiomassSamplePrep> CLOSED {
+    (  $<BiomassSamplePrep_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <BiomassSamplePrep> ]
+    )
+}
+
+<CnSamplePrep> CLOSED {
+    (  $<CnSamplePrep_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <CnSamplePrep> ]
+    )
+}
+
 <Database> CLOSED {
     (  $<Database_tes> (  rdfs:label @linkml:String ? ;
           <information_set> @<Information> * ;
@@ -86,6 +110,46 @@ linkml:Nodeidentifier NONLITERAL
     )
 }
 
+<GeneticArchiving1> CLOSED {
+    (  $<GeneticArchiving1_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <GeneticArchiving1> ]
+    )
+}
+
+<GeneticArchiving2> CLOSED {
+    (  $<GeneticArchiving2_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <GeneticArchiving2> ]
+    )
+}
+
+<GeneticArchiving3> CLOSED {
+    (  $<GeneticArchiving3_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <GeneticArchiving3> ]
+    )
+}
+
+<GeneticArchiving4> CLOSED {
+    (  $<GeneticArchiving4_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <GeneticArchiving4> ]
+    )
+}
+
+<GeneticArchiving5> CLOSED {
+    (  $<GeneticArchiving5_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <GeneticArchiving5> ]
+    )
+}
+
 <GeneticSamplePrep> CLOSED {
     (  $<GeneticSamplePrep_tes> (  &<Process_tes> ;
           rdf:type [ <Process> ] ?
@@ -102,6 +166,14 @@ linkml:Nodeidentifier NONLITERAL
     )
 }
 
+<KclSamplePrep> CLOSED {
+    (  $<KclSamplePrep_tes> (  &<Process_tes> ;
+          rdf:type [ <Process> ] ?
+       ) ;
+       rdf:type [ <KclSamplePrep> ]
+    )
+}
+
 <MaterialEntity>  (
     CLOSED {
        (  $<MaterialEntity_tes> (  &<NamedThing_tes> ;
@@ -115,11 +187,10 @@ linkml:Nodeidentifier NONLITERAL
           rdf:type [ <MaterialEntity> ]
        )
     } OR @<MicDnaExtractionInSoilDnaSample> OR @<MicDnaExtractionInSubsample> OR @<MmsMetagenomeSequencingInProcessedSeqFileName>
-    OR @<SlsMetagenomicsPoolingInCompositeSample> OR @<SlsSoilCoreCollectionInGeneticArchiveSample1> OR
-    @<SlsSoilCoreCollectionInGeneticArchiveSample2> OR @<SlsSoilCoreCollectionInGeneticArchiveSample3> OR
-    @<SlsSoilCoreCollectionInGeneticArchiveSample4> OR @<SlsSoilCoreCollectionInGeneticArchiveSample5> OR
-    @<SlsSoilCoreCollectionInGeneticSample> OR @<SlsSoilCoreCollectionInSample> OR @<SlsSoilMoistureInMoistureSample> OR
-    @<SlsSoilpHInPhSample>
+    OR @<NtrInternalLabInKclSample> OR @<SlsBgcSubsamplingInBgcArchive> OR @<SlsBgcSubsamplingInCnSample> OR
+    @<SlsMetagenomicsPoolingInCompositeSample> OR @<SlsSoilCoreCollectionInBiomass> OR
+    @<SlsSoilCoreCollectionInGeneticArchiveSample> OR @<SlsSoilCoreCollectionInGeneticSample> OR @<SlsSoilCoreCollectionInSample>
+    OR @<SlsSoilMoistureInMoistureSample> OR @<SlsSoilpHInPhSample>
 )
 
 <MicDnaExtractionInSoilDnaSample> CLOSED {
@@ -164,6 +235,14 @@ linkml:Nodeidentifier NONLITERAL
     } OR @<Information> OR @<MaterialEntity> OR @<Process>
 )
 
+<NtrInternalLabInKclSample> CLOSED {
+    (  $<NtrInternalLabInKclSample_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <NtrInternalLabInKclSample> ]
+    )
+}
+
 <PhSamplePrep> CLOSED {
     (  $<PhSamplePrep_tes> (  &<Process_tes> ;
           rdf:type [ <Process> ] ?
@@ -189,8 +268,10 @@ linkml:Nodeidentifier NONLITERAL
           ) ;
           rdf:type [ <Process> ]
        )
-    } OR @<DnaSamplePrepComposite> OR @<DnaSamplePrepSimple> OR @<GeneticSamplePrep> OR @<MoistureSamplePrep> OR @<PhSamplePrep> OR
-    @<Pooling> OR @<Sequencing> OR @<SubsampleDnaExtract>
+    } OR @<BgcArchiving> OR @<BiomassSamplePrep> OR @<CnSamplePrep> OR @<DnaSamplePrepComposite> OR @<DnaSamplePrepSimple> OR
+    @<GeneticArchiving1> OR @<GeneticArchiving2> OR @<GeneticArchiving3> OR @<GeneticArchiving4> OR @<GeneticArchiving5> OR
+    @<GeneticSamplePrep> OR @<KclSamplePrep> OR @<MoistureSamplePrep> OR @<PhSamplePrep> OR @<Pooling> OR @<Sequencing> OR
+    @<SubsampleDnaExtract>
 )
 
 <Sequencing> CLOSED {
@@ -198,6 +279,22 @@ linkml:Nodeidentifier NONLITERAL
           rdf:type [ <Process> ] ?
        ) ;
        rdf:type [ <Sequencing> ]
+    )
+}
+
+<SlsBgcSubsamplingInBgcArchive> CLOSED {
+    (  $<SlsBgcSubsamplingInBgcArchive_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <SlsBgcSubsamplingInBgcArchive> ]
+    )
+}
+
+<SlsBgcSubsamplingInCnSample> CLOSED {
+    (  $<SlsBgcSubsamplingInCnSample_tes> (  &<MaterialEntity_tes> ;
+          rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <SlsBgcSubsamplingInCnSample> ]
     )
 }
 
@@ -209,41 +306,61 @@ linkml:Nodeidentifier NONLITERAL
     )
 }
 
-<SlsSoilCoreCollectionInGeneticArchiveSample1> CLOSED {
-    (  $<SlsSoilCoreCollectionInGeneticArchiveSample1_tes> (  &<MaterialEntity_tes> ;
+<SlsSoilCoreCollectionInBiomass> CLOSED {
+    (  $<SlsSoilCoreCollectionInBiomass_tes> (  &<MaterialEntity_tes> ;
           rdf:type [ <MaterialEntity> ] ?
+       ) ;
+       rdf:type [ <SlsSoilCoreCollectionInBiomass> ]
+    )
+}
+
+<SlsSoilCoreCollectionInGeneticArchiveSample>  (
+    CLOSED {
+       (  $<SlsSoilCoreCollectionInGeneticArchiveSample_tes> (  &<MaterialEntity_tes> ;
+             rdf:type [ <MaterialEntity> ] ?
+          ) ;
+          rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample> ]
+       )
+    } OR @<SlsSoilCoreCollectionInGeneticArchiveSample1> OR @<SlsSoilCoreCollectionInGeneticArchiveSample2> OR
+    @<SlsSoilCoreCollectionInGeneticArchiveSample3> OR @<SlsSoilCoreCollectionInGeneticArchiveSample4> OR
+    @<SlsSoilCoreCollectionInGeneticArchiveSample5>
+)
+
+<SlsSoilCoreCollectionInGeneticArchiveSample1> CLOSED {
+    (  $<SlsSoilCoreCollectionInGeneticArchiveSample1_tes> (  &<SlsSoilCoreCollectionInGeneticArchiveSample_tes> ;
+          rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample> ] ?
        ) ;
        rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample1> ]
     )
 }
 
 <SlsSoilCoreCollectionInGeneticArchiveSample2> CLOSED {
-    (  $<SlsSoilCoreCollectionInGeneticArchiveSample2_tes> (  &<MaterialEntity_tes> ;
-          rdf:type [ <MaterialEntity> ] ?
+    (  $<SlsSoilCoreCollectionInGeneticArchiveSample2_tes> (  &<SlsSoilCoreCollectionInGeneticArchiveSample_tes> ;
+          rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample> ] ?
        ) ;
        rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample2> ]
     )
 }
 
 <SlsSoilCoreCollectionInGeneticArchiveSample3> CLOSED {
-    (  $<SlsSoilCoreCollectionInGeneticArchiveSample3_tes> (  &<MaterialEntity_tes> ;
-          rdf:type [ <MaterialEntity> ] ?
+    (  $<SlsSoilCoreCollectionInGeneticArchiveSample3_tes> (  &<SlsSoilCoreCollectionInGeneticArchiveSample_tes> ;
+          rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample> ] ?
        ) ;
        rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample3> ]
     )
 }
 
 <SlsSoilCoreCollectionInGeneticArchiveSample4> CLOSED {
-    (  $<SlsSoilCoreCollectionInGeneticArchiveSample4_tes> (  &<MaterialEntity_tes> ;
-          rdf:type [ <MaterialEntity> ] ?
+    (  $<SlsSoilCoreCollectionInGeneticArchiveSample4_tes> (  &<SlsSoilCoreCollectionInGeneticArchiveSample_tes> ;
+          rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample> ] ?
        ) ;
        rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample4> ]
     )
 }
 
 <SlsSoilCoreCollectionInGeneticArchiveSample5> CLOSED {
-    (  $<SlsSoilCoreCollectionInGeneticArchiveSample5_tes> (  &<MaterialEntity_tes> ;
-          rdf:type [ <MaterialEntity> ] ?
+    (  $<SlsSoilCoreCollectionInGeneticArchiveSample5_tes> (  &<SlsSoilCoreCollectionInGeneticArchiveSample_tes> ;
+          rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample> ] ?
        ) ;
        rdf:type [ <SlsSoilCoreCollectionInGeneticArchiveSample5> ]
     )

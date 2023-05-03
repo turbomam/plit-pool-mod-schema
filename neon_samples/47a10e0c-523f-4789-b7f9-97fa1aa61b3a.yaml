@@ -1,0 +1,35 @@
+data:
+  sampleViews:
+  - archiveGuid: null
+    barcode: null
+    childSampleIdentifiers: null
+    parentSampleIdentifiers:
+    - archiveGuid: null
+      barcode: A00000116861
+      sampleClass: sls_soilCoreCollection_in.sampleID
+      sampleTag: YELL_052-M-28.5-4-20200709
+      sampleUuid: 906d4d0d-2b49-4df9-83f8-a207de15765f
+    sampleClass: sls_soilMoisture_in.moistureSampleID
+    sampleEvents:
+    - ingestTableName: sls_soilMoisture_in
+      smsFieldEntries:
+      - smsKey: collect_end_date
+        smsValue: '2020-07-09T22:35:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2020-07-09T22:35:00Z'
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: fate
+        smsValue: discarded
+      - smsKey: fate_date
+        smsValue: '2020-07-23T20:38:00Z'
+      - smsKey: recorded_by
+        smsValue: 0000-0001-7235-2193
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-28.5-4-20200709-SM
+      - smsKey: sample_type
+        smsValue: M
+      - smsKey: sampling_protocol
+        smsValue: NEON.DOC.014048vN
+    sampleTag: YELL_052-M-28.5-4-20200709-SM
+    sampleUuid: 47a10e0c-523f-4789-b7f9-97fa1aa61b3a

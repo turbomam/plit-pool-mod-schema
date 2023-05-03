@@ -1,5 +1,5 @@
 # Auto generated from split_pool_mod_schema.yaml by pythongen.py version: 0.9.0
-# Generation date: 2023-05-02T15:13:17
+# Generation date: 2023-05-03T18:18:26
 # Schema: split-pool-mod-schema
 #
 # id: https://w3id.org/turbomam/split-pool-mod-schema
@@ -68,6 +68,22 @@ class InformationId(NamedThingId):
     pass
 
 
+class NtrInternalLabInKclSampleId(MaterialEntityId):
+    pass
+
+
+class SlsBgcSubsamplingInBgcArchiveId(MaterialEntityId):
+    pass
+
+
+class SlsBgcSubsamplingInCnSampleId(MaterialEntityId):
+    pass
+
+
+class SlsSoilCoreCollectionInBiomassId(MaterialEntityId):
+    pass
+
+
 class MicDnaExtractionInSoilDnaSampleId(MaterialEntityId):
     pass
 
@@ -80,23 +96,27 @@ class SlsMetagenomicsPoolingInCompositeSampleId(MaterialEntityId):
     pass
 
 
-class SlsSoilCoreCollectionInGeneticArchiveSample1Id(MaterialEntityId):
+class SlsSoilCoreCollectionInGeneticArchiveSampleId(MaterialEntityId):
     pass
 
 
-class SlsSoilCoreCollectionInGeneticArchiveSample2Id(MaterialEntityId):
+class SlsSoilCoreCollectionInGeneticArchiveSample1Id(SlsSoilCoreCollectionInGeneticArchiveSampleId):
     pass
 
 
-class SlsSoilCoreCollectionInGeneticArchiveSample3Id(MaterialEntityId):
+class SlsSoilCoreCollectionInGeneticArchiveSample2Id(SlsSoilCoreCollectionInGeneticArchiveSampleId):
     pass
 
 
-class SlsSoilCoreCollectionInGeneticArchiveSample4Id(MaterialEntityId):
+class SlsSoilCoreCollectionInGeneticArchiveSample3Id(SlsSoilCoreCollectionInGeneticArchiveSampleId):
     pass
 
 
-class SlsSoilCoreCollectionInGeneticArchiveSample5Id(MaterialEntityId):
+class SlsSoilCoreCollectionInGeneticArchiveSample4Id(SlsSoilCoreCollectionInGeneticArchiveSampleId):
+    pass
+
+
+class SlsSoilCoreCollectionInGeneticArchiveSample5Id(SlsSoilCoreCollectionInGeneticArchiveSampleId):
     pass
 
 
@@ -149,6 +169,42 @@ class MoistureSamplePrepId(ProcessId):
 
 
 class PhSamplePrepId(ProcessId):
+    pass
+
+
+class KclSamplePrepId(ProcessId):
+    pass
+
+
+class BgcArchivingId(ProcessId):
+    pass
+
+
+class CnSamplePrepId(ProcessId):
+    pass
+
+
+class BiomassSamplePrepId(ProcessId):
+    pass
+
+
+class GeneticArchiving1Id(ProcessId):
+    pass
+
+
+class GeneticArchiving2Id(ProcessId):
+    pass
+
+
+class GeneticArchiving3Id(ProcessId):
+    pass
+
+
+class GeneticArchiving4Id(ProcessId):
+    pass
+
+
+class GeneticArchiving5Id(ProcessId):
     pass
 
 
@@ -387,6 +443,86 @@ class Information(NamedThing):
 
 
 @dataclass
+class NtrInternalLabInKclSample(MaterialEntity):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.NtrInternalLabInKclSample
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:NtrInternalLabInKclSample"
+    class_name: ClassVar[str] = "NtrInternalLabInKclSample"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.NtrInternalLabInKclSample
+
+    id: Union[str, NtrInternalLabInKclSampleId] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, NtrInternalLabInKclSampleId):
+            self.id = NtrInternalLabInKclSampleId(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class SlsBgcSubsamplingInBgcArchive(MaterialEntity):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.SlsBgcSubsamplingInBgcArchive
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:SlsBgcSubsamplingInBgcArchive"
+    class_name: ClassVar[str] = "SlsBgcSubsamplingInBgcArchive"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.SlsBgcSubsamplingInBgcArchive
+
+    id: Union[str, SlsBgcSubsamplingInBgcArchiveId] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, SlsBgcSubsamplingInBgcArchiveId):
+            self.id = SlsBgcSubsamplingInBgcArchiveId(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class SlsBgcSubsamplingInCnSample(MaterialEntity):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.SlsBgcSubsamplingInCnSample
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:SlsBgcSubsamplingInCnSample"
+    class_name: ClassVar[str] = "SlsBgcSubsamplingInCnSample"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.SlsBgcSubsamplingInCnSample
+
+    id: Union[str, SlsBgcSubsamplingInCnSampleId] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, SlsBgcSubsamplingInCnSampleId):
+            self.id = SlsBgcSubsamplingInCnSampleId(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class SlsSoilCoreCollectionInBiomass(MaterialEntity):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.SlsSoilCoreCollectionInBiomass
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:SlsSoilCoreCollectionInBiomass"
+    class_name: ClassVar[str] = "SlsSoilCoreCollectionInBiomass"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.SlsSoilCoreCollectionInBiomass
+
+    id: Union[str, SlsSoilCoreCollectionInBiomassId] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, SlsSoilCoreCollectionInBiomassId):
+            self.id = SlsSoilCoreCollectionInBiomassId(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
 class MicDnaExtractionInSoilDnaSample(MaterialEntity):
     _inherited_slots: ClassVar[List[str]] = []
 
@@ -447,7 +583,27 @@ class SlsMetagenomicsPoolingInCompositeSample(MaterialEntity):
 
 
 @dataclass
-class SlsSoilCoreCollectionInGeneticArchiveSample1(MaterialEntity):
+class SlsSoilCoreCollectionInGeneticArchiveSample(MaterialEntity):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.SlsSoilCoreCollectionInGeneticArchiveSample
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:SlsSoilCoreCollectionInGeneticArchiveSample"
+    class_name: ClassVar[str] = "SlsSoilCoreCollectionInGeneticArchiveSample"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.SlsSoilCoreCollectionInGeneticArchiveSample
+
+    id: Union[str, SlsSoilCoreCollectionInGeneticArchiveSampleId] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, SlsSoilCoreCollectionInGeneticArchiveSampleId):
+            self.id = SlsSoilCoreCollectionInGeneticArchiveSampleId(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class SlsSoilCoreCollectionInGeneticArchiveSample1(SlsSoilCoreCollectionInGeneticArchiveSample):
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.SlsSoilCoreCollectionInGeneticArchiveSample1
@@ -467,7 +623,7 @@ class SlsSoilCoreCollectionInGeneticArchiveSample1(MaterialEntity):
 
 
 @dataclass
-class SlsSoilCoreCollectionInGeneticArchiveSample2(MaterialEntity):
+class SlsSoilCoreCollectionInGeneticArchiveSample2(SlsSoilCoreCollectionInGeneticArchiveSample):
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.SlsSoilCoreCollectionInGeneticArchiveSample2
@@ -487,7 +643,7 @@ class SlsSoilCoreCollectionInGeneticArchiveSample2(MaterialEntity):
 
 
 @dataclass
-class SlsSoilCoreCollectionInGeneticArchiveSample3(MaterialEntity):
+class SlsSoilCoreCollectionInGeneticArchiveSample3(SlsSoilCoreCollectionInGeneticArchiveSample):
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.SlsSoilCoreCollectionInGeneticArchiveSample3
@@ -507,7 +663,7 @@ class SlsSoilCoreCollectionInGeneticArchiveSample3(MaterialEntity):
 
 
 @dataclass
-class SlsSoilCoreCollectionInGeneticArchiveSample4(MaterialEntity):
+class SlsSoilCoreCollectionInGeneticArchiveSample4(SlsSoilCoreCollectionInGeneticArchiveSample):
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.SlsSoilCoreCollectionInGeneticArchiveSample4
@@ -527,7 +683,7 @@ class SlsSoilCoreCollectionInGeneticArchiveSample4(MaterialEntity):
 
 
 @dataclass
-class SlsSoilCoreCollectionInGeneticArchiveSample5(MaterialEntity):
+class SlsSoilCoreCollectionInGeneticArchiveSample5(SlsSoilCoreCollectionInGeneticArchiveSample):
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.SlsSoilCoreCollectionInGeneticArchiveSample5
@@ -806,6 +962,186 @@ class PhSamplePrep(Process):
         super().__post_init__(**kwargs)
 
 
+@dataclass
+class KclSamplePrep(Process):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.KclSamplePrep
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:KclSamplePrep"
+    class_name: ClassVar[str] = "KclSamplePrep"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.KclSamplePrep
+
+    id: Union[str, KclSamplePrepId] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, KclSamplePrepId):
+            self.id = KclSamplePrepId(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class BgcArchiving(Process):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.BgcArchiving
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:BgcArchiving"
+    class_name: ClassVar[str] = "BgcArchiving"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.BgcArchiving
+
+    id: Union[str, BgcArchivingId] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, BgcArchivingId):
+            self.id = BgcArchivingId(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class CnSamplePrep(Process):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.CnSamplePrep
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:CnSamplePrep"
+    class_name: ClassVar[str] = "CnSamplePrep"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.CnSamplePrep
+
+    id: Union[str, CnSamplePrepId] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, CnSamplePrepId):
+            self.id = CnSamplePrepId(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class BiomassSamplePrep(Process):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.BiomassSamplePrep
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:BiomassSamplePrep"
+    class_name: ClassVar[str] = "BiomassSamplePrep"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.BiomassSamplePrep
+
+    id: Union[str, BiomassSamplePrepId] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, BiomassSamplePrepId):
+            self.id = BiomassSamplePrepId(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class GeneticArchiving1(Process):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.GeneticArchiving1
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:GeneticArchiving1"
+    class_name: ClassVar[str] = "GeneticArchiving1"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.GeneticArchiving1
+
+    id: Union[str, GeneticArchiving1Id] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, GeneticArchiving1Id):
+            self.id = GeneticArchiving1Id(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class GeneticArchiving2(Process):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.GeneticArchiving2
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:GeneticArchiving2"
+    class_name: ClassVar[str] = "GeneticArchiving2"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.GeneticArchiving2
+
+    id: Union[str, GeneticArchiving2Id] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, GeneticArchiving2Id):
+            self.id = GeneticArchiving2Id(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class GeneticArchiving3(Process):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.GeneticArchiving3
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:GeneticArchiving3"
+    class_name: ClassVar[str] = "GeneticArchiving3"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.GeneticArchiving3
+
+    id: Union[str, GeneticArchiving3Id] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, GeneticArchiving3Id):
+            self.id = GeneticArchiving3Id(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class GeneticArchiving4(Process):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.GeneticArchiving4
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:GeneticArchiving4"
+    class_name: ClassVar[str] = "GeneticArchiving4"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.GeneticArchiving4
+
+    id: Union[str, GeneticArchiving4Id] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, GeneticArchiving4Id):
+            self.id = GeneticArchiving4Id(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class GeneticArchiving5(Process):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.GeneticArchiving5
+    class_class_curie: ClassVar[str] = "split_pool_mod_schema:GeneticArchiving5"
+    class_name: ClassVar[str] = "GeneticArchiving5"
+    class_model_uri: ClassVar[URIRef] = SPLIT_POOL_MOD_SCHEMA.GeneticArchiving5
+
+    id: Union[str, GeneticArchiving5Id] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, GeneticArchiving5Id):
+            self.id = GeneticArchiving5Id(self.id)
+
+        super().__post_init__(**kwargs)
+
+
 # Enumerations
 
 
@@ -909,6 +1245,30 @@ slots.moisture_sample_prep_set = Slot(uri=SPLIT_POOL_MOD_SCHEMA.moisture_sample_
 
 slots.ph_sample_prep_set = Slot(uri=SPLIT_POOL_MOD_SCHEMA.ph_sample_prep_set, name="ph_sample_prep_set", curie=SPLIT_POOL_MOD_SCHEMA.curie('ph_sample_prep_set'),
                    model_uri=SPLIT_POOL_MOD_SCHEMA.ph_sample_prep_set, domain=Database, range=Optional[Union[Dict[Union[str, PhSamplePrepId], Union[dict, "PhSamplePrep"]], List[Union[dict, "PhSamplePrep"]]]])
+
+slots.bgc_archiving_set = Slot(uri=SPLIT_POOL_MOD_SCHEMA.bgc_archiving_set, name="bgc_archiving_set", curie=SPLIT_POOL_MOD_SCHEMA.curie('bgc_archiving_set'),
+                   model_uri=SPLIT_POOL_MOD_SCHEMA.bgc_archiving_set, domain=Database, range=Optional[Union[Dict[Union[str, BgcArchivingId], Union[dict, "BgcArchiving"]], List[Union[dict, "BgcArchiving"]]]])
+
+slots.biomass_sample_prep_set = Slot(uri=SPLIT_POOL_MOD_SCHEMA.biomass_sample_prep_set, name="biomass_sample_prep_set", curie=SPLIT_POOL_MOD_SCHEMA.curie('biomass_sample_prep_set'),
+                   model_uri=SPLIT_POOL_MOD_SCHEMA.biomass_sample_prep_set, domain=Database, range=Optional[Union[Dict[Union[str, BiomassSamplePrepId], Union[dict, "BiomassSamplePrep"]], List[Union[dict, "BiomassSamplePrep"]]]])
+
+slots.c_n_sample_prep_set = Slot(uri=SPLIT_POOL_MOD_SCHEMA.c_n_sample_prep_set, name="c_n_sample_prep_set", curie=SPLIT_POOL_MOD_SCHEMA.curie('c_n_sample_prep_set'),
+                   model_uri=SPLIT_POOL_MOD_SCHEMA.c_n_sample_prep_set, domain=Database, range=Optional[Union[Dict[Union[str, CnSamplePrepId], Union[dict, "CnSamplePrep"]], List[Union[dict, "CnSamplePrep"]]]])
+
+slots.genetic_archiving_1_set = Slot(uri=SPLIT_POOL_MOD_SCHEMA.genetic_archiving_1_set, name="genetic_archiving_1_set", curie=SPLIT_POOL_MOD_SCHEMA.curie('genetic_archiving_1_set'),
+                   model_uri=SPLIT_POOL_MOD_SCHEMA.genetic_archiving_1_set, domain=Database, range=Optional[Union[Dict[Union[str, GeneticArchiving1Id], Union[dict, "GeneticArchiving1"]], List[Union[dict, "GeneticArchiving1"]]]])
+
+slots.genetic_archiving_2_set = Slot(uri=SPLIT_POOL_MOD_SCHEMA.genetic_archiving_2_set, name="genetic_archiving_2_set", curie=SPLIT_POOL_MOD_SCHEMA.curie('genetic_archiving_2_set'),
+                   model_uri=SPLIT_POOL_MOD_SCHEMA.genetic_archiving_2_set, domain=Database, range=Optional[Union[Dict[Union[str, GeneticArchiving2Id], Union[dict, "GeneticArchiving2"]], List[Union[dict, "GeneticArchiving2"]]]])
+
+slots.genetic_archiving_3_set = Slot(uri=SPLIT_POOL_MOD_SCHEMA.genetic_archiving_3_set, name="genetic_archiving_3_set", curie=SPLIT_POOL_MOD_SCHEMA.curie('genetic_archiving_3_set'),
+                   model_uri=SPLIT_POOL_MOD_SCHEMA.genetic_archiving_3_set, domain=Database, range=Optional[Union[Dict[Union[str, GeneticArchiving3Id], Union[dict, "GeneticArchiving3"]], List[Union[dict, "GeneticArchiving3"]]]])
+
+slots.genetic_archiving_4_set = Slot(uri=SPLIT_POOL_MOD_SCHEMA.genetic_archiving_4_set, name="genetic_archiving_4_set", curie=SPLIT_POOL_MOD_SCHEMA.curie('genetic_archiving_4_set'),
+                   model_uri=SPLIT_POOL_MOD_SCHEMA.genetic_archiving_4_set, domain=Database, range=Optional[Union[Dict[Union[str, GeneticArchiving4Id], Union[dict, "GeneticArchiving4"]], List[Union[dict, "GeneticArchiving4"]]]])
+
+slots.genetic_archiving_5_set = Slot(uri=SPLIT_POOL_MOD_SCHEMA.genetic_archiving_5_set, name="genetic_archiving_5_set", curie=SPLIT_POOL_MOD_SCHEMA.curie('genetic_archiving_5_set'),
+                   model_uri=SPLIT_POOL_MOD_SCHEMA.genetic_archiving_5_set, domain=Database, range=Optional[Union[Dict[Union[str, GeneticArchiving5Id], Union[dict, "GeneticArchiving5"]], List[Union[dict, "GeneticArchiving5"]]]])
 
 slots.pooling_set = Slot(uri=SPLIT_POOL_MOD_SCHEMA.pooling_set, name="pooling_set", curie=SPLIT_POOL_MOD_SCHEMA.curie('pooling_set'),
                    model_uri=SPLIT_POOL_MOD_SCHEMA.pooling_set, domain=Database, range=Optional[Union[Dict[Union[str, PoolingId], Union[dict, "Pooling"]], List[Union[dict, "Pooling"]]]])

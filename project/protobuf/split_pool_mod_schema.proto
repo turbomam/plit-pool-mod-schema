@@ -1,3 +1,27 @@
+message BgcArchiving
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
+ }
+message BiomassSamplePrep
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
+ }
+message CnSamplePrep
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
+ }
 // A possibly heterogeneous collections of data
 message Database
  {
@@ -45,6 +69,46 @@ message DnaSamplePrepSimple
  repeated  materialEntity hasInputs = 0
  repeated  materialEntity hasOutputs = 0
  }
+message GeneticArchiving1
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
+ }
+message GeneticArchiving2
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
+ }
+message GeneticArchiving3
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
+ }
+message GeneticArchiving4
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
+ }
+message GeneticArchiving5
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
+ }
 message GeneticSamplePrep
  {
   uriorcurie id = 0
@@ -59,6 +123,14 @@ message Information
   uriorcurie id = 0
   string name = 0
   string description = 0
+ }
+message KclSamplePrep
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+ repeated  materialEntity hasInputs = 0
+ repeated  materialEntity hasOutputs = 0
  }
 // An entity that consists of matter. Has an identity that persists over time.
 message MaterialEntity
@@ -120,6 +192,17 @@ message NamedThing
   string name = 0
   string description = 0
  }
+message NtrInternalLabInKclSample
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
 message PhSamplePrep
  {
   uriorcurie id = 0
@@ -153,7 +236,51 @@ message Sequencing
  repeated  materialEntity hasInputs = 0
  repeated  materialEntity hasOutputs = 0
  }
+message SlsBgcSubsamplingInBgcArchive
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message SlsBgcSubsamplingInCnSample
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
 message SlsMetagenomicsPoolingInCompositeSample
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message SlsSoilCoreCollectionInBiomass
+ {
+  uriorcurie id = 0
+  string name = 0
+  string description = 0
+  string neonSampleClass = 0
+  string neonSampleTag = 0
+  string neonSampleUuid = 0
+ repeated  namedThing hasChildren = 0
+ repeated  namedThing hasParents = 0
+ }
+message SlsSoilCoreCollectionInGeneticArchiveSample
  {
   uriorcurie id = 0
   string name = 0

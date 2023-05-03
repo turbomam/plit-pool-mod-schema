@@ -1,0 +1,35 @@
+data:
+  sampleViews:
+  - archiveGuid: null
+    barcode: null
+    childSampleIdentifiers: null
+    parentSampleIdentifiers:
+    - archiveGuid: null
+      barcode: A00000114885
+      sampleClass: sls_soilCoreCollection_in.sampleID
+      sampleTag: YELL_052-M-30.5-31.5-20200709
+      sampleUuid: 38d05f16-5872-49c3-9c61-1854c6e8a84f
+    sampleClass: sls_soilpH_in.pHSampleID
+    sampleEvents:
+    - ingestTableName: sls_soilpH_in
+      smsFieldEntries:
+      - smsKey: collect_end_date
+        smsValue: '2020-07-09T23:04:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2020-07-09T23:04:00Z'
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: fate
+        smsValue: consumed
+      - smsKey: fate_date
+        smsValue: '2020-08-08T18:00:00Z'
+      - smsKey: recorded_by
+        smsValue: 0000-0003-0814-3869
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-PH
+      - smsKey: sample_type
+        smsValue: M
+      - smsKey: sampling_protocol
+        smsValue: NEON.DOC.014048vN
+    sampleTag: YELL_052-M-30.5-31.5-20200709-PH
+    sampleUuid: beb01900-3f5c-4a36-b441-1b1efe06a279

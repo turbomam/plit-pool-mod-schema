@@ -92,3 +92,40 @@ xxx: examples/output/neon-merged.ttl
 #		--input $< tree 'Information'
 	$(RUN) runoak \
 		--input $< viz -p t,p,i 'empty/invalid bioproject claimed by neon'
+
+# # # #
+
+neon_samples:
+	$(RUN) neon-dl-sample-by-tag-or-tags by-tag \
+		--sample-tag "YELL_052-M-20200709-COMP" \
+		--get-relatives \
+		--dest-dir $@ \
+		--api-token eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJhdWQiOiJodHRwczovL2RhdGEubmVvbnNjaWVuY2Uub3JnL2FwaS92MC8iLCJzdWIiOiJNQU1AbGJsLmdvdiIsInNjb3BlIjoicmF0ZTpwdWJsaWMiLCJpc3MiOiJodHRwczovL2RhdGEubmVvbnNjaWVuY2Uub3JnLyIsImV4cCI6MTg0MDYzMTY3MywiaWF0IjoxNjgyOTUxNjczLCJlbWFpbCI6Ik1BTUBsYmwuZ292In0.H0P7ke_WL7syECGAA4khEddZ8f6sR__vA3TFherLVt8I1omtYNjspqwWZh42ZkoCbCmRTIr4b4OG8uqPhICv8g
+
+#instantiate-samples:
+#	$(RUN) instantiate-samples instantiate \
+#		--destination-file neon-notes/Database.yaml \
+#		--materialize-generic-processes \
+#		--neon-yaml-dir neon_samples \
+#		--schema-file src/split_pool_mod_schema/schema/split_pool_mod_schema.yaml
+
+neon-notes/one_compound_soil_metagenome.yaml: src/split_pool_mod_schema/schema/split_pool_mod_schema.yaml neon_samples
+	$(RUN) python src/split_pool_mod_schema/datamodel/inst_samps.py instantiate \
+		--destination-file $@ \
+		--no-materialize-generic-processes \
+		--neon-yaml-dir $(word 2, $^) \
+		--schema-file $<
+
+neon-notes/one_compound_soil_metagenome.ttl: src/split_pool_mod_schema/schema/split_pool_mod_schema.yaml \
+neon-notes/one_compound_soil_metagenome.yaml
+	$(RUN) linkml-convert \
+		--output $@ \
+		--schema $^
+
+
+neon-notes/one_compound_soil_metagenome_with_ontology.ttl: neon-notes/one_compound_soil_metagenome.ttl \
+project/owl/split_pool_mod_schema.owl.ttl
+	robot merge \
+		--input $(word 1, $^) \
+		--input $(word 2, $^) \
+		--output $@

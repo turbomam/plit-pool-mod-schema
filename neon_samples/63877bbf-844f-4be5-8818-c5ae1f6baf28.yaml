@@ -1,0 +1,91 @@
+data:
+  sampleViews:
+  - archiveGuid: null
+    barcode: A00000117021
+    childSampleIdentifiers: null
+    parentSampleIdentifiers:
+    - archiveGuid: null
+      barcode: A00000114885
+      sampleClass: sls_soilCoreCollection_in.sampleID
+      sampleTag: YELL_052-M-30.5-31.5-20200709
+      sampleUuid: 38d05f16-5872-49c3-9c61-1854c6e8a84f
+    sampleClass: sls_bgcSubsampling_in.cnSampleID
+    sampleEvents:
+    - ingestTableName: sls_bgcSubsampling_in
+      smsFieldEntries:
+      - smsKey: collect_end_date
+        smsValue: '2020-07-09T23:04:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2020-07-09T23:04:00Z'
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-07-17T23:30:00Z'
+      - smsKey: recorded_by
+        smsValue: 0000-0001-7235-2193
+      - smsKey: sample_code
+        smsValue: A00000117021
+      - smsKey: sample_condition
+        smsValue: OK
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-CN
+      - smsKey: sample_type
+        smsValue: M
+      - smsKey: sampling_protocol
+        smsValue: NEON.DOC.014048vN
+    - ingestTableName: scs_shipmentCreation_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-08-12T12:00:00Z'
+      - smsKey: fate_location
+        smsValue: D12
+      - smsKey: sample_code
+        smsValue: A00000117021
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-CN
+    - ingestTableName: scs_shipmentVerification_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-08-14T12:00:00Z'
+      - smsKey: fate_location
+        smsValue: University of Wyoming Stable Isotope Facility
+      - smsKey: sample_code
+        smsValue: A00000117021
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-CN
+    - ingestTableName: bgc_CNiso_externalAnalysis_in
+      smsFieldEntries:
+      - smsKey: analysis_type
+        smsValue: 010 EA-IRMS organic d15N, d13C, C% & N%
+      - smsKey: fate
+        smsValue: discarded
+      - smsKey: fate_date
+        smsValue: '2020-09-22T18:00:00Z'
+      - smsKey: fate_location
+        smsValue: University of Wyoming Stable Isotope Facility
+      - smsKey: sample_code
+        smsValue: A00000117021
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-CN
+    - ingestTableName: bgc_CNiso_externalAnalysis_in
+      smsFieldEntries:
+      - smsKey: analysis_type
+        smsValue: 008 EA-IRMS organic d13C, & C%
+      - smsKey: fate
+        smsValue: discarded
+      - smsKey: fate_date
+        smsValue: '2020-12-30T19:00:00Z'
+      - smsKey: fate_location
+        smsValue: University of Wyoming Stable Isotope Facility
+      - smsKey: sample_code
+        smsValue: A00000117021
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-CN
+    sampleTag: YELL_052-M-30.5-31.5-20200709-CN
+    sampleUuid: 63877bbf-844f-4be5-8818-c5ae1f6baf28

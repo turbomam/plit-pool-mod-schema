@@ -72,6 +72,18 @@ classes:
       - pooling_set
       - sequencing_set
       - subsample_dna_extract_set
+      - bgc_archiving_set
+      - biomass_sample_prep_set
+      - c_n_sample_prep_set
+      - genetic_archiving_1_set
+      - genetic_archiving_2_set
+      - genetic_archiving_3_set
+      - genetic_archiving_4_set
+      - genetic_archiving_5_set
+      - pooling_set
+      - sequencing_set
+      - subsample_dna_extract_set
+      - kcl_sample_prep_set
   #      - archiving_set
 
   MaterialEntity:
@@ -119,6 +131,23 @@ classes:
       - IAO:0000030
     #    abstract: true
 
+  NtrInternalLabInKclSample:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: ntr_internalLab_in.kclSampleID
+  SlsBgcSubsamplingInBgcArchive:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: sls_bgcSubsampling_in.bgcArchiveID
+  SlsBgcSubsamplingInCnSample:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: sls_bgcSubsampling_in.cnSampleID
+  SlsSoilCoreCollectionInBiomass:
+    is_a: MaterialEntity
+    annotations:
+      neon_term: sls_soilCoreCollection_in.biomassID
+
   MicDnaExtractionInSoilDnaSample:
     is_a: MaterialEntity
     annotations:
@@ -131,24 +160,27 @@ classes:
     is_a: MaterialEntity
     annotations:
       neon_term: sls_metagenomicsPooling_in.compositeSampleID
-  SlsSoilCoreCollectionInGeneticArchiveSample1:
+
+  SlsSoilCoreCollectionInGeneticArchiveSample:
     is_a: MaterialEntity
+  SlsSoilCoreCollectionInGeneticArchiveSample1:
+    is_a: SlsSoilCoreCollectionInGeneticArchiveSample
     annotations:
       neon_term: sls_soilCoreCollection_in.geneticArchiveSample1ID
   SlsSoilCoreCollectionInGeneticArchiveSample2:
-    is_a: MaterialEntity
+    is_a: SlsSoilCoreCollectionInGeneticArchiveSample
     annotations:
       neon_term: sls_soilCoreCollection_in.geneticArchiveSample2ID
   SlsSoilCoreCollectionInGeneticArchiveSample3:
-    is_a: MaterialEntity
+    is_a: SlsSoilCoreCollectionInGeneticArchiveSample
     annotations:
       neon_term: sls_soilCoreCollection_in.geneticArchiveSample3ID
   SlsSoilCoreCollectionInGeneticArchiveSample4:
-    is_a: MaterialEntity
+    is_a: SlsSoilCoreCollectionInGeneticArchiveSample
     annotations:
       neon_term: sls_soilCoreCollection_in.geneticArchiveSample4ID
   SlsSoilCoreCollectionInGeneticArchiveSample5:
-    is_a: MaterialEntity
+    is_a: SlsSoilCoreCollectionInGeneticArchiveSample
     annotations:
       neon_term: sls_soilCoreCollection_in.geneticArchiveSample5ID
   SlsSoilCoreCollectionInGeneticSample:
@@ -160,11 +192,13 @@ classes:
     annotations:
       neon_term: sls_soilCoreCollection_in.sampleID
   SlsSoilMoistureInMoistureSample:
+    title: soil moisture sample
     is_a: MaterialEntity
     annotations:
       neon_term: sls_soilMoisture_in.moistureSampleID
   SlsSoilpHInPhSample:
     is_a: MaterialEntity
+    title: soil pH sample
     annotations:
       neon_term: sls_soilpH_in.pHSampleID
 
@@ -174,50 +208,114 @@ classes:
       neon_term: mms_metagenomeSequencing_in.processedSeqFileNameID
 
   SubsampleDnaExtract:
+    title: extraction of DNA
     is_a: Process
     annotations:
       neon_input_class: mic_dnaExtraction_in.soilDnaSampleID
       neon_output_class: mic_dnaExtraction_in.subsampleID
   Sequencing:
+    title: sequencing
     is_a: Process
     annotations:
       neon_input_class: mic_dnaExtraction_in.soilDnaSampleID
       neon_output_class: mms_metagenomeSequencing_in.processedSeqFileNameID
   DnaSamplePrepSimple:
+    title: preparation of DNA from a simple sample
     is_a: Process
     annotations:
       neon_input_class: sls_soilCoreCollection_in.geneticSampleID
       neon_output_class: mic_dnaExtraction_in.soilDnaSampleID
   DnaSamplePrepComposite:
+    title: preparation of DNA from a composite sample
     is_a: Process
     annotations:
       neon_input_class: sls_metagenomicsPooling_in.compositeSampleID
       neon_output_class: mic_dnaExtraction_in.soilDnaSampleID
   Pooling:
+    title: pooling of samples
     is_a: Process
     annotations:
       neon_input_class: sls_soilCoreCollection_in.sampleID
       neon_output_class: sls_metagenomicsPooling_in.compositeSampleID
+
   #  Archiving:
   #    is_a: Process
   #    annotations:
   #      neon_input_class: { }
   #      neon_output_class: { }
+
   GeneticSamplePrep:
+    title: preparation of genetic samples
     is_a: Process
     annotations:
       neon_input_class: sls_soilCoreCollection_in.sampleID
       neon_output_class: sls_soilCoreCollection_in.geneticSampleID
   MoistureSamplePrep:
+    title: preparation of samples for moisture measurement
     is_a: Process
     annotations:
       neon_input_class: sls_soilCoreCollection_in.sampleID
       neon_output_class: sls_soilMoisture_in.moistureSampleID
   PhSamplePrep:
+    title: preparation of samples for pH measurement
     is_a: Process
     annotations:
       neon_input_class: sls_soilCoreCollection_in.sampleID
       neon_output_class: sls_soilpH_in.pHSampleID
+  KclSamplePrep:
+    title: preparation of samples for pH measurement
+    is_a: Process
+    annotations:
+      neon_input_class: sls_soilCoreCollection_in.sampleID
+      neon_output_class: ntr_internalLab_in.kclSampleID
+  BgcArchiving:
+    title: preparation of samples for pH measurement
+    is_a: Process
+    annotations:
+      neon_input_class: sls_soilCoreCollection_in.sampleID
+      neon_output_class: sls_bgcSubsampling_in.bgcArchiveID
+  CnSamplePrep:
+    title: preparation of samples for pH measurement
+    is_a: Process
+    annotations:
+      neon_input_class: sls_soilCoreCollection_in.sampleID
+      neon_output_class: sls_bgcSubsampling_in.cnSampleID
+  BiomassSamplePrep:
+    title: preparation of samples for pH measurement
+    is_a: Process
+    annotations:
+      neon_input_class: sls_soilCoreCollection_in.sampleID
+      neon_output_class: sls_soilCoreCollection_in.biomassID
+  GeneticArchiving1:
+    title: preparation of samples for pH measurement
+    is_a: Process
+    annotations:
+      neon_input_class: sls_soilCoreCollection_in.sampleID
+      neon_output_class: sls_soilCoreCollection_in.geneticArchiveSample1ID
+  GeneticArchiving2:
+    title: preparation of samples for pH measurement
+    is_a: Process
+    annotations:
+      neon_input_class: sls_soilCoreCollection_in.sampleID
+      neon_output_class: sls_soilCoreCollection_in.geneticArchiveSample2ID
+  GeneticArchiving3:
+    title: preparation of samples for pH measurement
+    is_a: Process
+    annotations:
+      neon_input_class: sls_soilCoreCollection_in.sampleID
+      neon_output_class: sls_soilCoreCollection_in.geneticArchiveSample3ID
+  GeneticArchiving4:
+    title: preparation of samples for pH measurement
+    is_a: Process
+    annotations:
+      neon_input_class: sls_soilCoreCollection_in.sampleID
+      neon_output_class: sls_soilCoreCollection_in.geneticArchiveSample4ID
+  GeneticArchiving5:
+    title: preparation of samples for pH measurement
+    is_a: Process
+    annotations:
+      neon_input_class: sls_soilCoreCollection_in.sampleID
+      neon_output_class: sls_soilCoreCollection_in.geneticArchiveSample5ID
 
 slots:
   id:
@@ -291,6 +389,7 @@ slots:
     range: NamedThing
     comments:
       - This is a temporary shortcut that bypasses process instances
+
   neon_sample_class: { }
   neon_sample_tag: { }
   neon_sample_uuid: { }
@@ -392,6 +491,55 @@ slots:
     inlined_as_list: true
     multivalued: true
     range: PhSamplePrep
+
+  bgc_archiving_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: BgcArchiving
+
+  biomass_sample_prep_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: BiomassSamplePrep
+
+  c_n_sample_prep_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: CnSamplePrep
+
+  genetic_archiving_1_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: GeneticArchiving1
+
+  genetic_archiving_2_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: GeneticArchiving2
+
+  genetic_archiving_3_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: GeneticArchiving3
+
+  genetic_archiving_4_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: GeneticArchiving4
+
+  genetic_archiving_5_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: GeneticArchiving5
+
   pooling_set:
     domain: Database
     inlined_as_list: true
@@ -407,4 +555,10 @@ slots:
     inlined_as_list: true
     multivalued: true
     range: SubsampleDnaExtract
+
+  kcl_sample_prep_set:
+    domain: Database
+    inlined_as_list: true
+    multivalued: true
+    range: KclSamplePrep
 

@@ -800,6 +800,110 @@
       "@type": "SlotDefinition"
     },
     {
+      "name": "bgc_archiving_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/bgc_archiving_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/bgc_archiving_set",
+      "multivalued": true,
+      "owner": "bgc_archiving_set",
+      "range": "BgcArchiving",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "biomass_sample_prep_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/biomass_sample_prep_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/biomass_sample_prep_set",
+      "multivalued": true,
+      "owner": "biomass_sample_prep_set",
+      "range": "BiomassSamplePrep",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "c_n_sample_prep_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/c_n_sample_prep_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/c_n_sample_prep_set",
+      "multivalued": true,
+      "owner": "c_n_sample_prep_set",
+      "range": "CnSamplePrep",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "genetic_archiving_1_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/genetic_archiving_1_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/genetic_archiving_1_set",
+      "multivalued": true,
+      "owner": "genetic_archiving_1_set",
+      "range": "GeneticArchiving1",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "genetic_archiving_2_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/genetic_archiving_2_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/genetic_archiving_2_set",
+      "multivalued": true,
+      "owner": "genetic_archiving_2_set",
+      "range": "GeneticArchiving2",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "genetic_archiving_3_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/genetic_archiving_3_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/genetic_archiving_3_set",
+      "multivalued": true,
+      "owner": "genetic_archiving_3_set",
+      "range": "GeneticArchiving3",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "genetic_archiving_4_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/genetic_archiving_4_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/genetic_archiving_4_set",
+      "multivalued": true,
+      "owner": "genetic_archiving_4_set",
+      "range": "GeneticArchiving4",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "genetic_archiving_5_set",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/genetic_archiving_5_set",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "domain": "Database",
+      "slot_uri": "https://w3id.org/turbomam/split-pool-mod-schema/genetic_archiving_5_set",
+      "multivalued": true,
+      "owner": "genetic_archiving_5_set",
+      "range": "GeneticArchiving5",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
       "name": "pooling_set",
       "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/pooling_set",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
@@ -984,6 +1088,110 @@
       "@type": "ClassDefinition"
     },
     {
+      "name": "NtrInternalLabInKclSample",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/NtrInternalLabInKclSample",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "ntr_internalLab_in.kclSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/NtrInternalLabInKclSample",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SlsBgcSubsamplingInBgcArchive",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsBgcSubsamplingInBgcArchive",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "sls_bgcSubsampling_in.bgcArchiveID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsBgcSubsamplingInBgcArchive",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SlsBgcSubsamplingInCnSample",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsBgcSubsamplingInCnSample",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "sls_bgcSubsampling_in.cnSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsBgcSubsamplingInCnSample",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SlsSoilCoreCollectionInBiomass",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInBiomass",
+      "annotations": [
+        {
+          "tag": "neon_term",
+          "value": "sls_soilCoreCollection_in.biomassID",
+          "@type": "Annotation"
+        }
+      ],
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInBiomass",
+      "@type": "ClassDefinition"
+    },
+    {
       "name": "MicDnaExtractionInSoilDnaSample",
       "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/MicDnaExtractionInSoilDnaSample",
       "annotations": [
@@ -1062,6 +1270,25 @@
       "@type": "ClassDefinition"
     },
     {
+      "name": "SlsSoilCoreCollectionInGeneticArchiveSample",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "MaterialEntity",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "neon_sample_class",
+        "neon_sample_tag",
+        "neon_sample_uuid",
+        "has_children",
+        "has_parents"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample",
+      "@type": "ClassDefinition"
+    },
+    {
       "name": "SlsSoilCoreCollectionInGeneticArchiveSample1",
       "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/SlsSoilCoreCollectionInGeneticArchiveSample1",
       "annotations": [
@@ -1072,7 +1299,7 @@
         }
       ],
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "is_a": "MaterialEntity",
+      "is_a": "SlsSoilCoreCollectionInGeneticArchiveSample",
       "slots": [
         "id",
         "name",
@@ -1098,7 +1325,7 @@
         }
       ],
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "is_a": "MaterialEntity",
+      "is_a": "SlsSoilCoreCollectionInGeneticArchiveSample",
       "slots": [
         "id",
         "name",
@@ -1124,7 +1351,7 @@
         }
       ],
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "is_a": "MaterialEntity",
+      "is_a": "SlsSoilCoreCollectionInGeneticArchiveSample",
       "slots": [
         "id",
         "name",
@@ -1150,7 +1377,7 @@
         }
       ],
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "is_a": "MaterialEntity",
+      "is_a": "SlsSoilCoreCollectionInGeneticArchiveSample",
       "slots": [
         "id",
         "name",
@@ -1176,7 +1403,7 @@
         }
       ],
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
-      "is_a": "MaterialEntity",
+      "is_a": "SlsSoilCoreCollectionInGeneticArchiveSample",
       "slots": [
         "id",
         "name",
@@ -1253,6 +1480,7 @@
           "@type": "Annotation"
         }
       ],
+      "title": "soil moisture sample",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "is_a": "MaterialEntity",
       "slots": [
@@ -1279,6 +1507,7 @@
           "@type": "Annotation"
         }
       ],
+      "title": "soil pH sample",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "is_a": "MaterialEntity",
       "slots": [
@@ -1336,6 +1565,7 @@
           "@type": "Annotation"
         }
       ],
+      "title": "extraction of DNA",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "is_a": "Process",
       "slots": [
@@ -1364,6 +1594,7 @@
           "@type": "Annotation"
         }
       ],
+      "title": "sequencing",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "is_a": "Process",
       "slots": [
@@ -1392,6 +1623,7 @@
           "@type": "Annotation"
         }
       ],
+      "title": "preparation of DNA from a simple sample",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "is_a": "Process",
       "slots": [
@@ -1420,6 +1652,7 @@
           "@type": "Annotation"
         }
       ],
+      "title": "preparation of DNA from a composite sample",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "is_a": "Process",
       "slots": [
@@ -1448,6 +1681,7 @@
           "@type": "Annotation"
         }
       ],
+      "title": "pooling of samples",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "is_a": "Process",
       "slots": [
@@ -1476,6 +1710,7 @@
           "@type": "Annotation"
         }
       ],
+      "title": "preparation of genetic samples",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "is_a": "Process",
       "slots": [
@@ -1504,6 +1739,7 @@
           "@type": "Annotation"
         }
       ],
+      "title": "preparation of samples for moisture measurement",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "is_a": "Process",
       "slots": [
@@ -1532,6 +1768,7 @@
           "@type": "Annotation"
         }
       ],
+      "title": "preparation of samples for pH measurement",
       "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
       "is_a": "Process",
       "slots": [
@@ -1544,13 +1781,274 @@
       "slot_usage": {},
       "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/PhSamplePrep",
       "@type": "ClassDefinition"
+    },
+    {
+      "name": "KclSamplePrep",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/KclSamplePrep",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_soilCoreCollection_in.sampleID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "ntr_internalLab_in.kclSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "title": "preparation of samples for pH measurement",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/KclSamplePrep",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "BgcArchiving",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/BgcArchiving",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_soilCoreCollection_in.sampleID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "sls_bgcSubsampling_in.bgcArchiveID",
+          "@type": "Annotation"
+        }
+      ],
+      "title": "preparation of samples for pH measurement",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/BgcArchiving",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "CnSamplePrep",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/CnSamplePrep",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_soilCoreCollection_in.sampleID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "sls_bgcSubsampling_in.cnSampleID",
+          "@type": "Annotation"
+        }
+      ],
+      "title": "preparation of samples for pH measurement",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/CnSamplePrep",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "BiomassSamplePrep",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/BiomassSamplePrep",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_soilCoreCollection_in.sampleID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "sls_soilCoreCollection_in.biomassID",
+          "@type": "Annotation"
+        }
+      ],
+      "title": "preparation of samples for pH measurement",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/BiomassSamplePrep",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "GeneticArchiving1",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/GeneticArchiving1",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_soilCoreCollection_in.geneticArchiveSample1ID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "sls_soilCoreCollection_in.biomassID",
+          "@type": "Annotation"
+        }
+      ],
+      "title": "preparation of samples for pH measurement",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/GeneticArchiving1",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "GeneticArchiving2",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/GeneticArchiving2",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_soilCoreCollection_in.geneticArchiveSample2ID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "sls_soilCoreCollection_in.biomassID",
+          "@type": "Annotation"
+        }
+      ],
+      "title": "preparation of samples for pH measurement",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/GeneticArchiving2",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "GeneticArchiving3",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/GeneticArchiving3",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_soilCoreCollection_in.geneticArchiveSample3ID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "sls_soilCoreCollection_in.biomassID",
+          "@type": "Annotation"
+        }
+      ],
+      "title": "preparation of samples for pH measurement",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/GeneticArchiving3",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "GeneticArchiving4",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/GeneticArchiving4",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_soilCoreCollection_in.geneticArchiveSample4ID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "sls_soilCoreCollection_in.biomassID",
+          "@type": "Annotation"
+        }
+      ],
+      "title": "preparation of samples for pH measurement",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/GeneticArchiving4",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "GeneticArchiving5",
+      "definition_uri": "https://w3id.org/turbomam/split-pool-mod-schema/GeneticArchiving5",
+      "annotations": [
+        {
+          "tag": "neon_input_class",
+          "value": "sls_soilCoreCollection_in.geneticArchiveSample5ID",
+          "@type": "Annotation"
+        },
+        {
+          "tag": "neon_output_class",
+          "value": "sls_soilCoreCollection_in.biomassID",
+          "@type": "Annotation"
+        }
+      ],
+      "title": "preparation of samples for pH measurement",
+      "from_schema": "https://w3id.org/turbomam/split-pool-mod-schema",
+      "is_a": "Process",
+      "slots": [
+        "id",
+        "name",
+        "description",
+        "has_inputs",
+        "has_outputs"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/turbomam/split-pool-mod-schema/GeneticArchiving5",
+      "@type": "ClassDefinition"
     }
   ],
   "metamodel_version": "1.7.0",
   "source_file": "split_pool_mod_schema.yaml",
-  "source_file_date": "2023-05-02T15:12:15",
-  "source_file_size": 12585,
-  "generation_date": "2023-05-02T15:13:00",
+  "source_file_date": "2023-05-03T18:17:49",
+  "source_file_size": 16805,
+  "generation_date": "2023-05-03T18:18:04",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/split_pool_mod_schema.context.jsonld",

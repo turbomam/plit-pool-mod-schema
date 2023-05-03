@@ -1,0 +1,65 @@
+data:
+  sampleViews:
+  - archiveGuid: null
+    barcode: B00000115663
+    childSampleIdentifiers: null
+    parentSampleIdentifiers:
+    - archiveGuid: null
+      barcode: A00000114885
+      sampleClass: sls_soilCoreCollection_in.sampleID
+      sampleTag: YELL_052-M-30.5-31.5-20200709
+      sampleUuid: 38d05f16-5872-49c3-9c61-1854c6e8a84f
+    sampleClass: ntr_internalLab_in.kclSampleID
+    sampleEvents:
+    - ingestTableName: scs_shipmentVerification_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-08-13T12:00:00Z'
+      - smsKey: fate_location
+        smsValue: University of Florida Wetland Biogeochemistry Laboratory
+      - smsKey: sample_code
+        smsValue: B00000115663
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-KCL
+    - ingestTableName: scs_shipmentCreation_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-08-12T12:00:00Z'
+      - smsKey: fate_location
+        smsValue: D12
+      - smsKey: sample_code
+        smsValue: B00000115663
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-KCL
+    - ingestTableName: ntr_externalLab_in
+      smsFieldEntries:
+      - smsKey: analysis_type
+        smsValue: WBL-AN-008
+      - smsKey: fate
+        smsValue: discarded
+      - smsKey: fate_date
+        smsValue: '2020-10-13T16:00:00Z'
+      - smsKey: fate_location
+        smsValue: University of Florida Wetland Biogeochemistry Laboratory
+      - smsKey: sample_code
+        smsValue: B00000115663
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-KCL
+    - ingestTableName: ntr_internalLab_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-07-09T23:04:00Z'
+      - smsKey: fate_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: sample_code
+        smsValue: B00000115663
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-KCL
+    sampleTag: YELL_052-M-30.5-31.5-20200709-KCL
+    sampleUuid: d3fd1355-73c2-4c38-8a69-b1622319e954

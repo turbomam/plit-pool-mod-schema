@@ -1,10 +1,91 @@
 
 
+CREATE TABLE "BgcArchiving" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	has_inputs TEXT, 
+	has_outputs TEXT, 
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "BiomassSamplePrep" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	has_inputs TEXT, 
+	has_outputs TEXT, 
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "CnSamplePrep" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	has_inputs TEXT, 
+	has_outputs TEXT, 
+	PRIMARY KEY (id)
+);
+
 CREATE TABLE "Database" (
 	id TEXT NOT NULL, 
 	name TEXT, 
 	material_entity_set TEXT, 
 	named_thing_set TEXT, 
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "GeneticArchiving1" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	has_inputs TEXT, 
+	has_outputs TEXT, 
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "GeneticArchiving2" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	has_inputs TEXT, 
+	has_outputs TEXT, 
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "GeneticArchiving3" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	has_inputs TEXT, 
+	has_outputs TEXT, 
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "GeneticArchiving4" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	has_inputs TEXT, 
+	has_outputs TEXT, 
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "GeneticArchiving5" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	has_inputs TEXT, 
+	has_outputs TEXT, 
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "KclSamplePrep" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	has_inputs TEXT, 
+	has_outputs TEXT, 
 	PRIMARY KEY (id)
 );
 
@@ -24,6 +105,66 @@ CREATE TABLE "NamedThing" (
 	id TEXT NOT NULL, 
 	name TEXT, 
 	description TEXT, 
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "NtrInternalLabInKclSample" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	neon_sample_class TEXT, 
+	neon_sample_tag TEXT, 
+	neon_sample_uuid TEXT, 
+	has_children TEXT, 
+	has_parents TEXT, 
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "SlsBgcSubsamplingInBgcArchive" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	neon_sample_class TEXT, 
+	neon_sample_tag TEXT, 
+	neon_sample_uuid TEXT, 
+	has_children TEXT, 
+	has_parents TEXT, 
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "SlsBgcSubsamplingInCnSample" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	neon_sample_class TEXT, 
+	neon_sample_tag TEXT, 
+	neon_sample_uuid TEXT, 
+	has_children TEXT, 
+	has_parents TEXT, 
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "SlsSoilCoreCollectionInBiomass" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	neon_sample_class TEXT, 
+	neon_sample_tag TEXT, 
+	neon_sample_uuid TEXT, 
+	has_children TEXT, 
+	has_parents TEXT, 
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "SlsSoilCoreCollectionInGeneticArchiveSample" (
+	id TEXT NOT NULL, 
+	name TEXT, 
+	description TEXT, 
+	neon_sample_class TEXT, 
+	neon_sample_tag TEXT, 
+	neon_sample_uuid TEXT, 
+	has_children TEXT, 
+	has_parents TEXT, 
 	PRIMARY KEY (id)
 );
 

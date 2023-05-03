@@ -1,5 +1,155 @@
 {
     "$defs": {
+        "BgcArchiving": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "BgcArchiving",
+            "type": "object"
+        },
+        "BiomassSamplePrep": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "BiomassSamplePrep",
+            "type": "object"
+        },
+        "CnSamplePrep": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "CnSamplePrep",
+            "type": "object"
+        },
         "Database": {
             "additionalProperties": false,
             "description": "A possibly heterogeneous collections of data",
@@ -274,6 +424,256 @@
             "title": "DnaSamplePrepSimple",
             "type": "object"
         },
+        "GeneticArchiving1": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "GeneticArchiving1",
+            "type": "object"
+        },
+        "GeneticArchiving2": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "GeneticArchiving2",
+            "type": "object"
+        },
+        "GeneticArchiving3": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "GeneticArchiving3",
+            "type": "object"
+        },
+        "GeneticArchiving4": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "GeneticArchiving4",
+            "type": "object"
+        },
+        "GeneticArchiving5": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "GeneticArchiving5",
+            "type": "object"
+        },
         "GeneticSamplePrep": {
             "additionalProperties": false,
             "description": "",
@@ -346,6 +746,56 @@
                 "id"
             ],
             "title": "Information",
+            "type": "object"
+        },
+        "KclSamplePrep": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_inputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "has_outputs": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "KclSamplePrep",
             "type": "object"
         },
         "MaterialEntity": {
@@ -602,6 +1052,51 @@
             "title": "NamedThing",
             "type": "object"
         },
+        "NtrInternalLabInKclSample": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "NtrInternalLabInKclSample",
+            "type": "object"
+        },
         "PhSamplePrep": {
             "additionalProperties": false,
             "description": "",
@@ -802,6 +1297,96 @@
             "title": "Sequencing",
             "type": "object"
         },
+        "SlsBgcSubsamplingInBgcArchive": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SlsBgcSubsamplingInBgcArchive",
+            "type": "object"
+        },
+        "SlsBgcSubsamplingInCnSample": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SlsBgcSubsamplingInCnSample",
+            "type": "object"
+        },
         "SlsMetagenomicsPoolingInCompositeSample": {
             "additionalProperties": false,
             "description": "",
@@ -845,6 +1430,96 @@
                 "id"
             ],
             "title": "SlsMetagenomicsPoolingInCompositeSample",
+            "type": "object"
+        },
+        "SlsSoilCoreCollectionInBiomass": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SlsSoilCoreCollectionInBiomass",
+            "type": "object"
+        },
+        "SlsSoilCoreCollectionInGeneticArchiveSample": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description for a thing",
+                    "type": "string"
+                },
+                "has_children": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "has_parents": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "A unique identifier for a thing",
+                    "pattern": "[a-zA-Z0-9_]+:[a-zA-Z0-9_]+",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for a thing",
+                    "type": "string"
+                },
+                "neon_sample_class": {
+                    "type": "string"
+                },
+                "neon_sample_tag": {
+                    "type": "string"
+                },
+                "neon_sample_uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "SlsSoilCoreCollectionInGeneticArchiveSample",
             "type": "object"
         },
         "SlsSoilCoreCollectionInGeneticArchiveSample1": {

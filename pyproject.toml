@@ -35,3 +35,6 @@ docs = ["linkml", "mkdocs-material"]
 [tool.poetry.scripts]
 dh-json2linkml = 'src.split_pool_mod_schema.datamodel.dh_json2linkml:update_json'
 linkml-json2dh = 'src.split_pool_mod_schema.datamodel.linkml_json2dh:extract_lists'
+neon-dl-sample-by-tag-or-tags = 'src.split_pool_mod_schema.datamodel.neon_dl_sample_by_tag_or_tags:cli'
+#inst-samps = 'src.split_pool_mod_schema.datamodel.inst_samps:cli'
+

@@ -1,0 +1,79 @@
+data:
+  sampleViews:
+  - archiveGuid: null
+    barcode: B00000115666
+    childSampleIdentifiers: null
+    parentSampleIdentifiers:
+    - archiveGuid: null
+      barcode: A00000114885
+      sampleClass: sls_soilCoreCollection_in.sampleID
+      sampleTag: YELL_052-M-30.5-31.5-20200709
+      sampleUuid: 38d05f16-5872-49c3-9c61-1854c6e8a84f
+    sampleClass: sls_soilCoreCollection_in.biomassID
+    sampleEvents:
+    - ingestTableName: sls_soilCoreCollection_in
+      smsFieldEntries:
+      - smsKey: collect_end_date
+        smsValue: '2020-07-09T23:04:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2020-07-09T23:04:00Z'
+      - smsKey: collected_by
+        smsValue: 0000-0002-8294-0383
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: event_id
+        smsValue: YELL.peakGreenness.2020
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-07-09T23:04:00Z'
+      - smsKey: fate_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: recorded_by
+        smsValue: 0000-0003-0814-3869
+      - smsKey: sample_code
+        smsValue: B00000115666
+      - smsKey: sample_condition
+        smsValue: OK
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-BM
+    - ingestTableName: scs_shipmentVerification_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-08-13T12:00:00Z'
+      - smsKey: fate_location
+        smsValue: Microbial ID, Inc
+      - smsKey: sample_code
+        smsValue: B00000115666
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-BM
+    - ingestTableName: scs_shipmentCreation_in
+      smsFieldEntries:
+      - smsKey: container_mass
+        smsValue: '8.31'
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2020-08-12T12:00:00Z'
+      - smsKey: fate_location
+        smsValue: D12
+      - smsKey: sample_code
+        smsValue: B00000115666
+      - smsKey: sample_mass
+        smsValue: '10.1'
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-BM
+    - ingestTableName: sme_microbialBiomass_in
+      smsFieldEntries:
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_location
+        smsValue: Microbial ID, Inc
+      - smsKey: sample_code
+        smsValue: B00000115666
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-30.5-31.5-20200709-BM
+    sampleTag: YELL_052-M-30.5-31.5-20200709-BM
+    sampleUuid: 1168b855-9d20-4768-96a3-315052059439

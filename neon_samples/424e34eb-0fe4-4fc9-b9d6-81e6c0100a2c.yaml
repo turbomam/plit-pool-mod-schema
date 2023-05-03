@@ -1,0 +1,44 @@
+data:
+  sampleViews:
+  - archiveGuid: null
+    barcode: null
+    childSampleIdentifiers:
+    - archiveGuid: null
+      barcode: null
+      sampleClass: mic_dnaExtraction_in.subsampleID
+      sampleTag: YELL_052-M-28.5-4-20200709-GEN-DNA1_20S_10_0895
+      sampleUuid: 4748839b-c846-4c8b-8ea1-98b9fdfe3daf
+    parentSampleIdentifiers:
+    - archiveGuid: null
+      barcode: B00000038576
+      sampleClass: sls_soilCoreCollection_in.geneticSampleID
+      sampleTag: YELL_052-M-28.5-4-20200709-GEN
+      sampleUuid: 846a6f96-69bb-4ff6-9c13-2e294fd42883
+    sampleClass: mic_dnaExtraction_in.soilDnaSampleID
+    sampleEvents:
+    - ingestTableName: mic_dnaExtraction_in
+      smsFieldEntries:
+      - smsKey: analysis_type
+        smsValue: marker gene
+      - smsKey: collect_end_date
+        smsValue: '2020-07-09T22:35:00Z'
+      - smsKey: collect_start_date
+        smsValue: '2020-07-09T22:35:00Z'
+      - smsKey: collection_location
+        smsValue: YELL_052.basePlot.bgc
+      - smsKey: fate
+        smsValue: active
+      - smsKey: fate_date
+        smsValue: '2021-09-16T16:00:00Z'
+      - smsKey: fate_location
+        smsValue: Battelle Applied Genomics
+      - smsKey: sample_class
+        smsValue: mic_dnaExtraction_in.soilDnaSampleID
+      - smsKey: sample_tag
+        smsValue: YELL_052-M-28.5-4-20200709-GEN-DNA1
+      - smsKey: sample_type
+        smsValue: soil
+      - smsKey: sampling_protocol
+        smsValue: BMI_dnaExtractionSOP_v6
+    sampleTag: YELL_052-M-28.5-4-20200709-GEN-DNA1
+    sampleUuid: 424e34eb-0fe4-4fc9-b9d6-81e6c0100a2c
