@@ -222,14 +222,14 @@
       NamedThing &lt;|-- MaterialEntity
 
 
+      MaterialEntity &lt;|-- NtrInternalLabInKclSample
+      MaterialEntity &lt;|-- SlsBgcSubsamplingInBgcArchive
+      MaterialEntity &lt;|-- SlsBgcSubsamplingInCnSample
+      MaterialEntity &lt;|-- SlsSoilCoreCollectionInBiomass
       MaterialEntity &lt;|-- MicDnaExtractionInSoilDnaSample
       MaterialEntity &lt;|-- MicDnaExtractionInSubsample
       MaterialEntity &lt;|-- SlsMetagenomicsPoolingInCompositeSample
-      MaterialEntity &lt;|-- SlsSoilCoreCollectionInGeneticArchiveSample1
-      MaterialEntity &lt;|-- SlsSoilCoreCollectionInGeneticArchiveSample2
-      MaterialEntity &lt;|-- SlsSoilCoreCollectionInGeneticArchiveSample3
-      MaterialEntity &lt;|-- SlsSoilCoreCollectionInGeneticArchiveSample4
-      MaterialEntity &lt;|-- SlsSoilCoreCollectionInGeneticArchiveSample5
+      MaterialEntity &lt;|-- SlsSoilCoreCollectionInGeneticArchiveSample
       MaterialEntity &lt;|-- SlsSoilCoreCollectionInGeneticSample
       MaterialEntity &lt;|-- SlsSoilCoreCollectionInSample
       MaterialEntity &lt;|-- SlsSoilMoistureInMoistureSample
@@ -263,14 +263,14 @@
 <ul>
 <li><a href="../NamedThing/">NamedThing</a><ul>
 <li><strong>MaterialEntity</strong><ul>
+<li><a href="../NtrInternalLabInKclSample/">NtrInternalLabInKclSample</a></li>
+<li><a href="../SlsBgcSubsamplingInBgcArchive/">SlsBgcSubsamplingInBgcArchive</a></li>
+<li><a href="../SlsBgcSubsamplingInCnSample/">SlsBgcSubsamplingInCnSample</a></li>
+<li><a href="../SlsSoilCoreCollectionInBiomass/">SlsSoilCoreCollectionInBiomass</a></li>
 <li><a href="../MicDnaExtractionInSoilDnaSample/">MicDnaExtractionInSoilDnaSample</a></li>
 <li><a href="../MicDnaExtractionInSubsample/">MicDnaExtractionInSubsample</a></li>
 <li><a href="../SlsMetagenomicsPoolingInCompositeSample/">SlsMetagenomicsPoolingInCompositeSample</a></li>
-<li><a href="../SlsSoilCoreCollectionInGeneticArchiveSample1/">SlsSoilCoreCollectionInGeneticArchiveSample1</a></li>
-<li><a href="../SlsSoilCoreCollectionInGeneticArchiveSample2/">SlsSoilCoreCollectionInGeneticArchiveSample2</a></li>
-<li><a href="../SlsSoilCoreCollectionInGeneticArchiveSample3/">SlsSoilCoreCollectionInGeneticArchiveSample3</a></li>
-<li><a href="../SlsSoilCoreCollectionInGeneticArchiveSample4/">SlsSoilCoreCollectionInGeneticArchiveSample4</a></li>
-<li><a href="../SlsSoilCoreCollectionInGeneticArchiveSample5/">SlsSoilCoreCollectionInGeneticArchiveSample5</a></li>
+<li><a href="../SlsSoilCoreCollectionInGeneticArchiveSample/">SlsSoilCoreCollectionInGeneticArchiveSample</a></li>
 <li><a href="../SlsSoilCoreCollectionInGeneticSample/">SlsSoilCoreCollectionInGeneticSample</a></li>
 <li><a href="../SlsSoilCoreCollectionInSample/">SlsSoilCoreCollectionInSample</a></li>
 <li><a href="../SlsSoilMoistureInMoistureSample/">SlsSoilMoistureInMoistureSample</a></li>
@@ -463,6 +463,114 @@
 </tr>
 <tr>
 <td><a href="../PhSamplePrep/">PhSamplePrep</a></td>
+<td><a href="../has_outputs/">has_outputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../KclSamplePrep/">KclSamplePrep</a></td>
+<td><a href="../has_inputs/">has_inputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../KclSamplePrep/">KclSamplePrep</a></td>
+<td><a href="../has_outputs/">has_outputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../BgcArchiving/">BgcArchiving</a></td>
+<td><a href="../has_inputs/">has_inputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../BgcArchiving/">BgcArchiving</a></td>
+<td><a href="../has_outputs/">has_outputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../CnSamplePrep/">CnSamplePrep</a></td>
+<td><a href="../has_inputs/">has_inputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../CnSamplePrep/">CnSamplePrep</a></td>
+<td><a href="../has_outputs/">has_outputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../BiomassSamplePrep/">BiomassSamplePrep</a></td>
+<td><a href="../has_inputs/">has_inputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../BiomassSamplePrep/">BiomassSamplePrep</a></td>
+<td><a href="../has_outputs/">has_outputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../GeneticArchiving1/">GeneticArchiving1</a></td>
+<td><a href="../has_inputs/">has_inputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../GeneticArchiving1/">GeneticArchiving1</a></td>
+<td><a href="../has_outputs/">has_outputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../GeneticArchiving2/">GeneticArchiving2</a></td>
+<td><a href="../has_inputs/">has_inputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../GeneticArchiving2/">GeneticArchiving2</a></td>
+<td><a href="../has_outputs/">has_outputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../GeneticArchiving3/">GeneticArchiving3</a></td>
+<td><a href="../has_inputs/">has_inputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../GeneticArchiving3/">GeneticArchiving3</a></td>
+<td><a href="../has_outputs/">has_outputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../GeneticArchiving4/">GeneticArchiving4</a></td>
+<td><a href="../has_inputs/">has_inputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../GeneticArchiving4/">GeneticArchiving4</a></td>
+<td><a href="../has_outputs/">has_outputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../GeneticArchiving5/">GeneticArchiving5</a></td>
+<td><a href="../has_inputs/">has_inputs</a></td>
+<td>range</td>
+<td><a href="./">MaterialEntity</a></td>
+</tr>
+<tr>
+<td><a href="../GeneticArchiving5/">GeneticArchiving5</a></td>
 <td><a href="../has_outputs/">has_outputs</a></td>
 <td>range</td>
 <td><a href="./">MaterialEntity</a></td>

@@ -209,6 +209,18 @@
 <p>URI: <a href="https://w3id.org/turbomam/split-pool-mod-schema/Database">split_pool_mod_schema:Database</a></p>
 <div class="mermaid"> classDiagram
     class Database
+      Database : bgc_archiving_set
+
+          Database --|&gt; BgcArchiving : bgc_archiving_set
+
+      Database : biomass_sample_prep_set
+
+          Database --|&gt; BiomassSamplePrep : biomass_sample_prep_set
+
+      Database : c_n_sample_prep_set
+
+          Database --|&gt; CnSamplePrep : c_n_sample_prep_set
+
       Database : dna_sample_prep_composite_set
 
           Database --|&gt; DnaSamplePrepComposite : dna_sample_prep_composite_set
@@ -216,6 +228,26 @@
       Database : dna_sample_prep_simple_set
 
           Database --|&gt; DnaSamplePrepSimple : dna_sample_prep_simple_set
+
+      Database : genetic_archiving_1_set
+
+          Database --|&gt; GeneticArchiving1 : genetic_archiving_1_set
+
+      Database : genetic_archiving_2_set
+
+          Database --|&gt; GeneticArchiving2 : genetic_archiving_2_set
+
+      Database : genetic_archiving_3_set
+
+          Database --|&gt; GeneticArchiving3 : genetic_archiving_3_set
+
+      Database : genetic_archiving_4_set
+
+          Database --|&gt; GeneticArchiving4 : genetic_archiving_4_set
+
+      Database : genetic_archiving_5_set
+
+          Database --|&gt; GeneticArchiving5 : genetic_archiving_5_set
 
       Database : genetic_sample_prep_set
 
@@ -226,6 +258,10 @@
       Database : information_set
 
           Database --|&gt; Information : information_set
+
+      Database : kcl_sample_prep_set
+
+          Database --|&gt; KclSamplePrep : kcl_sample_prep_set
 
       Database : material_entity_set
 
@@ -328,15 +364,75 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../id/">id</a></td>
-<td>1..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>A unique identifier for a thing</td>
+<td><a href="../bgc_archiving_set/">bgc_archiving_set</a></td>
+<td>0..* <br/> <a href="../BgcArchiving/">BgcArchiving</a></td>
+<td></td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../name/">name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>A human-readable name for a thing</td>
+<td><a href="../biomass_sample_prep_set/">biomass_sample_prep_set</a></td>
+<td>0..* <br/> <a href="../BiomassSamplePrep/">BiomassSamplePrep</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../c_n_sample_prep_set/">c_n_sample_prep_set</a></td>
+<td>0..* <br/> <a href="../CnSamplePrep/">CnSamplePrep</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../dna_sample_prep_composite_set/">dna_sample_prep_composite_set</a></td>
+<td>0..* <br/> <a href="../DnaSamplePrepComposite/">DnaSamplePrepComposite</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../dna_sample_prep_simple_set/">dna_sample_prep_simple_set</a></td>
+<td>0..* <br/> <a href="../DnaSamplePrepSimple/">DnaSamplePrepSimple</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../genetic_archiving_1_set/">genetic_archiving_1_set</a></td>
+<td>0..* <br/> <a href="../GeneticArchiving1/">GeneticArchiving1</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../genetic_archiving_2_set/">genetic_archiving_2_set</a></td>
+<td>0..* <br/> <a href="../GeneticArchiving2/">GeneticArchiving2</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../genetic_archiving_3_set/">genetic_archiving_3_set</a></td>
+<td>0..* <br/> <a href="../GeneticArchiving3/">GeneticArchiving3</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../genetic_archiving_4_set/">genetic_archiving_4_set</a></td>
+<td>0..* <br/> <a href="../GeneticArchiving4/">GeneticArchiving4</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../genetic_archiving_5_set/">genetic_archiving_5_set</a></td>
+<td>0..* <br/> <a href="../GeneticArchiving5/">GeneticArchiving5</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../genetic_sample_prep_set/">genetic_sample_prep_set</a></td>
+<td>0..* <br/> <a href="../GeneticSamplePrep/">GeneticSamplePrep</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../id/">id</a></td>
+<td>1..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>A unique identifier for a thing</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -346,21 +442,15 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../kcl_sample_prep_set/">kcl_sample_prep_set</a></td>
+<td>0..* <br/> <a href="../KclSamplePrep/">KclSamplePrep</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../material_entity_set/">material_entity_set</a></td>
 <td>0..* <br/> <a href="../MaterialEntity/">MaterialEntity</a></td>
 <td>Links a Database to a list of MaterialEntities</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../named_thing_set/">named_thing_set</a></td>
-<td>0..* <br/> <a href="../NamedThing/">NamedThing</a></td>
-<td>Links a Database to a list of NamedThings</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../process_set/">process_set</a></td>
-<td>0..* <br/> <a href="../Process/">Process</a></td>
-<td>Links a Database to a list of Processes</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -378,6 +468,60 @@
 <tr>
 <td><a href="../mms_metagenome_sequencing_in_processed_seq_file_name_set/">mms_metagenome_sequencing_in_processed_seq_file_name_set</a></td>
 <td>0..* <br/> <a href="../MmsMetagenomeSequencingInProcessedSeqFileName/">MmsMetagenomeSequencingInProcessedSeqFileName</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../moisture_sample_prep_set/">moisture_sample_prep_set</a></td>
+<td>0..* <br/> <a href="../MoistureSamplePrep/">MoistureSamplePrep</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../name/">name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>A human-readable name for a thing</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../named_thing_set/">named_thing_set</a></td>
+<td>0..* <br/> <a href="../NamedThing/">NamedThing</a></td>
+<td>Links a Database to a list of NamedThings</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ph_sample_prep_set/">ph_sample_prep_set</a></td>
+<td>0..* <br/> <a href="../PhSamplePrep/">PhSamplePrep</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../pooling_set/">pooling_set</a></td>
+<td>0..* <br/> <a href="../Pooling/">Pooling</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../pooling_set/">pooling_set</a></td>
+<td>0..* <br/> <a href="../Pooling/">Pooling</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../process_set/">process_set</a></td>
+<td>0..* <br/> <a href="../Process/">Process</a></td>
+<td>Links a Database to a list of Processes</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sequencing_set/">sequencing_set</a></td>
+<td>0..* <br/> <a href="../Sequencing/">Sequencing</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sequencing_set/">sequencing_set</a></td>
+<td>0..* <br/> <a href="../Sequencing/">Sequencing</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -442,44 +586,8 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../dna_sample_prep_composite_set/">dna_sample_prep_composite_set</a></td>
-<td>0..* <br/> <a href="../DnaSamplePrepComposite/">DnaSamplePrepComposite</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../dna_sample_prep_simple_set/">dna_sample_prep_simple_set</a></td>
-<td>0..* <br/> <a href="../DnaSamplePrepSimple/">DnaSamplePrepSimple</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../genetic_sample_prep_set/">genetic_sample_prep_set</a></td>
-<td>0..* <br/> <a href="../GeneticSamplePrep/">GeneticSamplePrep</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../moisture_sample_prep_set/">moisture_sample_prep_set</a></td>
-<td>0..* <br/> <a href="../MoistureSamplePrep/">MoistureSamplePrep</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../ph_sample_prep_set/">ph_sample_prep_set</a></td>
-<td>0..* <br/> <a href="../PhSamplePrep/">PhSamplePrep</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../pooling_set/">pooling_set</a></td>
-<td>0..* <br/> <a href="../Pooling/">Pooling</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../sequencing_set/">sequencing_set</a></td>
-<td>0..* <br/> <a href="../Sequencing/">Sequencing</a></td>
+<td><a href="../subsample_dna_extract_set/">subsample_dna_extract_set</a></td>
+<td>0..* <br/> <a href="../SubsampleDnaExtract/">SubsampleDnaExtract</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -504,25 +612,85 @@
 <tbody>
 <tr>
 <td><a href="./">Database</a></td>
+<td><a href="../bgc_archiving_set/">bgc_archiving_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../biomass_sample_prep_set/">biomass_sample_prep_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../c_n_sample_prep_set/">c_n_sample_prep_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../dna_sample_prep_composite_set/">dna_sample_prep_composite_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../dna_sample_prep_simple_set/">dna_sample_prep_simple_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../genetic_archiving_1_set/">genetic_archiving_1_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../genetic_archiving_2_set/">genetic_archiving_2_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../genetic_archiving_3_set/">genetic_archiving_3_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../genetic_archiving_4_set/">genetic_archiving_4_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../genetic_archiving_5_set/">genetic_archiving_5_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../genetic_sample_prep_set/">genetic_sample_prep_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
 <td><a href="../information_set/">information_set</a></td>
 <td>domain</td>
 <td><a href="./">Database</a></td>
 </tr>
 <tr>
 <td><a href="./">Database</a></td>
+<td><a href="../kcl_sample_prep_set/">kcl_sample_prep_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
 <td><a href="../material_entity_set/">material_entity_set</a></td>
-<td>domain</td>
-<td><a href="./">Database</a></td>
-</tr>
-<tr>
-<td><a href="./">Database</a></td>
-<td><a href="../named_thing_set/">named_thing_set</a></td>
-<td>domain</td>
-<td><a href="./">Database</a></td>
-</tr>
-<tr>
-<td><a href="./">Database</a></td>
-<td><a href="../process_set/">process_set</a></td>
 <td>domain</td>
 <td><a href="./">Database</a></td>
 </tr>
@@ -541,6 +709,42 @@
 <tr>
 <td><a href="./">Database</a></td>
 <td><a href="../mms_metagenome_sequencing_in_processed_seq_file_name_set/">mms_metagenome_sequencing_in_processed_seq_file_name_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../moisture_sample_prep_set/">moisture_sample_prep_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../named_thing_set/">named_thing_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../ph_sample_prep_set/">ph_sample_prep_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../pooling_set/">pooling_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../process_set/">process_set</a></td>
+<td>domain</td>
+<td><a href="./">Database</a></td>
+</tr>
+<tr>
+<td><a href="./">Database</a></td>
+<td><a href="../sequencing_set/">sequencing_set</a></td>
 <td>domain</td>
 <td><a href="./">Database</a></td>
 </tr>
@@ -606,48 +810,6 @@
 </tr>
 <tr>
 <td><a href="./">Database</a></td>
-<td><a href="../dna_sample_prep_composite_set/">dna_sample_prep_composite_set</a></td>
-<td>domain</td>
-<td><a href="./">Database</a></td>
-</tr>
-<tr>
-<td><a href="./">Database</a></td>
-<td><a href="../dna_sample_prep_simple_set/">dna_sample_prep_simple_set</a></td>
-<td>domain</td>
-<td><a href="./">Database</a></td>
-</tr>
-<tr>
-<td><a href="./">Database</a></td>
-<td><a href="../genetic_sample_prep_set/">genetic_sample_prep_set</a></td>
-<td>domain</td>
-<td><a href="./">Database</a></td>
-</tr>
-<tr>
-<td><a href="./">Database</a></td>
-<td><a href="../moisture_sample_prep_set/">moisture_sample_prep_set</a></td>
-<td>domain</td>
-<td><a href="./">Database</a></td>
-</tr>
-<tr>
-<td><a href="./">Database</a></td>
-<td><a href="../ph_sample_prep_set/">ph_sample_prep_set</a></td>
-<td>domain</td>
-<td><a href="./">Database</a></td>
-</tr>
-<tr>
-<td><a href="./">Database</a></td>
-<td><a href="../pooling_set/">pooling_set</a></td>
-<td>domain</td>
-<td><a href="./">Database</a></td>
-</tr>
-<tr>
-<td><a href="./">Database</a></td>
-<td><a href="../sequencing_set/">sequencing_set</a></td>
-<td>domain</td>
-<td><a href="./">Database</a></td>
-</tr>
-<tr>
-<td><a href="./">Database</a></td>
 <td><a href="../subsample_dna_extract_set/">subsample_dna_extract_set</a></td>
 <td>domain</td>
 <td><a href="./">Database</a></td>
@@ -693,15 +855,33 @@ comments:
 from_schema: https://w3id.org/turbomam/split-pool-mod-schema
 rank: 1000
 slots:
+- bgc_archiving_set
+- biomass_sample_prep_set
+- c_n_sample_prep_set
+- dna_sample_prep_composite_set
+- dna_sample_prep_simple_set
+- genetic_archiving_1_set
+- genetic_archiving_2_set
+- genetic_archiving_3_set
+- genetic_archiving_4_set
+- genetic_archiving_5_set
+- genetic_sample_prep_set
 - id
-- name
 - information_set
+- kcl_sample_prep_set
 - material_entity_set
-- named_thing_set
-- process_set
 - mic_dna_extraction_in_soil_dna_sample_set
 - mic_dna_extraction_in_subsample_set
 - mms_metagenome_sequencing_in_processed_seq_file_name_set
+- moisture_sample_prep_set
+- name
+- named_thing_set
+- ph_sample_prep_set
+- pooling_set
+- pooling_set
+- process_set
+- sequencing_set
+- sequencing_set
 - sls_metagenomics_pooling_in_composite_sample_set
 - sls_soil_core_collection_in_genetic_archive_sample1_set
 - sls_soil_core_collection_in_genetic_archive_sample2_set
@@ -712,13 +892,7 @@ slots:
 - sls_soil_core_collection_in_sample_set
 - sls_soil_moisture_in_moisture_sample_set
 - sls_soil_ph_in_ph_sample_set
-- dna_sample_prep_composite_set
-- dna_sample_prep_simple_set
-- genetic_sample_prep_set
-- moisture_sample_prep_set
-- ph_sample_prep_set
-- pooling_set
-- sequencing_set
+- subsample_dna_extract_set
 - subsample_dna_extract_set
 tree_root: true
 
@@ -733,6 +907,149 @@ comments:
 from_schema: https://w3id.org/turbomam/split-pool-mod-schema
 rank: 1000
 attributes:
+  bgc_archiving_set:
+    name: bgc_archiving_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: bgc_archiving_set
+    owner: Database
+    domain_of:
+    - Database
+    range: BgcArchiving
+    inlined: true
+    inlined_as_list: true
+  biomass_sample_prep_set:
+    name: biomass_sample_prep_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: biomass_sample_prep_set
+    owner: Database
+    domain_of:
+    - Database
+    range: BiomassSamplePrep
+    inlined: true
+    inlined_as_list: true
+  c_n_sample_prep_set:
+    name: c_n_sample_prep_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: c_n_sample_prep_set
+    owner: Database
+    domain_of:
+    - Database
+    range: CnSamplePrep
+    inlined: true
+    inlined_as_list: true
+  dna_sample_prep_composite_set:
+    name: dna_sample_prep_composite_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: dna_sample_prep_composite_set
+    owner: Database
+    domain_of:
+    - Database
+    range: DnaSamplePrepComposite
+    inlined: true
+    inlined_as_list: true
+  dna_sample_prep_simple_set:
+    name: dna_sample_prep_simple_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: dna_sample_prep_simple_set
+    owner: Database
+    domain_of:
+    - Database
+    range: DnaSamplePrepSimple
+    inlined: true
+    inlined_as_list: true
+  genetic_archiving_1_set:
+    name: genetic_archiving_1_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: genetic_archiving_1_set
+    owner: Database
+    domain_of:
+    - Database
+    range: GeneticArchiving1
+    inlined: true
+    inlined_as_list: true
+  genetic_archiving_2_set:
+    name: genetic_archiving_2_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: genetic_archiving_2_set
+    owner: Database
+    domain_of:
+    - Database
+    range: GeneticArchiving2
+    inlined: true
+    inlined_as_list: true
+  genetic_archiving_3_set:
+    name: genetic_archiving_3_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: genetic_archiving_3_set
+    owner: Database
+    domain_of:
+    - Database
+    range: GeneticArchiving3
+    inlined: true
+    inlined_as_list: true
+  genetic_archiving_4_set:
+    name: genetic_archiving_4_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: genetic_archiving_4_set
+    owner: Database
+    domain_of:
+    - Database
+    range: GeneticArchiving4
+    inlined: true
+    inlined_as_list: true
+  genetic_archiving_5_set:
+    name: genetic_archiving_5_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: genetic_archiving_5_set
+    owner: Database
+    domain_of:
+    - Database
+    range: GeneticArchiving5
+    inlined: true
+    inlined_as_list: true
+  genetic_sample_prep_set:
+    name: genetic_sample_prep_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: genetic_sample_prep_set
+    owner: Database
+    domain_of:
+    - Database
+    range: GeneticSamplePrep
+    inlined: true
+    inlined_as_list: true
   id:
     name: id
     description: A unique identifier for a thing
@@ -748,18 +1065,6 @@ attributes:
     range: uriorcurie
     required: true
     pattern: '[a-zA-Z0-9_]+:[a-zA-Z0-9_]+'
-  name:
-    name: name
-    description: A human-readable name for a thing
-    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
-    rank: 1000
-    slot_uri: rdfs:label
-    alias: name
-    owner: Database
-    domain_of:
-    - NamedThing
-    - Database
-    range: string
   information_set:
     name: information_set
     description: Links a Database to a list of Informations
@@ -774,6 +1079,19 @@ attributes:
     range: Information
     inlined: true
     inlined_as_list: true
+  kcl_sample_prep_set:
+    name: kcl_sample_prep_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: kcl_sample_prep_set
+    owner: Database
+    domain_of:
+    - Database
+    range: KclSamplePrep
+    inlined: true
+    inlined_as_list: true
   material_entity_set:
     name: material_entity_set
     description: Links a Database to a list of MaterialEntities
@@ -786,34 +1104,6 @@ attributes:
     domain_of:
     - Database
     range: MaterialEntity
-    inlined: true
-    inlined_as_list: true
-  named_thing_set:
-    name: named_thing_set
-    description: Links a Database to a list of NamedThings
-    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
-    rank: 1000
-    domain: Database
-    multivalued: true
-    alias: named_thing_set
-    owner: Database
-    domain_of:
-    - Database
-    range: NamedThing
-    inlined: true
-    inlined_as_list: true
-  process_set:
-    name: process_set
-    description: Links a Database to a list of Processes
-    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
-    rank: 1000
-    domain: Database
-    multivalued: true
-    alias: process_set
-    owner: Database
-    domain_of:
-    - Database
-    range: Process
     inlined: true
     inlined_as_list: true
   mic_dna_extraction_in_soil_dna_sample_set:
@@ -853,6 +1143,98 @@ attributes:
     domain_of:
     - Database
     range: MmsMetagenomeSequencingInProcessedSeqFileName
+    inlined: true
+    inlined_as_list: true
+  moisture_sample_prep_set:
+    name: moisture_sample_prep_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: moisture_sample_prep_set
+    owner: Database
+    domain_of:
+    - Database
+    range: MoistureSamplePrep
+    inlined: true
+    inlined_as_list: true
+  name:
+    name: name
+    description: A human-readable name for a thing
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    slot_uri: rdfs:label
+    alias: name
+    owner: Database
+    domain_of:
+    - NamedThing
+    - Database
+    range: string
+  named_thing_set:
+    name: named_thing_set
+    description: Links a Database to a list of NamedThings
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: named_thing_set
+    owner: Database
+    domain_of:
+    - Database
+    range: NamedThing
+    inlined: true
+    inlined_as_list: true
+  ph_sample_prep_set:
+    name: ph_sample_prep_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: ph_sample_prep_set
+    owner: Database
+    domain_of:
+    - Database
+    range: PhSamplePrep
+    inlined: true
+    inlined_as_list: true
+  pooling_set:
+    name: pooling_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: pooling_set
+    owner: Database
+    domain_of:
+    - Database
+    range: Pooling
+    inlined: true
+    inlined_as_list: true
+  process_set:
+    name: process_set
+    description: Links a Database to a list of Processes
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: process_set
+    owner: Database
+    domain_of:
+    - Database
+    range: Process
+    inlined: true
+    inlined_as_list: true
+  sequencing_set:
+    name: sequencing_set
+    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
+    rank: 1000
+    domain: Database
+    multivalued: true
+    alias: sequencing_set
+    owner: Database
+    domain_of:
+    - Database
+    range: Sequencing
     inlined: true
     inlined_as_list: true
   sls_metagenomics_pooling_in_composite_sample_set:
@@ -983,97 +1365,6 @@ attributes:
     domain_of:
     - Database
     range: SlsSoilpHInPhSample
-    inlined: true
-    inlined_as_list: true
-  dna_sample_prep_composite_set:
-    name: dna_sample_prep_composite_set
-    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
-    rank: 1000
-    domain: Database
-    multivalued: true
-    alias: dna_sample_prep_composite_set
-    owner: Database
-    domain_of:
-    - Database
-    range: DnaSamplePrepComposite
-    inlined: true
-    inlined_as_list: true
-  dna_sample_prep_simple_set:
-    name: dna_sample_prep_simple_set
-    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
-    rank: 1000
-    domain: Database
-    multivalued: true
-    alias: dna_sample_prep_simple_set
-    owner: Database
-    domain_of:
-    - Database
-    range: DnaSamplePrepSimple
-    inlined: true
-    inlined_as_list: true
-  genetic_sample_prep_set:
-    name: genetic_sample_prep_set
-    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
-    rank: 1000
-    domain: Database
-    multivalued: true
-    alias: genetic_sample_prep_set
-    owner: Database
-    domain_of:
-    - Database
-    range: GeneticSamplePrep
-    inlined: true
-    inlined_as_list: true
-  moisture_sample_prep_set:
-    name: moisture_sample_prep_set
-    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
-    rank: 1000
-    domain: Database
-    multivalued: true
-    alias: moisture_sample_prep_set
-    owner: Database
-    domain_of:
-    - Database
-    range: MoistureSamplePrep
-    inlined: true
-    inlined_as_list: true
-  ph_sample_prep_set:
-    name: ph_sample_prep_set
-    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
-    rank: 1000
-    domain: Database
-    multivalued: true
-    alias: ph_sample_prep_set
-    owner: Database
-    domain_of:
-    - Database
-    range: PhSamplePrep
-    inlined: true
-    inlined_as_list: true
-  pooling_set:
-    name: pooling_set
-    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
-    rank: 1000
-    domain: Database
-    multivalued: true
-    alias: pooling_set
-    owner: Database
-    domain_of:
-    - Database
-    range: Pooling
-    inlined: true
-    inlined_as_list: true
-  sequencing_set:
-    name: sequencing_set
-    from_schema: https://w3id.org/turbomam/split-pool-mod-schema
-    rank: 1000
-    domain: Database
-    multivalued: true
-    alias: sequencing_set
-    owner: Database
-    domain_of:
-    - Database
-    range: Sequencing
     inlined: true
     inlined_as_list: true
   subsample_dna_extract_set:
